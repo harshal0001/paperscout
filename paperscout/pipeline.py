@@ -6,6 +6,7 @@ from datetime import datetime
 from pathlib import Path
 
 from . import europepmc
+from .insights import extract_effects, outcome_tags
 from .llm import MODELS
 
 MAX_QUERIES = 4
@@ -203,7 +204,7 @@ def run(question, llm, search_fn=None, runs_dir="runs", run_id=None):
         return {"type": "warning", "message": msg}
 
     try:
-        yield {"type": "run", "run_id": run_id}
+        yield {"type": "run", "run_id": run_id, "question": question, "models": MODELS}
         yield {"type": "step", "stage": "plan", "status": "start"}
         try:
             plan, warnings = make_plan(question, llm)
@@ -240,9 +241,14 @@ def run(question, llm, search_fn=None, runs_dir="runs", run_id=None):
                     yield warn(f"Ranking batch {n} failed ({e}); its {len(b)} papers are shown unscored.")
                 yield {"type": "rank_progress", "done": n, "total": len(batches)}
         ranked = sort_papers(papers)
-        meta["counts"]["unscored"] = sum(p.get("score") is None for p in ranked)
+        effects = []
+        for p in ranked:  # deterministic, from the abstract text only; see insights.py
+            p["outcomes"] = outcome_tags(p["abstract"])
+            effects += [{"key": p["key"], **e} for e in extract_effects(p["abstract"])]
+        meta["counts"].update(unscored=sum(p.get("score") is None for p in ranked), effects=len(effects))
         save("ranked.json", ranked)
-        yield {"type": "results", "papers": ranked}
+        save("effects.json", effects)
+        yield {"type": "results", "papers": ranked, "effects": effects}
         yield {"type": "step", "stage": "rank", "status": "done"}
 
         yield {"type": "step", "stage": "synthesize", "status": "start"}

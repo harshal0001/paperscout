@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-10-18_172931-does-gut-microbiome-composition-influenc",
+  "question": "Does gut microbiome composition influence Parkinson's disease progression?",
+  "started": "2026-10-18T17:29:31",
+  "models": {
+    "planner": "nvidia/nemotron-3-super-120b-a12b",
+    "ranker": "nvidia/Nemotron-3_5-Lightning",
+    "writer": "nvidia/nemotron-3-super-120b-a12b"
+  },
+  "status": "ok",
+  "warnings": [],
+  "counts": {
+    "per_query": {
+      "(Parkinson's disease) AND (gut microbiome)": 25,
+      "(Parkinson's disease OR PD) AND (microbiota OR microbiome OR bacterial community)": 25,
+      "(Parkinson's disease) AND (gut microbiome) AND (longitudinal OR progression OR worsening)": 25,
+      "(Parkinson's disease) AND (gut microbiota OR dysbiosis)": 25
+    },
+    "unique": 61,
+    "dropped_no_abstract": 5,
+    "unscored": 0,
+    "effects": 0
+  },
+  "finished": "2026-10-18T17:29:39",
+  "usage": {
+    "prompt_tokens": 21830,
+    "completion_tokens": 3601
+  }
+}

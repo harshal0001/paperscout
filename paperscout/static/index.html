@@ -3,204 +3,694 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PaperScout - research paper discovery for life sciences</title>
+<title>PaperScout · research paper discovery for healthcare &amp; life sciences</title>
 <style>
-  :root { --bg:#f6f8fb; --card:#fff; --ink:#0f172a; --muted:#64748b; --line:#e2e8f0; --accent:#0e7c66; --accent2:#76b900; --warn:#b45309; --err:#b91c1c; }
-  * { box-sizing:border-box; }
-  body { margin:0; font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
-  header { background:linear-gradient(120deg,#063b33,#0e7c66 60%,#3f8f1f); color:#fff; padding:28px 24px 64px; }
-  .wrap { max-width:1080px; margin:0 auto; }
-  h1 { margin:0; font-size:28px; letter-spacing:-.02em; } h1 span { color:#c6f26e; }
-  .tag { opacity:.85; margin-top:4px; }
-  .searchbox { max-width:1080px; margin:-40px auto 0; padding:0 24px; }
-  .bar { background:var(--card); border-radius:14px; box-shadow:0 10px 30px rgba(15,23,42,.12); padding:14px; display:flex; gap:10px; }
-  .bar textarea { flex:1; border:1px solid var(--line); border-radius:10px; padding:10px 12px; font:inherit; resize:vertical; min-height:48px; }
-  .bar button { background:var(--accent); color:#fff; border:0; border-radius:10px; padding:0 22px; font-weight:600; font-size:15px; cursor:pointer; }
-  .bar button:disabled { opacity:.5; cursor:wait; }
-  .examples { margin:10px 2px 0; display:flex; flex-wrap:wrap; gap:8px; }
-  .chip { background:#e6f4f1; color:#065f50; border:0; border-radius:999px; padding:5px 12px; font-size:13px; cursor:pointer; }
-  main { max-width:1080px; margin:20px auto 60px; padding:0 24px; display:grid; grid-template-columns:280px 1fr; gap:20px; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:16px; }
-  .card h3 { margin:0 0 10px; font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
-  .steps { list-style:none; margin:0; padding:0; }
-  .steps li { padding:6px 0 6px 28px; position:relative; color:var(--muted); }
-  .steps li::before { content:""; position:absolute; left:4px; top:11px; width:12px; height:12px; border-radius:50%; border:2px solid var(--line); }
-  .steps li.active { color:var(--ink); font-weight:600; } .steps li.active::before { border-color:var(--accent); border-top-color:transparent; animation:spin .8s linear infinite; }
-  .steps li.done { color:var(--ink); } .steps li.done::before { background:var(--accent); border-color:var(--accent); }
-  .steps small { display:block; font-weight:400; color:var(--muted); }
-  @keyframes spin { to { transform:rotate(360deg); } }
-  .pico { display:grid; grid-template-columns:auto 1fr; gap:4px 10px; font-size:13px; } .pico b { color:var(--accent); }
-  code.q { display:block; background:#f1f5f9; border-radius:6px; padding:6px 8px; margin:6px 0; font-size:12px; word-break:break-word; }
-  .warn { background:#fff7ed; border:1px solid #fed7aa; color:var(--warn); border-radius:8px; padding:8px 10px; margin-bottom:8px; font-size:13px; }
-  .err { background:#fef2f2; border:1px solid #fecaca; color:var(--err); border-radius:8px; padding:10px 12px; margin-bottom:12px; }
-  .summary { border-left:4px solid var(--accent); }
-  .summary p { margin:0 0 8px; } .summary a.cite { color:var(--accent); font-weight:600; text-decoration:none; }
-  .conf { display:inline-block; font-size:12px; padding:2px 8px; border-radius:999px; background:#e6f4f1; color:#065f50; margin-left:6px; }
-  .tools { display:flex; flex-wrap:wrap; gap:12px; align-items:center; font-size:13px; color:var(--muted); margin-bottom:12px; }
-  .tools select, .tools input { font:inherit; } .tools a { color:var(--accent); font-weight:600; }
-  .paper { display:grid; grid-template-columns:52px 1fr; gap:14px; scroll-margin-top:16px; }
-  .paper.hl { outline:2px solid var(--accent2); }
-  .score { width:52px; height:52px; border-radius:12px; display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:700; font-size:20px; color:#fff; }
-  .score small { font-size:10px; font-weight:500; opacity:.9; }
-  .s-hi { background:#0e7c66; } .s-mid { background:#65a30d; } .s-lo { background:#94a3b8; } .s-na { background:#cbd5e1; color:#475569; }
-  .paper h4 { margin:0 0 4px; font-size:16px; } .paper h4 a { color:var(--ink); text-decoration:none; } .paper h4 a:hover { color:var(--accent); }
-  .meta { font-size:13px; color:var(--muted); } .reason { margin:6px 0; font-size:14px; }
-  .badges span { display:inline-block; font-size:11px; padding:2px 8px; border-radius:999px; margin:4px 4px 0 0; background:#f1f5f9; color:#334155; }
-  .badges .oa { background:#dcfce7; color:#166534; } .badges .pp { background:#fef3c7; color:#92400e; } .badges .st { background:#e0e7ff; color:#3730a3; }
-  details { font-size:13px; color:#334155; margin-top:6px; } summary { cursor:pointer; color:var(--accent); }
-  .empty { color:var(--muted); text-align:center; padding:40px 0; }
-  footer { text-align:center; color:var(--muted); font-size:12px; padding-bottom:30px; }
-  @media (max-width:860px) { main { grid-template-columns:1fr; } }
+/* ===== THEME: every colour lives here. JS reads chart colours from these variables too. ===== */
+:root{
+  --bg:#f4f6f9; --bg-top:#e9effa; --surface:#ffffff; --surface-2:#f8fafc; --surface-3:#f1f5f9;
+  --line:#e3e8ef; --line-2:#cdd6e1;
+  --ink:#1e293b; --ink-2:#334155; --muted:#5b6b80; --dim:#5e6b80; --on-accent:#ffffff;
+  --accent:#2563eb; --accent-strong:#1d4ed8; --accent-soft:#eaf1fe; --accent-ring:rgba(37,99,235,.18);
+  --good:#11692f; --good-soft:#e8f5ec; --warn:#b45309; --warn-ink:#92400e; --warn-soft:#fff6e5; --bad:#be123c; --bad-soft:#fdecef;
+  --violet:#5a47c0; --violet-soft:#f0edfb; --mark:#fde68a;
+  --score-hi:#11692f; --score-mid:#2563eb; --score-low:#b45309; --score-na:#94a3b8;
+  /* study designs: muted, colour-blind-friendly, readable on white */
+  --st-meta-analysis:#0b6e4f; --st-systematic-review:#2a9d8f; --st-rct:#2563eb; --st-guideline:#b7791f; --st-cohort:#6d5bd0;
+  --st-case-control:#8e6cc4; --st-cross-sectional:#a07cc5; --st-narrative-review:#64748b; --st-other:#94a3b8; --st-case-report:#c05680; --st-preclinical:#d1495b;
+  /* funnel */
+  --fn-query:#5a6b94; --fn-retrieved:#2563eb; --fn-screened:#3b82f6; --fn-dup:#cbd5e1; --fn-noabs:#e2e8f0;
+  --fn-hi:#15803d; --fn-mid:#60a5fa; --fn-lo:#cbd5e1; --fn-unscored:#f59e0b; --fn-cited:#0b6e4f; --fn-other:#86c79b;
+  --shadow-sm:0 1px 2px rgba(15,23,42,.06),0 1px 3px rgba(15,23,42,.04); --shadow:0 2px 6px rgba(15,23,42,.05),0 10px 28px rgba(15,23,42,.06);
+  --shadow-pop:0 12px 32px rgba(15,23,42,.14);
+  --r:14px; --mono:ui-monospace,SFMono-Regular,"JetBrains Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box} html,body{margin:0;height:100%}
+body{font:15px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:linear-gradient(180deg,var(--bg-top) 0,var(--bg) 420px) no-repeat,var(--bg);overflow-x:hidden}
+a{color:inherit}
+.aurora,.grid-bg{display:none}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:14px;padding:12px 26px;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:750;font-size:18px;letter-spacing:-.02em;color:var(--ink)}
+.brand b{color:var(--accent)}
+.brand svg{color:var(--accent)}
+.pill{font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line-2);color:var(--muted);background:var(--surface);white-space:nowrap}
+.pill.live{color:var(--good);border-color:transparent;background:var(--good-soft)}
+.pill.sample{color:var(--warn-ink);border-color:transparent;background:var(--warn-soft)}
+.spacer{flex:1}
+.btn{font:inherit;font-size:13px;color:var(--ink-2);background:var(--surface);border:1px solid var(--line-2);border-radius:10px;padding:7px 12px;cursor:pointer;transition:.15s;box-shadow:var(--shadow-sm)}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+
+/* hero + search */
+.hero{max-width:980px;margin:0 auto;padding:72px 24px 26px;text-align:center;transition:padding .6s cubic-bezier(.2,.8,.2,1)}
+body.running .hero{padding:24px 24px 8px}
+.hero h1{margin:0 0 12px;font-size:48px;line-height:1.08;letter-spacing:-.03em;font-weight:800;color:var(--ink);transition:all .5s}
+.hero h1 .grad{color:var(--accent)}
+.hero p{margin:0 auto 28px;max-width:640px;color:var(--muted);font-size:17px;transition:all .5s}
+body.running .hero h1{font-size:0;margin:0;opacity:0} body.running .hero p{font-size:0;margin:0;opacity:0}
+.search{border-radius:16px;background:var(--surface);border:1.5px solid var(--line-2);box-shadow:var(--shadow);transition:border-color .2s,box-shadow .2s}
+.search:focus-within{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-ring),var(--shadow)}
+.search-inner{display:flex;align-items:center;gap:12px;padding:8px 8px 8px 18px}
+.search svg{flex:none;color:var(--muted)}
+.search input{flex:1;background:transparent;border:0;outline:0;color:var(--ink);font:inherit;font-size:17px;padding:10px 0}
+.search input::placeholder{color:var(--dim)}
+.kbd{font:11px var(--mono);color:var(--dim);border:1px solid var(--line-2);border-radius:6px;padding:2px 6px;background:var(--surface-2)}
+.go{font:inherit;font-weight:650;font-size:15px;color:var(--on-accent);background:var(--accent);border:0;border-radius:11px;padding:12px 20px;cursor:pointer;transition:background .15s}
+.go:hover{background:var(--accent-strong)} .go:disabled{opacity:.6;cursor:progress}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:16px}
+body.running .chips{display:none}
+.chip{font:inherit;font-size:13.5px;color:var(--ink-2);background:var(--surface);border:1px solid var(--line-2);border-radius:999px;padding:7px 14px;cursor:pointer;transition:.15s;box-shadow:var(--shadow-sm)}
+.chip:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.trust{display:flex;justify-content:center;gap:22px;margin-top:30px;color:var(--muted);font-size:13px}
+.trust span::before{content:"✓";color:var(--good);font-weight:700;margin-right:6px}
+body.running .trust{display:none}
+
+/* workspace */
+.ws{display:none;max-width:1760px;margin:14px auto 60px;padding:0 22px;grid-template-columns:290px minmax(0,1fr) 370px;gap:18px;align-items:start}
+body.running .ws{display:grid}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin-bottom:16px;box-shadow:var(--shadow-sm)}
+.ph{display:flex;align-items:center;gap:8px;margin:0 0 12px;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:650}
+.ph svg{color:var(--accent)}
+.ph .r{margin-left:auto;text-transform:none;letter-spacing:0;font-weight:500;color:var(--dim);font-family:var(--mono)}
+.sticky{position:sticky;top:74px}
+
+/* agent trace */
+.trace{list-style:none;margin:0;padding:0;position:relative}
+.trace::before{content:"";position:absolute;left:15px;top:18px;bottom:18px;width:2px;background:var(--line)}
+.trace .fill{position:absolute;left:15px;top:18px;width:2px;height:0;background:var(--accent);transition:height .6s ease}
+.st{position:relative;padding:4px 0 14px 44px}
+.node{position:absolute;left:4px;top:4px;width:24px;height:24px;border-radius:50%;background:var(--surface);border:2px solid var(--line-2);display:grid;place-items:center;transition:.3s;color:var(--on-accent)}
+.node svg{width:12px;height:12px;opacity:0;transition:.3s}
+.st.active .node{border-color:var(--accent);box-shadow:0 0 0 5px var(--accent-ring);animation:pulse 1.4s ease-in-out infinite}
+.st.done .node{background:var(--accent);border-color:var(--accent)} .st.done .node svg{opacity:1}
+@keyframes pulse{50%{box-shadow:0 0 0 9px rgba(37,99,235,.06)}}
+.st h4{margin:0;font-size:14px;font-weight:650;color:var(--dim);transition:.3s} .st.active h4,.st.done h4{color:var(--ink)}
+.st .model{font:11px var(--mono);color:var(--dim)}
+.log{font:11.5px/1.65 var(--mono);color:var(--ink-2);margin-top:6px;max-height:0;overflow:hidden;transition:max-height .5s}
+.st.active .log,.st.done .log{max-height:260px}
+.log div{opacity:0;transform:translateX(-4px);animation:in .35s forwards;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.log .ok{color:var(--good)} .log .hl{color:var(--accent);font-weight:600}
+@keyframes in{to{opacity:1;transform:none}}
+.bar{height:5px;border-radius:5px;background:var(--surface-3);overflow:hidden;margin-top:8px}
+.bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .4s}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stat{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.stat b{display:block;font-size:22px;letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:var(--ink)}
+.stat span{font-size:12px;color:var(--muted)}
+.qlist{display:flex;flex-direction:column;gap:8px}
+.q{font:11.5px/1.5 var(--mono);color:var(--ink-2);background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:8px 10px;opacity:0;animation:in .4s forwards}
+.q em{font-style:normal;color:var(--accent);font-weight:700;margin-right:6px}
+.q .hits{float:right;color:var(--good);font-weight:600}
+.pico{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:12px}
+.pico div{background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:13px;opacity:0;animation:in .4s forwards}
+.pico b{display:block;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+
+/* summary */
+.answer{border-left:4px solid var(--accent)}
+.qtitle{font-size:21px;font-weight:700;letter-spacing:-.02em;margin:0 0 12px;line-height:1.35;color:var(--ink)}
+.sum{font-size:16px;line-height:1.75;color:var(--ink-2);min-height:60px}
+.caret{display:inline-block;width:8px;height:18px;background:var(--accent);vertical-align:-3px;margin-left:2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.cite{display:inline-grid;place-items:center;min-width:22px;height:20px;padding:0 5px;margin:0 1px;font:700 11px var(--mono);color:var(--accent-strong);background:var(--accent-soft);border:1px solid rgba(37,99,235,.25);border-radius:6px;cursor:pointer;vertical-align:1px;transition:.15s}
+.cite:hover{background:var(--accent);color:var(--on-accent)}
+.cite.bad{color:var(--bad);background:var(--bad-soft);border-color:transparent}
+.meta-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.conf{display:flex;align-items:center;gap:8px} .conf b{color:var(--ink)}
+.conf .seg{display:flex;gap:3px} .conf .seg i{width:16px;height:6px;border-radius:3px;background:var(--line-2)} .conf .seg i.on{background:var(--good)}
+.gaps{margin-top:12px;font-size:13.5px;color:var(--warn-ink);background:var(--warn-soft);border:1px solid rgba(180,83,9,.18);border-radius:10px;padding:10px 12px;display:none}
+.gaps b{color:var(--warn-ink)}
+
+/* toolbar */
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:4px 0 14px}
+.seg-ctl{display:flex;background:var(--surface-3);border:1px solid var(--line);border-radius:10px;padding:3px}
+.seg-ctl button{font:inherit;font-size:13px;color:var(--muted);background:transparent;border:0;border-radius:8px;padding:5px 11px;cursor:pointer}
+.seg-ctl button.on{background:var(--surface);color:var(--ink);box-shadow:var(--shadow-sm);font-weight:600}
+.tog{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--muted);cursor:pointer;user-select:none}
+.tog input{display:none} .tog .sw{width:32px;height:18px;border-radius:999px;background:var(--line-2);position:relative;transition:.2s}
+.tog .sw::after{content:"";position:absolute;width:14px;height:14px;border-radius:50%;background:var(--surface);top:2px;left:2px;transition:.2s;box-shadow:var(--shadow-sm)}
+.tog input:checked + .sw{background:var(--accent)} .tog input:checked + .sw::after{left:16px}
+.range{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)} .range b{color:var(--ink)}
+.range input{accent-color:var(--accent);width:110px}
+.count{margin-left:auto;font:12px var(--mono);color:var(--dim)}
+.filter-tag{display:none;font-size:12.5px;color:var(--violet);background:var(--violet-soft);border-radius:999px;padding:3px 10px;cursor:pointer}
+
+/* cards */
+.card{display:grid;grid-template-columns:58px minmax(0,1fr);gap:16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;margin-bottom:12px;box-shadow:var(--shadow-sm);transition:border-color .2s,box-shadow .2s;opacity:0;transform:translateY(8px);animation:rise .45s cubic-bezier(.2,.8,.2,1) forwards;scroll-margin-top:90px}
+.card:hover,.card.hot{border-color:rgba(37,99,235,.45);box-shadow:var(--shadow)}
+.card.flash{animation:rise .45s forwards,flash 1.8s ease}
+@keyframes flash{0%,100%{box-shadow:var(--shadow-sm)}20%{box-shadow:0 0 0 3px var(--accent-ring),var(--shadow)}}
+@keyframes rise{to{opacity:1;transform:none}}
+.ring{position:relative;width:58px;height:58px}
+.ring svg{transform:rotate(-90deg)} .ring circle{fill:none;stroke-width:5} .ring .bg{stroke:var(--surface-3)}
+.ring .fg{stroke-linecap:round;transition:stroke-dashoffset 1s cubic-bezier(.2,.8,.2,1)}
+.ring b{position:absolute;inset:0;display:grid;place-items:center;font-size:18px;font-weight:800;letter-spacing:-.03em}
+.ring small{position:absolute;bottom:-14px;left:0;right:0;text-align:center;font-size:10px;color:var(--dim)}
+.card h3{margin:0 0 5px;font-size:16px;line-height:1.4;font-weight:650;letter-spacing:-.01em;color:var(--ink)}
+.card h3 a{text-decoration:none} .card h3 a:hover{color:var(--accent);text-decoration:underline}
+.card h3 .n{font:700 11px var(--mono);color:var(--accent-strong);background:var(--accent-soft);border-radius:5px;padding:1px 5px;margin-right:6px;vertical-align:2px}
+.byline{font-size:13px;color:var(--muted)} .byline i{color:var(--ink-2)}
+.why{margin:9px 0 8px;font-size:14px;color:var(--ink-2);padding:8px 10px;border-radius:8px;background:var(--surface-2);border-left:3px solid var(--accent)}
+.why b{color:var(--accent);font-weight:700;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;margin-right:6px}
+.tags{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.tag{font-size:11.5px;padding:3px 9px;border-radius:999px;border:1px solid var(--line-2);color:var(--ink-2);background:var(--surface);white-space:nowrap}
+.tag .d{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:0}
+.tag.oa{color:var(--good);border-color:transparent;background:var(--good-soft)} .tag.pp{color:var(--warn-ink);border-color:transparent;background:var(--warn-soft)}
+.qdots{display:inline-flex;gap:3px;margin-left:4px;vertical-align:middle} .qdots i{width:14px;height:5px;border-radius:3px;background:var(--line-2)} .qdots i.on{background:var(--violet)}
+.links{margin-left:auto;display:flex;gap:10px;font-size:12.5px} .links a{color:var(--accent);text-decoration:none} .links a:hover{text-decoration:underline}
+details{margin-top:8px} summary{cursor:pointer;font-size:13px;color:var(--accent);list-style:none;font-weight:600} summary::-webkit-details-marker{display:none}
+summary::before{content:"▸ ";} details[open] summary::before{content:"▾ "}
+details p{font-size:13.5px;color:var(--ink-2);margin:8px 0 0;line-height:1.7}
+.skeleton{height:118px;border-radius:var(--r);margin-bottom:12px;background:linear-gradient(90deg,var(--surface-3) 0%,var(--surface) 50%,var(--surface-3) 100%);background-size:200% 100%;animation:shimmer 1.4s linear infinite;border:1px solid var(--line)}
+@keyframes shimmer{to{background-position:-200% 0}}
+
+/* evidence map + pyramid */
+.map{width:100%;height:auto;display:block}
+.map .ax{stroke:var(--line);stroke-width:1} .map text{fill:var(--dim);font:9.5px var(--mono)}
+.map .zone{fill:var(--good);fill-opacity:.07} .map .zone-l{fill:var(--good);font-weight:700}
+.dot{transition:opacity .3s;cursor:pointer;stroke:var(--surface);stroke-width:1.2}
+.dot.dim{opacity:.12} .dot.hot{stroke:var(--ink);stroke-width:2}
+.tip{position:fixed;z-index:50;pointer-events:none;max-width:340px;background:var(--surface);color:var(--ink);border:1px solid var(--line-2);border-radius:12px;padding:10px 12px;font-size:13px;box-shadow:var(--shadow-pop);opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s}
+.tip.on{opacity:1;transform:none} .tip b{display:block;margin-bottom:4px;line-height:1.35} .tip span{color:var(--muted)}
+.tip mark{background:var(--mark);color:var(--ink);border-radius:3px;padding:0 2px}
+.pyr{display:flex;flex-direction:column;gap:5px}
+.pyr button{all:unset;display:grid;grid-template-columns:118px 1fr 26px;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-2);cursor:pointer;padding:3px 4px;border-radius:6px}
+.pyr button:hover{background:var(--surface-3)} .pyr button.on{background:var(--violet-soft)}
+.pyr .track{height:8px;border-radius:5px;background:var(--surface-3);overflow:hidden}
+.pyr .track i{display:block;height:100%;width:0;border-radius:5px;transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.pyr .c{font:11px var(--mono);color:var(--muted);text-align:right}
+.legend{font-size:11.5px;color:var(--dim);margin-top:8px}
+.export{display:flex;gap:8px} .export .btn{flex:1;text-align:center}
+
+/* insight canvas */
+.canvas{display:none;padding:18px 18px 14px}
+.canvas.on{display:block;animation:rise .5s cubic-bezier(.2,.8,.2,1)}
+.tabs{display:flex;gap:4px;background:var(--surface-3);border:1px solid var(--line);border-radius:12px;padding:4px;margin-left:auto}
+.tabs button{font:inherit;font-size:13px;font-weight:600;color:var(--muted);background:transparent;border:0;border-radius:9px;padding:7px 12px;cursor:pointer;display:flex;align-items:center;gap:7px}
+.tabs button .ic{width:8px;height:8px;border-radius:2px}
+.tabs button.on{color:var(--ink);background:var(--surface);box-shadow:var(--shadow-sm)}
+.ic-funnel{background:var(--accent)} .ic-forest{background:var(--good)} .ic-gap{background:var(--violet)}
+.cv-head{display:flex;align-items:center;gap:12px;margin-bottom:6px} .cv-head svg{color:var(--accent)}
+.cv-head h3{margin:0;font-size:17px;letter-spacing:-.01em;color:var(--ink)}
+.cv-sub{font-size:14px;color:var(--muted);margin:0 0 12px;min-height:20px}
+.cv-sub b{color:var(--ink)}
+.viz{width:100%;height:auto;display:block;overflow:visible}
+.viz text{font:11.5px Inter,system-ui,sans-serif;fill:var(--ink-2);paint-order:stroke;stroke:var(--surface);stroke-width:3px;stroke-linejoin:round}
+.viz .lbl-b{font-weight:700;fill:var(--ink)} .viz .lbl-d{fill:var(--dim);font-size:10px} .viz .mono{font-family:var(--mono);font-size:10.5px}
+.viz .on-color{fill:var(--on-accent);stroke:none;font-weight:700}
+.viz .grid{stroke:var(--line)} .viz .noeffect{stroke:var(--ink-2);stroke-opacity:.5}
+.viz .sig{fill:var(--good)} .viz .gap-ring{fill:none;stroke:var(--bad);stroke-opacity:.45}
+.fade{opacity:0;animation:in .6s forwards}
+.lk{opacity:0;animation:lk .9s cubic-bezier(.2,.8,.2,1) forwards} @keyframes lk{from{opacity:0;transform:scaleX(.6);transform-origin:left}to{opacity:1;transform:none}}
+.lk path{transition:fill-opacity .2s} .lk:hover path.base{fill-opacity:.5}
+.nd{cursor:pointer} .nd rect{transition:filter .2s} .nd:hover rect{filter:brightness(.88)}
+.fr{cursor:pointer} .fr:hover .bgrow{fill:var(--surface-3)}
+.ci{transform-box:fill-box;transform-origin:center;animation:grow .7s cubic-bezier(.2,.8,.2,1) both} @keyframes grow{from{transform:scaleX(0)}}
+.sq{transform-box:fill-box;transform-origin:center;animation:pop .45s cubic-bezier(.3,1.6,.5,1) both} @keyframes pop{from{transform:scale(0)}}
+.oc-chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.oc-chips button{font:inherit;font-size:12px;color:var(--ink-2);background:var(--surface);border:1px solid var(--line-2);border-radius:999px;padding:4px 10px;cursor:pointer}
+.oc-chips button.on{color:var(--on-accent);background:var(--accent);border-color:var(--accent);font-weight:650}
+.cell{cursor:pointer} .cell:hover circle.c{stroke:var(--ink);stroke-width:2}
+.cv-foot{font-size:12px;color:var(--dim);margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
+.alert{border-radius:10px;padding:10px 12px;margin-bottom:10px;font-size:13.5px;border:1px solid var(--line)}
+.alert.warn{background:var(--warn-soft);color:var(--warn-ink)} .alert.bad{background:var(--bad-soft);color:var(--bad);font-weight:600}
+.empty{color:var(--muted);text-align:center}
+.foot{max-width:1760px;margin:0 auto;padding:0 22px 40px;color:var(--dim);font-size:12px;text-align:center}
+@media (max-width:1240px){.ws{grid-template-columns:270px minmax(0,1fr)} .right{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:16px} .right .panel{margin:0} .sticky{position:static}}
+@media (max-width:820px){.ws{grid-template-columns:1fr} .right{grid-template-columns:1fr} .hero h1{font-size:34px}}
 </style>
 </head>
 <body>
-<header><div class="wrap">
-  <h1>Paper<span>Scout</span></h1>
-  <div class="tag">Ask a research question. An agent plans the search, screens the literature in Europe PMC (PubMed + preprints) and ranks what matters, with a reason for each paper.</div>
-</div></header>
+<div class="aurora"><i></i><i></i><i></i></div><div class="grid-bg"></div>
 
-<div class="searchbox">
-  <form class="bar" id="form">
-    <textarea id="q" placeholder="e.g. Do SGLT2 inhibitors reduce hospitalisation in heart failure with preserved ejection fraction?" required minlength="8"></textarea>
-    <button id="go" type="submit">Discover</button>
-  </form>
-  <div class="examples" id="examples"></div>
+<div class="top">
+  <div class="brand">
+    <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+      <path d="M9 4c0 8 14 8 14 16s-14 8-14 8M23 4c0 8-14 8-14 16s14 8 14 8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M11 9h10M10 16h12M11 23h10" stroke="currentColor" stroke-opacity=".45" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span>Paper<b>Scout</b></span>
+  </div>
+  <span class="pill live">● Nemotron on Nebius Token Factory</span>
+  <span class="pill">Europe PMC · PubMed + preprints</span>
+  <div class="spacer"></div>
+  <button class="btn" id="newq" title="New search (press /)">＋ New search</button>
 </div>
 
-<main>
-  <aside>
-    <div class="card"><h3>Agent progress</h3>
-      <ul class="steps" id="steps">
-        <li data-stage="plan">Plan search<small>PICO + Boolean queries (Nemotron Super)</small></li>
-        <li data-stage="retrieve">Retrieve<small>Europe PMC, parallel queries</small></li>
-        <li data-stage="rank">Screen &amp; rank<small>Abstract relevance scoring (Nemotron Lightning)</small></li>
-        <li data-stage="synthesize">Synthesize<small>Cited evidence summary</small></li>
+<section class="hero">
+  <h1>Find the evidence,<br><span class="grad">not just the papers.</span></h1>
+  <p>Ask a clinical or biomedical research question. An AI agent plans the search, screens the literature, ranks every paper with a reason, and writes a cited evidence brief.</p>
+  <form class="search" id="form"><div class="search-inner">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" autocomplete="off" maxlength="500" placeholder="e.g. Do SGLT2 inhibitors reduce hospitalisation in HFpEF?">
+    <span class="kbd">/</span>
+    <button class="go" id="go" type="submit">Discover →</button>
+  </div></form>
+  <div class="chips" id="chips"></div>
+  <div class="trust"><span>PICO-structured search plan</span><span>Every paper scored with a reason</span><span>Citations you can click</span></div>
+</section>
+
+<main class="ws" id="ws">
+  <aside class="sticky">
+    <div class="panel">
+      <div class="ph">Agent trace <span class="r" id="clock">0.0s</span></div>
+      <ul class="trace" id="trace"><div class="fill" id="fill"></div>
+        <li class="st" data-s="plan"><div class="node"><svg viewBox="0 0 12 12"><path d="M2 6.5 5 9l5-6" stroke="currentColor" stroke-width="2" fill="none"/></svg></div><h4>Plan the search</h4><div class="model" id="mPlan">planner model</div><div class="log"></div></li>
+        <li class="st" data-s="retrieve"><div class="node"><svg viewBox="0 0 12 12"><path d="M2 6.5 5 9l5-6" stroke="currentColor" stroke-width="2" fill="none"/></svg></div><h4>Retrieve candidates</h4><div class="model">Europe PMC REST · parallel</div><div class="log"></div></li>
+        <li class="st" data-s="rank"><div class="node"><svg viewBox="0 0 12 12"><path d="M2 6.5 5 9l5-6" stroke="currentColor" stroke-width="2" fill="none"/></svg></div><h4>Screen &amp; rank</h4><div class="model" id="mRank">ranker model</div><div class="log"></div><div class="bar"><i id="rankbar"></i></div></li>
+        <li class="st" data-s="synth"><div class="node"><svg viewBox="0 0 12 12"><path d="M2 6.5 5 9l5-6" stroke="currentColor" stroke-width="2" fill="none"/></svg></div><h4>Synthesize evidence</h4><div class="model" id="mSynth">writer model</div><div class="log"></div></li>
       </ul>
     </div>
-    <div class="card" id="plancard" hidden><h3>Search plan</h3><div id="plan"></div></div>
+    <div class="panel"><div class="ph">Run stats</div>
+      <div class="stats">
+        <div class="stat"><b id="sPapers">0</b><span>papers screened</span></div>
+        <div class="stat"><b id="sRel">0</b><span>highly relevant (≥7)</span></div>
+        <div class="stat"><b id="sTok">0</b><span>tokens used</span></div>
+        <div class="stat"><b id="sCost">$0</b><span>cost upper bound</span></div>
+      </div>
+    </div>
   </aside>
+
   <section>
     <div id="alerts"></div>
-    <div class="card summary" id="sumcard" hidden><h3>Evidence summary <span class="conf" id="conf"></span></h3><div id="summary"></div></div>
-    <div id="toolbar" class="tools" hidden>
-      <span id="count"></span>
-      <label>Sort <select id="sort"><option value="score">Relevance</option><option value="cited">Citations</option><option value="year">Newest</option></select></label>
-      <label>Min score <input id="min" type="range" min="0" max="10" value="5"> <b id="minv">5</b></label>
-      <label><input id="oa" type="checkbox"> Open access only</label>
-      <label><input id="nopp" type="checkbox"> Hide preprints</label>
-      <a id="bib" href="#">BibTeX</a><a id="csv" href="#">CSV</a>
+    <div class="panel answer" id="answer">
+      <div class="ph"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg>Evidence brief <span class="r" id="briefState">waiting for screening…</span></div>
+      <h2 class="qtitle" id="qtitle"></h2>
+      <div class="sum" id="sum"><span class="caret"></span></div>
+      <div class="gaps" id="gaps"></div>
+      <div class="meta-row" id="metaRow" style="display:none">
+        <div class="conf">Confidence <div class="seg" id="confSeg"><i></i><i></i><i></i></div> <b id="confTxt"></b></div>
+        <span id="citedTxt"></span>
+      </div>
     </div>
-    <div id="results"><div class="empty">Results appear here. Try one of the example questions above.</div></div>
+
+    <div class="panel canvas" id="canvas">
+      <div class="cv-head">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+        <h3 id="cvTitle">Insight canvas</h3>
+        <div class="tabs" id="tabs">
+          <button data-t="funnel" class="on"><span class="ic ic-funnel"></span>Evidence funnel</button>
+          <button data-t="forest"><span class="ic ic-forest"></span>Effect sizes</button>
+          <button data-t="gap"><span class="ic ic-gap"></span>Evidence gap map</button>
+        </div>
+      </div>
+      <p class="cv-sub" id="cvSub"></p>
+      <div class="oc-chips" id="ocChips"></div>
+      <svg class="viz" id="viz" viewBox="0 0 860 320"></svg>
+      <div class="cv-foot" id="cvFoot"></div>
+    </div>
+
+    <div class="toolbar" id="toolbar" style="visibility:hidden">
+      <div class="seg-ctl" id="sort"><button class="on" data-v="score">Relevance</button><button data-v="evidence">Evidence level</button><button data-v="cited">Citations</button><button data-v="year">Newest</button></div>
+      <label class="range">Min score <input type="range" id="min" min="0" max="10" value="5"><b id="minv">5</b></label>
+      <label class="tog"><input type="checkbox" id="oa"><span class="sw"></span>Open access</label>
+      <label class="tog"><input type="checkbox" id="nopp"><span class="sw"></span>Hide preprints</label>
+      <span class="filter-tag" id="ftag"></span>
+      <span class="count" id="count"></span>
+    </div>
+    <div id="list"></div>
   </section>
+
+  <aside class="right sticky">
+    <div class="panel"><div class="ph">Evidence map <span class="r">hover · click</span></div>
+      <svg class="map" id="map" viewBox="0 0 340 236"></svg>
+      <div class="legend">↑ relevance to your question · → strength of study design · bubble = citations</div>
+    </div>
+    <div class="panel"><div class="ph">Evidence pyramid <span class="r">click to filter</span></div><div class="pyr" id="pyr"></div></div>
+    <div class="panel"><div class="ph">Search plan</div><div class="pico" id="pico"></div><div class="qlist" id="qlist"></div></div>
+    <div class="panel"><div class="ph">Export</div><div class="export"><button class="btn" id="bib">BibTeX</button><button class="btn" id="csv">CSV</button><button class="btn" id="copy">Copy brief</button></div></div>
+  </aside>
 </main>
-<footer>Data: Europe PMC REST API. Models: NVIDIA Nemotron on Nebius Token Factory. Relevance scores are machine screening, not clinical advice.</footer>
+<div class="foot" id="foot"></div>
+<div class="tip" id="tip"></div>
 
 <script>
+let RUN = null, es = null;
 const EXAMPLES = [
   "Do SGLT2 inhibitors reduce hospitalisation in heart failure with preserved ejection fraction?",
   "What biomarkers predict response to immune checkpoint inhibitors in non-small cell lung cancer?",
   "Does gut microbiome composition influence Parkinson's disease progression?",
   "Is CRISPR base editing effective for treating sickle cell disease?",
 ];
+// weakest -> strongest design; drives map x-axis, pyramid order and "Evidence level" sort
+const LEVELS = ["preclinical","case report","other","narrative review","cross-sectional","case-control","cohort","RCT","guideline","systematic review","meta-analysis"];
+const SHORT = {"preclinical":"Pre","case report":"Case","other":"Oth","narrative review":"Rev","cross-sectional":"XS","case-control":"CC","cohort":"Coh","RCT":"RCT","guideline":"GL","systematic review":"SR","meta-analysis":"MA"};
+// all colours come from the CSS theme variables in :root, so the theme lives in one place
+const V = n => getComputedStyle(document.documentElement).getPropertyValue("--" + n).trim();
+const COLOR = Object.fromEntries(LEVELS.map(l => [l, V("st-" + l.toLowerCase().replace(/ /g, "-"))]));
+const PRICE_IN = 0.30, PRICE_OUT = 0.90; // dearer model's $/1M tokens -> an upper bound on cost
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-let papers = [], runId = null, es = null, citeMap = {};
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const hash = s => { let h = 0; for (const c of s) h = (h * 31 + c.charCodeAt(0)) | 0; return (h >>> 0) / 4294967295; };
+let papers = [], cited = [], citeOf = {}, byKey = {};
+function indexRun() {
+  papers = RUN ? RUN.papers : []; cited = RUN?.summary?.cited_keys || [];
+  citeOf = Object.fromEntries(cited.map((k, i) => [k, i + 1])); byKey = Object.fromEntries(papers.map(p => [p.key, p]));
+}
+let state = {sort: "score", min: 5, oa: false, nopp: false, level: null, keys: null, keysLabel: "", scored: new Set()}, token = 0, t0 = 0, clockTimer;
+let tab = "funnel", ocFilter = "All";
+const RELEVANT = 6; // "relevant" threshold shared by the forest plot and the gap map (same as the brief's grounding cut)
 
-EXAMPLES.forEach(t => { const b = document.createElement("button"); b.className = "chip"; b.type = "button"; b.textContent = t;
-  b.onclick = () => { $("q").value = t; start(); }; $("examples").appendChild(b); });
+EXAMPLES.forEach(t => { const b = document.createElement("button"); b.className = "chip"; b.type = "button"; b.textContent = t; b.onclick = () => { $("q").value = t; start(); }; $("chips").appendChild(b); });
 $("form").onsubmit = e => { e.preventDefault(); start(); };
-$("q").addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); start(); } });
-["sort", "oa", "nopp"].forEach(id => $(id).onchange = render);
-$("min").oninput = () => { $("minv").textContent = $("min").value; render(); exportLinks(); };
+$("newq").onclick = () => { window.scrollTo({top: 0, behavior: "smooth"}); $("q").select(); $("q").focus(); };
+document.addEventListener("keydown", e => { if (e.key === "/" && document.activeElement !== $("q")) { e.preventDefault(); window.scrollTo({top: 0, behavior: "smooth"}); $("q").focus(); } });
+$("foot").textContent = "Data: Europe PMC (PubMed + preprints). Models: NVIDIA Nemotron on Nebius Token Factory. Relevance scores, labels and extracted numbers are machine output, not clinical advice.";
+const initialQ = new URLSearchParams(location.search).get("q");
+if (initialQ) { $("q").value = initialQ; setTimeout(start, 0); }
+
+function logLine(stage, html, cls = "") { const el = document.querySelector(`.st[data-s="${stage}"] .log`); el.insertAdjacentHTML("beforeend", `<div class="${cls}">${html}</div>`); }
+function setStage(stage, status) {
+  const li = document.querySelector(`.st[data-s="${stage}"]`); li.className = "st " + status;
+  const all = [...document.querySelectorAll(".st")], idx = all.indexOf(li), tr = $("trace");
+  const target = status === "done" ? all[Math.min(idx + 1, all.length - 1)] : li;
+  $("fill").style.height = Math.max(0, target.offsetTop + 12 - 18) + "px";
+}
+function countUp(el, to, fmt = v => Math.round(v).toLocaleString(), ms = 700) {
+  const from = parseFloat(el.dataset.v || 0); el.dataset.v = to; const s = performance.now();
+  const f = now => { const k = Math.min(1, (now - s) / ms), e = 1 - Math.pow(1 - k, 3); el.textContent = fmt(from + (to - from) * e); if (k < 1) requestAnimationFrame(f); }; requestAnimationFrame(f);
+}
 
 function reset() {
-  papers = []; runId = null; citeMap = {};
-  document.querySelectorAll("#steps li").forEach(li => { li.className = ""; li.querySelector("small").dataset.extra = ""; });
-  ["plancard", "sumcard", "toolbar"].forEach(id => $(id).hidden = true);
-  $("alerts").innerHTML = ""; $("results").innerHTML = '<div class="empty">Working...</div>';
+  document.querySelectorAll(".st").forEach(li => { li.className = "st"; li.querySelector(".log").innerHTML = ""; });
+  $("fill").style.height = "0"; $("rankbar").style.width = "0";
+  ["sPapers", "sRel", "sTok"].forEach(id => { $(id).dataset.v = 0; $(id).textContent = "0"; }); $("sCost").dataset.v = 0; $("sCost").textContent = "$0";
+  $("pico").innerHTML = ""; $("qlist").innerHTML = ""; $("sum").innerHTML = '<span class="caret"></span>'; $("gaps").style.display = "none"; $("metaRow").style.display = "none";
+  $("briefState").textContent = "waiting for screening…"; $("toolbar").style.visibility = "hidden"; $("alerts").innerHTML = ""; $("qtitle").textContent = "";
+  ["mPlan", "mRank", "mSynth"].forEach(id => $(id).textContent = "…"); ocFilter = "All"; Object.assign(state, {min: 5, oa: false, nopp: false}); $("min").value = 5; $("minv").textContent = 5; $("oa").checked = $("nopp").checked = false;
+  $("list").innerHTML = '<div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>';
+  state.scored = new Set(); state.level = null; state.keys = null; drawMap(); drawPyramid();
+  $("canvas").classList.remove("on"); tab = "funnel"; ocFilter = "All"; $("tabs").querySelectorAll("button").forEach(b => b.classList.toggle("on", b.dataset.t === "funnel"));
 }
-function alertBox(cls, msg) { $("alerts").insertAdjacentHTML("beforeend", `<div class="${cls}">${esc(msg)}</div>`); }
-function step(stage, status, note) {
-  const li = document.querySelector(`#steps li[data-stage="${stage}"]`); if (!li) return;
-  if (status) li.className = status === "start" ? "active" : "done";
-  if (note) li.querySelector("small").textContent = note;
-}
+
+function alertBox(kind, msg) { $("alerts").insertAdjacentHTML("beforeend", `<div class="alert ${kind}">${esc(msg)}</div>`); }
+const STAGE = {plan: "plan", retrieve: "retrieve", rank: "rank", synthesize: "synth"};
 
 function start() {
-  const q = $("q").value.trim(); if (q.length < 8) return;
-  if (es) es.close(); reset(); $("go").disabled = true;
+  const q = $("q").value.trim();
+  if (q.length < 8) { $("q").focus(); return; }
+  if (es) { es.close(); es = null; }
+  const my = ++token;
+  RUN = {question: q, run_id: null, plan: null, counts: {}, papers: [], effects: [], summary: null, usage: null, warnings: [], done: false};
+  document.body.classList.add("running"); $("go").disabled = true; reset(); indexRun();
+  $("qtitle").textContent = q; history.replaceState(null, "", "?q=" + encodeURIComponent(q));
+  t0 = performance.now(); clearInterval(clockTimer); clockTimer = setInterval(() => $("clock").textContent = ((performance.now() - t0) / 1000).toFixed(1) + "s", 100);
   es = new EventSource("/api/search?q=" + encodeURIComponent(q));
-  es.onmessage = m => handle(JSON.parse(m.data));
-  es.onerror = () => { if (es) { es.close(); es = null; } $("go").disabled = false;
-    if (!runId || !papers.length) alertBox("err", "Connection to the server closed before the run finished."); };
+  es.onmessage = m => { if (my === token) handle(JSON.parse(m.data), my); };
+  es.onerror = () => {
+    if (my !== token || !es) return;
+    es.close(); es = null;
+    if (!RUN.done) { alertBox("bad", "The connection to the server closed before the run finished."); finish(); }
+  };
 }
 
-function handle(e) {
+function handle(e, my) {
   switch (e.type) {
-    case "run": runId = e.run_id; break;
-    case "step": step(e.stage, e.status); break;
+    case "run":
+      RUN.run_id = e.run_id;
+      if (e.models) { $("mPlan").textContent = e.models.planner; $("mRank").textContent = e.models.ranker + " · batches of 10"; $("mSynth").textContent = e.models.writer; }
+      break;
+    case "step": {
+      const st = STAGE[e.stage]; setStage(st, e.status === "start" ? "active" : "done");
+      if (e.status === "start" && st === "plan") logLine("plan", "› parsing question into PICO…");
+      if (e.status === "done" && st === "plan") logLine("plan", "✓ plan ready", "ok");
+      if (e.status === "start" && st === "rank") logLine("rank", `› scoring ${RUN.counts.unique ?? "?"} abstracts`);
+      if (e.status === "start" && st === "synth") { $("briefState").textContent = "writing…"; logLine("synth", `› grounding on the top-scored papers`); }
+      break;
+    }
     case "plan": showPlan(e.plan); break;
-    case "candidates": step("retrieve", null, `${e.count} unique papers from ${Object.keys(e.per_query).length} queries` +
-      (e.dropped_no_abstract ? `, ${e.dropped_no_abstract} without abstract skipped` : "")); break;
-    case "rank_progress": step("rank", null, `Screened batch ${e.done} of ${e.total}`); break;
-    case "results": papers = e.papers; $("toolbar").hidden = false;
-      if (!papers.some(p => p.score != null)) { $("min").value = 0; $("minv").textContent = "0"; }
-      exportLinks(); render(); break;
-    case "summary": showSummary(e); break;
-    case "warning": alertBox("warn", e.message); break;
-    case "error": alertBox("err", e.message); finish(); break;
-    case "done": if (e.usage) step("synthesize", null, `Done: ${(e.usage.prompt_tokens + e.usage.completion_tokens).toLocaleString()} tokens`); finish(); break;
+    case "candidates": showCandidates(e); break;
+    case "rank_progress": $("rankbar").style.width = (e.done / e.total * 100) + "%"; logLine("rank", `› batch ${e.done}/${e.total} screened`); break;
+    case "results": showResults(e, my); break;
+    case "summary": RUN.summary = e; indexRun(); typeBrief(e, my); if (tab === "funnel" && papers.length) drawCanvas(); render(); break;
+    case "warning": RUN.warnings.push(e.message); alertBox("warn", e.message); break;
+    case "error": alertBox("bad", e.message); finish(); break;
+    case "done": {
+      RUN.done = true; RUN.usage = e.usage; const u = e.usage || {prompt_tokens: 0, completion_tokens: 0};
+      countUp($("sTok"), u.prompt_tokens + u.completion_tokens); countUp($("sCost"), (u.prompt_tokens * PRICE_IN + u.completion_tokens * PRICE_OUT) / 1e6, v => "≤$" + v.toFixed(3));
+      logLine("synth", "✓ brief ready", "ok"); finish(); break;
+    }
   }
 }
-function finish() { if (es) { es.close(); es = null; } $("go").disabled = false;
-  document.querySelectorAll("#steps li.active").forEach(li => li.className = ""); }
 
-function showPlan(p) {
-  const rows = Object.entries(p.pico).filter(([, v]) => v).map(([k, v]) => `<b>${esc(k[0].toUpperCase())}</b><span>${esc(v)}</span>`).join("");
-  $("plan").innerHTML = (rows ? `<div class="pico">${rows}</div>` : "") + p.queries.map(q => `<code class="q">${esc(q)}</code>`).join("") +
-    (p.rationale ? `<div class="meta">${esc(p.rationale)}</div>` : "");
-  $("plancard").hidden = false;
+function finish() {
+  if (es) { es.close(); es = null; }
+  clearInterval(clockTimer); $("go").disabled = false;
+  document.querySelectorAll(".st.active").forEach(li => li.className = "st");
+  if (!papers.length) $("list").innerHTML = '<div class="panel empty">No papers to show for this run.</div>';
+  if (!RUN.summary) $("briefState").textContent = "no brief for this run";
 }
 
-function showSummary(s) {
-  if (!s.summary) return;
-  citeMap = Object.fromEntries(s.cited_keys.map((k, i) => [i + 1, k]));
-  const link = t => esc(t).replace(/\[(\d+)\]/g, (m, n) => citeMap[n] ? `<a class="cite" href="#" data-key="${esc(citeMap[n])}">[${n}]</a>` : m);
-  $("summary").innerHTML = `<p>${link(s.summary)}</p>` + (s.evidence_gaps ? `<p class="meta"><b>Gaps:</b> ${esc(s.evidence_gaps)}</p>` : "");
-  $("conf").textContent = s.confidence + " confidence"; $("sumcard").hidden = false;
-  $("summary").querySelectorAll("a.cite").forEach(a => a.onclick = ev => { ev.preventDefault(); jump(a.dataset.key); });
-  render();
+function showPlan(plan) {
+  RUN.plan = plan;
+  const P = plan.pico || {}, labels = {population: "Population", intervention: "Intervention", comparison: "Comparison", outcome: "Outcome"};
+  $("pico").innerHTML = Object.entries(labels).map(([k, l], i) => `<div style="animation-delay:${i * 90}ms"><b>${l}</b>${esc(P[k] || "—")}</div>`).join("");
+  $("qlist").innerHTML = plan.queries.map((q, i) => `<div class="q" id="q${i}" style="animation-delay:${200 + i * 120}ms"><em>Q${i + 1}</em><span class="hits"></span>${esc(q)}</div>`).join("");
+  logLine("plan", `› ${plan.queries.length} Boolean quer${plan.queries.length > 1 ? "ies" : "y"} drafted`, "hl");
+}
+
+function showCandidates(e) {
+  RUN.counts = {per_query: e.per_query, unique: e.count, dropped_no_abstract: e.dropped_no_abstract};
+  (RUN.plan?.queries || []).forEach((q, i) => {
+    const n = e.per_query[q], el = document.querySelector(`#q${i} .hits`);
+    logLine("retrieve", `› Q${i + 1} → <span class="hl">${n ?? "failed"}</span>${n == null ? "" : " hits"}`);
+    if (el) el.textContent = n == null ? "failed" : n + " hits";
+  });
+  logLine("retrieve", `✓ ${e.count} unique · ${e.dropped_no_abstract} w/o abstract skipped`, "ok"); countUp($("sPapers"), e.count);
+}
+
+async function showResults(e, my) {
+  RUN.papers = e.papers; RUN.effects = e.effects || []; indexRun();
+  for (let b = 0; b < papers.length; b += 10) {  // bubbles land on the map batch by batch
+    papers.slice(b, b + 10).forEach(p => state.scored.add(p.key)); drawMap(); await sleep(90); if (my !== token) return;
+  }
+  const scored = papers.filter(p => p.score != null).length;
+  logLine("rank", `✓ ${scored}/${papers.length} papers scored`, "ok");
+  countUp($("sRel"), papers.filter(p => (p.score ?? 0) >= 7).length);
+  if (!scored) { state.min = 0; $("min").value = 0; $("minv").textContent = 0; }
+  drawPyramid(); $("canvas").classList.add("on"); drawCanvas(); $("toolbar").style.visibility = "visible"; render(true);
+}
+
+async function typeBrief(s, my) {
+  const sum = $("sum");
+  if (!s.summary) { sum.innerHTML = '<span class="empty">No summary was produced for this run; the ranked papers below are still valid.</span>'; $("briefState").textContent = "no brief"; return; }
+  const parts = s.summary.split(/(\[\d+\])/), caret = document.createElement("span"); caret.className = "caret"; sum.innerHTML = "";
+  for (const part of parts) {
+    if (my !== token) return;
+    const m = part.match(/^\[(\d+)\]$/);
+    if (m) { sum.insertBefore(citePill(+m[1]), caret.parentNode ? caret : null); continue; }
+    for (const w of part.split(/(\s+)/)) { sum.appendChild(document.createTextNode(w)); sum.appendChild(caret); if (w.trim()) await sleep(18); }
+  }
+  caret.remove();
+  if (s.evidence_gaps) { $("gaps").innerHTML = `<b>Evidence gaps · </b>${esc(s.evidence_gaps)}`; $("gaps").style.display = "block"; }
+  const lv = {low: 1, moderate: 2, high: 3}[s.confidence] || 1;
+  [...$("confSeg").children].forEach((i, k) => i.className = k < lv ? "on" : ""); $("confTxt").textContent = s.confidence;
+  $("citedTxt").textContent = `${new Set(s.summary.match(/\[\d+\]/g) || []).size} of ${cited.length} grounding papers cited · ${RUN.warnings.length} warning${RUN.warnings.length === 1 ? "" : "s"}`;
+  $("metaRow").style.display = "flex"; $("briefState").textContent = "grounded in screened abstracts";
+}
+
+function citePill(n) {
+  const el = document.createElement("span"); el.className = "cite"; el.textContent = n; const p = byKey[cited[n - 1]];
+  if (!p) { el.classList.add("bad"); el.title = "citation not in grounding set"; return el; }
+  el.onmouseenter = e => showTip(e, p); el.onmousemove = moveTip; el.onmouseleave = hideTip; el.onclick = () => jump(p.key); return el;
+}
+function showTip(e, p) { const t = $("tip"); t.innerHTML = `<b>${esc(p.title)}</b><span>${esc(p.journal)} ${esc(p.year ?? "")} · score ${p.score ?? "?"}/10 · ${esc(p.study_type || "")}</span>`; t.classList.add("on"); moveTip(e); hot(p.key, true); }
+function moveTip(e) { const t = $("tip"); t.style.left = Math.min(e.clientX + 14, innerWidth - 340) + "px"; t.style.top = (e.clientY + 16) + "px"; }
+function hideTip() { $("tip").classList.remove("on"); hot(null, false); }
+function hot(key, on) {
+  document.querySelectorAll(".card.hot,.dot.hot").forEach(e => e.classList.remove("hot"));
+  if (on && key) document.querySelectorAll(`[data-k="${CSS.escape(key)}"]`).forEach(e => e.classList.add("hot"));
 }
 function jump(key) {
-  $("min").value = 0; $("minv").textContent = "0"; $("oa").checked = $("nopp").checked = false; $("sort").value = "score"; render();
-  const el = document.querySelector(`[data-paper="${CSS.escape(key)}"]`); if (!el) return;
-  el.scrollIntoView({behavior: "smooth"}); el.classList.add("hl"); setTimeout(() => el.classList.remove("hl"), 2000);
+  Object.assign(state, {min: 0, oa: false, nopp: false, level: null, keys: null}); $("min").value = 0; $("minv").textContent = 0; $("oa").checked = $("nopp").checked = false; drawPyramid(); render();
+  const el = document.querySelector(`.card[data-k="${CSS.escape(key)}"]`); if (!el) return;
+  el.scrollIntoView({behavior: "smooth", block: "center"}); el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
 }
 
-function exportLinks() { if (!runId) return; const m = $("min").value;
-  $("bib").href = `/api/runs/${runId}/export?fmt=bib&min_score=${m}`; $("csv").href = `/api/runs/${runId}/export?fmt=csv&min_score=${m}`; }
-
-function render() {
-  const min = +$("min").value, sort = $("sort").value;
-  let list = papers.filter(p => (p.score ?? -1) >= min || (min === 0)).filter(p => !$("oa").checked || p.open_access).filter(p => !$("nopp").checked || !p.preprint);
-  if (sort === "cited") list = [...list].sort((a, b) => b.cited_by - a.cited_by);
-  if (sort === "year") list = [...list].sort((a, b) => (b.year || 0) - (a.year || 0));
-  const citeOf = Object.fromEntries(Object.entries(citeMap).map(([n, k]) => [k, n]));
-  $("count").textContent = `${list.length} of ${papers.length} papers`;
-  $("results").innerHTML = list.length ? list.map(p => {
-    const s = p.score, cls = s == null ? "s-na" : s >= 8 ? "s-hi" : s >= 5 ? "s-mid" : "s-lo";
-    return `<div class="card paper" data-paper="${esc(p.key)}">
-      <div class="score ${cls}">${s ?? "?"}<small>${s == null ? "unscored" : "/10"}</small></div>
+function visible() {
+  let l = papers.filter(p => ((p.score ?? -1) >= state.min || state.min === 0) && (!state.oa || p.open_access) && (!state.nopp || !p.preprint) && (!state.level || p.study_type === state.level) && (!state.keys || state.keys.has(p.key)));
+  const lvl = p => LEVELS.indexOf(p.study_type);
+  if (state.sort === "evidence") l = [...l].sort((a, b) => lvl(b) - lvl(a) || (b.score ?? 0) - (a.score ?? 0));
+  if (state.sort === "cited") l = [...l].sort((a, b) => b.cited_by - a.cited_by);
+  if (state.sort === "year") l = [...l].sort((a, b) => (b.year || 0) - (a.year || 0));
+  return l;
+}
+function ring(s) {
+  const C = 2 * Math.PI * 24, v = s == null ? 0 : s / 10, col = s == null ? V("score-na") : s >= 8 ? V("score-hi") : s >= 6 ? V("score-mid") : s >= 4 ? V("score-low") : V("score-na");
+  return `<div class="ring"><svg width="58" height="58"><circle class="bg" cx="29" cy="29" r="24"/><circle class="fg" cx="29" cy="29" r="24" stroke="${col}" stroke-dasharray="${C}" stroke-dashoffset="${C}" data-off="${C * (1 - v)}"/></svg><b style="color:${col}">${s ?? "?"}</b><small>relevance</small></div>`;
+}
+function render(stagger) {
+  const l = visible(), nq = RUN?.plan?.queries.length || 0;
+  $("count").textContent = `${l.length} / ${papers.length} papers`;
+  const fl = state.keys ? state.keysLabel : state.level, ft = $("ftag");
+  ft.style.display = fl ? "inline-block" : "none"; ft.textContent = fl ? `${fl} ✕` : ""; ft.onclick = () => { state.level = null; state.keys = null; drawPyramid(); render(); drawMap(); };
+  $("list").innerHTML = l.length ? l.map((p, i) => {
+    const qi = new Set((p.matched_queries || []).map(q => RUN.plan.queries.indexOf(q)));
+    return `<article class="card" data-k="${esc(p.key)}" style="animation-delay:${stagger ? Math.min(i, 12) * 55 : 0}ms">
+      ${ring(p.score)}
       <div>
-        <h4><a href="${esc(p.url)}" target="_blank" rel="noopener">${citeOf[p.key] ? `[${citeOf[p.key]}] ` : ""}${esc(p.title)}</a></h4>
-        <div class="meta">${esc(p.authors)}${p.authors ? " · " : ""}<i>${esc(p.journal)}</i> ${esc(p.year ?? "")} · cited by ${p.cited_by}
-          ${p.doi ? ` · <a href="https://doi.org/${esc(p.doi)}" target="_blank" rel="noopener">doi</a>` : ""}${p.pmid ? ` · <a href="https://pubmed.ncbi.nlm.nih.gov/${esc(p.pmid)}/" target="_blank" rel="noopener">PubMed</a>` : ""}</div>
-        ${p.reason ? `<div class="reason">${esc(p.reason)}</div>` : ""}
-        <div class="badges">${p.study_type ? `<span class="st">${esc(p.study_type)}</span>` : ""}${p.open_access ? '<span class="oa">open access</span>' : ""}${p.preprint ? '<span class="pp">preprint</span>' : ""}<span title="${esc(p.matched_queries.join(' | '))}">matched ${p.matched_queries.length} quer${p.matched_queries.length > 1 ? "ies" : "y"}</span></div>
-        <details><summary>Abstract</summary>${esc(p.abstract)}</details>
-      </div></div>`;
-  }).join("") : '<div class="empty">No papers match the current filters.</div>';
+        <h3><a href="${esc(p.url)}" target="_blank" rel="noopener">${citeOf[p.key] ? `<span class="n">${citeOf[p.key]}</span>` : ""}${esc(p.title)}</a></h3>
+        <div class="byline">${esc(p.authors)} · <i>${esc(p.journal)}</i> · ${esc(p.year ?? "n.d.")} · cited by ${p.cited_by}</div>
+        ${p.reason ? `<div class="why"><b>Why it matters</b>${esc(p.reason)}</div>` : ""}
+        <div class="tags">
+          <span class="tag"><span class="d" style="background:${COLOR[p.study_type] || V("st-other")}"></span>${esc(p.study_type || "unclassified")}</span>
+          ${p.open_access ? '<span class="tag oa">open access</span>' : ""}${p.preprint ? '<span class="tag pp">preprint</span>' : ""}
+          <span class="tag" title="${esc((p.matched_queries || []).join("  |  "))}">found by<span class="qdots">${Array.from({length: nq}, (_, k) => `<i class="${qi.has(k) ? "on" : ""}"></i>`).join("")}</span></span>
+          <span class="links">${p.doi ? `<a href="https://doi.org/${esc(p.doi)}" target="_blank" rel="noopener">DOI ↗</a>` : ""}${p.pmid ? `<a href="https://pubmed.ncbi.nlm.nih.gov/${esc(p.pmid)}/" target="_blank" rel="noopener">PubMed ↗</a>` : ""}<a href="${esc(p.url)}" target="_blank" rel="noopener">Europe PMC ↗</a></span>
+        </div>
+        <details><summary>Abstract</summary><p>${esc(p.abstract)}</p></details>
+      </div></article>`;
+  }).join("") : '<div class="panel" style="text-align:center;color:var(--muted)">No papers match these filters.</div>';
+  setTimeout(() => document.querySelectorAll(".ring .fg").forEach(c => c.style.strokeDashoffset = c.dataset.off), 40);
+  document.querySelectorAll(".card").forEach(c => { c.onmouseenter = () => hot(c.dataset.k, true); c.onmouseleave = () => hot(null, false); });
 }
+
+function drawMap() {
+  const W = 340, H = 236, L = 28, R = 10, T = 10, B = 30, svg = $("map");
+  const x = i => L + (i + .5) * (W - L - R) / LEVELS.length, y = s => T + (10 - s) / 10 * (H - T - B);
+  let g = "";
+  g += `<rect class="zone" x="${x(7) - 12}" y="${T}" width="${W - R - x(7) + 12}" height="${y(7) - T}" rx="8"/><text x="${W - R - 4}" y="${T + 12}" text-anchor="end" class="zone-l">strong &amp; relevant</text>`;
+  [0, 5, 10].forEach(s => g += `<line class="ax" x1="${L}" x2="${W - R}" y1="${y(s)}" y2="${y(s)}" stroke-dasharray="${s ? "2 4" : ""}"/><text x="${L - 6}" y="${y(s) + 3}" text-anchor="end">${s}</text>`);
+  LEVELS.forEach((lv, i) => g += `<text x="${x(i)}" y="${H - B + 14}" text-anchor="middle" fill="${COLOR[lv]}">${SHORT[lv]}</text>`);
+  papers.filter(p => state.scored.has(p.key) && p.score != null).forEach(p => {
+    const i = Math.max(0, LEVELS.indexOf(p.study_type)), jx = (hash(p.key) - .5) * 18, jy = (hash(p.key + "y") - .5) * 8;
+    const r = 3.5 + 2.2 * Math.log2(p.cited_by + 1), dim = state.level && p.study_type !== state.level;
+    g += `<circle class="dot${dim ? " dim" : ""}" data-k="${esc(p.key)}" cx="${(x(i) + jx).toFixed(1)}" cy="${(y(p.score) + jy).toFixed(1)}" r="${r.toFixed(1)}" fill="${COLOR[p.study_type] || V("st-other")}" fill-opacity=".85"/>`;
+  });
+  svg.innerHTML = g;
+  svg.querySelectorAll(".dot").forEach(d => { const p = byKey[d.dataset.k]; d.onmouseenter = e => showTip(e, p); d.onmousemove = moveTip; d.onmouseleave = hideTip; d.onclick = () => jump(p.key); });
+}
+
+function drawPyramid() {
+  const counts = {}; papers.forEach(p => counts[p.study_type || "other"] = (counts[p.study_type || "other"] || 0) + 1);
+  const max = Math.max(1, ...Object.values(counts)), ready = state.scored.size > 0;
+  $("pyr").innerHTML = [...LEVELS].reverse().filter(l => counts[l]).map(l => `<button data-l="${esc(l)}" class="${state.level === l ? "on" : ""}"><span><span class="tag" style="border:0;padding:0"><span class="d" style="background:${COLOR[l]}"></span></span>${esc(l)}</span><span class="track"><i style="background:${COLOR[l]}" data-w="${counts[l] / max * 100}"></i></span><span class="c">${counts[l]}</span></button>`).join("");
+  requestAnimationFrame(() => document.querySelectorAll(".pyr .track i").forEach(i => i.style.width = ready ? i.dataset.w + "%" : "0"));
+  $("pyr").querySelectorAll("button").forEach(b => b.onclick = () => { state.level = state.level === b.dataset.l ? null : b.dataset.l; drawPyramid(); drawMap(); render(); });
+}
+
+/* ---------------- Insight canvas ---------------- */
+function applyKeys(label, keys) {
+  Object.assign(state, {keys: new Set(keys), keysLabel: label, level: null, min: 0}); $("min").value = 0; $("minv").textContent = 0;
+  drawPyramid(); drawMap(); render(true); $("toolbar").scrollIntoView({behavior: "smooth", block: "start"});
+}
+$("tabs").querySelectorAll("button").forEach(b => b.onclick = () => { tab = b.dataset.t; $("tabs").querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); drawCanvas(); });
+function drawCanvas() { $("ocChips").innerHTML = ""; ({funnel: drawFunnel, forest: drawForest, gap: drawGap})[tab](); }
+const svgEl = (w, h) => { const v = $("viz"); v.setAttribute("viewBox", `0 0 ${w} ${h}`); return v; };
+const shortRef = p => `${(p.authors.split(",")[0] || "Anon").trim().split(" ")[0]} ${p.year ?? ""}`;
+
+// 1) Evidence funnel: a Sankey of the agent's work, from searches to the papers that grounded the brief
+function drawFunnel() {
+  const pq = RUN.counts.per_query || {}, qs = RUN.plan.queries, total = qs.reduce((s, q) => s + (pq[q] || 0), 0);
+  const uniq = RUN.counts.unique, noabs = RUN.counts.dropped_no_abstract || 0, dup = Math.max(0, total - uniq - noabs);
+  const band = (a, b) => papers.filter(p => p.score != null && p.score >= a && p.score <= b);
+  const hi = band(7, 10), mid = band(4, 6), lo = band(0, 3), un = papers.filter(p => p.score == null), cs = new Set(cited);
+  const hiC = hi.filter(p => cs.has(p.key)), midC = mid.filter(p => cs.has(p.key)), hiO = hi.filter(p => !cs.has(p.key));
+  const N = [], L = [], node = (id, label, col, color, keys) => N.push({id, label, col, color, keys}), link = (s, t, v) => v > 0 && L.push({s, t, v});
+  qs.forEach((q, i) => { node("q" + i, `Q${i + 1}`, 0, V("fn-query"), papers.filter(p => (p.matched_queries || []).includes(q)).map(p => p.key)); link("q" + i, "ret", pq[q] || 0); });
+  node("ret", "Retrieved", 1, V("fn-retrieved")); node("scr", "Screened", 2, V("fn-screened"), papers.map(p => p.key)); node("dup", "Duplicates merged", 2, V("fn-dup")); node("na", "No abstract", 2, V("fn-noabs"));
+  link("ret", "scr", uniq); link("ret", "dup", dup); link("ret", "na", noabs);
+  node("hi", "Highly relevant ≥7", 3, V("fn-hi"), hi.map(p => p.key)); node("mid", "Related 4–6", 3, V("fn-mid"), mid.map(p => p.key)); node("lo", "Off-topic ≤3", 3, V("fn-lo"), lo.map(p => p.key)); node("un", "Unscored", 3, V("fn-unscored"), un.map(p => p.key));
+  link("scr", "hi", hi.length); link("scr", "mid", mid.length); link("scr", "lo", lo.length); link("scr", "un", un.length);
+  node("cit", "Grounded the brief", 4, V("fn-cited"), cited); node("oth", "Other strong papers", 4, V("fn-other"), hiO.map(p => p.key));
+  link("hi", "cit", hiC.length); link("mid", "cit", midC.length); link("hi", "oth", hiO.length);
+  const used = new Set(L.flatMap(l => [l.s, l.t])), nodes = N.filter(n => used.has(n.id)), by = Object.fromEntries(nodes.map(n => [n.id, n]));
+  nodes.forEach(n => n.v = Math.max(L.filter(l => l.t === n.id).reduce((s, l) => s + l.v, 0), L.filter(l => l.s === n.id).reduce((s, l) => s + l.v, 0)));
+  const W = 860, H = 300, nw = 14, gap = 12, padR = 150, cols = 5, colX = c => 6 + c * (W - padR - nw - 6) / (cols - 1);
+  const colN = c => nodes.filter(n => n.col === c), k = Math.min(...[0, 1, 2, 3, 4].map(c => { const ns = colN(c); return (H - 20 - gap * (ns.length - 1)) / ns.reduce((s, n) => s + n.v, 0); }));
+  [0, 1, 2, 3, 4].forEach(c => { const ns = colN(c), h = ns.reduce((s, n) => s + n.v * k, 0) + gap * (ns.length - 1); let y = (H - h) / 2; ns.forEach(n => { n.x = colX(c); n.y = y; n.h = Math.max(2, n.v * k); y += n.h + gap; n.so = 0; n.to = 0; }); });
+  let g = `<defs><linearGradient id="flow" gradientUnits="userSpaceOnUse" x1="0" x2="160" spreadMethod="repeat"><stop offset="0" stop-color="${V("accent")}" stop-opacity="0"/><stop offset=".5" stop-color="${V("accent")}" stop-opacity=".16"/><stop offset="1" stop-color="${V("accent")}" stop-opacity="0"/><animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="160 0" dur="2.4s" repeatCount="indefinite"/></linearGradient>`;
+  L.forEach((l, i) => g += `<linearGradient id="lg${i}" x1="0" x2="1"><stop offset="0" stop-color="${by[l.s].color}"/><stop offset="1" stop-color="${by[l.t].color}"/></linearGradient>`);
+  g += `</defs>`;
+  L.sort((a, b) => by[a.s].y - by[b.s].y || by[a.t].y - by[b.t].y).forEach((l, i) => {
+    const s = by[l.s], t = by[l.t], h = l.v * k, sx = s.x + nw, tx = t.x, sy = s.y + s.so, ty = t.y + t.to, mx = (sx + tx) / 2; s.so += h; t.to += h;
+    const d = `M${sx},${sy}C${mx},${sy} ${mx},${ty} ${tx},${ty}L${tx},${ty + h}C${mx},${ty + h} ${mx},${sy + h} ${sx},${sy + h}Z`;
+    const id = L.indexOf(l);
+    g += `<g class="lk" style="animation-delay:${s.col * 0.28}s"><path class="base" d="${d}" fill="url(#lg${id})" fill-opacity=".32"/><path d="${d}" fill="url(#flow)"/><title>${esc(s.label)} → ${esc(t.label)}: ${l.v}</title></g>`;
+  });
+  nodes.forEach(n => {
+    const lx = n.x + nw + 7, ly = n.y + n.h / 2;
+    g += `<g class="nd fade" data-id="${n.id}" style="animation-delay:${n.col * 0.28}s"><rect x="${n.x}" y="${n.y}" width="${nw}" height="${n.h}" rx="4" fill="${n.color}"/>`
+      + `<text x="${lx}" y="${ly - 1}" class="lbl-b">${n.v}</text><text x="${lx + String(n.v).length * 7.5 + 6}" y="${ly - 1}">${esc(n.label)}</text>`
+      + (n.col === 0 ? `<text x="${lx}" y="${ly + 12}" class="lbl-d">hits</text>` : "") + `</g>`;
+  });
+  ["Searches", "Retrieved", "Merged & filtered", "Relevance screen", "Outcome"].forEach((t, c) => g += `<text x="${colX(c)}" y="${H + 16}" class="lbl-d">${t.toUpperCase()}</text>`);
+  const v = svgEl(W, H + 22); v.innerHTML = g;
+  v.querySelectorAll(".nd").forEach(el => { const n = by[el.dataset.id]; if (n.keys && n.keys.length) el.onclick = () => applyKeys(`${n.label} (${n.keys.length})`, n.keys); else el.style.cursor = "default"; });
+  $("cvSub").innerHTML = `<b>${total}</b> hits from ${qs.length} searches → <b>${uniq}</b> unique papers screened → <b>${hi.length}</b> highly relevant → <b>${cited.length}</b> grounded the brief. Click any bar to list those papers.`;
+  $("cvFoot").textContent = "Every number comes from this run's saved artefacts (per-query counts, relevance scores, the brief's grounding set).";
+}
+
+// 2) Effect sizes: a forest plot of ratio estimates (HR/OR/RR + 95% CI) extracted verbatim from relevant abstracts
+function drawForest() {
+  const all = (RUN.effects || []).filter(e => (byKey[e.key]?.score ?? 0) >= RELEVANT);
+  const outs = [...new Set(all.map(e => e.outcome))].sort((a, b) => all.filter(e => e.outcome === b).length - all.filter(e => e.outcome === a).length);
+  if (ocFilter !== "All" && !outs.includes(ocFilter)) ocFilter = "All";
+  $("ocChips").innerHTML = ["All", ...outs].map(o => `<button class="${o === ocFilter ? "on" : ""}" data-o="${esc(o)}">${esc(o)} <span style="opacity:.6">${o === "All" ? all.length : all.filter(e => e.outcome === o).length}</span></button>`).join("");
+  $("ocChips").querySelectorAll("button").forEach(b => b.onclick = () => { ocFilter = b.dataset.o; drawForest(); });
+  const MAXR = 16, rows = all.filter(e => ocFilter === "All" || e.outcome === ocFilter).sort((a, b) => a.outcome.localeCompare(b.outcome) || a.est - b.est);
+  const shown = rows.slice(0, MAXR), W = 860, RH = 22, top = 26, H = top + shown.length * RH + 34, x0 = 300, x1 = 690;
+  if (!shown.length) { svgEl(W, 60).innerHTML = `<text x="430" y="34" text-anchor="middle">No ratio estimates with a 95% CI found in the relevant abstracts.</text>`; $("cvSub").textContent = ""; $("cvFoot").textContent = ""; return; }
+  const lmin = Math.log(Math.max(0.05, Math.min(0.5, ...shown.map(e => e.lo)))), lmax = Math.log(Math.min(20, Math.max(2, ...shown.map(e => e.hi))));
+  const X = v => x0 + (Math.log(Math.min(Math.max(v, Math.exp(lmin)), Math.exp(lmax))) - lmin) / (lmax - lmin) * (x1 - x0);
+  const prec = e => 1 / Math.max(0.02, Math.log(e.hi) - Math.log(e.lo)), pmax = Math.max(...shown.map(prec));
+  let g = `<text x="10" y="14" class="lbl-d">STUDY · OUTCOME</text><text x="${x1 + 20}" y="14" class="lbl-d">ESTIMATE [95% CI]</text>`;
+  [0.1, 0.25, 0.5, 1, 2, 4, 10].filter(t => Math.log(t) >= lmin - 1e-9 && Math.log(t) <= lmax + 1e-9).forEach(t => g += `<line x1="${X(t)}" x2="${X(t)}" y1="${top - 6}" y2="${H - 30}" class="grid" stroke-opacity="${t === 1 ? 0 : 1}"/><text x="${X(t)}" y="${H - 16}" text-anchor="middle" class="mono">${t}</text>`);
+  g += `<line x1="${X(1)}" x2="${X(1)}" y1="${top - 10}" y2="${H - 28}" class="noeffect" stroke-dasharray="4 4"/><text x="${X(1) - 8}" y="${H - 2}" text-anchor="end" class="lbl-d">← ratio below 1</text><text x="${X(1) + 8}" y="${H - 2}" class="lbl-d">ratio above 1 →</text>`;
+  shown.forEach((e, i) => {
+    const p = byKey[e.key], y = top + i * RH + RH / 2, sig = e.hi < 1 || e.lo > 1, col = sig ? V("good") : V("score-na"), s = 5 + 7 * prec(e) / pmax, d = (i * 0.045).toFixed(2);
+    g += `<g class="fr" data-i="${i}"><rect class="bgrow" x="0" y="${y - RH / 2}" width="${W}" height="${RH}" rx="6" fill="transparent"/>`
+      + `<text x="10" y="${y + 4}" class="lbl-b">${citeOf[e.key] ? `[${citeOf[e.key]}] ` : ""}${esc(shortRef(p))}</text><text x="118" y="${y + 4}">${esc(e.outcome)} · ${e.measure}</text>`
+      + `<line class="ci" style="animation-delay:${d}s" x1="${X(e.lo)}" x2="${X(e.hi)}" y1="${y}" y2="${y}" stroke="${col}" stroke-width="2"/>`
+      + `<rect class="sq" style="animation-delay:${(+d + .25).toFixed(2)}s" x="${X(e.est) - s / 2}" y="${y - s / 2}" width="${s}" height="${s}" rx="2" fill="${col}"/>`
+      + `<text x="${x1 + 20}" y="${y + 4}" class="mono${sig ? " sig" : ""}">${e.est.toFixed(2)} [${e.lo.toFixed(2)}–${e.hi.toFixed(2)}]</text></g>`;
+  });
+  const v = svgEl(W, H); v.innerHTML = g;
+  v.querySelectorAll(".fr").forEach(el => { const e = shown[+el.dataset.i], p = byKey[e.key]; const num = e.est.toString();
+    el.onmouseenter = ev => { const t = $("tip"); const hl = esc(e.snippet).replace(new RegExp(`(${e.measure}[^0-9]{0,12}${num.replace(".", "\\.")}[^)]*?${e.hi.toString().replace(".", "\\.")})`), "<mark>$1</mark>");
+      t.innerHTML = `<b>${esc(p.title)}</b><span>“${hl}”</span>`; t.classList.add("on"); moveTip(ev); hot(e.key, true); };
+    el.onmousemove = moveTip; el.onmouseleave = hideTip; el.onclick = () => jump(e.key); });
+  const sig = rows.filter(e => e.hi < 1 || e.lo > 1).length, below = rows.filter(e => e.hi < 1).length;
+  $("cvSub").innerHTML = `<b>${rows.length}</b> ratio estimates from <b>${new Set(rows.map(e => e.key)).size}</b> relevant papers${ocFilter === "All" ? "" : ` on <b>${esc(ocFilter)}</b>`} · <b>${sig}</b> have a 95% CI excluding 1, <b>${below}</b> of them below 1. Hover a row for the source sentence.`;
+  $("cvFoot").textContent = `Extracted by pattern-matching from abstracts; the source sentence is kept word for word. Not a meta-analysis: studies overlap and outcome labels are automatic, so check the sentence before relying on a number.${rows.length > MAXR ? ` Showing ${MAXR} of ${rows.length}; pick an outcome to see the rest.` : ""}`;
+}
+
+// 3) Evidence gap map: outcomes × study designs, bubble = number of relevant papers, empty cell = evidence gap
+function drawGap() {
+  const GROUPS = [["Meta-analysis / SR", ["meta-analysis", "systematic review"]], ["RCT", ["RCT"]], ["Observational", ["cohort", "case-control", "cross-sectional"]], ["Guideline / review", ["guideline", "narrative review"]], ["Preclinical", ["preclinical"]], ["Other", ["case report", "other"]]];
+  const rel = papers.filter(p => (p.score ?? 0) >= RELEVANT);
+  const outs = [...new Set(rel.flatMap(p => p.outcomes || []))].sort((a, b) => rel.filter(p => p.outcomes.includes(b)).length - rel.filter(p => p.outcomes.includes(a)).length);
+  const W = 860, lw = 170, top = 34, RH = 34, H = top + outs.length * RH + 8, cw = (W - lw) / GROUPS.length;
+  if (!outs.length) { svgEl(W, 60).innerHTML = `<text x="430" y="34" text-anchor="middle">No outcome terms found in the relevant abstracts.</text>`; return; }
+  const cells = outs.map(o => GROUPS.map(([, types]) => rel.filter(p => p.outcomes.includes(o) && types.includes(p.study_type))));
+  const max = Math.max(1, ...cells.flat().map(c => c.length));
+  let g = "";
+  GROUPS.forEach(([name], j) => g += `<text x="${lw + cw * j + cw / 2}" y="16" text-anchor="middle" class="lbl-d">${name.toUpperCase()}</text>`);
+  outs.forEach((o, i) => {
+    const y = top + i * RH + RH / 2;
+    g += `<line x1="${lw - 8}" x2="${W}" y1="${y}" y2="${y}" class="grid"/><text x="${lw - 14}" y="${y + 4}" text-anchor="end" class="lbl-b">${esc(o)}</text>`;
+    cells[i].forEach((c, j) => {
+      const cx = lw + cw * j + cw / 2, d = ((i + j) * 0.04).toFixed(2);
+      if (!c.length) { g += `<g class="fade" style="animation-delay:${d}s"><circle cx="${cx}" cy="${y}" r="5" class="gap-ring" stroke-dasharray="2 2"/></g>`; return; }
+      const r = 7 + 9 * Math.sqrt(c.length / max), avg = c.reduce((s, p) => s + p.score, 0) / c.length, col = avg >= 8 ? V("score-hi") : avg >= 7 ? V("score-mid") : V("fn-query");
+      g += `<g class="cell sq" data-i="${i}" data-j="${j}" style="animation-delay:${d}s"><circle class="c" cx="${cx}" cy="${y}" r="${r}" fill="${col}" fill-opacity=".85"/><text x="${cx}" y="${y + 4}" text-anchor="middle" class="on-color">${c.length}</text><title>${esc(o)} × ${esc(GROUPS[j][0])}: ${c.length} papers, mean score ${avg.toFixed(1)}</title></g>`;
+    });
+  });
+  const v = svgEl(W, H); v.innerHTML = g;
+  v.querySelectorAll(".cell").forEach(el => { const i = +el.dataset.i, j = +el.dataset.j; el.onclick = () => applyKeys(`${outs[i]} × ${GROUPS[j][0]} (${cells[i][j].length})`, cells[i][j].map(p => p.key)); });
+  let best = [0, 0]; cells.forEach((r, i) => r.forEach((c, j) => { if (c.length > cells[best[0]][best[1]].length) best = [i, j]; }));
+  const noStrong = outs.filter((o, i) => !cells[i][0].length && !cells[i][1].length);
+  $("cvSub").innerHTML = `Where the <b>${rel.length}</b> relevant papers concentrate: densest is <b>${esc(outs[best[0]])} × ${esc(GROUPS[best[1]][0])}</b> (${cells[best[0]][best[1]].length}).`
+    + (noStrong.length ? ` No meta-analysis or RCT evidence for <b>${noStrong.slice(0, 3).map(esc).join("</b>, <b>")}</b>.` : " Every outcome has some meta-analysis or RCT evidence.") + " Click a bubble to list those papers.";
+  $("cvFoot").textContent = "Outcomes are matched by keywords in each abstract; study designs are labelled by the screening model and can be wrong. Dashed rings mark empty cells, i.e. possible evidence gaps. Bubble colour shows mean relevance.";
+}
+
+$("sort").querySelectorAll("button").forEach(b => b.onclick = () => { $("sort").querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); state.sort = b.dataset.v; render(); });
+$("min").oninput = () => { state.min = +$("min").value; $("minv").textContent = state.min; render(); };
+$("oa").onchange = () => { state.oa = $("oa").checked; render(); };
+$("nopp").onchange = () => { state.nopp = $("nopp").checked; render(); };
+function download(name, text, type) { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text], {type})); a.download = name; a.click(); URL.revokeObjectURL(a.href); }
+$("bib").onclick = () => download(RUN.run_id + ".bib", visible().map(p => `@article{${(p.authors.split(/[ ,]/)[0] || "anon")}${p.year || ""}${p.id},\n  title = {${p.title}},\n  author = {${p.authors.replace(/, /g, " and ")}},\n  journal = {${p.journal}},\n  year = {${p.year || ""}},\n  doi = {${p.doi || ""}}\n}`).join("\n\n"), "application/x-bibtex");
+$("csv").onclick = () => { const cols = ["score", "study_type", "title", "authors", "journal", "year", "cited_by", "doi", "url", "reason"]; download(RUN.run_id + ".csv", [cols.join(","), ...visible().map(p => cols.map(c => `"${String(p[c] ?? "").replace(/"/g, '""')}"`).join(","))].join("\n"), "text/csv"); };
+$("copy").onclick = async () => { if (!RUN?.summary?.summary) return; const refs = cited.map((k, i) => `[${i + 1}] ${byKey[k].title}. ${byKey[k].journal} ${byKey[k].year}. ${byKey[k].url}`).join("\n"); try { await navigator.clipboard.writeText(`${RUN.question}\n\n${RUN.summary.summary}\n\n${refs}`); $("copy").textContent = "Copied ✓"; } catch { $("copy").textContent = "Copy blocked"; } setTimeout(() => $("copy").textContent = "Copy brief", 1500); };
 </script>
 </body>
 </html>

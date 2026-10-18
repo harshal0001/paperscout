@@ -1,0 +1,15 @@
+{
+  "summary": "Biomarkers predicting response to immune checkpoint inhibitors in NSCLC include SWI/SNF loss-of-function mutations, which correlate with higher TMB, neoantigen load, and immune cell infiltration, and predict superior clinical outcomes across multiple cancer types [1]; high CTLA-4/CD80 interaction states, measured by FRET efficiency ≥6.41%, which correlate with improved overall and progression-free survival in anti-PD-1/PD-L1-treated NSCLC patients [2]; APOBEC mutational signatures, which independently predict improved overall survival in TMB-low metastatic NSCLC regardless of PD-L1 status [3]; and combined CD47 and PD-L1 expression, where both are independent prognostic factors for immunotherapy efficacy in advanced NSCLC [6]. Additionally, circulating cytokines such as declines in IL-6, IL-8, IL-17A, and IL-10, along with transient increases in IFN-γ and TNF-α, may indicate favorable immune reinvigoration during PD-1 blockade [8]. Chemokine signatures and multi-omic biomarkers (genomic, transcriptomic, proteomic, metabolomic) also show promise when integrated into predictive models [7].",
+  "evidence_gaps": "The papers do not prospectively validate the clinical utility of SWI/SNF-LOF, CTLA-4/CD80 interaction, or APOBEC signatures as standalone biomarkers in prospective trials, nor do they establish standardized thresholds or assay protocols for routine clinical use across diverse populations.",
+  "confidence": "moderate",
+  "cited_keys": [
+    "pmid:42642869",
+    "pmid:42535087",
+    "pmid:42378718",
+    "pmid:42625644",
+    "pmid:42779146",
+    "pmid:42813858",
+    "pmid:42465572",
+    "pmid:42769976"
+  ]
+}

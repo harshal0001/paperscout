@@ -74,6 +74,20 @@ palette failed 5 pairs (small grey labels 3.0–3.2:1, green and violet on their
 colour). These were darkened until all 18 pairs passed; the lowest is now 4.9:1. The dark version is kept as
 `mockups/2026-10-18_1714-ui-concept.html` for comparison.
 
+**Concept ported to the live app (17:30):**
+- **Backend:** the pipeline adds `outcomes` to each paper and an `effects` list (from `insights.py`) to the `results`
+  event and persists `effects.json`. The `run` event now carries the model names, so the UI never hard-codes them.
+- **Frontend:** `paperscout/static/index.html` is the concept with the replay engine swapped for an EventSource
+  handler. Warnings and errors show as amber and red alerts; an error re-enables the button and replaces the loading
+  skeletons; `?q=` links start a search.
+- **Width:** the workspace max width went from 1480 to 1760 px (user: "the center column is very narrow").
+- **Verification:**
+  - `check_ui_live.mjs` replays a real captured stream through the page JS: 25 checks over the real run, a server
+    error mid-run, and an injected warning.
+  - The checker itself was proven by its failure path: with the citation class and the warning alert broken in a copy
+    of the page, it reported 2 FAILs.
+  - The live smoke test passed 4/4 on the new backend; pytest is at 63.
+
 **Tests:** 26 offline tests (mock LLM + a recorded Europe PMC response) covering the happy path and every failure
 path: planner failure or garbage output → fallback query plus a warning; one query failing → warning, run continues;
 all failing → error event and a persisted `run.json` with status `failed`; ranker batch failure or partial reply →

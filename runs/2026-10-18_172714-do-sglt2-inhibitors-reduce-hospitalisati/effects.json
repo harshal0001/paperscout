@@ -1,0 +1,110 @@
+[
+  {
+    "key": "pmid:42644019",
+    "measure": "HR",
+    "est": 0.82,
+    "lo": 0.7,
+    "hi": 0.96,
+    "outcome": "Composite endpoint",
+    "snippet": "Use of SGLT2 inhibitors was associated with a relative risk reduction in the primary composite outcome of 18% compared with the use of DPP4 inhibitors or sulfonylureas (hazard ratio 0.82, 95% confidence interval 0.70 to 0.96; P=0.01)."
+  },
+  {
+    "key": "pmid:42205792",
+    "measure": "HR",
+    "est": 0.78,
+    "lo": 0.6,
+    "hi": 1.03,
+    "outcome": "Composite endpoint",
+    "snippet": "Results Treatment with SGLT2 inhibitors reduced the risk of the primary endpoint by 22% in the strict group (HR: 0.78, 95% CI: 0.60-1.03, with a confidence interval that includes the null) and by 27% in the broad group (HR: 0.73, 95% CI: 0.59-0.90)."
+  },
+  {
+    "key": "pmid:42205792",
+    "measure": "HR",
+    "est": 0.73,
+    "lo": 0.59,
+    "hi": 0.9,
+    "outcome": "Composite endpoint",
+    "snippet": "Results Treatment with SGLT2 inhibitors reduced the risk of the primary endpoint by 22% in the strict group (HR: 0.78, 95% CI: 0.60-1.03, with a confidence interval that includes the null) and by 27% in the broad group (HR: 0.73, 95% CI: 0.59-0.90)."
+  },
+  {
+    "key": "pmid:42211456",
+    "measure": "HR",
+    "est": 0.86,
+    "lo": 0.79,
+    "hi": 0.92,
+    "outcome": "Mortality / survival",
+    "snippet": "Results SGLT2 inhibitor therapy was associated with a 14% reduction in all-cause mortality (HR = 0.86, 95% CI: 0.79-0.92; p < 0.001) and a 26% reduction in heart failure hospitalization (HR = 0.74, 95% CI: 0.68-0.81; p < 0.001)."
+  },
+  {
+    "key": "pmid:42211456",
+    "measure": "HR",
+    "est": 0.74,
+    "lo": 0.68,
+    "hi": 0.81,
+    "outcome": "Hospitalisation",
+    "snippet": "Results SGLT2 inhibitor therapy was associated with a 14% reduction in all-cause mortality (HR = 0.86, 95% CI: 0.79-0.92; p < 0.001) and a 26% reduction in heart failure hospitalization (HR = 0.74, 95% CI: 0.68-0.81; p < 0.001)."
+  },
+  {
+    "key": "pmid:42769115",
+    "measure": "HR",
+    "est": 0.583,
+    "lo": 0.371,
+    "hi": 0.916,
+    "outcome": "Other",
+    "snippet": "Multivariable Cox regression confirmed SGLT2i use as an independent protective factor (HR, 0.583; 95% CI, 0.371-0.916; P=0.017)."
+  },
+  {
+    "key": "pmid:42518892",
+    "measure": "RR",
+    "est": 0.9,
+    "lo": 0.83,
+    "hi": 0.98,
+    "outcome": "Mortality / survival",
+    "snippet": "SGLT2 inhibitors reduced all-cause mortality (ACM; RR 0.90, 95% CI 0.83-0.98; p = 0.016; 26 trials; low certainty), although trim-and-fill adjustment for publication bias attenuated the finding (adjusted RR 0.92, 95% CI 0.84-1.00)."
+  },
+  {
+    "key": "pmid:42518892",
+    "measure": "RR",
+    "est": 0.92,
+    "lo": 0.84,
+    "hi": 1.0,
+    "outcome": "Mortality / survival",
+    "snippet": "SGLT2 inhibitors reduced all-cause mortality (ACM; RR 0.90, 95% CI 0.83-0.98; p = 0.016; 26 trials; low certainty), although trim-and-fill adjustment for publication bias attenuated the finding (adjusted RR 0.92, 95% CI 0.84-1.00)."
+  },
+  {
+    "key": "pmid:42518892",
+    "measure": "RR",
+    "est": 0.74,
+    "lo": 0.69,
+    "hi": 0.79,
+    "outcome": "Hospitalisation",
+    "snippet": "HF hospitalization (HFH) was reduced (RR 0.74, 95% CI 0.69-0.79; 15 trials; moderate certainty), as were CV death (RR 0.86, 95% CI 0.76-0.98; seven trials; moderate certainty), the composite of CV death and HFH (RR 0.80, 95% CI 0.75-0.85; eight trials; high certainty), and serious adverse events (RR 0.94, 95% CI 0.90-0.99; 20 trials; high certainty)."
+  },
+  {
+    "key": "pmid:42222151",
+    "measure": "OR",
+    "est": 0.89,
+    "lo": 0.82,
+    "hi": 0.95,
+    "outcome": "CV death",
+    "snippet": "Compared with placebo, finerenone was associated with lower risk of CV death (OR = 0.89, 95% CI 0.82-0.95) and worsening HF events (OR = 0.75, 95% CI 0.71-0.79), but higher risk of composite renal outcomes (OR = 1.42, 95% CI 1.10-1.84)."
+  },
+  {
+    "key": "pmid:42222151",
+    "measure": "OR",
+    "est": 0.75,
+    "lo": 0.71,
+    "hi": 0.79,
+    "outcome": "Progression",
+    "snippet": "Compared with placebo, finerenone was associated with lower risk of CV death (OR = 0.89, 95% CI 0.82-0.95) and worsening HF events (OR = 0.75, 95% CI 0.71-0.79), but higher risk of composite renal outcomes (OR = 1.42, 95% CI 1.10-1.84)."
+  },
+  {
+    "key": "pmid:42222151",
+    "measure": "OR",
+    "est": 1.42,
+    "lo": 1.1,
+    "hi": 1.84,
+    "outcome": "Kidney",
+    "snippet": "Compared with placebo, finerenone was associated with lower risk of CV death (OR = 0.89, 95% CI 0.82-0.95) and worsening HF events (OR = 0.75, 95% CI 0.71-0.79), but higher risk of composite renal outcomes (OR = 1.42, 95% CI 1.10-1.84)."
+  }
+]

@@ -32,8 +32,17 @@ def test_happy_path_events_order_and_persistence(tmp_path):
     summary = by_type(events, "summary")[0]
     top = [p["key"] for p in papers if p["score"] >= pipeline.MIN_SUMMARY_SCORE][:pipeline.TOP_K_SUMMARY]
     assert summary["cited_keys"] == top and len(top) > 1
-    for f in ("plan.json", "candidates.json", "ranked.json", "summary.json", "run.json"):
+    for f in ("plan.json", "candidates.json", "ranked.json", "effects.json", "summary.json", "run.json"):
         assert (run_dir / f).is_file()
+    assert events[0]["models"].keys() == {"planner", "ranker", "writer"} and events[0]["question"]
+    results = by_type(events, "results")[0]
+    assert all(isinstance(p["outcomes"], list) for p in papers) and any(p["outcomes"] for p in papers)
+    keys = {p["key"] for p in papers}
+    assert results["effects"] and all(e["key"] in keys and e["lo"] <= e["est"] <= e["hi"] for e in results["effects"])
+    by = {p["key"]: p for p in papers}
+    assert all(e["snippet"] in by[e["key"]]["abstract"] for e in results["effects"])
+    assert json.loads((run_dir / "effects.json").read_text()) == results["effects"]
+    assert meta["counts"]["effects"] == len(results["effects"])
 
 
 def test_planner_failure_falls_back_and_warns(tmp_path):
