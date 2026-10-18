@@ -1,0 +1,15 @@
+{
+  "summary": "In NSCLC, multiple biomarkers predict response to immune checkpoint inhibitors (ICIs): high PD-1/PD-L1 interaction state correlates with improved overall and progression-free survival [2]; high CTLA-4/CD80 interaction (FRET efficiency ≥6.41%) similarly predicts better outcomes [2]; APOBEC mutational signatures confer improved overall survival in TMB-low metastatic NSCLC independent of PD-L1 status [3]; DDR gene mutations are associated with higher objective response rate (RR=0.63 for wild-type vs mutated), improved PFS (HR=0.56), and OS (HR=0.82) [4]; chromatin regulator (CR) mutations, particularly specific pro-survival CR gene sets and their co-occurrence, are linked to improved survival following ICI treatment [5]; and combined high CD47 and PD-L1 expression serves as an independent prognostic factor for immunotherapy efficacy [8]. COMPASS, a pan-cancer AI model, also predicts immunotherapy response from bulk tumor transcriptomes via 44 immune concepts, with responder classification linked to longer overall survival (HR=4.7) [1].",
+  "evidence_gaps": "These studies do not fully address longitudinal dynamics of biomarker changes during treatment, optimal biomarker combinations for clinical decision-making, or validation in diverse real-world populations beyond selected cohorts.",
+  "confidence": "high",
+  "cited_keys": [
+    "pmid:42399673",
+    "pmid:42535087",
+    "pmid:42378718",
+    "pmid:42649868",
+    "doi:10.21203/rs.3.rs-11183780/v1",
+    "pmid:42241716",
+    "pmid:42779146",
+    "pmid:42813858"
+  ]
+}

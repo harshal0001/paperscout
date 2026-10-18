@@ -1,0 +1,15 @@
+{
+  "pico": {
+    "population": "sickle cell disease",
+    "intervention": "CRISPR base editing",
+    "comparison": "",
+    "outcome": "efficacy"
+  },
+  "queries": [
+    "(sickle cell disease OR \"HbS\" OR \"hemoglobin S\") AND (base editing OR \"CRISPR base editor\" OR ABE OR CBE)",
+    "(sickle cell anemia OR beta-globin mutation) AND ((BE3 OR BE4max OR ABE8e) OR \"prime editing\" OR \"CRISPR-Cas9 base editor\")",
+    "(sickle cell disease) AND (base editing) AND (randomized controlled trial OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\" OR \"safety and efficacy\")",
+    "(hemoglobinopathies) AND (gene editing) AND (therapeutic OR treatment OR cure)"
+  ],
+  "rationale": "Queries cover core concepts, synonyms/variants, clinical evidence focus, and broader therapeutic context to capture relevant studies on CRISPR base editing for sickle cell disease."
+}

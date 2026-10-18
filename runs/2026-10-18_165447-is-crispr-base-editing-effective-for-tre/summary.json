@@ -1,0 +1,15 @@
+{
+  "summary": "CRISPR base editing shows effectiveness for treating sickle cell disease by reactivating fetal hemoglobin (HbF) through multiplex editing of BCL11A regulatory elements (+58-kb and +55-kb enhancers) without inducing double-strand breaks, achieving higher HbF levels than CRISPR-Cas9 nucleases and demonstrating durability in long-term repopulating hematopoietic stem/progenitor cells (HSPCs) in vivo [1]. Additionally, base editing can correct specific β-globin mutations (e.g., CD39, IVS2-1) associated with sickle cell-β-thalassemia phenotypes, with >90% editing efficiency in HSPCs leading to improved β-globin expression and phenotypic correction in preclinical models [2]. While Casgevy (a CRISPR-Cas9-based therapy) is FDA-approved for sickle cell disease, the evidence here supports base editing as a promising alternative approach with potential safety advantages due to reduced genomic rearrangements [1,4,5].",
+  "evidence_gaps": "These papers do not report direct clinical trial outcomes of base editing in humans with sickle cell disease, nor do they compare long-term safety or efficacy of base editing versus approved CRISPR-Cas9 therapies like Casgevy or Lyfgenia in clinical settings.",
+  "confidence": "moderate",
+  "cited_keys": [
+    "pmid:41015034",
+    "pmid:41296828",
+    "doi:10.64898/2026.09.15.751289",
+    "pmid:42028170",
+    "pmid:41773269",
+    "pmid:42405279",
+    "pmid:39659430",
+    "pmid:42755327"
+  ]
+}
