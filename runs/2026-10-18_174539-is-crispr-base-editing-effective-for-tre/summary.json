@@ -1,0 +1,15 @@
+{
+  "summary": "CRISPR base editing demonstrates effectiveness for treating sickle cell disease through multiple approaches: direct correction of the sickle mutation in HBB using base editors achieves high editing efficiency (>90%) and improves β-globin expression in hematopoietic stem and progenitor cells (HSPCs) [4]; multiplex base editing of BCL11A regulatory elements reactivates fetal hemoglobin (HbF) to levels exceeding those from CRISPR-Cas9-induced double-strand breaks, with durable HbF reactivation in vivo and minimal genomic rearrangements [3]; and clinical application of a transformer base editor (tBE) in one African sickle cell disease patient and three transfusion-dependent β-thalassemia patients resulted in transfusion independence, sustained high-level pan-cellular HbF expression, durable editing, and no vaso-occlusive episodes or off-target effects after >12 months of follow-up [6]. These preclinical and early clinical findings indicate base editing is a promising therapeutic strategy for sickle cell disease.",
+  "evidence_gaps": "The papers do not provide long-term safety data beyond 12 months, lack large-scale clinical trial results, and do not compare base editing efficacy head-to-head with other CRISPR-based therapies like exa-cel (Casgevy) or prime editing in sickle cell disease.",
+  "confidence": "moderate",
+  "cited_keys": [
+    "pmid:31634902",
+    "pmid:30082871",
+    "pmid:41015034",
+    "pmid:41296828",
+    "pmid:42755327",
+    "pmid:42705233",
+    "pmid:40659814",
+    "pmid:41773269"
+  ]
+}

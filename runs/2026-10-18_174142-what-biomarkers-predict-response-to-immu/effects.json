@@ -1,0 +1,218 @@
+[
+  {
+    "key": "pmid:42378718",
+    "measure": "HR",
+    "est": 0.6,
+    "lo": 0.42,
+    "hi": 0.85,
+    "outcome": "Mortality / survival",
+    "snippet": "Results APOBEC-positive patients (n = 52, 6.1%) had significantly improved overall survival [median 33.7 versus 17.4 months; hazard ratio (HR) 0.60, 95% confidence interval (CI) 0.42-0.85, P = 0.004]."
+  },
+  {
+    "key": "pmid:42662437",
+    "measure": "HR",
+    "est": 0.81,
+    "lo": 0.67,
+    "hi": 0.99,
+    "outcome": "Mortality / survival",
+    "snippet": "Durvalumab and tremelimumab significantly improved overall survival (OS) compared with that of chemotherapy (HR = 0.81, 95% CI: 0.67-0.99) in patients with PD-L1 < 1%."
+  },
+  {
+    "key": "pmid:42662437",
+    "measure": "RR",
+    "est": 1.41,
+    "lo": 1.14,
+    "hi": 1.74,
+    "outcome": "Safety",
+    "snippet": "Treatment-related adverse events (TRAEs) and grade ≥ 3 TRAEs were significantly lower in patients receiving the drug combination (RR = 0.78 and 0.64, respectively), whereas serious TRAEs were higher (RR = 1.41, 95% CI: 1.14-1.74) when compared with those receiving standard chemotherapy."
+  },
+  {
+    "key": "pmid:42625644",
+    "measure": "RR",
+    "est": 11.0,
+    "lo": 7.0,
+    "hi": 95.0,
+    "outcome": "Other",
+    "snippet": "In PD-L1 ≥1%, tislelizumab plus CT was associated with higher pCR versus CT (RR 11.07, 95% CrI 5.35-27.31), and camrelizumab plus CT was associated with higher MPR (RR 8.28, 95% CrI 3.58-21.94)."
+  },
+  {
+    "key": "pmid:42625644",
+    "measure": "RR",
+    "est": 8.2,
+    "lo": 8.0,
+    "hi": 95.0,
+    "outcome": "Other",
+    "snippet": "In PD-L1 ≥1%, tislelizumab plus CT was associated with higher pCR versus CT (RR 11.07, 95% CrI 5.35-27.31), and camrelizumab plus CT was associated with higher MPR (RR 8.28, 95% CrI 3.58-21.94)."
+  },
+  {
+    "key": "pmid:42199400",
+    "measure": "HR",
+    "est": 0.84,
+    "lo": 0.76,
+    "hi": 0.92,
+    "outcome": "Mortality / survival",
+    "snippet": "The OS (HR = 0.84, 95%CI 0.76-0.92, p=0.003) and PFS (HR = 0.78, 95%CI 0.68-0.89, p=0.002) of patients who received dual ICI treatment were significantly better than those in the control group."
+  },
+  {
+    "key": "pmid:42199400",
+    "measure": "HR",
+    "est": 0.78,
+    "lo": 0.68,
+    "hi": 0.89,
+    "outcome": "Progression",
+    "snippet": "The OS (HR = 0.84, 95%CI 0.76-0.92, p=0.003) and PFS (HR = 0.78, 95%CI 0.68-0.89, p=0.002) of patients who received dual ICI treatment were significantly better than those in the control group."
+  },
+  {
+    "key": "pmid:42344916",
+    "measure": "HR",
+    "est": 0.65,
+    "lo": 0.57,
+    "hi": 0.75,
+    "outcome": "Progression",
+    "snippet": "Antibody-based regimens targeting PD-1/PD-L1 and VEGF/VEGFR, with or without chemotherapy, were associated with better PFS (HR = 0.65, 95%CI: 0.57-0.75, p<0.001) and OS (HR = 0.79, 95%CI: 0.71-0.87, p<0.001) compared with the control regimen."
+  },
+  {
+    "key": "pmid:42344916",
+    "measure": "HR",
+    "est": 0.79,
+    "lo": 0.71,
+    "hi": 0.87,
+    "outcome": "Mortality / survival",
+    "snippet": "Antibody-based regimens targeting PD-1/PD-L1 and VEGF/VEGFR, with or without chemotherapy, were associated with better PFS (HR = 0.65, 95%CI: 0.57-0.75, p<0.001) and OS (HR = 0.79, 95%CI: 0.71-0.87, p<0.001) compared with the control regimen."
+  },
+  {
+    "key": "pmid:42739617",
+    "measure": "HR",
+    "est": 0.953,
+    "lo": 0.533,
+    "hi": 1.704,
+    "outcome": "Mortality / survival",
+    "snippet": "In treatment-line-adjusted Cox models, EZH2 expression was not associated with OS (hazard ratio (HR) 0.953, 95% confidence interval (CI) 0.533-1.704; p = 0.870) or PFS (HR 0.996, 95% CI 0.573-1.733; p = 0.989), whereas squamous histology was an independent predictor of survival."
+  },
+  {
+    "key": "pmid:42739617",
+    "measure": "HR",
+    "est": 0.996,
+    "lo": 0.573,
+    "hi": 1.733,
+    "outcome": "Progression",
+    "snippet": "In treatment-line-adjusted Cox models, EZH2 expression was not associated with OS (hazard ratio (HR) 0.953, 95% confidence interval (CI) 0.533-1.704; p = 0.870) or PFS (HR 0.996, 95% CI 0.573-1.733; p = 0.989), whereas squamous histology was an independent predictor of survival."
+  },
+  {
+    "key": "pmid:42658167",
+    "measure": "HR",
+    "est": 0.97,
+    "lo": 0.74,
+    "hi": 1.27,
+    "outcome": "Mortality / survival",
+    "snippet": "Combined analysis showed no significant overall survival benefit with durvalumab plus tremelimumab compared to durvalumab alone (HR 0.97; 95% CI, 0.74-1.27)."
+  },
+  {
+    "key": "pmid:42688457",
+    "measure": "HR",
+    "est": 0.74,
+    "lo": 0.64,
+    "hi": 0.86,
+    "outcome": "Mortality / survival",
+    "snippet": "Conventional random-effects analyses suggested improved OS (HR 0.74, 95% CI 0.64-0.86) and PFS (HR 0.81, 95% CI 0.68-0.96) among RAS inhibitor users."
+  },
+  {
+    "key": "pmid:42688457",
+    "measure": "HR",
+    "est": 0.81,
+    "lo": 0.68,
+    "hi": 0.96,
+    "outcome": "Progression",
+    "snippet": "Conventional random-effects analyses suggested improved OS (HR 0.74, 95% CI 0.64-0.86) and PFS (HR 0.81, 95% CI 0.68-0.96) among RAS inhibitor users."
+  },
+  {
+    "key": "pmid:42688457",
+    "measure": "HR",
+    "est": 0.99,
+    "lo": 0.96,
+    "hi": 1.02,
+    "outcome": "Mortality / survival",
+    "snippet": "Exploratory PET-PEESE analyses attenuated the observed associations toward the null (adjusted OS HR 0.99, 95% CI 0.96-1.02; adjusted PFS HR 1.04, 95% CI 0.85-1.27)."
+  },
+  {
+    "key": "pmid:42591455",
+    "measure": "HR",
+    "est": 0.79,
+    "lo": 0.73,
+    "hi": 0.84,
+    "outcome": "Mortality / survival",
+    "snippet": "Nab-paclitaxel plus ICIs significantly improved OS (HR =0.79; 95% CI: 0.73-0.84), PFS (HR =0.63; 95% CI: 0.58-0.69), and pCR (RR =1.28; 95% CI: 1.15-1.43) compared with controls."
+  },
+  {
+    "key": "pmid:42591455",
+    "measure": "HR",
+    "est": 0.63,
+    "lo": 0.58,
+    "hi": 0.69,
+    "outcome": "Progression",
+    "snippet": "Nab-paclitaxel plus ICIs significantly improved OS (HR =0.79; 95% CI: 0.73-0.84), PFS (HR =0.63; 95% CI: 0.58-0.69), and pCR (RR =1.28; 95% CI: 1.15-1.43) compared with controls."
+  },
+  {
+    "key": "pmid:42591455",
+    "measure": "RR",
+    "est": 1.28,
+    "lo": 1.15,
+    "hi": 1.43,
+    "outcome": "Progression",
+    "snippet": "Nab-paclitaxel plus ICIs significantly improved OS (HR =0.79; 95% CI: 0.73-0.84), PFS (HR =0.63; 95% CI: 0.58-0.69), and pCR (RR =1.28; 95% CI: 1.15-1.43) compared with controls."
+  },
+  {
+    "key": "pmid:26028407",
+    "measure": "HR",
+    "est": 0.59,
+    "lo": 0.44,
+    "hi": 0.79,
+    "outcome": "Mortality / survival",
+    "snippet": "The risk of death was 41% lower with nivolumab than with docetaxel (hazard ratio, 0.59; 95% CI, 0.44 to 0.79; P<0.001)."
+  },
+  {
+    "key": "pmid:42769195",
+    "measure": "HR",
+    "est": 0.74,
+    "lo": 0.68,
+    "hi": 0.82,
+    "outcome": "Progression",
+    "snippet": "Adjuvant ICIs significantly improved DFS/RFS/PFS (HR 0.74, 95% CI 0.68-0.82, p<0.0001) and OS (HR 0.84, 95% CI 0.78-0.90, p<0.0001) compared with non-ICI controls."
+  },
+  {
+    "key": "pmid:42769195",
+    "measure": "HR",
+    "est": 0.84,
+    "lo": 0.78,
+    "hi": 0.9,
+    "outcome": "Mortality / survival",
+    "snippet": "Adjuvant ICIs significantly improved DFS/RFS/PFS (HR 0.74, 95% CI 0.68-0.82, p<0.0001) and OS (HR 0.84, 95% CI 0.78-0.90, p<0.0001) compared with non-ICI controls."
+  },
+  {
+    "key": "pmid:42819186",
+    "measure": "HR",
+    "est": 0.54,
+    "lo": 0.4,
+    "hi": 0.72,
+    "outcome": "Progression",
+    "snippet": "ICIs significantly improved PFS/EFS [HR 0.54; 95% confidence interval (CI): 0.40-0.72; P < 0.0001], DMFS (HR 0.52; 95% CI: 0.36-0.75; P = 0.0005), and LRFS (HR 0.47; 95% CI: 0.31-0.71; P = 0.0003)."
+  },
+  {
+    "key": "pmid:42819186",
+    "measure": "HR",
+    "est": 0.52,
+    "lo": 0.36,
+    "hi": 0.75,
+    "outcome": "Progression",
+    "snippet": "ICIs significantly improved PFS/EFS [HR 0.54; 95% confidence interval (CI): 0.40-0.72; P < 0.0001], DMFS (HR 0.52; 95% CI: 0.36-0.75; P = 0.0005), and LRFS (HR 0.47; 95% CI: 0.31-0.71; P = 0.0003)."
+  },
+  {
+    "key": "pmid:42819186",
+    "measure": "HR",
+    "est": 0.47,
+    "lo": 0.31,
+    "hi": 0.71,
+    "outcome": "Progression",
+    "snippet": "ICIs significantly improved PFS/EFS [HR 0.54; 95% confidence interval (CI): 0.40-0.72; P < 0.0001], DMFS (HR 0.52; 95% CI: 0.36-0.75; P = 0.0005), and LRFS (HR 0.47; 95% CI: 0.31-0.71; P = 0.0003)."
+  }
+]

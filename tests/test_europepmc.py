@@ -48,6 +48,17 @@ def test_search_gives_up_after_retries_and_reports_body():
         europepmc.search("x", client=_client(busy), retries=2, backoff=0)
 
 
+def test_search_sends_sort_only_when_asked():
+    seen = []
+    def handler(req):
+        seen.append(dict(req.url.params))
+        return httpx.Response(200, json={"resultList": {"result": []}})
+    client = httpx.Client(transport=httpx.MockTransport(handler))
+    europepmc.search("x", client=client)
+    europepmc.search("x", client=client, page_size=10, sort="CITED desc")
+    assert "sort" not in seen[0] and seen[1]["sort"] == "CITED desc" and seen[1]["pageSize"] == "10"
+
+
 def test_search_does_not_retry_400():
     with pytest.raises(europepmc.SearchError, match="400.*bad query"):
         europepmc.search("x", client=_client([httpx.Response(400, text="bad query")]), backoff=0)

@@ -45,6 +45,23 @@ def test_happy_path_events_order_and_persistence(tmp_path):
     assert meta["counts"]["effects"] == len(results["effects"])
 
 
+def test_default_search_merges_recent_and_most_cited(monkeypatch):
+    calls = []
+    def fake(q, page_size=25, sort=None, **kw):
+        calls.append((page_size, sort))
+        return [{"id": f"{sort}-{i}"} for i in range(2)]
+    monkeypatch.setattr(pipeline.europepmc, "search", fake)
+    assert len(pipeline.default_search("x")) == 4
+    assert calls == [(pipeline.PAGE_SIZE, None), (pipeline.CITED_SIZE, "CITED desc")]
+
+
+def test_paper_returned_twice_by_one_query_is_counted_once(tmp_path):
+    raw = fixture_results()
+    events, _, _ = run_all(FakeLLM(), lambda q: raw + raw[:5], tmp_path)
+    papers = by_type(events, "results")[0]["papers"]
+    assert len(papers) == 22 and all(len(p["matched_queries"]) == 3 for p in papers)
+
+
 def test_planner_failure_falls_back_and_warns(tmp_path):
     seen = []
     events, _, meta = run_all(FakeLLM(fail={"planner": LLMError("boom")}), lambda q: seen.append(q) or fixture_results(),

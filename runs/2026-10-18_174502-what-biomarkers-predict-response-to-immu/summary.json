@@ -1,0 +1,15 @@
+{
+  "summary": "Higher tumor mutational burden (TMB), particularly nonsynonymous mutation burden, is associated with improved response to PD-1 blockade in NSCLC, as demonstrated in two independent cohorts where it correlated with objective response, durable clinical benefit, and progression-free survival [1]. APOBEC mutational signatures predict improved overall survival in TMB-low metastatic NSCLC patients treated with immune checkpoint inhibitors, independent of PD-L1 status, based on analysis of 857 ICI-treated patients from the MSK-CHORD cohort [3]. High PD-1/PD-L1 interaction states, measured by FRET efficiency, predict improved overall survival and progression-free survival in NSCLC patients receiving anti-PD-1/PD-L1 therapies [2]. Additionally, high CTLA-4/CD80 interaction (FRET efficiency ≥6.41%) correlates with improved OS and PFS in response to anti-PD-1/PD-L1 therapies, suggesting combined checkpoint interactions may serve as predictive biomarkers [2]. Circulating CD4+ T cells emerge as the strongest peripheral predictor of favorable response to immunotherapy in advanced NSCLC, followed by CD3+ and CD45+ T cells, natural killer cells, albumin, and total protein, while elevated neutrophils, LDH, and NLR are associated with poor outcomes [7]. Pre-treatment samples from responding NSCLC patients show higher numbers of CD8+, PD-1+, and PD-L1-expressing cells at the invasive tumor margin, which may predict response to PD-1 blockade [5].",
+  "evidence_gaps": "The papers do not fully address how these biomarkers perform in real-world clinical settings across diverse populations, nor do they establish standardized thresholds or integrated scoring systems for clinical use; long-term validation of biomarker combinations in prospective trials remains limited.",
+  "confidence": "moderate",
+  "cited_keys": [
+    "pmid:25765070",
+    "pmid:42535087",
+    "pmid:42378718",
+    "pmid:42465572",
+    "pmid:25428505",
+    "pmid:42245711",
+    "pmid:42495619",
+    "pmid:42779146"
+  ]
+}

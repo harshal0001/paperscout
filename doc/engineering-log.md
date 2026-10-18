@@ -88,6 +88,20 @@ colour). These were darkened until all 18 pairs passed; the lowest is now 4.9:1.
     of the page, it reported 2 FAILs.
   - The live smoke test passed 4/4 on the new backend; pytest is at 63.
 
+**Bias toward recent papers fixed; ranking made concurrent (17:45):**
+- **Fix:** each query also runs with `sort=CITED desc` (10 per query), merged and de-duplicated. A paper returned by
+  both orderings of one query counts once (tested).
+- **Effect:** EMPEROR-Preserved is #1 for the SGLT2 question; all 4 example questions now include landmark papers
+  from 1985–2023 (for example Rizvi 2015 in *Science* for lung-cancer immunotherapy).
+- **Speed:** the first smoke run took 78 s and 35 s on two questions. Europe PMC was not the cause (0.2–0.65 s per
+  call, with or without the sort). A timestamped re-run took 12.5 s, so the slowdown was transient on the model side.
+  - Ranking used 5 workers (two rounds for 9 batches), and progress was reported in submit order, so the bar sat
+    still and then jumped.
+  - Now 10 workers, with progress reported as batches finish (`as_completed`).
+  - Measured after: 16–21 s per question with about 75–115 papers (more candidates than before). Some batches still
+    take 13 s at the tail.
+- **Logo:** the PaperScout logo is now a link to the home page (`/`).
+
 **Tests:** 26 offline tests (mock LLM + a recorded Europe PMC response) covering the happy path and every failure
 path: planner failure or garbage output → fallback query plus a warning; one query failing → warning, run continues;
 all failing → error event and a persisted `run.json` with status `failed`; ranker batch failure or partial reply →

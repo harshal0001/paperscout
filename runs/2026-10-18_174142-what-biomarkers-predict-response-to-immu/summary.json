@@ -1,0 +1,15 @@
+{
+  "summary": "Higher tumor mutational burden (TMB), particularly nonsynonymous mutation burden, is associated with improved response to PD-1 blockade in NSCLC, as demonstrated in two independent cohorts where it correlated with objective response, durable clinical benefit, and progression-free survival [1]. APOBEC mutational signatures predict improved overall survival in TMB-low metastatic NSCLC patients treated with immune checkpoint inhibitors, independent of PD-L1 status [3]. Loss-of-function mutations in SWI/SNF complexes correlate with elevated immunogenicity markers and predict superior clinical outcomes, including prolonged overall survival and progression-free survival, in immune checkpoint blockade-treated patients across multiple cancer types including NSCLC [5]. High CTLA-4/CD80 interaction states, measured by FRET efficiency, also correlate with improved overall survival and progression-free survival in response to anti-PD-1/PD-L1 therapies in NSCLC [2]. An IFN-γ-related mRNA profile (T cell-inflamed gene expression profile) predicts clinical response to PD-1 blockade across multiple tumor types, including NSCLC [7]. TIDE, a computational method modeling T cell dysfunction and exclusion, predicts immunotherapy response more accurately than PD-L1 or mutation load in melanoma and has utility for NSCLC [6]. High TMB (≥10 mut/Mb) is associated with significantly longer progression-free survival with nivolumab plus ipilimumab versus chemotherapy in NSCLC [8].",
+  "evidence_gaps": "These papers do not fully address the optimal thresholds or dynamic changes of these biomarkers during treatment, nor do they extensively validate their performance in diverse ethnic populations or real-world settings beyond clinical trial cohorts.",
+  "confidence": "high",
+  "cited_keys": [
+    "pmid:25765070",
+    "pmid:42535087",
+    "pmid:42378718",
+    "pmid:42465572",
+    "pmid:42642869",
+    "pmid:30127393",
+    "pmid:28650338",
+    "pmid:29658845"
+  ]
+}

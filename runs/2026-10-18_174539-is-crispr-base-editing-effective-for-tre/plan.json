@@ -1,0 +1,15 @@
+{
+  "pico": {
+    "population": "sickle cell disease",
+    "intervention": "CRISPR base editing",
+    "comparison": "",
+    "outcome": "efficacy"
+  },
+  "queries": [
+    "(sickle cell disease) AND (CRISPR base editing)",
+    "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)",
+    "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"meta-analysis\" OR \"systematic review\")",
+    "(hemoglobinopathies) AND (gene editing OR genome editing) AND (therapy OR treatment)"
+  ],
+  "rationale": "Queries cover core concept pairing, synonym expansion for population and intervention, study design filtering for high evidence, and a broader gene therapy context to capture relevant preclinical and clinical advances."
+}

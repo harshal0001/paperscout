@@ -32,10 +32,13 @@ def clean(text):
     return re.sub(r"\s+", " ", _strip(text)).strip()
 
 
-def search(query, page_size=25, client=None, retries=2, backoff=1.5):
-    """Raw Europe PMC results for one query. Retries only 503 (observed transient); other errors raise with the body."""
+def search(query, page_size=25, client=None, retries=2, backoff=1.5, sort=None):
+    """Raw Europe PMC results for one query. Retries only 503 (observed transient); other errors raise with the body.
+    sort=None is Europe PMC's default order, which skews to the newest papers; "CITED desc" surfaces landmark papers."""
     client = client or httpx.Client(timeout=30)
     params = {"query": f"({query}) AND {SOURCES}", "format": "json", "resultType": "core", "pageSize": page_size}
+    if sort:
+        params["sort"] = sort
     for attempt in range(retries + 1):
         r = client.get(BASE, params=params)
         if r.status_code == 503 and attempt < retries:

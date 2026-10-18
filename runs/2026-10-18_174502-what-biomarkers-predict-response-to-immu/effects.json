@@ -1,0 +1,317 @@
+[
+  {
+    "key": "pmid:42378718",
+    "measure": "HR",
+    "est": 0.6,
+    "lo": 0.42,
+    "hi": 0.85,
+    "outcome": "Mortality / survival",
+    "snippet": "Results APOBEC-positive patients (n = 52, 6.1%) had significantly improved overall survival [median 33.7 versus 17.4 months; hazard ratio (HR) 0.60, 95% confidence interval (CI) 0.42-0.85, P = 0.004]."
+  },
+  {
+    "key": "pmid:42662437",
+    "measure": "HR",
+    "est": 0.81,
+    "lo": 0.67,
+    "hi": 0.99,
+    "outcome": "Mortality / survival",
+    "snippet": "Durvalumab and tremelimumab significantly improved overall survival (OS) compared with that of chemotherapy (HR = 0.81, 95% CI: 0.67-0.99) in patients with PD-L1 < 1%."
+  },
+  {
+    "key": "pmid:42662437",
+    "measure": "RR",
+    "est": 1.41,
+    "lo": 1.14,
+    "hi": 1.74,
+    "outcome": "Safety",
+    "snippet": "Treatment-related adverse events (TRAEs) and grade ≥ 3 TRAEs were significantly lower in patients receiving the drug combination (RR = 0.78 and 0.64, respectively), whereas serious TRAEs were higher (RR = 1.41, 95% CI: 1.14-1.74) when compared with those receiving standard chemotherapy."
+  },
+  {
+    "key": "pmid:42591702",
+    "measure": "HR",
+    "est": 2.26,
+    "lo": 1.77,
+    "hi": 2.87,
+    "outcome": "Progression",
+    "snippet": "Results Lower baseline sPD-L1 levels consistently correlated with longer progression-free (PFS: random effect model with a pooled HR of 2.26 [95% CI: 1.77-2.87, p < 0.0001]) and overall survival (OS: random effect model with a pooled HR of 2.04 [95% CI 1.55-2.68, p < 0.0001]), whereas elevated concentrations were frequently observed in males, smokers, individuals with advanced disease, and those with liver metastases."
+  },
+  {
+    "key": "pmid:42591702",
+    "measure": "HR",
+    "est": 2.04,
+    "lo": 1.55,
+    "hi": 2.68,
+    "outcome": "Mortality / survival",
+    "snippet": "Results Lower baseline sPD-L1 levels consistently correlated with longer progression-free (PFS: random effect model with a pooled HR of 2.26 [95% CI: 1.77-2.87, p < 0.0001]) and overall survival (OS: random effect model with a pooled HR of 2.04 [95% CI 1.55-2.68, p < 0.0001]), whereas elevated concentrations were frequently observed in males, smokers, individuals with advanced disease, and those with liver metastases."
+  },
+  {
+    "key": "pmid:42649868",
+    "measure": "HR",
+    "est": 0.56,
+    "lo": 0.43,
+    "hi": 0.74,
+    "outcome": "Progression",
+    "snippet": "DDR mutations were also associated with improved PFS (HR = 0.56, 95% CI: 0.43-0.74, p < 0.001) and OS (HR = 0.82, 95% CI: 0.68-0.98, p < 0.05)."
+  },
+  {
+    "key": "pmid:42649868",
+    "measure": "HR",
+    "est": 0.82,
+    "lo": 0.68,
+    "hi": 0.98,
+    "outcome": "Mortality / survival",
+    "snippet": "DDR mutations were also associated with improved PFS (HR = 0.56, 95% CI: 0.43-0.74, p < 0.001) and OS (HR = 0.82, 95% CI: 0.68-0.98, p < 0.05)."
+  },
+  {
+    "key": "pmid:42649868",
+    "measure": "HR",
+    "est": 0.59,
+    "lo": 0.44,
+    "hi": 0.79,
+    "outcome": "Progression",
+    "snippet": "In subgroup analyses, benefits were more consistent with ICI monotherapy, including improved PFS (HR = 0.59, 95% CI: 0.44-0.79, p < 0.001) and ORR (RR = 0.60, 95% CI: 0.44-0.82, p = 0.001), while OS showed a nonsignificant trend."
+  },
+  {
+    "key": "pmid:42199400",
+    "measure": "HR",
+    "est": 0.84,
+    "lo": 0.76,
+    "hi": 0.92,
+    "outcome": "Mortality / survival",
+    "snippet": "The OS (HR = 0.84, 95%CI 0.76-0.92, p=0.003) and PFS (HR = 0.78, 95%CI 0.68-0.89, p=0.002) of patients who received dual ICI treatment were significantly better than those in the control group."
+  },
+  {
+    "key": "pmid:42199400",
+    "measure": "HR",
+    "est": 0.78,
+    "lo": 0.68,
+    "hi": 0.89,
+    "outcome": "Progression",
+    "snippet": "The OS (HR = 0.84, 95%CI 0.76-0.92, p=0.003) and PFS (HR = 0.78, 95%CI 0.68-0.89, p=0.002) of patients who received dual ICI treatment were significantly better than those in the control group."
+  },
+  {
+    "key": "pmid:42529281",
+    "measure": "HR",
+    "est": 0.572,
+    "lo": 0.435,
+    "hi": 0.754,
+    "outcome": "Progression",
+    "snippet": "Among patients with driver gene-negative NSCLC and liver metastases: (1) PD-1 inhibitor plus chemotherapy significantly improved progression-free survival (PFS) (HR = 0.572, 95% CI: 0.435-0.754) and overall survival (OS) (HR = 0.681, 95% CI: 0.559-0.830) compared with chemotherapy alone."
+  },
+  {
+    "key": "pmid:42529281",
+    "measure": "HR",
+    "est": 0.681,
+    "lo": 0.559,
+    "hi": 0.83,
+    "outcome": "Mortality / survival",
+    "snippet": "Among patients with driver gene-negative NSCLC and liver metastases: (1) PD-1 inhibitor plus chemotherapy significantly improved progression-free survival (PFS) (HR = 0.572, 95% CI: 0.435-0.754) and overall survival (OS) (HR = 0.681, 95% CI: 0.559-0.830) compared with chemotherapy alone."
+  },
+  {
+    "key": "pmid:42529281",
+    "measure": "HR",
+    "est": 0.583,
+    "lo": 0.386,
+    "hi": 0.882,
+    "outcome": "Progression",
+    "snippet": "(3) A similar PFS advantage was observed in patients with squamous NSCLC receiving PD-1 inhibitor plus chemotherapy versus chemotherapy alone (HR = 0.583, 95% CI: 0.386-0.882)."
+  },
+  {
+    "key": "pmid:42444950",
+    "measure": "RR",
+    "est": 1.98788,
+    "lo": 1.04653,
+    "hi": 3.77596,
+    "outcome": "Other",
+    "snippet": "Sensitivity analysis revealed an increased treatment effect (RR: 1.98788; 95% CI: 1.04653-3.77596; P=0.047) upon removal of Ricciuti et al."
+  },
+  {
+    "key": "pmid:42206596",
+    "measure": "HR",
+    "est": 1.92,
+    "lo": 1.7,
+    "hi": 2.17,
+    "outcome": "Mortality / survival",
+    "snippet": "Elevated NLR was significantly associated with shorter overall survival (OS) (HR = 1.92, 95% CI: 1.70-2.17) and progression-free survival (PFS) (HR = 1.66, 95% CI: 1.48-1.87)."
+  },
+  {
+    "key": "pmid:42206596",
+    "measure": "HR",
+    "est": 1.66,
+    "lo": 1.48,
+    "hi": 1.87,
+    "outcome": "Progression",
+    "snippet": "Elevated NLR was significantly associated with shorter overall survival (OS) (HR = 1.92, 95% CI: 1.70-2.17) and progression-free survival (PFS) (HR = 1.66, 95% CI: 1.48-1.87)."
+  },
+  {
+    "key": "pmid:42625644",
+    "measure": "RR",
+    "est": 11.0,
+    "lo": 7.0,
+    "hi": 95.0,
+    "outcome": "Other",
+    "snippet": "In PD-L1 ≥1%, tislelizumab plus CT was associated with higher pCR versus CT (RR 11.07, 95% CrI 5.35-27.31), and camrelizumab plus CT was associated with higher MPR (RR 8.28, 95% CrI 3.58-21.94)."
+  },
+  {
+    "key": "pmid:42625644",
+    "measure": "RR",
+    "est": 8.2,
+    "lo": 8.0,
+    "hi": 95.0,
+    "outcome": "Other",
+    "snippet": "In PD-L1 ≥1%, tislelizumab plus CT was associated with higher pCR versus CT (RR 11.07, 95% CrI 5.35-27.31), and camrelizumab plus CT was associated with higher MPR (RR 8.28, 95% CrI 3.58-21.94)."
+  },
+  {
+    "key": "pmid:42688457",
+    "measure": "HR",
+    "est": 0.74,
+    "lo": 0.64,
+    "hi": 0.86,
+    "outcome": "Mortality / survival",
+    "snippet": "Conventional random-effects analyses suggested improved OS (HR 0.74, 95% CI 0.64-0.86) and PFS (HR 0.81, 95% CI 0.68-0.96) among RAS inhibitor users."
+  },
+  {
+    "key": "pmid:42688457",
+    "measure": "HR",
+    "est": 0.81,
+    "lo": 0.68,
+    "hi": 0.96,
+    "outcome": "Progression",
+    "snippet": "Conventional random-effects analyses suggested improved OS (HR 0.74, 95% CI 0.64-0.86) and PFS (HR 0.81, 95% CI 0.68-0.96) among RAS inhibitor users."
+  },
+  {
+    "key": "pmid:42688457",
+    "measure": "HR",
+    "est": 0.99,
+    "lo": 0.96,
+    "hi": 1.02,
+    "outcome": "Mortality / survival",
+    "snippet": "Exploratory PET-PEESE analyses attenuated the observed associations toward the null (adjusted OS HR 0.99, 95% CI 0.96-1.02; adjusted PFS HR 1.04, 95% CI 0.85-1.27)."
+  },
+  {
+    "key": "pmid:42564097",
+    "measure": "HR",
+    "est": 0.46,
+    "lo": 0.34,
+    "hi": 0.64,
+    "outcome": "Mortality / survival",
+    "snippet": "Meta-analysis results showed that a higher PNI was associated with significantly improved overall survival (OS) (HR = 0.46, 95% CI: 0.34-0.64, p < 0.00001) and progression-free survival (PFS) (HR = 0.63, 95% CI: 0.52-0.76, p < 0.00001)."
+  },
+  {
+    "key": "pmid:42564097",
+    "measure": "HR",
+    "est": 0.63,
+    "lo": 0.52,
+    "hi": 0.76,
+    "outcome": "Progression",
+    "snippet": "Meta-analysis results showed that a higher PNI was associated with significantly improved overall survival (OS) (HR = 0.46, 95% CI: 0.34-0.64, p < 0.00001) and progression-free survival (PFS) (HR = 0.63, 95% CI: 0.52-0.76, p < 0.00001)."
+  },
+  {
+    "key": "pmid:42564097",
+    "measure": "HR",
+    "est": 0.47,
+    "lo": 0.34,
+    "hi": 0.64,
+    "outcome": "Mortality / survival",
+    "snippet": "Publication bias assessment suggested publication bias in OS, but after correction using pruning and complementation, the significant association between PNI and OS remained unchanged (corrected HR: 0.47, 95% CI: 0.34-0.64)."
+  },
+  {
+    "key": "pmid:42724878",
+    "measure": "HR",
+    "est": 0.73,
+    "lo": 0.67,
+    "hi": 0.79,
+    "outcome": "Mortality / survival",
+    "snippet": "Patients receiving PC demonstrated significantly improved overall survival (OS) {HR: 0.73 [95% confidence interval (CI): 0.67, 0.79], P<0.001} and progression-free survival (PFS) [HR: 0.54 (95% CI: 0.48, 0.60), P<0.001] compared with those treated with chemotherapy alone."
+  },
+  {
+    "key": "pmid:42724878",
+    "measure": "HR",
+    "est": 0.54,
+    "lo": 0.48,
+    "hi": 0.6,
+    "outcome": "Progression",
+    "snippet": "Patients receiving PC demonstrated significantly improved overall survival (OS) {HR: 0.73 [95% confidence interval (CI): 0.67, 0.79], P<0.001} and progression-free survival (PFS) [HR: 0.54 (95% CI: 0.48, 0.60), P<0.001] compared with those treated with chemotherapy alone."
+  },
+  {
+    "key": "pmid:42724878",
+    "measure": "HR",
+    "est": 0.48,
+    "lo": 0.41,
+    "hi": 0.55,
+    "outcome": "Response / efficacy",
+    "snippet": "Regarding tumor response, PC was associated with a longer duration of response [HR: 0.48 (95% CI: 0.41, 0.55), P<0.001] and a higher objective response rate [RR: 1.50 (95% CI: 1.40, 1.61), P<0.001]."
+  },
+  {
+    "key": "pmid:42824677",
+    "measure": "HR",
+    "est": 1.09,
+    "lo": 1.0,
+    "hi": 1.19,
+    "outcome": "Mortality / survival",
+    "snippet": "In a time-varying analysis using serial measurements, higher on-treatment NLR remained independently associated with OS after adjustment for ECOG performance status (HR 1.09, 95% CI 1.00-1.19, p=0.040; ECOG p=0.021)."
+  },
+  {
+    "key": "pmid:26028407",
+    "measure": "HR",
+    "est": 0.59,
+    "lo": 0.44,
+    "hi": 0.79,
+    "outcome": "Mortality / survival",
+    "snippet": "The risk of death was 41% lower with nivolumab than with docetaxel (hazard ratio, 0.59; 95% CI, 0.44 to 0.79; P<0.001)."
+  },
+  {
+    "key": "pmid:42658167",
+    "measure": "HR",
+    "est": 0.97,
+    "lo": 0.74,
+    "hi": 1.27,
+    "outcome": "Mortality / survival",
+    "snippet": "Combined analysis showed no significant overall survival benefit with durvalumab plus tremelimumab compared to durvalumab alone (HR 0.97; 95% CI, 0.74-1.27)."
+  },
+  {
+    "key": "pmid:42614905",
+    "measure": "HR",
+    "est": 1.43,
+    "lo": 1.15,
+    "hi": 1.79,
+    "outcome": "Other",
+    "snippet": "High TROP-2 [hazard ratio (HR) 1.43, 95% confidence interval (CI): 1.15-1.79; P=0.002] and MUC-1 (HR 2.25; 95% CI: 1.57-3.23, P<0.0001) were consistently overexpressed in NSCLC patient tissues."
+  },
+  {
+    "key": "pmid:42614905",
+    "measure": "HR",
+    "est": 2.25,
+    "lo": 1.57,
+    "hi": 3.23,
+    "outcome": "Other",
+    "snippet": "High TROP-2 [hazard ratio (HR) 1.43, 95% confidence interval (CI): 1.15-1.79; P=0.002] and MUC-1 (HR 2.25; 95% CI: 1.57-3.23, P<0.0001) were consistently overexpressed in NSCLC patient tissues."
+  },
+  {
+    "key": "pmid:42614905",
+    "measure": "HR",
+    "est": 1.62,
+    "lo": 1.34,
+    "hi": 1.96,
+    "outcome": "Mortality / survival",
+    "snippet": "An exploratory pooled analysis of both biomarker groups demonstrated a significant association with poor clinical outcomes and short survival (HR 1.62; 95% CI: 1.34-1.96; P<0.00001), though this should not be interpreted as evidence of a true dual-biomarker effect."
+  },
+  {
+    "key": "pmid:42769195",
+    "measure": "HR",
+    "est": 0.74,
+    "lo": 0.68,
+    "hi": 0.82,
+    "outcome": "Progression",
+    "snippet": "Adjuvant ICIs significantly improved DFS/RFS/PFS (HR 0.74, 95% CI 0.68-0.82, p<0.0001) and OS (HR 0.84, 95% CI 0.78-0.90, p<0.0001) compared with non-ICI controls."
+  },
+  {
+    "key": "pmid:42769195",
+    "measure": "HR",
+    "est": 0.84,
+    "lo": 0.78,
+    "hi": 0.9,
+    "outcome": "Mortality / survival",
+    "snippet": "Adjuvant ICIs significantly improved DFS/RFS/PFS (HR 0.74, 95% CI 0.68-0.82, p<0.0001) and OS (HR 0.84, 95% CI 0.78-0.90, p<0.0001) compared with non-ICI controls."
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-10-18_174502-what-biomarkers-predict-response-to-immu",
+  "question": "What biomarkers predict response to immune checkpoint inhibitors in non-small cell lung cancer?",
+  "started": "2026-10-18T17:45:02",
+  "models": {
+    "planner": "nvidia/nemotron-3-super-120b-a12b",
+    "ranker": "nvidia/Nemotron-3_5-Lightning",
+    "writer": "nvidia/nemotron-3-super-120b-a12b"
+  },
+  "status": "ok",
+  "warnings": [],
+  "counts": {
+    "per_query": {
+      "(non-small cell lung cancer OR NSCLC) AND (immune checkpoint inhibitors OR PD-1 OR PD-L1 OR CTLA-4) AND (biomarker OR predictive biomarker)": 35,
+      "(PD-L1 OR TMB OR tumor mutational burden OR gene expression signature) AND (response OR efficacy) AND (immune checkpoint inhibitors OR pembrolizumab OR nivolumab OR atezolizumab)": 35,
+      "(non-small cell lung cancer OR NSCLC) AND (immune checkpoint inhibitors OR PD-1 OR PD-L1) AND (randomized OR \"meta-analysis\" OR \"systematic review\") AND (biomarker OR predictor)": 35,
+      "(lung cancer) AND (checkpoint blockade) AND (biomarker OR predictor OR response)": 35
+    },
+    "unique": 110,
+    "dropped_no_abstract": 0,
+    "unscored": 0,
+    "effects": 35
+  },
+  "finished": "2026-10-18T17:45:18",
+  "usage": {
+    "prompt_tokens": 39640,
+    "completion_tokens": 5803
+  }
+}

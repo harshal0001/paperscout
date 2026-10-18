@@ -1,0 +1,15 @@
+{
+  "pico": {
+    "population": "Parkinson's disease",
+    "intervention": "",
+    "comparison": "",
+    "outcome": "gut microbiome composition"
+  },
+  "queries": [
+    "(Parkinson's disease) AND (gut microbiome)",
+    "(Parkinson's disease OR PD) AND (gut microbiota OR intestinal flora OR microbiome)",
+    "(Parkinson's disease) AND (gut microbiome) AND (longitudinal OR progression OR worsening)",
+    "(Parkinson's disease) AND (microbiome)"
+  ],
+  "rationale": "Covering core association, synonym variations, progression-focused studies, and a broad microbiome link to capture relevant evidence."
+}

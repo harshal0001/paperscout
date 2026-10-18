@@ -31,7 +31,8 @@ a{color:inherit}
 
 /* top bar */
 .top{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:14px;padding:12px 26px;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.brand{display:flex;align-items:center;gap:10px;font-weight:750;font-size:18px;letter-spacing:-.02em;color:var(--ink)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:750;font-size:18px;letter-spacing:-.02em;color:var(--ink);text-decoration:none;cursor:pointer}
+.brand:hover span{opacity:.8}
 .brand b{color:var(--accent)}
 .brand svg{color:var(--accent)}
 .pill{font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line-2);color:var(--muted);background:var(--surface);white-space:nowrap}
@@ -223,11 +224,11 @@ details p{font-size:13.5px;color:var(--ink-2);margin:8px 0 0;line-height:1.7}
 <div class="aurora"><i></i><i></i><i></i></div><div class="grid-bg"></div>
 
 <div class="top">
-  <div class="brand">
+  <a class="brand" href="/" title="PaperScout home">
     <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
       <path d="M9 4c0 8 14 8 14 16s-14 8-14 8M23 4c0 8-14 8-14 16s14 8 14 8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M11 9h10M10 16h12M11 23h10" stroke="currentColor" stroke-opacity=".45" stroke-width="1.6" stroke-linecap="round"/></svg>
     <span>Paper<b>Scout</b></span>
-  </div>
+  </a>
   <span class="pill live">● Nemotron on Nebius Token Factory</span>
   <span class="pill">Europe PMC · PubMed + preprints</span>
   <div class="spacer"></div>

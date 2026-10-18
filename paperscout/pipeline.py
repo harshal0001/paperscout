@@ -1,7 +1,7 @@
 """Agent pipeline: plan -> retrieve -> rank -> synthesize. A generator of UI events; every run is persisted under runs/."""
 import json
 import re
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
 
@@ -11,7 +11,9 @@ from .llm import MODELS
 
 MAX_QUERIES = 4
 PAGE_SIZE = 25
+CITED_SIZE = 10  # per query, extra most-cited papers: the default order alone returned only 2025-2026 papers
 RANK_BATCH = 10
+RANK_WORKERS = 10  # one round for up to ~100 candidates; 5 workers meant two rounds (measured 8.2 s of ranking)
 TOP_K_SUMMARY = 8
 MIN_SUMMARY_SCORE = 6
 
@@ -111,7 +113,9 @@ def retrieve(queries, search_fn):
             if not p["abstract"] or not p["title"]:
                 dropped.add(p["key"])
                 continue
-            merged.setdefault(p["key"], {**p, "matched_queries": []})["matched_queries"].append(q)
+            matched = merged.setdefault(p["key"], {**p, "matched_queries": []})["matched_queries"]
+            if q not in matched:  # the same paper can come back from both orderings of one query
+                matched.append(q)
     if all(c is None for c in counts.values()):
         raise RuntimeError("All searches failed: " + " | ".join(warnings))
     return list(merged.values()), counts, warnings, len(dropped)
@@ -153,6 +157,11 @@ def _rank_batch(question, plan, batch, llm):
     return scored
 
 
+def default_search(q):
+    """Europe PMC's default order (skews recent) plus the most-cited matches (landmark trials, guidelines)."""
+    return europepmc.search(q, page_size=PAGE_SIZE) + europepmc.search(q, page_size=CITED_SIZE, sort="CITED desc")
+
+
 def sort_papers(papers):
     return sorted(papers, key=lambda p: (p.get("score") is None, -(p.get("score") or 0), -p["cited_by"]))
 
@@ -189,7 +198,7 @@ def synthesize(question, ranked, llm):
 
 def run(question, llm, search_fn=None, runs_dir="runs", run_id=None):
     """Yield event dicts for the UI. Always leaves runs/<run_id>/run.json, even on failure or client disconnect."""
-    search_fn = search_fn or (lambda q: europepmc.search(q, page_size=PAGE_SIZE))
+    search_fn = search_fn or default_search
     run_id = run_id or new_run_id(question)
     run_dir = Path(runs_dir) / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
@@ -231,15 +240,16 @@ def run(question, llm, search_fn=None, runs_dir="runs", run_id=None):
 
         yield {"type": "step", "stage": "rank", "status": "start"}
         batches = [papers[i:i + RANK_BATCH] for i in range(0, len(papers), RANK_BATCH)]
-        with ThreadPoolExecutor(max_workers=5) as pool:
-            futures = [pool.submit(_rank_batch, question, plan, b, llm) for b in batches]
-            for n, (b, f) in enumerate(zip(batches, futures), 1):
+        with ThreadPoolExecutor(max_workers=RANK_WORKERS) as pool:
+            futures = {pool.submit(_rank_batch, question, plan, b, llm): n for n, b in enumerate(batches, 1)}
+            for done, f in enumerate(as_completed(futures), 1):  # report each batch as it lands, not in submit order
+                n, b = futures[f], batches[futures[f] - 1]
                 try:
                     if f.result() < len(b):
                         yield warn(f"Ranker skipped {len(b) - f.result()} of {len(b)} papers in batch {n}; shown unscored.")
                 except Exception as e:
                     yield warn(f"Ranking batch {n} failed ({e}); its {len(b)} papers are shown unscored.")
-                yield {"type": "rank_progress", "done": n, "total": len(batches)}
+                yield {"type": "rank_progress", "done": done, "total": len(batches)}
         ranked = sort_papers(papers)
         effects = []
         for p in ranked:  # deterministic, from the abstract text only; see insights.py

@@ -1,0 +1,15 @@
+{
+  "summary": "Multiple lines of evidence indicate that gut microbiome composition influences Parkinson's disease progression. Germ-free mice overexpressing α-synuclein show reduced motor deficits and neuroinflammation, which are worsened by colonization with microbiota from Parkinson's patients compared to healthy donors [1]. Specific bacterial taxa such as Faecalibacterium prausnitzii, which is depleted in Parkinson's patients, can ameliorate motor and gastrointestinal deficits and reduce α-synuclein aggregates when administered to animal models [3]. Meta-analyses reveal consistent alterations in the Parkinson's gut microbiome, including increased proinflammatory bacteria like Klebsiella variicola and GABA-consuming species, alongside decreased anti-inflammatory taxa, suggesting a role in disease mechanisms [2,7]. Furthermore, pathogenic α-synuclein can propagate from the gut to the brain via the vagus nerve, supporting a direct pathway through which gut changes may drive neurodegeneration [6]. Together, these preclinical and clinical studies demonstrate that gut microbiota modulate neuroinflammation, α-synuclein pathology, and motor symptoms, thereby influencing Parkinson's disease progression.",
+  "evidence_gaps": "While the evidence strongly supports a role for the gut microbiome in modulating Parkinson's disease pathology in models and associations in humans, longitudinal human studies tracking microbiome changes alongside clinical progression over time are limited, and causal mechanisms in human disease progression remain to be fully established.",
+  "confidence": "moderate",
+  "cited_keys": [
+    "pmid:27912057",
+    "pmid:40461531",
+    "pmid:41786774",
+    "pmid:42592705",
+    "pmid:25476529",
+    "pmid:31255487",
+    "pmid:42845985",
+    "pmid:42719630"
+  ]
+}

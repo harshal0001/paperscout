@@ -1,0 +1,15 @@
+{
+  "pico": {
+    "population": "heart failure with preserved ejection fraction",
+    "intervention": "SGLT2 inhibitors",
+    "comparison": "",
+    "outcome": "hospitalisation"
+  },
+  "queries": [
+    "(heart failure with preserved ejection fraction OR HFpEF) AND (SGLT2 inhibitor OR dapagliflozin OR empagliflozin)",
+    "(HFpEF OR \"preserved ejection fraction\") AND (dapagliflozin OR empagliflozin OR canagliflozin OR ertugliflozin) AND hospitalization",
+    "(heart failure with preserved ejection fraction OR HFpEF) AND (SGLT2 inhibitor OR dapagliflozin OR empagliflozin) AND (randomized OR meta-analysis OR systematic review)",
+    "\"SGLT2 inhibitor\" AND heart failure"
+  ],
+  "rationale": "Queries cover core concept combinations, expanded drug synonyms, study design filters, and a broad intervention-outcome pair to capture relevant evidence."
+}

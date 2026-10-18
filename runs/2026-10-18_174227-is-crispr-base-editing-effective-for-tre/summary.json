@@ -1,0 +1,15 @@
+{
+  "summary": "CRISPR base editing demonstrates effectiveness for treating sickle cell disease through multiple approaches. Multiplex base editing of BCL11A regulatory elements (+58-kb and +55-kb enhancers) successfully reactivates fetal hemoglobin to levels exceeding those achieved with CRISPR-Cas9-induced editing while minimizing double-strand breaks and genomic rearrangements, showing efficacy in long-term repopulating hematopoietic stem/progenitor cells and robust HbF reactivation in vivo [3]. Additionally, base editing can directly correct sickle cell disease mutations in the HBB gene, with highly processive adenine base editor variants achieving over 90% editing in hematopoietic stem and progenitor cells, leading to improved β-globin expression and persistent correction of sickle cell-β-thalassemia phenotypes [4]. Prime editing has also been used to correct the primary genetic cause of sickle cell disease (requiring a transversion in HBB) efficiently and with few byproducts in human cells [2]. These preclinical and mechanistic studies support base editing as a promising therapeutic strategy, though the provided papers do not include clinical trial data specifically for base editing treatments in sickle cell disease patients.",
+  "evidence_gaps": "The papers lack direct clinical trial evidence demonstrating the safety and efficacy of base editing treatments in human sickle cell disease patients; most data are preclinical or mechanistic, focusing on cellular models and animal studies rather than human clinical outcomes.",
+  "confidence": "moderate",
+  "cited_keys": [
+    "pmid:42028170",
+    "pmid:31634902",
+    "pmid:41015034",
+    "pmid:41296828",
+    "pmid:42755327",
+    "pmid:40659814",
+    "pmid:42400217",
+    "pmid:42074029"
+  ]
+}
