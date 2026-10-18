@@ -65,6 +65,15 @@ now case-sensitive, and the keyword that *ends* closest to the number wins, with
 `scripts/check_ui_sample.mjs` runs every renderer in Node against a stub DOM and fails on NaN/undefined. Its numbers
 were cross-checked against the run's JSON from Python (100 hits, 66 unique, 13 with score ≥7, 8 cited, 19 relevant).
 
+**UI concept, light theme (user request: "easy to see in daily life"):** the dark neon theme had about 90 colours
+hard-coded across CSS, markup and JS. Every colour now lives in one `:root` block (57 variables), and the JS reads its
+chart colours from those variables, so a future theme (or a dark-mode toggle) is a single-block change.
+`check_ui_sample.mjs` now fails on any hex colour outside `:root` and on any variable that is used but not defined.
+Probe: a deliberate typo (`fn-hii`) was caught. Contrast was measured against WCAG AA (4.5:1): the first light
+palette failed 5 pairs (small grey labels 3.0–3.2:1, green and violet on their tinted backgrounds, white on the query
+colour). These were darkened until all 18 pairs passed; the lowest is now 4.9:1. The dark version is kept as
+`mockups/2026-10-18_1714-ui-concept.html` for comparison.
+
 **Tests:** 26 offline tests (mock LLM + a recorded Europe PMC response) covering the happy path and every failure
 path: planner failure or garbage output → fallback query plus a warning; one query failing → warning, run continues;
 all failing → error event and a persisted `run.json` with status `failed`; ranker batch failure or partial reply →

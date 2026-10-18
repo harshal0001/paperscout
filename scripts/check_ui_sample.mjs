@@ -5,7 +5,15 @@ import fs from "node:fs";
 import vm from "node:vm";
 
 const file = process.argv[2];
-const js = fs.readFileSync(file, "utf8").match(/<script>([\s\S]*)<\/script>/)[1];
+const html = fs.readFileSync(file, "utf8");
+const js = html.match(/<script>([\s\S]*)<\/script>/)[1];
+// theme variables from :root, served through a getComputedStyle stub so a mistyped variable name shows up as ""
+const rootCss = html.match(/:root\{([\s\S]*?)\}/)[1];
+const vars = Object.fromEntries([...rootCss.matchAll(/(--[\w-]+)\s*:\s*([^;]+);/g)].map(m => [m[1], m[2].trim()]));
+const missing = new Set();
+const getComputedStyle = () => ({ getPropertyValue: n => { if (!(n in vars)) missing.add(n); return vars[n] ?? ""; } });
+const outsideRoot = html.slice(html.indexOf("}", html.indexOf(":root{")));
+const strayHex = outsideRoot.match(/#[0-9a-fA-F]{3,8}\b/g) || [];
 const els = {};
 const mk = () => {
   const e = { innerHTML: "", textContent: "", value: "", checked: false, disabled: false, style: {}, dataset: {}, children: [],
@@ -18,7 +26,7 @@ const mk = () => {
 };
 const document = { getElementById: id => (els[id] ??= mk()), createElement: () => mk(), createTextNode: t => ({ t }), addEventListener() {},
   querySelectorAll: () => [], querySelector: () => mk(), body: mk(), activeElement: null };
-const ctx = { document, window: {}, innerWidth: 1400, performance, console, setTimeout: () => 0, setInterval: () => 0, clearInterval() {},
+const ctx = { document, getComputedStyle, window: {}, innerWidth: 1400, performance, console, setTimeout: () => 0, setInterval: () => 0, clearInterval() {},
   requestAnimationFrame: () => 0, CSS: { escape: s => s }, navigator: {}, URL, Blob, Math, JSON, Set, Object, Array, String, Number, RegExp, Promise };
 vm.createContext(ctx);
 vm.runInContext(js + `
@@ -35,9 +43,12 @@ const out = ctx.__out;
 let bad = 0;
 for (const [k, v] of Object.entries(out)) {
   const s = typeof v === "string" ? v : JSON.stringify(v);
-  const m = s.match(/NaN|undefined|Infinity/g);
+  const m = s.match(/NaN|undefined|Infinity|fill=\\?"\\?"|stroke=\\?"\\?"|stop-color=\\?"\\?"|background:\s*[;"\\]/g);
   if (m) { bad++; console.log(`FAIL ${k}: contains ${[...new Set(m)].join(", ")}`); }
 }
+if (missing.size) { bad++; console.log(`FAIL theme variables used but not defined in :root: ${[...missing].join(", ")}`); }
+if (strayHex.length) { bad++; console.log(`FAIL hard-coded colours outside :root: ${[...new Set(strayHex)].join(", ")}`); }
+console.log(`theme: ${Object.keys(vars).length} variables in :root, ${missing.size} missing, ${strayHex.length} stray hex colours`);
 const strip = h => h.replace(/<[^>]+>/g, "");
 console.log("funnel :", strip(out.funnel.sub));
 console.log("forest :", strip(out.forest.sub));
