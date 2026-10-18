@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PaperScout - research paper discovery for life sciences</title>
+<style>
+  :root { --bg:#f6f8fb; --card:#fff; --ink:#0f172a; --muted:#64748b; --line:#e2e8f0; --accent:#0e7c66; --accent2:#76b900; --warn:#b45309; --err:#b91c1c; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  header { background:linear-gradient(120deg,#063b33,#0e7c66 60%,#3f8f1f); color:#fff; padding:28px 24px 64px; }
+  .wrap { max-width:1080px; margin:0 auto; }
+  h1 { margin:0; font-size:28px; letter-spacing:-.02em; } h1 span { color:#c6f26e; }
+  .tag { opacity:.85; margin-top:4px; }
+  .searchbox { max-width:1080px; margin:-40px auto 0; padding:0 24px; }
+  .bar { background:var(--card); border-radius:14px; box-shadow:0 10px 30px rgba(15,23,42,.12); padding:14px; display:flex; gap:10px; }
+  .bar textarea { flex:1; border:1px solid var(--line); border-radius:10px; padding:10px 12px; font:inherit; resize:vertical; min-height:48px; }
+  .bar button { background:var(--accent); color:#fff; border:0; border-radius:10px; padding:0 22px; font-weight:600; font-size:15px; cursor:pointer; }
+  .bar button:disabled { opacity:.5; cursor:wait; }
+  .examples { margin:10px 2px 0; display:flex; flex-wrap:wrap; gap:8px; }
+  .chip { background:#e6f4f1; color:#065f50; border:0; border-radius:999px; padding:5px 12px; font-size:13px; cursor:pointer; }
+  main { max-width:1080px; margin:20px auto 60px; padding:0 24px; display:grid; grid-template-columns:280px 1fr; gap:20px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:16px; }
+  .card h3 { margin:0 0 10px; font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+  .steps { list-style:none; margin:0; padding:0; }
+  .steps li { padding:6px 0 6px 28px; position:relative; color:var(--muted); }
+  .steps li::before { content:""; position:absolute; left:4px; top:11px; width:12px; height:12px; border-radius:50%; border:2px solid var(--line); }
+  .steps li.active { color:var(--ink); font-weight:600; } .steps li.active::before { border-color:var(--accent); border-top-color:transparent; animation:spin .8s linear infinite; }
+  .steps li.done { color:var(--ink); } .steps li.done::before { background:var(--accent); border-color:var(--accent); }
+  .steps small { display:block; font-weight:400; color:var(--muted); }
+  @keyframes spin { to { transform:rotate(360deg); } }
+  .pico { display:grid; grid-template-columns:auto 1fr; gap:4px 10px; font-size:13px; } .pico b { color:var(--accent); }
+  code.q { display:block; background:#f1f5f9; border-radius:6px; padding:6px 8px; margin:6px 0; font-size:12px; word-break:break-word; }
+  .warn { background:#fff7ed; border:1px solid #fed7aa; color:var(--warn); border-radius:8px; padding:8px 10px; margin-bottom:8px; font-size:13px; }
+  .err { background:#fef2f2; border:1px solid #fecaca; color:var(--err); border-radius:8px; padding:10px 12px; margin-bottom:12px; }
+  .summary { border-left:4px solid var(--accent); }
+  .summary p { margin:0 0 8px; } .summary a.cite { color:var(--accent); font-weight:600; text-decoration:none; }
+  .conf { display:inline-block; font-size:12px; padding:2px 8px; border-radius:999px; background:#e6f4f1; color:#065f50; margin-left:6px; }
+  .tools { display:flex; flex-wrap:wrap; gap:12px; align-items:center; font-size:13px; color:var(--muted); margin-bottom:12px; }
+  .tools select, .tools input { font:inherit; } .tools a { color:var(--accent); font-weight:600; }
+  .paper { display:grid; grid-template-columns:52px 1fr; gap:14px; scroll-margin-top:16px; }
+  .paper.hl { outline:2px solid var(--accent2); }
+  .score { width:52px; height:52px; border-radius:12px; display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:700; font-size:20px; color:#fff; }
+  .score small { font-size:10px; font-weight:500; opacity:.9; }
+  .s-hi { background:#0e7c66; } .s-mid { background:#65a30d; } .s-lo { background:#94a3b8; } .s-na { background:#cbd5e1; color:#475569; }
+  .paper h4 { margin:0 0 4px; font-size:16px; } .paper h4 a { color:var(--ink); text-decoration:none; } .paper h4 a:hover { color:var(--accent); }
+  .meta { font-size:13px; color:var(--muted); } .reason { margin:6px 0; font-size:14px; }
+  .badges span { display:inline-block; font-size:11px; padding:2px 8px; border-radius:999px; margin:4px 4px 0 0; background:#f1f5f9; color:#334155; }
+  .badges .oa { background:#dcfce7; color:#166534; } .badges .pp { background:#fef3c7; color:#92400e; } .badges .st { background:#e0e7ff; color:#3730a3; }
+  details { font-size:13px; color:#334155; margin-top:6px; } summary { cursor:pointer; color:var(--accent); }
+  .empty { color:var(--muted); text-align:center; padding:40px 0; }
+  footer { text-align:center; color:var(--muted); font-size:12px; padding-bottom:30px; }
+  @media (max-width:860px) { main { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>Paper<span>Scout</span></h1>
+  <div class="tag">Ask a research question. An agent plans the search, screens the literature in Europe PMC (PubMed + preprints) and ranks what matters, with a reason for each paper.</div>
+</div></header>
+
+<div class="searchbox">
+  <form class="bar" id="form">
+    <textarea id="q" placeholder="e.g. Do SGLT2 inhibitors reduce hospitalisation in heart failure with preserved ejection fraction?" required minlength="8"></textarea>
+    <button id="go" type="submit">Discover</button>
+  </form>
+  <div class="examples" id="examples"></div>
+</div>
+
+<main>
+  <aside>
+    <div class="card"><h3>Agent progress</h3>
+      <ul class="steps" id="steps">
+        <li data-stage="plan">Plan search<small>PICO + Boolean queries (Nemotron Super)</small></li>
+        <li data-stage="retrieve">Retrieve<small>Europe PMC, parallel queries</small></li>
+        <li data-stage="rank">Screen &amp; rank<small>Abstract relevance scoring (Nemotron Lightning)</small></li>
+        <li data-stage="synthesize">Synthesize<small>Cited evidence summary</small></li>
+      </ul>
+    </div>
+    <div class="card" id="plancard" hidden><h3>Search plan</h3><div id="plan"></div></div>
+  </aside>
+  <section>
+    <div id="alerts"></div>
+    <div class="card summary" id="sumcard" hidden><h3>Evidence summary <span class="conf" id="conf"></span></h3><div id="summary"></div></div>
+    <div id="toolbar" class="tools" hidden>
+      <span id="count"></span>
+      <label>Sort <select id="sort"><option value="score">Relevance</option><option value="cited">Citations</option><option value="year">Newest</option></select></label>
+      <label>Min score <input id="min" type="range" min="0" max="10" value="5"> <b id="minv">5</b></label>
+      <label><input id="oa" type="checkbox"> Open access only</label>
+      <label><input id="nopp" type="checkbox"> Hide preprints</label>
+      <a id="bib" href="#">BibTeX</a><a id="csv" href="#">CSV</a>
+    </div>
+    <div id="results"><div class="empty">Results appear here. Try one of the example questions above.</div></div>
+  </section>
+</main>
+<footer>Data: Europe PMC REST API. Models: NVIDIA Nemotron on Nebius Token Factory. Relevance scores are machine screening, not clinical advice.</footer>
+
+<script>
+const EXAMPLES = [
+  "Do SGLT2 inhibitors reduce hospitalisation in heart failure with preserved ejection fraction?",
+  "What biomarkers predict response to immune checkpoint inhibitors in non-small cell lung cancer?",
+  "Does gut microbiome composition influence Parkinson's disease progression?",
+  "Is CRISPR base editing effective for treating sickle cell disease?",
+];
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let papers = [], runId = null, es = null, citeMap = {};
+
+EXAMPLES.forEach(t => { const b = document.createElement("button"); b.className = "chip"; b.type = "button"; b.textContent = t;
+  b.onclick = () => { $("q").value = t; start(); }; $("examples").appendChild(b); });
+$("form").onsubmit = e => { e.preventDefault(); start(); };
+$("q").addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); start(); } });
+["sort", "oa", "nopp"].forEach(id => $(id).onchange = render);
+$("min").oninput = () => { $("minv").textContent = $("min").value; render(); exportLinks(); };
+
+function reset() {
+  papers = []; runId = null; citeMap = {};
+  document.querySelectorAll("#steps li").forEach(li => { li.className = ""; li.querySelector("small").dataset.extra = ""; });
+  ["plancard", "sumcard", "toolbar"].forEach(id => $(id).hidden = true);
+  $("alerts").innerHTML = ""; $("results").innerHTML = '<div class="empty">Working...</div>';
+}
+function alertBox(cls, msg) { $("alerts").insertAdjacentHTML("beforeend", `<div class="${cls}">${esc(msg)}</div>`); }
+function step(stage, status, note) {
+  const li = document.querySelector(`#steps li[data-stage="${stage}"]`); if (!li) return;
+  if (status) li.className = status === "start" ? "active" : "done";
+  if (note) li.querySelector("small").textContent = note;
+}
+
+function start() {
+  const q = $("q").value.trim(); if (q.length < 8) return;
+  if (es) es.close(); reset(); $("go").disabled = true;
+  es = new EventSource("/api/search?q=" + encodeURIComponent(q));
+  es.onmessage = m => handle(JSON.parse(m.data));
+  es.onerror = () => { if (es) { es.close(); es = null; } $("go").disabled = false;
+    if (!runId || !papers.length) alertBox("err", "Connection to the server closed before the run finished."); };
+}
+
+function handle(e) {
+  switch (e.type) {
+    case "run": runId = e.run_id; break;
+    case "step": step(e.stage, e.status); break;
+    case "plan": showPlan(e.plan); break;
+    case "candidates": step("retrieve", null, `${e.count} unique papers from ${Object.keys(e.per_query).length} queries` +
+      (e.dropped_no_abstract ? `, ${e.dropped_no_abstract} without abstract skipped` : "")); break;
+    case "rank_progress": step("rank", null, `Screened batch ${e.done} of ${e.total}`); break;
+    case "results": papers = e.papers; $("toolbar").hidden = false;
+      if (!papers.some(p => p.score != null)) { $("min").value = 0; $("minv").textContent = "0"; }
+      exportLinks(); render(); break;
+    case "summary": showSummary(e); break;
+    case "warning": alertBox("warn", e.message); break;
+    case "error": alertBox("err", e.message); finish(); break;
+    case "done": if (e.usage) step("synthesize", null, `Done: ${(e.usage.prompt_tokens + e.usage.completion_tokens).toLocaleString()} tokens`); finish(); break;
+  }
+}
+function finish() { if (es) { es.close(); es = null; } $("go").disabled = false;
+  document.querySelectorAll("#steps li.active").forEach(li => li.className = ""); }
+
+function showPlan(p) {
+  const rows = Object.entries(p.pico).filter(([, v]) => v).map(([k, v]) => `<b>${esc(k[0].toUpperCase())}</b><span>${esc(v)}</span>`).join("");
+  $("plan").innerHTML = (rows ? `<div class="pico">${rows}</div>` : "") + p.queries.map(q => `<code class="q">${esc(q)}</code>`).join("") +
+    (p.rationale ? `<div class="meta">${esc(p.rationale)}</div>` : "");
+  $("plancard").hidden = false;
+}
+
+function showSummary(s) {
+  if (!s.summary) return;
+  citeMap = Object.fromEntries(s.cited_keys.map((k, i) => [i + 1, k]));
+  const link = t => esc(t).replace(/\[(\d+)\]/g, (m, n) => citeMap[n] ? `<a class="cite" href="#" data-key="${esc(citeMap[n])}">[${n}]</a>` : m);
+  $("summary").innerHTML = `<p>${link(s.summary)}</p>` + (s.evidence_gaps ? `<p class="meta"><b>Gaps:</b> ${esc(s.evidence_gaps)}</p>` : "");
+  $("conf").textContent = s.confidence + " confidence"; $("sumcard").hidden = false;
+  $("summary").querySelectorAll("a.cite").forEach(a => a.onclick = ev => { ev.preventDefault(); jump(a.dataset.key); });
+  render();
+}
+function jump(key) {
+  $("min").value = 0; $("minv").textContent = "0"; $("oa").checked = $("nopp").checked = false; $("sort").value = "score"; render();
+  const el = document.querySelector(`[data-paper="${CSS.escape(key)}"]`); if (!el) return;
+  el.scrollIntoView({behavior: "smooth"}); el.classList.add("hl"); setTimeout(() => el.classList.remove("hl"), 2000);
+}
+
+function exportLinks() { if (!runId) return; const m = $("min").value;
+  $("bib").href = `/api/runs/${runId}/export?fmt=bib&min_score=${m}`; $("csv").href = `/api/runs/${runId}/export?fmt=csv&min_score=${m}`; }
+
+function render() {
+  const min = +$("min").value, sort = $("sort").value;
+  let list = papers.filter(p => (p.score ?? -1) >= min || (min === 0)).filter(p => !$("oa").checked || p.open_access).filter(p => !$("nopp").checked || !p.preprint);
+  if (sort === "cited") list = [...list].sort((a, b) => b.cited_by - a.cited_by);
+  if (sort === "year") list = [...list].sort((a, b) => (b.year || 0) - (a.year || 0));
+  const citeOf = Object.fromEntries(Object.entries(citeMap).map(([n, k]) => [k, n]));
+  $("count").textContent = `${list.length} of ${papers.length} papers`;
+  $("results").innerHTML = list.length ? list.map(p => {
+    const s = p.score, cls = s == null ? "s-na" : s >= 8 ? "s-hi" : s >= 5 ? "s-mid" : "s-lo";
+    return `<div class="card paper" data-paper="${esc(p.key)}">
+      <div class="score ${cls}">${s ?? "?"}<small>${s == null ? "unscored" : "/10"}</small></div>
+      <div>
+        <h4><a href="${esc(p.url)}" target="_blank" rel="noopener">${citeOf[p.key] ? `[${citeOf[p.key]}] ` : ""}${esc(p.title)}</a></h4>
+        <div class="meta">${esc(p.authors)}${p.authors ? " · " : ""}<i>${esc(p.journal)}</i> ${esc(p.year ?? "")} · cited by ${p.cited_by}
+          ${p.doi ? ` · <a href="https://doi.org/${esc(p.doi)}" target="_blank" rel="noopener">doi</a>` : ""}${p.pmid ? ` · <a href="https://pubmed.ncbi.nlm.nih.gov/${esc(p.pmid)}/" target="_blank" rel="noopener">PubMed</a>` : ""}</div>
+        ${p.reason ? `<div class="reason">${esc(p.reason)}</div>` : ""}
+        <div class="badges">${p.study_type ? `<span class="st">${esc(p.study_type)}</span>` : ""}${p.open_access ? '<span class="oa">open access</span>' : ""}${p.preprint ? '<span class="pp">preprint</span>' : ""}<span title="${esc(p.matched_queries.join(' | '))}">matched ${p.matched_queries.length} quer${p.matched_queries.length > 1 ? "ies" : "y"}</span></div>
+        <details><summary>Abstract</summary>${esc(p.abstract)}</details>
+      </div></div>`;
+  }).join("") : '<div class="empty">No papers match the current filters.</div>';
+}
+</script>
+</body>
+</html>

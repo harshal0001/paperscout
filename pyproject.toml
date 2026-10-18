@@ -1,0 +1,9 @@
+[project]
+name = "paperscout"
+version = "0.1.0"
+description = "Research paper discovery agent for healthcare and life sciences"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = [".", "tests"]
+testpaths = ["tests"]
