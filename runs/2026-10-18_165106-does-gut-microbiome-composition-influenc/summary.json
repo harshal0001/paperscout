@@ -1,0 +1,15 @@
+{
+  "summary": "The available evidence consistently shows that gut microbiome composition is altered in Parkinson's disease patients across disease stages and correlates with clinical symptoms, suggesting a role in disease progression. Studies indicate that microbiome dysbiosis contributes to intestinal inflammation, barrier dysfunction, and neuroinflammatory processes that promote α-synuclein pathology and its spread from the gut to the brain via the vagus nerve. Interventions targeting the microbiome—such as resistant starch supplementation, fecal microbiota transplantation, and paraprobiotics—have demonstrated improvements in motor and non-motor symptoms, reductions in pathogenic bacteria, increases in beneficial microbes like Faecalibacterium, and modulation of inflammatory and metabolic pathways. Multi-omics analyses further link specific microbial taxa and metabolic alterations (e.g., SCFAs, indole derivatives) to host pathophysiology and identify potential biomarker panels with high diagnostic accuracy. Together, these findings support a mechanistic role for the gut microbiome in influencing Parkinson's disease progression through the gut-brain axis.",
+  "evidence_gaps": "While the papers establish associations and mechanistic plausibility, they do not provide conclusive evidence from long-term longitudinal human studies proving that microbiome changes directly drive or predict clinical progression over time, nor do they establish causality beyond animal models and short-term interventions.",
+  "confidence": "moderate",
+  "cited_keys": [
+    "pmid:41351765",
+    "pmid:41389850",
+    "pmid:42598050",
+    "pmid:42845985",
+    "pmid:41113141",
+    "pmid:42168845",
+    "pmid:42154337",
+    "pmid:42105976"
+  ]
+}

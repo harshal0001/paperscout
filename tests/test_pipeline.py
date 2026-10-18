@@ -2,7 +2,7 @@ import json
 
 from conftest import FakeLLM, fixture_results
 
-from paperscout import pipeline
+from paperscout import europepmc, pipeline
 from paperscout.llm import LLMError, parse_json
 
 
@@ -83,17 +83,102 @@ def test_ranker_batch_failure_leaves_papers_unscored_at_bottom(tmp_path):
     assert "None of the retrieved papers" in by_type(events, "summary")[0]["summary"]
 
 
-def test_ranker_partial_reply_warns(tmp_path):
-    events, _, meta = run_all(FakeLLM(ranker_drop={2}), lambda q: fixture_results(), tmp_path)
-    assert any("skipped 1 of" in w["message"] for w in by_type(events, "warning"))
+def _first_title():
+    return europepmc.normalize(fixture_results()[0])["title"][:40]
+
+
+def test_ranker_persistently_missing_paper_warns_after_reask(tmp_path):
+    llm = FakeLLM(ranker_drop={_first_title()})
+    events, _, meta = run_all(llm, lambda q: fixture_results(), tmp_path)
+    assert [w["message"] for w in by_type(events, "warning")] == [
+        "Ranker skipped 1 of 10 papers in batch 1; shown unscored."]
     papers = by_type(events, "results")[0]["papers"]
-    assert papers[-1].get("score") is None and meta["counts"]["unscored"] == 3
+    assert papers[-1].get("score") is None and meta["counts"]["unscored"] == 1
+    assert llm.calls.count("ranker") == 4  # 3 batches + 1 re-ask for the missing paper
+
+
+def test_ranker_reask_recovers_dropped_paper(tmp_path):
+    llm = FakeLLM(ranker_drop={_first_title()}, drop_once=True)
+    events, _, meta = run_all(llm, lambda q: fixture_results(), tmp_path)
+    assert not by_type(events, "warning") and meta["counts"]["unscored"] == 0
+
+
+def test_ranker_transient_failure_recovers_on_reask(tmp_path):
+    llm = FakeLLM(fail={"ranker": LLMError("bad json")}, fail_times=1)
+    events, _, meta = run_all(llm, lambda q: fixture_results(), tmp_path)
+    assert not by_type(events, "warning") and meta["counts"]["unscored"] == 0
+
+
+def test_every_llm_call_is_schema_constrained(tmp_path):
+    llm = FakeLLM()
+    run_all(llm, lambda q: fixture_results(), tmp_path)
+    assert {r for r, _ in llm.schemas} == {"planner", "ranker", "writer"} and all(s for _, s in llm.schemas)
+    sizes = sorted(s["properties"]["scores"]["minItems"] for r, s in llm.schemas if r == "ranker")
+    assert sizes == [2, 10, 10] and all(s["properties"]["scores"]["maxItems"] == s["properties"]["scores"]["minItems"]
+                                        for r, s in llm.schemas if r == "ranker")
 
 
 def test_summary_with_invented_citation_warns(tmp_path):
     llm = FakeLLM(summary={"summary": "Effect shown [1][42].", "evidence_gaps": "", "confidence": "low"})
     events, _, _ = run_all(llm, lambda q: fixture_results(), tmp_path)
     assert any("[42]" in w["message"] for w in by_type(events, "warning"))
+    assert llm.calls.count("writer") == 2
+
+
+def _summary(text):
+    return {"summary": text, "evidence_gaps": "", "confidence": "low"}
+
+
+def test_summary_without_citations_is_reasked_then_warns(tmp_path):
+    llm = FakeLLM(summary=_summary("SGLT2 inhibitors help."))
+    events, _, _ = run_all(llm, lambda q: fixture_results(), tmp_path)
+    assert llm.calls.count("writer") == 2
+    assert [w["message"] for w in by_type(events, "warning")] == [
+        "Summary has no [n] citations, so its claims are not traceable to papers"]
+
+
+def test_summary_reask_recovers_citations(tmp_path):
+    llm = FakeLLM(summary=[_summary("SGLT2 inhibitors help."), _summary("SGLT2 inhibitors help [1].")])
+    events, _, _ = run_all(llm, lambda q: fixture_results(), tmp_path)
+    assert not by_type(events, "warning") and by_type(events, "summary")[0]["summary"].endswith("[1].")
+
+
+GOOD_PLAN = {"pico": {}, "queries": ["(HFpEF OR \"preserved ejection fraction\") AND SGLT2"], "rationale": ""}
+BAD_PLAN = {"pico": {}, "queries": ["HFpEF OR \"preserved ejection fraction\" AND SGLT2"], "rationale": ""}
+
+
+def test_planner_unparenthesised_query_is_reasked(tmp_path):
+    llm = FakeLLM(plan=[BAD_PLAN, GOOD_PLAN])
+    events, _, _ = run_all(llm, lambda q: fixture_results(), tmp_path)
+    assert by_type(events, "plan")[0]["plan"]["queries"] == GOOD_PLAN["queries"]
+    assert llm.calls.count("planner") == 2 and not by_type(events, "warning")
+
+
+def test_planner_persistently_unparenthesised_query_warns(tmp_path):
+    events, _, _ = run_all(FakeLLM(plan=BAD_PLAN), lambda q: fixture_results(), tmp_path)
+    assert any("without parentheses" in w["message"] for w in by_type(events, "warning"))
+    assert events[-1]["type"] == "done"
+
+
+def test_mixes_and_or_on_invented_shapes():
+    yes = ['"HFpEF" OR "x" AND "SGLT2"', "a AND (b OR c AND d)", "a AND b OR c"]
+    no = ["(a OR b) AND (c OR d)", "a AND b AND c", '"heart AND or OR lung" AND x', "((a OR b) AND c) OR d",
+          "a OR b OR c", "single", "a AND NOT b", '"crohn\'s disease" AND (infliximab OR adalimumab)']
+    assert [pipeline.mixes_and_or(q) for q in yes] == [True] * len(yes)
+    assert [pipeline.mixes_and_or(q) for q in no] == [False] * len(no)
+
+
+def test_planner_backslashes_are_removed(tmp_path):
+    plan = {"pico": {}, "queries": ["(microbiome) AND Parkinson\\'s disease", "\\\\"], "rationale": ""}
+    events, _, _ = run_all(FakeLLM(plan=plan), lambda q: fixture_results(), tmp_path)
+    assert by_type(events, "plan")[0]["plan"]["queries"] == ["(microbiome) AND Parkinson's disease"]
+
+
+def test_unknown_study_type_is_normalised(tmp_path):
+    llm = FakeLLM()
+    llm.study_type = "review-article, Journal Article"
+    events, _, _ = run_all(llm, lambda q: fixture_results(), tmp_path)
+    assert {p["study_type"] for p in by_type(events, "results")[0]["papers"]} == {"other"}
 
 
 def test_summary_failure_keeps_results(tmp_path):

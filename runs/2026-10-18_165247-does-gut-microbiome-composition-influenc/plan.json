@@ -1,0 +1,15 @@
+{
+  "pico": {
+    "population": "Parkinson's disease",
+    "intervention": "",
+    "comparison": "",
+    "outcome": "progression"
+  },
+  "queries": [
+    "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression",
+    "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)",
+    "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)",
+    "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+  ],
+  "rationale": "Queries target microbiome-Parkinson's progression links via core concepts, synonyms, study design, and broader microbial terms."
+}

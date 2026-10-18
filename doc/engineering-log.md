@@ -22,8 +22,36 @@
 - `python-dotenv`'s `load_dotenv()` without a path crashes when run from stdin (`find_dotenv` frame assertion). The
   server passes an explicit path.
 
+**First real end-to-end run (run `2026-10-18_164809-…`): 3 of 9 ranker batches failed, 30 of 81 papers unscored.**
+Nemotron Lightning emitted malformed JSON (`}], {"i": 2, …`: it closed the array after the first item). Reproduced
+on the saved candidates: 2 of the 3 batches failed deterministically at temperature 0, so the same-request retry could
+not help. Tried `response_format: json_schema`: always valid JSON, but the model then *legally* closed the array after
+1–2 items. Fix: `minItems = maxItems = batch size` in the schema → 9 of 9 batches complete (a keyed-object schema did
+equally well; the array version kept the existing parser). On top of that, the class fix: any paper still unscored
+after a batch is re-asked once in a smaller batch (a different prompt, so it can succeed where an identical retry
+cannot). Planner and writer got schemas too, since the same failure class applies to every JSON call.
+
+**Second and third real runs: reading the output, not just the status, found three more defects (all fixed):**
+- The microbiome summary contained zero `[n]` citations. The check only caught out-of-range numbers, so a summary with
+  no citations passed silently. Now the writer is re-asked once if there are no citations or invalid ones, and warns
+  if that fails too.
+- `study_type` was free text ("review", "Review", "review-article, Review, Journal Article"). Now it is an enum in the
+  schema, and anything outside the enum is normalised to "other".
+- A planner query mixed AND and OR without parentheses (`"HFpEF" OR "…" AND "SGLT2" OR …`), which silently changes what
+  it searches for. Fixed with a prompt rule plus a `mixes_and_or` check that re-asks once, then warns. The model also
+  emitted `Parkinson\'s` (a JSON-escaped apostrophe); backslashes are now removed from queries.
+- Titles kept `<i>` and `<sup>` tags because `clean()` stripped tags *before* unescaping, so escaped tags survived.
+  Unescaping first would also eat comparisons like `p < 0.05 … > 3`, so the tag pattern now requires a letter right
+  after `<`, and strip/unescape repeats until stable. An invented double-escaped input caught a second bug in the first
+  version of that fix (it ended on an unescape step).
+
+Measured after the fixes (2 questions): 64–71 papers, 0 unscored, 0 warnings, 9–11 s, about 26k input + 3.5k output
+tokens per question (almost all on Lightning), which is under $0.01.
+
 **Tests:** 26 offline tests (mock LLM + a recorded Europe PMC response) covering the happy path and every failure
 path: planner failure or garbage output → fallback query plus a warning; one query failing → warning, run continues;
 all failing → error event and a persisted `run.json` with status `failed`; ranker batch failure or partial reply →
 papers left unscored, sorted to the bottom, with a warning; an invented citation number in the summary → warning;
-summary failure → results kept; client disconnect → run marked `aborted`.
+summary failure → results kept; client disconnect → run marked `aborted`. Now 45 tests, adding: schema on every LLM
+call, ranker re-ask (recovers / still warns), summary citation re-ask (recovers / still warns), AND/OR re-ask,
+`mixes_and_or` on 11 invented shapes, `clean()` on 10 invented markup shapes.

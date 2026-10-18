@@ -1,0 +1,32 @@
+{
+  "run_id": "2026-10-18_164809-do-sglt2-inhibitors-reduce-hospitalisati",
+  "question": "Do SGLT2 inhibitors reduce hospitalisation in heart failure with preserved ejection fraction?",
+  "started": "2026-10-18T16:48:09",
+  "models": {
+    "planner": "nvidia/nemotron-3-super-120b-a12b",
+    "ranker": "nvidia/Nemotron-3_5-Lightning",
+    "writer": "nvidia/nemotron-3-super-120b-a12b"
+  },
+  "status": "ok",
+  "warnings": [
+    "Ranking batch 2 failed (invalid JSON (Expecting property name enclosed in double quotes: line 1 column 134 (char 133)): '{\"scores\": [{\"i\": 1, \"score\": 2, \"study_type\": \"systematic review\", \"reason\": \"Population is TAVR for aortic stenosis, not HFpEF\"}], {\"i\": 2, \"score\": 1, \"study_type\": \"review\", \"reason\": \"GLP-1 medic'); its 10 papers are shown unscored.",
+    "Ranking batch 5 failed (invalid JSON (Expecting property name enclosed in double quotes: line 1 column 218 (char 217)): '{\"scores\": [{\"i\": 1, \"score\": 9, \"study_type\": \"systematic review\", \"reason\": \"Systematic review of RCTs including EMPEROR-Preserved and multi-agent trial reporting HF hospitalization outcomes in HFpE'); its 10 papers are shown unscored.",
+    "Ranking batch 8 failed (invalid JSON (Expecting ':' delimiter: line 1 column 425 (char 424)): '{\"scores\": [{\"i\": 1, \"score\": 4, \"study_type\": \"review\", \"reason\": \"Background review of HFpEF; does not report SGLT2i outcomes for hospitalisation\"}, {\"i\": 2, \"score\": 7, \"study_type\": \"cohort\", \"rea'); its 10 papers are shown unscored."
+  ],
+  "counts": {
+    "per_query": {
+      "\"heart failure with preserved ejection fraction\" AND \"SGLT2 inhibitor\" AND hospitalisation": 25,
+      "(HFpEF OR \"heart failure with preserved ejection fraction\") AND (dapagliflozin OR empagliflozin OR canagliflozin OR ertugliflozin OR \"SGLT2 inhibitor\") AND (hospitalization OR hospitalization OR \"heart failure hospitalization\")": 25,
+      "\"heart failure with preserved ejection fraction\" AND \"SGLT2 inhibitor\" AND (randomized OR \"meta-analysis\" OR \"systematic review\")": 25,
+      "(HFpEF OR \"diastolic heart failure\") AND (SGLT2 OR \"glucose transporter 2\") AND (hospital* OR admission*)": 25
+    },
+    "unique": 81,
+    "dropped_no_abstract": 3,
+    "unscored": 30
+  },
+  "finished": "2026-10-18T16:48:24",
+  "usage": {
+    "prompt_tokens": 48417,
+    "completion_tokens": 6735
+  }
+}

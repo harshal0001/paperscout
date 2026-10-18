@@ -7,15 +7,29 @@ import httpx
 
 BASE = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
 SOURCES = "(SRC:MED OR SRC:PPR)"
-_TAG = re.compile(r"<[^>]+>")
+# A tag needs a letter right after "<" so comparisons like "p < 0.05 and x > 3" survive. Inline formatting tags are
+# removed without a space ("β<sup>0</sup>" -> "β0"); any other tag becomes a space (block boundaries).
+_INLINE = re.compile(r"</?(?:i|b|em|strong|sup|sub|u|span|sc)(?:\s[^<>]*)?/?>", re.I)
+_TAG = re.compile(r"</?[a-zA-Z][a-zA-Z0-9]*(?:\s[^<>]*)?/?>")
 
 
 class SearchError(RuntimeError):
     pass
 
 
+def _strip(text):
+    return _TAG.sub(" ", _INLINE.sub("", text))
+
+
 def clean(text):
-    return re.sub(r"\s+", " ", html.unescape(_TAG.sub(" ", text or ""))).strip()
+    """Strip tags and unescape until stable (bounded): Europe PMC sends markup literal, escaped, or double-escaped."""
+    text = text or ""
+    for _ in range(3):
+        new = html.unescape(_strip(text))
+        if new == text:
+            break
+        text = new
+    return re.sub(r"\s+", " ", _strip(text)).strip()
 
 
 def search(query, page_size=25, client=None, retries=2, backoff=1.5):

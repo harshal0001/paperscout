@@ -20,12 +20,15 @@ Return JSON only:
 Rules:
 - 3 or 4 queries, each a different angle: (1) core concepts joined with AND; (2) synonyms / MeSH-style variants grouped with OR; (3) the core concepts AND (randomized OR "meta-analysis" OR "systematic review"); (4) optionally a broader query.
 - Europe PMC syntax only: AND, OR, NOT, parentheses, "quoted phrases". No field tags.
+- Wrap every OR group in parentheses, e.g. (HFpEF OR "preserved ejection fraction") AND (dapagliflozin OR empagliflozin). Never mix AND and OR at the same level.
 - Keep each query under 200 characters. Use an empty string for PICO fields that do not apply."""
 
-RANKER_SYSTEM = """You screen biomedical abstracts for relevance to a research question.
+STUDY_TYPES = ("RCT", "meta-analysis", "systematic review", "cohort", "case-control", "cross-sectional", "case report",
+               "narrative review", "preclinical", "guideline", "other")
+RANKER_SYSTEM = f"""You screen biomedical abstracts for relevance to a research question.
 Score each paper 0-10: 10 = directly answers the question (same population, intervention and outcome); 7-9 = highly relevant, one element differs; 4-6 = related background; 0-3 = off-topic.
 Return JSON only, one entry per paper:
-{"scores": [{"i": <paper number>, "score": <integer 0-10>, "study_type": "<RCT|meta-analysis|systematic review|cohort|case-control|cross-sectional|case report|narrative review|preclinical|guideline|other>", "reason": "<max 25 words, specific to this paper>"}]}"""
+{{"scores": [{{"i": <paper number>, "score": <integer 0-10>, "study_type": "<{'|'.join(STUDY_TYPES)}>", "reason": "<max 25 words, specific to this paper>"}}]}}"""
 
 WRITER_SYSTEM = """You write evidence summaries for researchers. Use ONLY the numbered papers provided; never add outside facts.
 Return JSON only:
@@ -33,19 +36,60 @@ Return JSON only:
 If the papers do not answer the question, say so plainly."""
 
 
+_STR = {"type": "string"}
+PICO_KEYS = ("population", "intervention", "comparison", "outcome")
+PLANNER_SCHEMA = {"type": "object", "required": ["pico", "queries", "rationale"], "properties": {
+    "pico": {"type": "object", "properties": dict.fromkeys(PICO_KEYS, _STR), "required": list(PICO_KEYS)},
+    "queries": {"type": "array", "items": _STR, "minItems": 1, "maxItems": MAX_QUERIES}, "rationale": _STR}}
+WRITER_SCHEMA = {"type": "object", "required": ["summary", "evidence_gaps", "confidence"], "properties": {
+    "summary": _STR, "evidence_gaps": _STR, "confidence": {"type": "string", "enum": ["high", "moderate", "low"]}}}
+
+
+def ranker_schema(n):
+    """minItems=maxItems=n: without it the constrained model closed the array after 1-2 papers."""
+    item = {"type": "object", "required": ["i", "score", "study_type", "reason"],
+            "properties": {"i": {"type": "integer"}, "score": {"type": "integer"},
+                           "study_type": {"type": "string", "enum": list(STUDY_TYPES)}, "reason": _STR}}
+    return {"type": "object", "required": ["scores"],
+            "properties": {"scores": {"type": "array", "items": item, "minItems": n, "maxItems": n}}}
+
+
 def new_run_id(question, now=None):
     slug = re.sub(r"[^a-z0-9]+", "-", question.lower()).strip("-")[:40].rstrip("-") or "query"
     return f"{(now or datetime.now()):%Y-%m-%d_%H%M%S}-{slug}"
 
 
+def mixes_and_or(query):
+    """True if AND and OR appear at the same parenthesis depth outside quotes: precedence then silently changes the query."""
+    ops, depth = {}, 0
+    for tok in re.findall(r'"[^"]*"|\(|\)|\bAND\b|\bOR\b', query):
+        if tok in "()":
+            depth += 1 if tok == "(" else -1
+        elif tok in ("AND", "OR"):
+            ops.setdefault(depth, set()).add(tok)
+    return any(len(s) == 2 for s in ops.values())
+
+
 def make_plan(question, llm):
-    plan = llm.complete_json("planner", PLANNER_SYSTEM, f"Research question: {question}", max_tokens=800)
-    queries = [q.strip() for q in plan.get("queries", []) if isinstance(q, str) and q.strip()][:MAX_QUERIES]
-    if not queries:
-        raise ValueError(f"planner returned no usable queries: {plan!r:.200}")
+    """Returns (plan, warnings). Re-asks once, naming the bad queries, if any mix AND/OR without parentheses."""
+    user = f"Research question: {question}"
+    for attempt in range(2):
+        plan = llm.complete_json("planner", PLANNER_SYSTEM, user, max_tokens=800, schema=PLANNER_SCHEMA)
+        # backslashes are never meaningful to Europe PMC; the model emits them as JSON-escaped apostrophes (Parkinson\'s)
+        queries = [q.replace("\\", "").strip() for q in plan.get("queries", []) if isinstance(q, str)]
+        queries = [q for q in queries if q][:MAX_QUERIES]
+        if not queries:
+            raise ValueError(f"planner returned no usable queries: {plan!r:.200}")
+        bad = [q for q in queries if mixes_and_or(q)]
+        if not bad:
+            break
+        user = (f"Research question: {question}\n\nYour previous plan had queries mixing AND and OR without "
+                f"parentheses, which changes their meaning: {json.dumps(bad)}. Return the full plan again with every OR "
+                f"group in parentheses.")
     pico = plan.get("pico") if isinstance(plan.get("pico"), dict) else {}
-    return {"pico": {k: str(pico.get(k) or "") for k in ("population", "intervention", "comparison", "outcome")},
-            "queries": queries, "rationale": str(plan.get("rationale") or "")}
+    warnings = [f"Query mixes AND/OR without parentheses, results may be off-target: {q}" for q in bad]
+    return {"pico": {k: str(pico.get(k) or "") for k in PICO_KEYS},
+            "queries": queries, "rationale": str(plan.get("rationale") or "")}, warnings
 
 
 def retrieve(queries, search_fn):
@@ -72,22 +116,39 @@ def retrieve(queries, search_fn):
     return list(merged.values()), counts, warnings, len(dropped)
 
 
-def _rank_batch(question, plan, batch, llm):
+def _score(question, plan, batch, llm):
     lines = [f"[{i}] {p['title']} ({p['year'] or 'n.d.'}; {', '.join(p['pub_types'][:3])})\n{p['abstract'][:1500]}"
              for i, p in enumerate(batch, 1)]
     pico = "; ".join(f"{k}: {v}" for k, v in plan["pico"].items() if v)
     user = f"Research question: {question}\nPICO: {pico or 'n/a'}\n\nPapers:\n\n" + "\n\n".join(lines)
-    out = llm.complete_json("ranker", RANKER_SYSTEM, user, max_tokens=150 * len(batch) + 200)
-    scored = 0
+    out = llm.complete_json("ranker", RANKER_SYSTEM, user, max_tokens=150 * len(batch) + 200,
+                            schema=ranker_schema(len(batch)))
     for s in out.get("scores", []):
         try:
             i, score = int(s["i"]), max(0, min(10, int(s["score"])))
         except (KeyError, TypeError, ValueError):
             continue
         if 1 <= i <= len(batch) and batch[i - 1].get("score") is None:
+            st = s.get("study_type")
             batch[i - 1].update(score=score, reason=str(s.get("reason", ""))[:300],
-                                study_type=str(s.get("study_type", "other")))
-            scored += 1
+                                study_type=st if st in STUDY_TYPES else "other")
+
+
+def _rank_batch(question, plan, batch, llm):
+    """Score a batch, then re-ask once for only the papers still unscored (a different prompt, so it can succeed
+    where an identical retry would not). Returns how many got a score; raises only if none did."""
+    error = None
+    for _ in range(2):
+        todo = [p for p in batch if p.get("score") is None]
+        if not todo:
+            break
+        try:
+            _score(question, plan, todo, llm)
+        except Exception as e:
+            error = e
+    scored = sum(p.get("score") is not None for p in batch)
+    if not scored and error:
+        raise error
     return scored
 
 
@@ -103,15 +164,25 @@ def synthesize(question, ranked, llm):
                 "cited_keys": []}, []
     body = "\n\n".join(f"[{n}] {p['title']} ({p['journal']}, {p['year']}; {p.get('study_type', '')})\n{p['abstract'][:1200]}"
                        for n, p in enumerate(top, 1))
-    out = llm.complete_json("writer", WRITER_SYSTEM, f"Research question: {question}\n\nPapers:\n\n{body}", max_tokens=900)
-    summary = {"summary": str(out.get("summary", "")), "evidence_gaps": str(out.get("evidence_gaps", "")),
+    user = f"Research question: {question}\n\nPapers:\n\n{body}"
+    for attempt in range(2):
+        out = llm.complete_json("writer", WRITER_SYSTEM, user, max_tokens=900, schema=WRITER_SCHEMA)
+        text = str(out.get("summary", ""))
+        cites = [int(n) for n in re.findall(r"\[(\d+)\]", text)]
+        bad = sorted({n for n in cites if not 1 <= n <= len(top)})
+        if text and cites and not bad:
+            break
+        user += ("\n\nYour previous summary had no [n] citations or cited papers that do not exist. Rewrite it: "
+                 f"every sentence must end with citations to papers [1]-[{len(top)}] that support it.")
+    summary = {"summary": text, "evidence_gaps": str(out.get("evidence_gaps", "")),
                "confidence": str(out.get("confidence", "low")), "cited_keys": [p["key"] for p in top]}
     warnings = []
-    bad = sorted({int(n) for n in re.findall(r"\[(\d+)\]", summary["summary"]) if not 1 <= int(n) <= len(top)})
     if bad:
         warnings.append(f"Summary cited papers that were not provided: {bad}")
-    if not summary["summary"]:
+    if not text:
         warnings.append("Summary model returned an empty summary")
+    elif not cites:
+        warnings.append("Summary has no [n] citations, so its claims are not traceable to papers")
     return summary, warnings
 
 
@@ -135,9 +206,11 @@ def run(question, llm, search_fn=None, runs_dir="runs", run_id=None):
         yield {"type": "run", "run_id": run_id}
         yield {"type": "step", "stage": "plan", "status": "start"}
         try:
-            plan = make_plan(question, llm)
+            plan, warnings = make_plan(question, llm)
+            for w in warnings:
+                yield warn(w)
         except Exception as e:
-            plan = {"pico": dict.fromkeys(("population", "intervention", "comparison", "outcome"), ""),
+            plan = {"pico": dict.fromkeys(PICO_KEYS, ""),
                     "queries": [question], "rationale": "Fallback: planner failed, searching the question verbatim."}
             yield warn(f"Query planner failed ({e}); searching the question as typed.")
         save("plan.json", plan)

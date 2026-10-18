@@ -15,8 +15,20 @@ def test_normalize_real_fixture(raw):
         assert p["year"] is None or 1900 < p["year"] < 2100
 
 
-def test_clean_strips_tags_and_entities():
-    assert europepmc.clean("<h4>Background</h4>SGLT2&amp;HF  <i>x</i>") == "Background SGLT2&HF x"
+@pytest.mark.parametrize("raw,expected", [
+    ("<h4>Background</h4>SGLT2&amp;HF  <i>x</i>", "Background SGLT2&HF x"),
+    ("&lt;i&gt;In vivo&lt;/i&gt; base editing", "In vivo base editing"),
+    ("Base editing of β<sup>0</sup>-thalassemia", "Base editing of β0-thalassemia"),
+    ("β&lt;sup&gt;0&lt;/sup&gt;-thalassemia", "β0-thalassemia"),
+    ("HR 0.7 (p < 0.05 and x > 3)", "HR 0.7 (p < 0.05 and x > 3)"),
+    ("p &lt; 0.001 vs &gt;65 years", "p < 0.001 vs >65 years"),
+    ("<p>One.</p><p>Two.</p>", "One. Two."),
+    ('<span class="x">CO<sub>2</sub></span>', "CO2"),
+    ("&amp;lt;b&amp;gt;double&amp;lt;/b&amp;gt;", "double"),
+    (None, ""),
+])
+def test_clean_strips_tags_and_entities(raw, expected):
+    assert europepmc.clean(raw) == expected
 
 
 def _client(responses):

@@ -7,5 +7,6 @@ Statuses: DEFERRED, UNVERIFIED, BLOCKED, WONTFIX, DONE (dated).
 - DEFERRED: **Follow-up questions / query refinement loop** (the agent sees weak scores and issues new queries). Where: `pipeline.run` after rank. Trigger: low-relevance results on niche questions.
 - DEFERRED: **Full-text open-access snippets** (Europe PMC fullTextXML) for evidence quotes. Trigger: judges or users asking "where in the paper?".
 - UNVERIFIED: **Ranker calibration.** Scores come from a small model on abstracts only, and have not been checked against expert relevance labels. Trigger: any claim about accuracy.
+- UNVERIFIED: **Study-type labels from the small ranker model are sometimes wrong.** Seen: a preclinical base-editing paper labelled "RCT", a mouse probiotic study labelled "cohort". The relevance scores looked sensible. Possible fix: map from Europe PMC `pubTypeList` first and let the LLM decide only when it is missing, or use Nemotron Super for labels. Trigger: anyone filtering by study design.
 - UNVERIFIED: **Summary faithfulness.** Out-of-range citation numbers are caught automatically. Whether each cited claim is actually supported by its abstract has not been checked beyond the manual look in the engineering log.
 - DEFERRED: **Rate limiting / concurrency guard** on `/api/search` for a public deployment. Trigger: hosting it publicly.

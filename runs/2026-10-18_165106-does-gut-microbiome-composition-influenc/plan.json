@@ -1,0 +1,15 @@
+{
+  "pico": {
+    "population": "Parkinson's disease",
+    "intervention": "gut microbiome composition",
+    "comparison": "",
+    "outcome": "disease progression"
+  },
+  "queries": [
+    "\"Parkinson's disease\" AND \"gut microbiome\" AND progression",
+    "\"Parkinson's disease\" AND (microbiota OR microbiome OR bacterial community) AND (progression OR worsening OR severity)",
+    "\"Parkinson's disease\" AND \"gut microbiome\" AND (randomized OR \"meta-analysis\" OR \"systematic review\")",
+    "\"Parkinson's\" AND dysbiosis AND (motor symptoms OR cognitive decline OR disease course)"
+  ],
+  "rationale": "Targeted queries capture core concepts, synonym variations, study design filters, and broader clinical manifestations to comprehensively assess microbiome influence on PD progression."
+}

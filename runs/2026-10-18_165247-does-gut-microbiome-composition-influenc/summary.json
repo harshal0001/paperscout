@@ -1,0 +1,15 @@
+{
+  "summary": "The available evidence strongly supports that gut microbiome composition influences Parkinson's disease progression through multiple interconnected mechanisms. Gut microbiota dysbiosis promotes intestinal inflammation, compromises gut barrier integrity, and alters microbial metabolite production (such as SCFAs, LPS, and tryptophan derivatives), which can trigger α-synuclein misfolding in the enteric nervous system and facilitate its spread to the CNS via vagal pathways, thereby exacerbating neurodegeneration [1][3][4][7]. Specific microbial interventions, such as fecal microbiota transplantation from healthy donors and administration of probiotic strains like Ligilactobacillus salivarius NCU-41, have demonstrated ameliorative effects in preclinical models by reducing α-synuclein aggregation, neuroinflammation, oxidative stress, and protecting dopaminergic neurons [2][8]. Furthermore, comparative microbiome analyses reveal consistent compositional shifts in PD patients, including depletion of beneficial short-chain fatty acid-producing bacteria, which correlate with disease severity and progression [6]. These findings collectively indicate that the gut microbiome is not merely associated with PD but actively modulates its pathophysiological trajectory.",
+  "evidence_gaps": "While mechanistic links are well-supported in preclinical models and observational human studies, there remains a lack of large-scale longitudinal clinical trials demonstrating that targeted microbiome modifications directly slow or halt clinical PD progression in humans over extended periods. Additionally, causal inference is complicated by confounding factors such as diet, medication, constipation, and reverse causation, which are not fully disentangled in current human cohort studies.",
+  "confidence": "high",
+  "cited_keys": [
+    "pmid:42598050",
+    "pmid:42612399",
+    "pmid:42154337",
+    "pmid:42358143",
+    "pmid:41889651",
+    "pmid:42206189",
+    "pmid:42845110",
+    "pmid:42034029"
+  ]
+}

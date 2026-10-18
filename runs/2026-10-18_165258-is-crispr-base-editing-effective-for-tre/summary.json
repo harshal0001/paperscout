@@ -1,0 +1,15 @@
+{
+  "summary": "Multiplex base editing of BCL11A regulatory elements effectively reactivates fetal hemoglobin in hematopoietic stem/progenitor cells, achieving higher HbF levels than CRISPR-Cas9-induced editing while minimizing double-strand breaks and genomic rearrangements, demonstrating a safe and durable strategy for treating sickle cell disease in preclinical models [1]. Base editing also shows therapeutic potential for correcting β-thalassemia mutations, with over 90% editing efficiency in HSPCs leading to improved β-globin expression and phenotypic correction in sickle cell-β-thalassemia models, supported by safety assessments showing no significant genotoxicity or clonal dominance [2]. Systematic reviews confirm that base editing is among the emerging gene-editing platforms being evaluated for sickle cell disease, alongside CRISPR-Cas9 and other approaches, though clinical trial data specifically for base editing in SCD remains limited compared to the approved Casgevy therapy [3,5,7]. While base editing holds strong translational promise for hemoglobinopathies due to its precision and reduced risks of double-strand breaks, current evidence is primarily preclinical, and long-term clinical efficacy and safety data in humans are still needed [7,8].",
+  "evidence_gaps": "The papers lack direct clinical trial data on base editing monotherapy for sickle cell disease in humans, focusing instead on preclinical models or grouping base editing with other gene-editing approaches in systematic reviews without isolating its specific outcomes.",
+  "confidence": "moderate",
+  "cited_keys": [
+    "pmid:41015034",
+    "pmid:41296828",
+    "pmid:42400217",
+    "pmid:40659814",
+    "pmid:42074029",
+    "pmid:42263664",
+    "pmid:42486091",
+    "pmid:42617141"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "summary": "Multiple meta-analyses and pooled analyses consistently show that SGLT2 inhibitors reduce heart failure hospitalizations in patients with heart failure with preserved ejection fraction (HFpEF). Empagliflozin specifically reduced the risk of hospitalization for heart failure by 30% (HR 0.70; 95% CI: 0.64-0.77) across randomized controlled trials [1]. A prespecified pooled analysis of EMPEROR-Preserved and DELIVER trials confirmed a uniform class effect, with SGLT2 inhibitors significantly reducing the primary endpoint (cardiovascular death or heart failure hospitalization) by 20% (HR 0.80, 95% CI 0.73-0.87) in HFpEF patients [2]. Additional meta-analyses of RCTs in HFpEF demonstrated significant reductions in heart failure hospitalization risk, with pooled hazard ratios ranging from 0.74 to 0.83 across studies [3][4][5][6]. These benefits extend to high-risk subgroups, including recently hospitalized patients, and are observed regardless of diabetes status [2][6].",
+  "evidence_gaps": "While the evidence supports reduction in heart failure hospitalizations, the papers provide limited detail on long-term effects beyond one year, optimal dosing strategies specific to HFpEF, and head-to-head comparisons between different SGLT2 inhibitors in this population.",
+  "confidence": "high",
+  "cited_keys": [
+    "pmid:40642671",
+    "pmid:41908059",
+    "pmid:41146013",
+    "pmid:42007145",
+    "pmid:42488770",
+    "pmid:42117353",
+    "pmid:42565898",
+    "pmid:42533465"
+  ]
+}

@@ -1,0 +1,1604 @@
+[
+  {
+    "key": "pmid:42845985",
+    "id": "42845985",
+    "source": "MED",
+    "pmid": "42845985",
+    "pmcid": null,
+    "doi": "10.3389/fmed.2026.1909087",
+    "title": "Gut-brain axis dysfunction in Parkinson's disease: a meta-analysis of microbiome dysbiosis and intestinal barrier markers.",
+    "abstract": "Background Parkinson's disease (PD) has traditionally been conceptualized as a neurodegenerative disorder centered within the central nervous system. However, growing evidence suggests that gastrointestinal dysfunction, intestinal permeability abnormalities, and gut microbiome dysbiosis may contribute to disease initiation and progression in a subset of patients. While several studies have characterized microbial alterations in PD, the integration of dysbiosis with intestinal barrier dysfunction and emerging phenotype-oriented models remains incompletely synthesized. Methods A systematic review and meta-analysis was conducted according to PRISMA 2020 guidelines. PubMed, Embase, Scopus, Web of Science, and Cochrane Library databases were searched from inception to January 2025 for studies evaluating gut microbiota composition and/or intestinal permeability markers in Parkinson's disease. Random-effects meta-analysis was performed using standardized mean differences (SMDs) with subgroup and sensitivity analyses exploring geographic variation, sequencing methodology, disease duration, and phenotype-specific findings. Results Thirty-four studies were identified; one (an experimental fecal-microbiota-transfer study in mice) was reclassified as preclinical mechanistic evidence rather than a primary human dataset. The remaining 33 human studies comprised 1,588 PD patients and 1,449 healthy controls. Consistent microbial alterations were identified across studies, characterized by depletion of short-chain fatty acid-producing taxa including Prevotella ceae, Faecalibacterium , and Lachnospiraceae, alongside enrichment of Akkermansia , Bifidobacteriaceae, and Christensenellaceae. Elevated fecal calprotectin and zonulin levels suggested concomitant low-grade intestinal inflammation and impaired epithelial barrier integrity. In limited phenotype-stratified subgroup analyses, gut-first PD phenotypes showed potentially more pronounced dysbiosis patterns than brain-first phenotypes; this preliminary observation is based on very few phenotype-stratified studies and requires validation in larger, prospective cohorts. Functional interpretation of the included literature suggested potential alterations in butyrate metabolism, mucosal barrier maintenance, inflammatory signaling, and microbial-host immune interactions. Conclusion Parkinson's disease is associated with reproducible alterations in gut microbial composition together with evidence of intestinal barrier dysfunction. Although causality cannot be established from predominantly observational studies, the findings support a biologically plausible role for gut-related mechanisms in disease pathophysiology, with a preliminary signal for more pronounced involvement in gut-first PD phenotypes that remains to be confirmed. Future longitudinal and mechanistic studies integrating microbiome, metabolomic, and permeability data are required to clarify therapeutic and biomarker implications. Systematic review registration https://www.crd.york.ac.uk/prospero/display_record.php?ID=CRD420251078511, CRD420251078511.",
+    "authors": "Mehrotra P, Vengadakrishnan K, Mehrotra P, Dan S.",
+    "journal": "Frontiers in medicine",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Systematic Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42845985",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression",
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42724165",
+    "id": "42724165",
+    "source": "MED",
+    "pmid": "42724165",
+    "pmcid": "PMC13558468",
+    "doi": "10.7759/cureus.114312",
+    "title": "Gut Microbiota, Neuroinflammation, and Autonomic Dysfunction in Neurodegenerative Diseases: A Systematic Review of Mechanistic and Translational Evidence.",
+    "abstract": "Neurodegenerative disorders, including Parkinson's disease, Alzheimer's disease, multiple system atrophy, and amyotrophic lateral sclerosis, are increasingly recognized as complex conditions arising from interactions among the gut microbiota, immune system, and autonomic nervous system. Growing evidence indicates that disruption of the intestinal microbial ecosystem may contribute to neuroinflammatory processes, autonomic impairment, and progressive neurodegeneration through the microbiota-gut-brain axis, although the underlying mechanisms and their translational implications remain incompletely understood. This systematic review was conducted in accordance with the PRISMA 2020 guidelines to comprehensively evaluate the evidence linking gut microbiota dysbiosis with neuroinflammation and autonomic dysfunction across neurodegenerative diseases. A systematic search of PubMed/MEDLINE, Scopus, Web of Science, EMBASE, EBSCOhost, CINAHL, PsycINFO, CENTRAL, Google Scholar, and major grey literature sources yielded 2,769 records. After duplicate removal and eligibility screening, 62 full-text reports underwent detailed assessment, of which 11 studies met the predefined eligibility criteria and were included in the qualitative synthesis. The evidence encompassed human observational, animal experimental, and in vitro approaches, with several studies integrating complementary clinical, microbiome, and experimental methodologies. Most included studies focused on Parkinson's disease and multiple system atrophy. Across studies, microbial dysbiosis was characterized by reduced abundance of short-chain fatty acid (SCFA)-producing bacteria alongside increased representation of pro-inflammatory microbial taxa. These microbial alterations were associated with disruption of intestinal barrier integrity, activation of inflammatory signaling pathways, microglial activation, elevated pro-inflammatory cytokine production, α-synuclein aggregation, and autonomic manifestations such as gastrointestinal dysmotility and cardiovascular autonomic dysfunction. Experimental studies provided biological support for the microbiota-gut-brain axis, whereas clinical investigations consistently demonstrated associations without establishing causality. Overall, current evidence suggests that gut microbial dysbiosis is closely associated with neuroinflammation and autonomic dysfunction in neurodegenerative diseases and may represent a promising avenue for biomarker discovery and therapeutic intervention. Nevertheless, the available literature is constrained by methodological heterogeneity, limited sample sizes, and the predominance of observational and preclinical studies. Future large-scale longitudinal investigations and rigorously designed randomized controlled trials are required to determine causal relationships and define the clinical utility of microbiome-targeted strategies.",
+    "authors": "Alauddin W, Srivastava C, Goyal P, Shukla M, Garg DK, Prajesh BR, Singh S, Shaikh FI, Khairnar S.",
+    "journal": "Cureus",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42724165",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression",
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42787718",
+    "id": "42787718",
+    "source": "MED",
+    "pmid": "42787718",
+    "pmcid": null,
+    "doi": "10.3389/fneur.2026.1889517",
+    "title": "The gut microbiota-short-chain fatty acid-inflammation axis in Parkinson's disease motor dysfunction: mechanisms and future of dietary interventions.",
+    "abstract": "Parkinson's disease (PD) is a neurodegenerative disorder characterized mainly by motor dysfunction that severely affects quality of life. In recent years, the gut microbiota and its metabolites, short-chain fatty acids (SCFAs), have become a focus in PD research. These factors are proposed to influence disease progression, potentially by modulating neuroinflammation and gut-brain axis signaling, although the causal relationship between specific microbial metabolites and clinical deterioration remains to be conclusively demonstrated in human studies. PD patients show characteristic gut dysbiosis, with fewer beneficial SCFA-producing bacteria and more pro-inflammatory bacteria, which may drive disease progression via the gut-brain axis. Dietary interventions can regulate the gut microbiota, increase SCFA levels, and reduce inflammation, and have shown promise for improving motor symptoms in PD. This review summarizes the current understanding of the \"gut microbiota-SCFA-inflammation axis\" in PD motor dysfunction, focusing on the potential mechanisms by which specific dietary strategies-prebiotics, probiotics, and the Mediterranean diet, and emerging patterns such as ketogenic diets (KD) and intermittent fasting (IF)-may ameliorate motor symptoms through modulation of this axis, while critically appraising the limitations and inconsistencies in the existing literature. By integrating disease-specific mechanistic insights with a translational evaluation of dietary interventions, this Review aims to complement existing immunological frameworks with a clinically oriented perspective on PD motor dysfunction. We also integrate recent preclinical and clinical evidence, discuss current research limitations, and offer perspectives on future therapeutic directions.",
+    "authors": "Wang W, Sun W, Ma L, Xu M, Dong X.",
+    "journal": "Frontiers in neurology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42787718",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression"
+    ]
+  },
+  {
+    "key": "pmid:42846826",
+    "id": "42846826",
+    "source": "MED",
+    "pmid": "42846826",
+    "pmcid": null,
+    "doi": "10.3389/fnagi.2026.1973833",
+    "title": "Gut-brain immune dysregulation in Parkinson's disease: a hypothesis-forming narrative review of trained immunity.",
+    "abstract": "Parkinson's disease (PD) is increasingly understood as a multisystem disorder in which gastrointestinal dysfunction, immune remodeling, protein aggregation, and central neurodegeneration interact across the disease course. Although gut microbiota alterations are repeatedly reported in PD, taxonomic differences alone do not explain how peripheral ecological signals acquire neurological relevance. This review therefore focuses on immune translation: the processes through which dysbiosis, microbial metabolites, intestinal barrier stress, and mucosal inflammation may reshape peripheral immunity and lower the threshold for central neuroinflammatory responses. Particular attention is given to trained immunity as a mechanistic framework that may connect repeated low-grade gut-derived stimulation with persistent innate immune reprogramming. Direct evidence that trained immunity drives PD remains limited; the concept is presented as a testable bridge rather than an established causal pathway. We integrate this framework with age-related immunosenescence and inflammaging, enteric nervous system vulnerability, vagal communication, alpha-synuclein pathology, blood-brain barrier signaling, and microglial priming. Human microbiome studies, Parkinsonian animal models, LPS-based innate immune-memory paradigms, and emerging intervention trials are considered according to their evidentiary level and major confounders, including constipation, diet, medication exposure, geography, and disease stage. The resulting model accommodates body-first, brain-first, and mixed trajectories rather than assigning a universal gut origin to PD. Therapeutically, the evidence supports a shift from nonspecific microbiome normalization toward mechanism-matched strategies that combine ecological, immune, metabolic, and clinical biomarkers. Longitudinal prodromal cohorts and integrated multi-omics with immune phenotyping will be essential to determine whether gut-brain immune signatures identify causal pathways, progression markers, or treatment-responsive subgroups.",
+    "authors": "Tang M, Li J, Zhang C, Tu R, Wang S.",
+    "journal": "Frontiers in aging neuroscience",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42846826",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression",
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42745420",
+    "id": "42745420",
+    "source": "MED",
+    "pmid": "42745420",
+    "pmcid": "PMC13578855",
+    "doi": "10.1111/jnc.70555",
+    "title": "Preface to the Special Issue: \"Microbiota and Gut-Brain Axis\".",
+    "abstract": "The microbiota-gut-brain axis has emerged as a central framework for understanding how microbial communities influence nervous system development, function, and disease. This Special Issue highlights three interconnected themes: microbial metabolites and neurochemistry, developmental and neuroimmune mechanisms, and translation to neurological and psychiatric disease. The articles in the collection examine how microbial metabolites modulate neuroinflammatory and neurochemical pathways, how stress, development, immune signaling, and gut health shape gut-brain communication across the lifespan, and how these mechanisms contribute to disorders including autism spectrum disorder, depression, Parkinson's disease, spinal cord injury, and addiction. Together, these contributions advance a mechanistic and translational understanding of microbiota-gut-brain interactions and identify important directions for future research.",
+    "authors": "Clarke G.",
+    "journal": "Journal of neurochemistry",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Introductory Journal Article",
+      "Editorial"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42745420",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression"
+    ]
+  },
+  {
+    "key": "pmid:42227044",
+    "id": "42227044",
+    "source": "MED",
+    "pmid": "42227044",
+    "pmcid": null,
+    "doi": "10.1080/13803395.2026.2673084",
+    "title": "The gut-brain axis in Alzheimer's and Parkinson's diseases: a systematic review of microbiota-derived biomarkers and novel therapeutic approaches.",
+    "abstract": "Background The altered gut microbiota substantially impacts the onset and progression of Alzheimer's disease (AD) and Parkinson's disease (PD), the two most widely studied neurodegenerative conditions. Microbiome-derived metabolites have been increasingly associated with disease onset, progression, and therapeutic targets in neurodegenerative disorders. Exploring the diagnostic and therapeutic implications of gut microbiome-derived biomarkers is critical to advancing our understanding and management of neurodegeneration. Methodology We systematically reviewed both clinical and preclinical studies published from 2010 to 2025. Studies examining gut microbiota composition, microbial-derived metabolites, or therapeutic interventions targeting the gut microbiome were included. Identification of gut microbiome alterations, discovery of microbial or metabolite-based biomarkers, association with disease onset or progression, and/or therapeutic effects on cognitive, neurological, or inflammatory outcomes were evaluated. Result Short-chain fatty acids(SCFAs) such as butyrate and acetate were found to be noninvasive biomarkers in patients with Alzheimer's disease (AD), mild cognitive impairment (MCI), and Parkinson's disease (PD). Lower SCFA levels correlated with cognitive decline. Diagnostic accuracy improved when SCFA combinations were used, with AUCs ranging from 0.75 to 0.87. Trimethylamine N-oxide(TMAO) levels showed inconsistent associations, with both elevated and reduced levels linked to disease risk. Therapeutic approaches targeting gut microbiota, including probiotics, prebiotics, dietary changes, and fecal microbiota transplantation, demonstrated cognitive benefits and modulation of gut-brain signaling pathways. Conclusion Overall, gut-derived biomarkers offer a promising avenue for early diagnosis and novel therapeutic approaches in AD and PD, while acknowledging that evidence in other neurodegenerative diseases remains limited through modulation of the gut-brain axis.",
+    "authors": "Singh VK, Gupta P, Jain SK, Matreja PS.",
+    "journal": "Journal of clinical and experimental neuropsychology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Systematic Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42227044",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression"
+    ]
+  },
+  {
+    "key": "pmid:42697520",
+    "id": "42697520",
+    "source": "MED",
+    "pmid": "42697520",
+    "pmcid": null,
+    "doi": "10.1016/j.neuroscience.2026.09.001",
+    "title": "Microbiota-derived metabolite-GPCR signalling in neurodegeneration.",
+    "abstract": "The gut microbiome acts as a primary regulator of host homeostasis, influencing the entire body through bidirectional communication along the gut-brain axis (GBA). Dysbiosis, which is defined as a state of microbial imbalance involving alterations in community composition and function, can disrupt the synthesis of important microbiota-derived metabolites, such as short-chain fatty acids (SCFAs), bile acids and neurotransmitter precursors. This can lead to impaired essential host signalling pathways. There is growing evidence that metabolic alterations associated with dysbiosis contribute to the onset and progression of neurodegenerative disorders (NDDs), including Alzheimer's disease (AD), Parkinson's disease (PD), Huntington's disease (HD), multiple sclerosis (MS) and amyotrophic lateral sclerosis (ALS). In this context, G protein-coupled receptors (GPCRs) act as essential molecular transducers that link microbial metabolites to intracellular signalling networks. Aberrant GPCR activation, driven by altered metabolite profiles, modulates key downstream pathways including cAMP, MAPK, PI3K/Akt, NF-κB and Ca2 + signalling. This promotes neuroinflammation, oxidative stress, mitochondrial dysfunction and pathological protein aggregation - hallmark processes underlying neurodegeneration. By identifying convergent and disease-specific signalling pathways, the review highlights mechanistic nodes of therapeutic relevance and discusses GPCR-centric emerging and other microbiome-targeted strategies aimed at restoring metabolic and signalling homeostasis in neurodegenerative disorders.",
+    "authors": "Sharma A, Jatana N.",
+    "journal": "Neuroscience",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42697520",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression"
+    ]
+  },
+  {
+    "key": "pmid:42343653",
+    "id": "42343653",
+    "source": "MED",
+    "pmid": "42343653",
+    "pmcid": "PMC13443337",
+    "doi": "10.1177/1877718x261455608",
+    "title": "Rationale and current status of fecal microbiota transplantations for Parkinson's disease.",
+    "abstract": "Treating a neurological disorder through the gut may seem counterintuitive, yet multiple lines of evidence highlight the gut's important role in Parkinson's disease (PD). Prodromal gastrointestinal symptoms, the presence of aggregated α-synuclein in enteric neurons, increased intestinal inflammation, and impaired epithelial barrier integrity all point to gut-level involvement in PD pathophysiology. The gut microbiome, markedly altered in individuals with PD, may be a key driver of these changes. Fecal microbiota transplantation (FMT) is currently the most effective strategy for achieving broad and durable modifications of gut microbiota composition. However, FMT is a complex, multi-step procedure requiring stringent methodological control. Modulating gut bacteria has demonstrated therapeutic potential in preclinical models of PD, and recent clinical trials have begun evaluating FMT in patients, although outcomes have been variable. In this review, we examine potential explanations for these divergent results, with a particular focus on methodological differences across trials. We also outline future directions for optimizing FMT study design in PD and discuss how these insights may guide the development of next-generation microbiota-targeted therapies.",
+    "authors": "Bruggeman A, Vandenbroucke RE, Santens P.",
+    "journal": "Journal of Parkinson's disease",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42343653",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression",
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42592659",
+    "id": "42592659",
+    "source": "MED",
+    "pmid": "42592659",
+    "pmcid": "PMC13470609",
+    "doi": "10.1002/mbo3.70374",
+    "title": "Microbiome-Phytochemical Crosstalk Along the Gut-Brain Axis in Alzheimer and Parkinson's Disease.",
+    "abstract": "Gut-brain axis (GBA) has emerged as a bidirectional communication network linking the gut microbiota with central nervous system function and contributing to the pathogenesis of Alzheimer's disease (AD) and Parkinson's disease (PD). This study aimed to critically evaluate the current evidence on how phytochemicals modulate gut microbiota and GBA signaling to influence the progression of AD and PD. A systematic literature search was conducted using major scientific databases, and preclinical studies investigating microbiota-mediated mechanisms of phytochemicals were synthesized according to predefined inclusion criteria. The available evidence demonstrates that phytochemicals consistently remodel the gut microbiota by increasing beneficial taxa such as Lactobacillus, Bifidobacterium, Akkermansia, and short-chain fatty acid (SCFA)-producing bacteria while suppressing pro-inflammatory Gram-negative microorganisms. These microbial alterations were associated with reduced lipopolysaccharide (LPS) production, inhibition of TLR4/NF-κB and NLRP3 inflammasome signaling, enhancement of brain-derived neurotrophic factor (BDNF) activity, restoration of intestinal barrier integrity, attenuation of oxidative stress, and activation of autophagy-related pathways, including PI3K/AKT/mTOR and AMPK/mTOR, leading to reduced amyloid-β, tau, and α-synuclein pathology. A major contribution of this review is the integration of current evidence demonstrating the bidirectional crosstalk between phytochemicals and the gut microbiota as a central mechanism regulating GBA signaling in AD and PD. Available evidence suggests that phytochemical-mediated modulation of the gut microbiota represents a promising therapeutic strategy for slowing disease progression in AD and PD. However, further mechanistic investigations and well-designed clinical trials are required to validate these findings and facilitate their translation into clinical practice.",
+    "authors": "Emon M, Rahaman MM, Sarder D, Shadin M, Neela SA, Wangchuk P, Sarker S.",
+    "journal": "MicrobiologyOpen",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42592659",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression",
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42817639",
+    "id": "42817639",
+    "source": "MED",
+    "pmid": "42817639",
+    "pmcid": "PMC13628083",
+    "doi": "10.1098/rstb.2025.0265",
+    "title": "The microbiota-proteostasis axis: implications in neurodegenerative diseases.",
+    "abstract": "Disruption of protein homoeostasis, or proteostasis, is a hallmark of protein conformational diseases (PCDs), including Alzheimer's and Parkinson's disease. These disorders are characterized by progressive protein aggregation and cellular dysfunction, yet no effective therapies exist. Emerging evidence indicates that microbial communities influence host proteostasis, giving rise to the concept of the microbiota-proteostasis axis. Microbes and their products can modulate host proteins by engaging with host proteostasis. As such, microbial dysbiosis has been linked to proteostasis disruption through the production of metabolites, extracellular vesicles, functional amyloids, and toxins or effector proteins capable of seeding or destabilizing host proteins associated with PCDs. These microbial factors have been shown in experimental models to converge on key proteostasis pathways, including protein synthesis, folding and clearance, thereby potentially reducing cellular buffering capacity and lowering the threshold for proteotoxic collapse. In parallel, microbiota-driven influence on inflammatory responses and immune signalling further amplifies systemic proteostasis disruption. In this review, we synthesize emerging evidence defining the microbiota-proteostasis axis and highlight how microbial factors influence host proteostasis. Importantly, these host-microbe interactions often precede neurodegeneration, suggesting potential for early detection and intervention. Together, these insights support targeting the microbiota as a potential strategy to enhance proteostasis and delay or prevent neurodegenerative disease. This article is part of the Theo Murphy meeting issue 'ProteostaSys: a systems view of proteostasis'.",
+    "authors": "Czyż DM, Brown BM.",
+    "journal": "Philosophical transactions of the Royal Society of London. Series B, Biological sciences",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42817639",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42192558",
+    "id": "42192558",
+    "source": "MED",
+    "pmid": "42192558",
+    "pmcid": "PMC13394756",
+    "doi": "10.1002/ame2.70226",
+    "title": "Exosome-mediated gut-brain axis signaling in neurodegenerative diseases: Mechanisms, experimental evidence, and therapeutic perspectives-A narrative review.",
+    "abstract": "The stomach and the brain are connected by a sophisticated two-way communication mechanism called the gut-brain axis. Extracellular vesicles, particularly exosomes, that move bioactive substances between the stomach and the brain, such as proteins, lipids, metabolites, and microRNAs, may improve the gut-brain axis. In the past years, the role of exosome-mediated communication has been recognized as significant in relation to the etiology, continued progression, and potential treatment of neurodegenerative disorders. The authors of this review article present a summary of the current understanding of the relationship of gut microbiome, exosome biogenesis, and the pathophysiological development of neurodegenerative diseases. Evidence from laboratory studies, animal studies, and newly emerging human studies suggests that microbiome-based metabolites and inflammatory mediators may modulate how exosomes are produced, what they carry, and how they interact with the blood-brain barrier. These exosomal signals may impact neuroinflammation, neuronal signaling, and the spread of pathological proteins of neurodegenerative diseases, such as Alzheimer's disease, Parkinson's disease, amyotrophic lateral sclerosis, and Huntington's disease. In addition, they examine some possible ways to target the gut-brain axis from a therapeutic perspective, including manipulating the gut microbiome, providing probiotics and/or prebiotics, performing fecal microbiota transplantation, and/or using engineered extracellular vesicles as vehicles for drug delivery. The authors also outline some of the methodological differences that make it difficult to assess the effects of exosomes.",
+    "authors": "Aggad WS, Ghosh R, Almohaimeed HM, Mohammedsaleh ZM, Saleh FM, Almars AI, Jyothi SR, Panigrahi R, Kumer A, Dhara B.",
+    "journal": "Animal models and experimental medicine",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42192558",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42612399",
+    "id": "42612399",
+    "source": "MED",
+    "pmid": "42612399",
+    "pmcid": null,
+    "doi": "10.1016/j.micres.2026.128688",
+    "title": "Ligilactobacillus salivarius NCU-41 reduces oxidative stress to ameliorate Parkinson's disease by regulating the AKT/Nrf2 signaling pathway.",
+    "abstract": "A growing body of evidence suggests that the gut microbiota influences the onset and progression of Parkinson's disease (PD) by regulating oxidative stress pathways. However, existing evidence remains the phenotypic level, and high-quality research is still lacking regarding specific probiotic strains with clearly defined ameliorative functions and their precise underlying molecular mechanisms. In this study, high-throughput sequencing confirmed significant differences in the gut microbiota between PD patients and healthy individuals. Furthermore, fecal microbiota transplantation (FMT) from healthy individuals significantly improved motor dysfunction in PD mice, reduced α-syn aggregation (MP vs. M = 319.61 ng/ML vs. 507.84 ng/ML), alleviated neuroinflammation (reduced GFAP and IBA1 positive areas), protected dopaminergic neurons (increased TH expression), and optimized the structure of the gut microbiota, whereas FMT from PD patients exacerbated PD progression. Additionally, through correlation analysis, culturomics, and tryptophan metabolite analysis, Ligilactobacillus salivarius NCU-41 may improve PD by producing indole-3-lactic acid (ILA). Further validation through animal experiments demonstrating that supplementation with either NCU-41 or ILA alone significantly improved PD symptoms, though not as effectively as FMT from healthy individuals. Mechanistically, NCU-41 might activate the AKT/Nrf2 signaling pathway through its tryptophan metabolite (ILA), thereby enhancing the body's antioxidant capacity and ultimately alleviating PD. In summary, this study revealed that L. salivarius NCU-41 to activate the AKT/Nrf2 signaling pathway, thereby exerting a therapeutic effect on PD. These findings provide a deeper mechanistic basis for the potential application of this strain in the future treatment of PD.",
+    "authors": "Xu T, Lin M, Yong Q, Zhang X, You J, Qi X, Li T, Zou T, Wei J, Li J, Chen T, Tu H.",
+    "journal": "Microbiological research",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42612399",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression"
+    ]
+  },
+  {
+    "key": "pmid:42439335",
+    "id": "42439335",
+    "source": "MED",
+    "pmid": "42439335",
+    "pmcid": null,
+    "doi": "10.2174/0118715273455874260702045636",
+    "title": "Gut Microbiota in Neuroinflammation, Neurodegenerative Disorders, and Neuropsychiatric Disorders: A Comprehensive Narrative Review.",
+    "abstract": "Neurodegenerative and neuropsychiatric illnesses are characterized by neuroinflammation, which is driven by microglial activation, cytokine production, and breakdown of the blood-brain barrier (BBB). It is currently known that the gut microbiota plays an important role in modulating neuroimmune signaling, which in turn may trigger anxiety-like behaviors and depressive phenotypes through the microbiota-gut-brain axis. This review aims to integrate the most recent mechanistic knowledge on treatment strategies targeting the gut microbiota to modulate neuroinflammation. This review article discusses preclinical and clinical studies that investigated microbial composition, metabolite profiles, and host-microbe interactions involved in neuroinflammatory processes. However, special attention was given to signaling via the vagus nerves and bile acids, as well as to tryptophankynurenine metabolism and short-chain fatty acids (SCFAs). To examine the potential connection between the two, researchers used animal models such as germ-free animals and antibiotic-injected mice for fecal microbiota transplantation (FMT). This article defines dysbiosis as amplifying neuroinflammatory responses by altering microglial phenotypes, disrupting the blood-brain barrier, and triggering the production of pro-inflammatory cytokines. In contrast, microbiome diversity rehabilitation through the use of probiotics, prebiotics, synbiotics, and dietary modifications reduces neuroinflammatory markers and enhances cognitive and behavioral status. Clinical trials have shown considerable promise in diseases such as Alzheimer's disease (AD), Parkinson's disease (PD), autism spectrum disorder (ASD), and depression. However, variability in treatment protocols, treatment resistance, and host-specific factors continue to pose significant challenges. This narrative review integrates mechanistic insights into microglial activation, cytokine signaling, blood-brain barrier regulation, vagal pathways, tryptophan metabolism, and short-chain fatty acids with emerging clinical evidence and therapeutic strategies, including probiotics, prebiotics, dietary modulation, and personalized microbiome-based interventions. Despite promising therapeutic potential, microbiome engineering faces important challenges, including safety concerns, lack of standardized intervention protocols, and substantial inter-individual variability in host-microbiome responses, which currently limit clinical translation. This review focuses on both neurodegenerative and neuropsychiatric disorders, examining shared neuroinflammatory mechanisms mediated by the gut-brain axis and evaluating microbiotatargeted therapeutic strategies across these disease categories. The review discusses both preventive strategies, including dietary modulation, prebiotics, and lifestyle-based microbiome interventions, as well as therapeutic approaches such as microbiota-targeted treatments aimed at mitigating neuroinflammation and disease progression.",
+    "authors": "Singh S, Singh S, Khandelwal V, Bharti U, Singh PK.",
+    "journal": "CNS & neurological disorders drug targets",
+    "year": 2026,
+    "cited_by": 1,
+    "open_access": false,
+    "pub_types": [
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42439335",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression"
+    ]
+  },
+  {
+    "key": "pmid:42358143",
+    "id": "42358143",
+    "source": "MED",
+    "pmid": "42358143",
+    "pmcid": null,
+    "doi": "10.13294/j.aps.2026.0021",
+    "title": "[Gut-brain axis and Parkinson's disease: research progress on the gut-brain interaction].",
+    "abstract": "Parkinson's disease (PD) is a progressive neurodegenerative disorder characterized by motor dysfunction. The main pathological manifestations are abnormal accumulation of α-synuclein (α-Syn) in substantia nigra neurons and loss of dopaminergic neurons (DAn). Gastrointestinal (GI) symptom is one of the common non-motor symptoms in PD. It is known that the brain and gut communicate via the parasympathetic nerves and the enteric nervous system (ENS), forming a bidirectional pathway called the gut-brain axis. Dysbiosis of the gut microbiota may be a key driver in the origin and pathological progression of PD, playing an important role in the spread of pathological α-Syn to the central nervous system (CNS) and thereby promoting the progression of PD. This article reviews the mechanism of gut microbiota dysbiosis in the pathogenesis and progression of PD, including its effects on intestinal barrier integrity, neuroinflammation, and pathological α-Syn transmission, and discusses the diagnosis and therapeutic strategies targeting the gut-brain axis, including microbiota transplantation, vagus nerve stimulation, Toll-like receptor 4 (TLR4) antagonists, exercise training, etc ., providing new insights for the diagnosis and treatment of PD.",
+    "authors": "Zhao YR, You HJ, Lei J.",
+    "journal": "Sheng li xue bao : [Acta physiologica Sinica]",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article",
+      "English Abstract"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42358143",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression"
+    ]
+  },
+  {
+    "key": "pmid:42630981",
+    "id": "42630981",
+    "source": "MED",
+    "pmid": "42630981",
+    "pmcid": "PMC13496164",
+    "doi": "10.1002/imt2.70144",
+    "title": "The gut microbiome organ.",
+    "abstract": "The human gut microbiome is increasingly viewed as an active regulator of host physiology, extending beyond earlier taxonomy-centered descriptions of a complex microbial community. Accumulating evidence supports an organ-like conceptual framework in which the gut microbiome exhibits spatially structured organization, extensive metabolic capacity, and continuous bidirectional communication with host systems. Through the production of bioactive metabolites with endocrine-like, immunomodulatory, and neuromodulatory properties, the microbiome contributes to metabolic, immune, and neuroendocrine regulation, thereby influencing systemic homeostasis and disease susceptibility. Recent advances in multi-omics, spatial biology, and computational modeling are moving the field from taxonomic association toward functional interpretation, mechanistic insight, and causal inference. These approaches are beginning to reveal microbiome-derived functional modules and host-microbe signaling networks that are shaped by host genetics, diet, medications, feeding patterns, circadian rhythms, and environmental exposures. In this review, we synthesize current mechanistic and translational evidence to conceptualize the gut microbiome as an organ-like functional system, delineate its structural and functional organization, and propose a framework for mapping, modeling, and therapeutically targeting microbiome-derived circuits to support precision medicine in metabolic, inflammatory, and selected gut-brain axis-related disorders.",
+    "authors": "Bi Y, Song W, Glymenaki M, Hu J, Li X, Huang H, Peng Y, Ni S, Haonon O, Liu Z, Daowtak K, Shen X, Peng H, et al.",
+    "journal": "iMeta",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42630981",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression",
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)",
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42712126",
+    "id": "42712126",
+    "source": "MED",
+    "pmid": "42712126",
+    "pmcid": "PMC13568577",
+    "doi": "10.1080/19490976.2026.2728828",
+    "title": "Towards optimizing the host response to biotics: a report of an International Scientific Association for Probiotics and Prebiotics working group.",
+    "abstract": "This report summarizes the deliberations of a working group convened by the International Scientific Association for Probiotics and Prebiotics (ISAPP) at their 2025 annual meeting to identify the key targets that mediate the host response to biotics. Probiotics, prebiotics, synbiotics, and postbiotics have been explored in numerous contexts, but results of clinical trials are mixed. In most studies performed to date, a therapeutic product and its dose and administration strategy were selected based on factors other than rigorous mechanistic evidence. Given recent advances in our understanding of interactions between biotics, the host, and the gut microbiome, we sought to determine whether a more rational, informed approach might now guide the more precise selection of a biotic for a specific indication. The panel addressed biotic modulation of the immune system, host metabolism, the enteric nervous system, human commensal microbes, and the gut-brain axis and developed five recommendations to increase the likelihood that biotic interventions will lead to meaningful clinical impacts. Interventions should: (1) strive to modulate or refine, rather than \"boost,\" host metabolism and the immune system to achieve specific outcomes; (2) consider the human metabolome, in addition to the microbiome, as a readout and therapeutic target; (3) determine context-dependent responses to biotics in terms of spatial location within the gut, host genetics, environmental influences, and diet; (4) explore a wide range of microbial fermentation substrates that yield biologically active products in addition to prebiotic fibers; and (5) leverage new approach methods including ex vivo human tissue-based approaches, novel in vitro methods, and advanced computational tools including artificial intelligence to complement human studies. The roadmap proposed by this panel aims to accelerate the translation of biotic research into discoveries that will more readily impact clinical practice.",
+    "authors": "Preidis GA, Bercik P, Marette A, O'Mahony L, Sperandio V, Quigley EM.",
+    "journal": "Gut microbes",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "meeting-report",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42712126",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression",
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)",
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42602177",
+    "id": "42602177",
+    "source": "MED",
+    "pmid": "42602177",
+    "pmcid": "PMC13473262",
+    "doi": "10.22034/ijp.2026.2081887.3613",
+    "title": "The Gut-Brain Axis in Neurodegeneration: Mechanistic Links Between Dysbiosis and Neuropathology.",
+    "abstract": "Background & objective The gut-brain axis is essentially a two-way communication system that physically connects the brain and the intestinal tract. The connection is mediated through a series of pathways, including neural, endocrine, and immune pathways. Gut dysbiosis, which is explained as an imbalance in the microbial community, has been linked to the causation of various neurodegenerative disorders such as Alzheimer's disease, Parkinson's disease, and multiple sclerosis. However, the pathological mechanisms in the brain are only partially known. The present review outlines the process of gut dysbiosis and neurodegeneration, detailing the roles of protein aggregation, neuroinflammation, barrier disruption, and neuroglial dysfunction. Then, extending the comparison to a range of neurodegenerative diseases, we discuss the possibility of common pathway therapeutics and actual microbiome-based treatment options planning from the standpoint of microbiome-directed interventions. Content/findings Gut dysbiosis triggers a definable cascade, starting with the disruption of the intestinal barrier and increased permeability (leaky gut), which allows bacterial products (lipopolysaccharides, bacterial amyloids) and pro-inflammatory cytokines to enter systemic circulation. Such peripheral changes weaken the blood-brain barrier and thus allow these factors to access the CNS, where they lead to neuroglial dysfunction (microglial priming, astrocytic reactivity, and oligodendrocyte injury) by disruption of glial homeostasis. CNS glial cell malfunction leads to the development of proteinopathies characteristic of each disease: amyloid and tau hyperphosphorylation in Alzheimer's disease through BACE1 upregulation and kinase activation; synuclein in Parkinson's disease via molecular mimicry, oxidative stress, and impaired clearance; and demyelination in multiple sclerosis through oligodendrocyte apoptosis. Oral bacteria such as Porphyromonas gingivalis aggravate this inflammatory loop through the direct invasion of the CNS and proteolytic cleavage of amyloid and tau. The vagus nerve is yet another pathway through which gut-derived inflammatory signals and pathological synuclein can be transmitted to the brain. Conclusion The gut microbiome is more than just a correlate of neurodegeneration; it actively promotes neurodegenerative diseases through pathways that can be mechanistically defined. Microbiome-targeted interventions such as dietary changes, precision probiotics, fecal microbiota transplantation, and anti-inflammatory agents offer a measure of hope for changing these pathological processes. Future studies need to be directed at determining the time sequence of cause and effect, finding dependable microbiota-based biomarkers, and formulating tailored strategies that can account for individual microbial composition variability, genetic susceptibility, and environmental exposures. A deeper understanding of the gut-brain axis from this mechanistic perspective could eventually lead to the prevention or postponement of neurodegeneration.",
+    "authors": "Azimzadeh M, Ababzadeh S, Kahaki AG, Babaei SMH, Seyedebrahimi R, Farsani ME.",
+    "journal": "Iranian journal of pathology",
+    "year": 2026,
+    "cited_by": 1,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42602177",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression",
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42154337",
+    "id": "42154337",
+    "source": "MED",
+    "pmid": "42154337",
+    "pmcid": null,
+    "doi": "10.1007/s12035-026-05917-6",
+    "title": "The Influence of Gut Microbiome on Alpha-Synuclein Aggregation: Implications for Parkinson's Disease Pathogenesis.",
+    "abstract": "Parkinson's disease (PD) is a progressive neurodegenerative disorder traditionally characterized by dopaminergic neuronal loss in the substantia nigra and the accumulation of misfolded α-synuclein (α-syn) aggregates. While genetic susceptibility and environmental exposures are well-recognized contributors to PD, growing evidence indicates that disease initiation and progression may also involve peripheral mechanisms originating in the gastrointestinal (GI) tract. Early non-motor symptoms such as constipation, along with the presence of α-syn pathology in the enteric nervous system, have led to increasing interest in the gut-brain axis as a critical modulator of PD pathogenesis. Recent literatures reveal that gut microbiota dysbiosis can influence neurodegeneration through immune activation, intestinal barrier dysfunction, and altered production of microbial metabolites, including short-chain fatty acids, bile acids, lipopolysaccharides, and tryptophan-derived compounds. However, the precise molecular mechanisms by which these microbial factors modulate α-syn aggregation, propagation, and clearance remain incompletely understood. In this article, we review current clinical and experimental literature linking gut microbiota alterations to α-syn pathology, with particular emphasis on inflammatory signaling, microbial metabolites, and impaired proteostatic pathways that promote α-syn misfolding. We further integrate emerging concepts of \"body-first\" and \"brain-first\" PD subtypes and discuss proposed routes of α-syn transmission from the enteric to the central nervous system, including vagal, hematogenous, and immune-mediated pathways. By highlighting underexplored mechanistic connections between gut dysbiosis and α-syn biology, this review underscores the potential of microbiome-targeted strategies for early diagnosis and disease modification. A deeper understanding of gut-brain communication may ultimately enable personalized therapeutic approaches and reshape current paradigms of PD pathogenesis.",
+    "authors": "Sain M, Rani S, Singh SP, Pothal P, Yadav S, Suttee A, Kumar A, Kumar S, Ranawat P, Singh G, Barnwal RP.",
+    "journal": "Molecular neurobiology",
+    "year": 2026,
+    "cited_by": 1,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42154337",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression"
+    ]
+  },
+  {
+    "key": "pmid:42725392",
+    "id": "42725392",
+    "source": "MED",
+    "pmid": "42725392",
+    "pmcid": "PMC13586700",
+    "doi": "10.3892/mmr.2026.14016",
+    "title": "Research advances in the microbiota‑gut‑brain axis and Parkinson's disease (Review).",
+    "abstract": "Parkinson's disease (PD) is a common neurodegenerative disease with diverse pathogenic mechanisms. The microbiota‑gut‑brain axis is closely related to the development of PD, in which non‑motor symptoms are considered to be the early manifestation and exacerbation of the disease. Nevertheless, reliable diagnostic criteria or biomarkers for PD have not been fully developed. The gut microbiota as a key transmitter of the gut‑brain axis, can affect disease progression through a variety of pathways, and may be a potential therapeutic target for PD. Therefore, new strategies have been developed with the aim to prevent and control PD by modulating the intestinal microflora, using tools such as antibiotics, probiotics, prebiotics, dietary interventions, fecal microbiota transplantation and vagus nerve stimulation; however, these interventions also face certain issues and challenges. The present article reviewed the latest research on PD through the microbiome‑gut‑brain axis, offering new angles for understanding and treating the condition.",
+    "authors": "Meng Y, Liu Q, Zou H, Zhu X, Mi X, Li S, Xia Y, Ma Y, Yang Q, Peng J, Li J, Liu X, Chen J.",
+    "journal": "Molecular medicine reports",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42725392",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42307649",
+    "id": "42307649",
+    "source": "MED",
+    "pmid": "42307649",
+    "pmcid": null,
+    "doi": "10.1007/s11033-026-12155-5",
+    "title": "Gut microbiota and immune modulation: role in neurodegenerative disorders and cancer.",
+    "abstract": "The gut microbiota plays a crucial role in maintaining host metabolic balance and immune homeostasis, with increasing evidence linking its dysregulation to neurodegenerative diseases and cancer. This review aims to provide a comprehensive and integrative analysis of gut microbiota-mediated immune modulation in Parkinson's disease, Alzheimer's disease, and cancer. A structured literature-based approach was employed to examine recent studies focusing on microbial composition, metabolite production, and host microbe immune interactions. We summarize the role of key microbial metabolites, particularly short-chain fatty acids, in regulating immune responses, maintaining gut barrier integrity, and modulating systemic inflammation. In addition, the bidirectional communication along the gut-brain axis is discussed, highlighting its differential involvement in neurodegenerative disorders, while microbiota driven immune mechanisms contributing to tumorigenesis are also evaluated. Importantly, this review emphasizes the translational relevance of microbiome-targeted interventions, including prebiotics, probiotics, synbiotics, and emerging postbiotic strategies, in modulating disease progression and therapeutic outcomes. Although limitations lies in correlating the human gut microbiota to the results obtained from the animal studies which may not fully reflect the physiological conditions of the human gut as it is affected by several factors, this work provides a unified framework linking gut microbiota, immune regulation, and disease pathogenesis, and outlines future directions for the development of targeted and personalized microbiome-based therapies which may be achieved through well designed longitudinal and large scale clinical studies further.",
+    "authors": "Dogra KA, Sharma M, Ghosh N, Kaur G, Singh J, Sinha P.",
+    "journal": "Molecular biology reports",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42307649",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression",
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42286837",
+    "id": "42286837",
+    "source": "MED",
+    "pmid": "42286837",
+    "pmcid": "PMC13274142",
+    "doi": "10.1080/19490976.2026.2679197",
+    "title": "Recent advances and clinical relevance of microbiome dynamics in health and disease.",
+    "abstract": "The human microbiome, comprising trillions of bacteria, viruses, fungi, and archaea, represents an essential partner in human biology rather than a passive collection of microbes. These microbial communities inhabit diverse niches, including the gut, skin, oral cavity, respiratory tract, and urogenital system, where they contribute to digestion, vitamin biosynthesis, immune development, and regulation of host metabolism. Their dynamic interactions form a complex ecosystem that profoundly shapes health across the lifespan. However, with ever increasing reports on the microbiome including perceived health benefits, diagnostic use, detrimental species and immune modulation, we synthesize findings from multiple biomedical fields for this review. It first describes beneficial functions of commensal microbes in maintaining immune tolerance and metabolic balance, then analyzes the effect of diet, geography and medication exposure, the consequences of dysbiosis in gastrointestinal, metabolic, neurological, cardiovascular, autoimmune, and oncological disorders. The article examines the functional potency of the gut microbiome, keystone taxa as well as disease-stage-specific and general dynamics, how microbiomes modulate drug absorption, metabolism, and efficacy, thereby influencing individualized responses to therapy. Furthermore, it evaluates therapeutic approaches, including probiotics, prebiotics, fecal microbiota transplantation, and engineered microbial strategies that seek to restore microbial equilibrium. The significance of this review lies in its integrative perspective, as it links microbiome research to precision medicine, emphasizing that safeguarding microbial diversity is crucial for prevention, early diagnosis, and the personalization of future medical interventions.",
+    "authors": "Gavanji S, Suhail M, Bencurova E, Dandekar T, Othman EM.",
+    "journal": "Gut microbes",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42286837",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression",
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42699222",
+    "id": "42699222",
+    "source": "MED",
+    "pmid": "42699222",
+    "pmcid": "PMC13542889",
+    "doi": "10.3389/fcimb.2026.1877371",
+    "title": "Decoding the power of the microbiome in human health.",
+    "abstract": "The human microbiota plays a vital role in maintaining physiological homeostasis and overall health. Microbial communities colonize distinct anatomical sites, including the gut, oral cavity, respiratory tract, and skin, where they engage in symbiotic interactions with the host. These site-specific microbial communities contribute to essential functions such as nutrient metabolism, vitamin and short-chain fatty acid (SCFA) synthesis, immune regulation, and epithelial barrier integrity. Disruption of this balance, known as dysbiosis, is increasingly linked to a wide range of diseases, including inflammatory bowel disease (IBD), obesity, diabetes, and cancer. In this review, we summarize the current understanding of the human microbiota, highlighting its role in vitamin biosynthesis, the gut-brain axis, and immune modulation. We further the role of microbiome alterations in disease pathogenesis and outline emerging microbiome-based therapeutic strategies aimed at restoring microbial homeostasis.",
+    "authors": "Kumar M, Almohannadi N, Al Khodor S.",
+    "journal": "Frontiers in cellular and infection microbiology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42699222",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND progression",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42337925",
+    "id": "42337925",
+    "source": "MED",
+    "pmid": "42337925",
+    "pmcid": "PMC13290434",
+    "doi": "10.1002/cam4.72061",
+    "title": "Harnessing Gut Microbiota to Enhance Immunotherapy in NSCLC: From Mechanisms to Translational Applications.",
+    "abstract": "The gut microbiome has emerged as a pivotal regulator of immunotherapy efficacy in non-small cell lung cancer (NSCLC), with mounting evidence demonstrating that microbial-immune crosstalk significantly influences therapeutic responses. Current research reveals that commensal bacteria modulate host immunity through complex metabolic and immunological pathways, yet the precise mechanisms underlying these interactions remain incompletely characterized. Meanwhile, the substantial heterogeneity of microbial ecosystems across individuals and the lack of standardized protocols for microbiota-based therapeutic interventions pose significant barriers to clinical translation. Furthermore, unresolved questions persist regarding the safety profiles and reproducibility of clinical outcomes associated with microbial modulation. Addressing these knowledge gaps could provide transformative insights into immunotherapy resistance while enabling the development of precision medicine approaches. This narrative review synthesizes current knowledge on the clinical impact of gut microbiota on the immunotherapy response in NSCLC, mechanistic insights into the interactions between gut microbiota and the lung cancer immune microenvironment, and the challenges in clinical translation. By integrating these perspectives, we develop a practical framework for implementing microbiota-based strategies to enhance immunotherapy efficacy, with the hope of addressing current limitations in biomarker development, intervention protocols, and personalized treatment approaches to bridge the gap between research and clinical practice in precision oncology.",
+    "authors": "Zhu L, Xu J, Niu D, Zhang X, Jin C.",
+    "journal": "Cancer medicine",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42337925",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)"
+    ]
+  },
+  {
+    "key": "pmid:42346116",
+    "id": "42346116",
+    "source": "MED",
+    "pmid": "42346116",
+    "pmcid": "PMC13297137",
+    "doi": "10.3390/cells15121089",
+    "title": "The Gut-Brain-Immune Axis: Multi-Omics Insights into Neurodegenerative and Metabolic Diseases.",
+    "abstract": "The axis linking the gut to the brain to the immune system connects all tissues involved-bacteria, immune cells, metabolism and the CNS-through a multidirectional communication network. Several studies have confirmed that when this axis is disrupted, it can be responsible for Alzheimer's disease, Parkinson's disease, obesity, type 2 diabetes, and NAFLD, and the main consequences come from increased systemic inflammation, altered regulation of immune cells, the production of microbial metabolites that alter signals to the immune cells and nervous system, increase in oxidative stress, breakdown of the gut barrier, and more. In recent years, advanced multi-omics technologies, such as metagenomics, transcriptomics, metabolomics, proteomics, and single-cell sequencing, have provided significant advancement in our understanding of all of the interacting nodes involved in the gut-brain-immune axis. These advanced sequencing technologies can characterize the microbial communities, host immune cells, metabolic profiles, and the degree of cell heterogeneity during a specific disease. Combining multi-omics information can reveal a few shared pathways between neurodegenerative and metabolic disorders, such as NF-κB, NLRP3 inflammasome activation, mitochondrial dysfunction, changes in SCFA metabolism, and the alteration of microbial populations in Alzheimer's and Parkinson's disease; metabolic dysbiosis and increased risk for Parkinson's disease; or changes in gut-to-brain-to-immune signaling contributing to diabetes complications and NAFLD. Artificial intelligence (AI) and machine learning are becoming promising tools for detecting biomarkers from these datasets, extracting knowledge, interpreting systems biology, and helping with developing precision medicine. In this review, we summarize current evidence that supports the role of the gut-brain-immune axis in neurodegenerative and metabolic diseases, highlighting results gained with the utilization of multi-omics approaches. We will describe the key microbial, immune, and metabolic pathways involved in pathogenesis and therapeutic approaches including psychobiotics, tailored nutrition, modulation of the microbiome, and metabolite interventions, discussing future perspectives of the translation of the gut-brain-immune axis knowledge into clinical practice.",
+    "authors": "Khan SU, Chauhan V, Chaudhary AA, Khan M.",
+    "journal": "Cells",
+    "year": 2026,
+    "cited_by": 1,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42346116",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)"
+    ]
+  },
+  {
+    "key": "pmid:42676548",
+    "id": "42676548",
+    "source": "MED",
+    "pmid": "42676548",
+    "pmcid": "PMC13526757",
+    "doi": "10.14744/cpr.2026.15313",
+    "title": "From Mouth to Mind: Unraveling the Oral Microbiome's Role in Orofacial Pain and Neurodegeneration.",
+    "abstract": "The human oral cavity hosts a diverse and dynamic microbiome comprising more than 700 microbial species, which plays a crucial role in maintaining oral and systemic health. Oral dysbiosis, defined as disruption of this microbial balance, has been increasingly implicated not only in periodontal disease but also in the pathogenesis of orofacial pain and neurodegenerative diseases. Key pathogens, such as Porphyromonas gingivalis, Treponema denticola , and Fusobacterium nucleatum , have been proposed to release virulence factors, including lipopolysaccharides and gingipains, which may activate immune pathways and nociceptors, thereby driving peripheral sensitization and neuroinflammation. These organisms have also been suggested to breach mucosal and vascular barriers, enter the systemic circulation, and, in some cases, access the central nervous system. Evidence has linked oral pathogens to Alzheimer's disease, Parkinson's disease, autism spectrum disorder, and multiple sclerosis. Notably, P. gingivalis and its gingipains have been identified in postmortem brain tissue from patients with Alzheimer's disease, with proposed roles in neuroinflammation and amyloid plaque formation. Salivary microbial alterations in burning mouth syndrome and temporomandibular disorders further highlight the influence of the oral microbiome on neuropathic pain. Therefore, the oral-gut-brain axis represents a novel and promising area of investigation, offering potential diagnostic biomarkers and targeted microbial therapies for the management of chronic orofacial pain and neurological disorders.",
+    "authors": "Moses S, Phulambrikar T, Dosi T.",
+    "journal": "Journal of clinical practice and research",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42676548",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)"
+    ]
+  },
+  {
+    "key": "pmid:42503576",
+    "id": "42503576",
+    "source": "MED",
+    "pmid": "42503576",
+    "pmcid": "PMC13402341",
+    "doi": "10.1111/ejn.70606",
+    "title": "Targeting the Microbiota-Gut-Brain Axis: Emerging Nanomedicine Approaches for Neurodegenerative Diseases.",
+    "abstract": "The microbiota-gut-brain axis (MGBA) is a bidirectional relationship between the gut microbiota (GM) and the brain, where the GM affects the gastrointestinal tract (GIT) and the central nervous system (CNS), and vice versa. Microbiotas are important for several vital body processes, including metabolism, immunity, and homeostasis. The MGBA has three main pathways: the vagal nerve mechanism, the immune-related mechanism, and the neuroendocrine mechanism. GM imbalance, known as dysbiosis, affects the GIT, the brain, and the CNS. Furthermore, dysbiosis is linked to several neurological disorders such as Alzheimer's (AD), Parkinson's (PD), depression, autism spectrum disorder (ASD), and multiple sclerosis (MS). Studying MGBA gives researchers new therapeutic ideas using microbiota. Using special diets rich in fiber and probiotics, in addition to fecal microbiota transplantation (FMT), is being studied as a new therapy for MGBA. From the point of view that these therapeutic interventions maintain microbiota imbalance, which in turn will affect the brain and can relieve the neurological disorders caused by dysbiosis and MGBA.",
+    "authors": "Mansour RM, Alam-ElDein KM, Abdel Mageed SS, El-Sayyad GS, Ghanem A, Shaker AAS, Mohammed OA, Farag DAA, Abdelnaby M, et al.",
+    "journal": "The European journal of neuroscience",
+    "year": 2026,
+    "cited_by": 1,
+    "open_access": false,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42503576",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42783767",
+    "id": "42783767",
+    "source": "MED",
+    "pmid": "42783767",
+    "pmcid": "PMC13609409",
+    "doi": "10.3390/metabo16090642",
+    "title": "Gut Microbial Metabolism as a Dynamic Interface in Neurodegenerative Diseases.",
+    "abstract": "Gut microbial metabolism links intestinal ecology with systemic physiology and neural pathology, but its effects vary across disease stage, tissue compartment, and host background. This review uses Alzheimer's disease (AD) as the principal model and compares selected features with Parkinson's disease (PD) and amyotrophic lateral sclerosis (ALS). Across the AD continuum, fermentation-related changes appear in prodromal cohorts, whereas broader alterations in amino acid products, host-microbial co-metabolites, bile acids, and lipids accompany mild cognitive impairment and dementia. These group-level patterns do not constitute a fixed patient trajectory. Microbial production, intestinal absorption, hepatic conversion, renal clearance, barrier integrity, and tissue-specific receptors jointly determine biological exposure. Experimental studies connect short-chain fatty acids and indole derivatives with epithelial and neuroimmune homeostasis, while imidazole propionate, trimethylamine N-oxide, selected kynurenine products, and remodeled bile acid pools engage vascular, inflammatory, amyloid, or tau-related pathways. Cerebral pathology can also remodel the intestinal ecosystem, creating reciprocal feedback. Apolipoprotein E4 modifies lipid handling, vascular permeability, and immune responses, helping to explain why comparable metabolic profiles may carry different consequences among individuals. Translation therefore requires more than a change in community composition. Trials must verify microbial function, metabolite target engagement, AD biomarker response, and clinical benefit in appropriately stratified participants. Shared pathways in PD and ALS provide comparison points, but disease-specific cells, proteinopathies, and treatment exposures constrain direct transfer of AD-derived targets.",
+    "authors": "Kang Z, Meng R, Nie M, Wang T.",
+    "journal": "Metabolites",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42783767",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)",
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42444486",
+    "id": "42444486",
+    "source": "MED",
+    "pmid": "42444486",
+    "pmcid": "PMC13371492",
+    "doi": "10.1080/19490976.2026.2698204",
+    "title": "Branched-chain amino acids and gut microbiota: coregulation and impact on neurological function via the gut-brain axis.",
+    "abstract": "Diseases that cause neurological dysfunction, such as Parkinson's disease (PD), Alzheimer's disease (AD), and maple syrup urine disease (MSUD), among others, are characterized by complex and multifaceted etiologies. There is growing evidence that branched-chain amino acids (BCAAs), regulated by the gut microbiota, play a critical role in the development of the central nervous system (CNS) disorders. This review focuses on the potential role of branched-chain amino acid metabolism in regulating brain function and gut microbiota. First, we summarize the current understanding of BCAAs, encompassing their biochemical metabolism, function, and systemic metabolic mechanisms. Subsequently, we delve into the mechanisms through which the gut microbiota regulates branched-chain amino acid metabolism, along with its mechanistic insights and recent evidence of its impact on neurological disorders. Finally, we discuss future research directions and challenges regarding gut BCAAs metabolism as a potential treatment for brain and gastrointestinal dysfunction.",
+    "authors": "Li Q, Fan B, Xiao Y, Zhang Z, Zhao S, Liao B, Zeng J, Shan X, Ye H, Wen Y, Zhang L, Guo H, Xiao F, Zhu H.",
+    "journal": "Gut microbes",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42444486",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)"
+    ]
+  },
+  {
+    "key": "pmid:41889651",
+    "id": "41889651",
+    "source": "MED",
+    "pmid": "41889651",
+    "pmcid": "PMC13013356",
+    "doi": "10.3389/fmicb.2026.1750505",
+    "title": "Exploring the molecular mechanisms by which exercise improves cognitive impairment in Parkinson's disease based on the brain-gut microbiota axis: bibliometrics and visualization analysis.",
+    "abstract": "Background Parkinson' s disease (PD) is a common neurodegenerative disease, and its cognitive impairment, as an important non-motor symptom, seriously affects the quality of life of patients. In recent years, the brain-gut flora axis, as a key pathway connecting the central nervous system(CNS) and intestinal microecology, has gradually become the forefront of research on cognitive dysfunction in PD. A large number of studies have shown that the imbalance of intestinal flora is closely related to the occurrence of cognitive impairment in PD, revealing molecular mechanisms such as inflammatory response, neurotransmitter metabolism, and immune regulation. As a safe and effective non-drug intervention, exercise can regulate the structure of intestinal flora and its metabolites, activate relevant signaling pathways, exert a neuroprotective effects, and improve cognitive function. In view of the large increase in related research in recent years, this study aims to use bibliometric methods to systematically review the global research status and trends of exercise treatment for cognitive dysfunction in PD patients, focusing on analyzing the relevant mechanisms of how exercise intervention interferes with Parkinson' s cognitive ability by affecting the intestinal microecology. To explore the synergistic effect of exercise and intestinal flora regulation and its potential therapeutic value. This review aims to provide a new perspective on the pathological mechanism of cognitive impairment in PD and provide scientific basis for the optimization of exercise intervention strategies. Methods Literature related to exercise and cognitive dysfunction in PD published between 1999 and 2024 was searched in the Science Citation Index Expanded (SCIE) and Social Science Citation Index (SSCI) databases based on the Web of Science Core Collection (WoSCC). Bibliometric analysis was performed using VOSviewer and CiteSpace software to analyze data on countries, institutions, authors, journals, keywords, citations, and to generate visual maps. Results Among 332 publications, annual output peaked in 2022. The USA led in publications ( n = 117). Key institutions included Eberhard Karls University of Tübingen. Research hotspots centered on mild cognitive impairment, dementia, and aerobic exercise. Emerging trends include home-based interventions and basal ganglia mechanisms. Conclusion This study aims to use bibliometric methods to systematically review the global research status and trends of exercise treatment for cognitive dysfunction in PD patients, focusing on analyzing how exercise intervention affects the intestinal microecology and its interaction with the central CNS, exploring the synergistic effect of exercise and intestinal flora regulation and its potential therapeutic value, and providing a new perspective and path for understanding the intervention of cognitive impairment in PD.",
+    "authors": "Wang W, Ma T, Qiu Z, Zhang X, Sun W.",
+    "journal": "Frontiers in microbiology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "Systematic Review",
+      "systematic-review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/41889651",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)"
+    ]
+  },
+  {
+    "key": "pmid:42474869",
+    "id": "42474869",
+    "source": "MED",
+    "pmid": "42474869",
+    "pmcid": "PMC13385334",
+    "doi": "10.1186/s43556-026-00512-6",
+    "title": "Gut microbiota in health and disease.",
+    "abstract": "The gut microbiota is integral to host physiology, contributing to metabolic homeostasis, epithelial barrier integrity, immune balance, and bidirectional communication along gut-organ axes. Disruption of this ecosystem, commonly referred to as dysbiosis, is increasingly implicated in a wide range of gastrointestinal and extra-intestinal diseases. Rather than reflecting isolated compositional changes, microbiota-related pathology often involves interconnected disturbances in barrier function, microbial metabolism, immune regulation, genotoxicity, inflammatory and oncogenic signaling, and long-range communication with distal organs. However, key challenges remain, particularly in resolving causality, accounting for interindividual heterogeneity, and translating complex microbiome data into robust clinical tools. In this review, we summarize the role of the gut microbiota in maintaining host homeostasis and outline the concept, drivers, and consequences of dysbiosis. We then discuss the major mechanisms through which the gut microbiota contributes to disease development and progression, using colorectal cancer as a representative gastrointestinal example and gut-organ axes as a framework for extra-intestinal disorders. We further highlight current translational advances in microbiota-based biomarkers, dietary modulation, biotic and postbiotic strategies, fecal microbiota transplantation, and emerging precision microbiota therapies. By integrating mechanistic insights with translational perspectives, this review offers an updated framework for interpreting the gut microbiota in health and disease and may help inform the future development of more precise, mechanism-informed diagnostic and therapeutic strategies.",
+    "authors": "Li Y, Xiao X, Jiang X, Li X, Wang W, Lin R.",
+    "journal": "Molecular biomedicine",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42474869",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)"
+    ]
+  },
+  {
+    "key": "pmid:42410982",
+    "id": "42410982",
+    "source": "MED",
+    "pmid": "42410982",
+    "pmcid": "PMC13399894",
+    "doi": "10.1002/jcla.70307",
+    "title": "Organ-Specific Human Microbiomes and Dysbiosis: Mechanistic Links to Disease and Emerging Therapeutic Strategies.",
+    "abstract": "Background The human microbiome is a dynamic and diverse community of microorganisms that affects susceptibility to illness and promotes wellness. Dysbiosis, or disruption of this delicately regulated microbial ecology, has been identified as a major factor in the emergence and development of systemic and organ-specific disorders. Objective With an emphasis on dysbiosis-driven illness processes and therapeutic intervention implications, this study attempts to critically analyze host-microbiome interactions across key human organ systems. Methods Using predetermined microbiome-related keywords, a systematic literature search (2001-2025) was carried out in PubMed, Scopus, Web of Science, and Google Scholar. To assess microbiome formation, organ-specific distribution, disease correlations, and therapeutic implications, English-language peer-reviewed original papers, meta-analyses, and clinical or validated animal studies were chosen and methodically compiled. Results Microbiome dysbiosis is linked to cardiovascular, metabolic, inflammatory, neurological, hepatic, renal, and cancer-related illnesses by interfering with immune modulation, metabolic balance, and epithelial barrier integrity, according to evidence from human and verified animal research. Modified production of short-chain fatty acids, immunological signaling imbalance, chronic inflammation, and communication between the gut-organ axis are examples of mechanistic linkages. Immune and metabolic indicators improved condition-specifically with interventions such as probiotics, fecal microbiota transplantation, and diet-based regulation. Conclusion Collectively, current evidence supports the microbiome as a modifiable determinant of disease risk and therapeutic response, underscoring its translational potential for precision medicine.",
+    "authors": "Alanazi A.",
+    "journal": "Journal of clinical laboratory analysis",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42410982",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42718434",
+    "id": "42718434",
+    "source": "MED",
+    "pmid": "42718434",
+    "pmcid": "PMC13553251",
+    "doi": "10.3389/fcimb.2026.1806356",
+    "title": "Global research trends in enteric nervous system and gut microbiota: a bibliometric analysis (2005-2025).",
+    "abstract": "Background The crosstalk between the enteric nervous system (ENS) and gut microbiota, along with their roles in disease, has garnered increasing scientific attention. However, a comprehensive and objective analysis of the field's current status and evolutionary trajectory remains lacking. Methods We retrieved and screened relevant publications from the Web of Science Core Collection and Scopus database. Bibliometric and visual analysis were performed using CiteSpace, VOSviewer, R-studio, Origin and Excel 365. Results A total of 759 relevant articles and reviews published from 2005 to 2025 were included. The annual publication volume exhibited a discernible three-phase growth trajectory, culminating in a peak output in recent years. Collaboration network analysis revealed the United States as the most influential country. Leading institutions, based on publication output and centrality metrics, included University College Cork (Ireland), McMaster University (Canada), the University of Melbourne (Australia) and Baylor College of Medicine (the US). Key journals publishing in this field included the International Journal of Molecular Sciences and Neurogastroenterology and Motility . Author cooperation analysis highlighted John F. Cryan (Ireland) as the most influential scholar, with his seminal review \"The Microbiota-Gut-Brain Axis\" being the highly cited reference. Furthermore, keywords and co-cited reference analysis revealed that current research primarily centers on specific disorders such as irritable bowel syndrome, inflammatory bowel disease, Parkinson's disease and Alzheimer's disease. The pivotal role of neuroinflammation and neuro-immune interactions was consistently identified as a core pathological mechanism. Importantly, modulation of the gut microbiota via probiotics and microbial metabolites like short-chain fatty acids emerged as predominant potential therapeutic targets. Conclusion Research on the gut microbiota and the ENS elucidates the mechanisms and potential therapeutic directions for a spectrum of disorders, including irritable bowel syndrome, inflammatory bowel disease, Parkinson's disease, and Alzheimer's disease. Fostering international collaboration and interdisciplinary exchange is crucial to accelerate the translation of high-quality research into clinical applications.",
+    "authors": "Tao W, Yu Y, Huang X, Huang J, Wang N, Shangguan X, Yu R, Xiao F.",
+    "journal": "Frontiers in cellular and infection microbiology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "Systematic Review",
+      "systematic-review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42718434",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42206189",
+    "id": "42206189",
+    "source": "MED",
+    "pmid": "42206189",
+    "pmcid": "PMC13201170",
+    "doi": "10.3389/frmbi.2026.1831956",
+    "title": "Identifying microbial biomarkers of neurodegeneration: a comparative study in Alzheimer's and Parkinson's disease.",
+    "abstract": "Introduction Neurodegenerative disorders such as Alzheimer's disease (AD) and Parkinson's disease (PD) have been increasingly linked to alterations of the gut microbiota, although reported microbial signatures remain heterogeneous and often lack taxonomic resolution. Methods In the present study, we applied full-length 16S rRNA gene sequencing to characterize gut microbiota composition in 152 individuals, including patients with AD (n = 37), PD (n = 65), and age-matched healthy controls (n = 50), using a unified bioinformatic and statistical framework with adjustment for relevant demographic covariates. Results Alzheimer's disease was associated with a modest but significant reduction in microbial richness and Shannon diversity compared with controls, whereas no alpha diversity differences were observed in PD. Beta diversity analyses revealed significant compositional differences across diagnostic groups, driven primarily by PD and modulated by sex but not age. Species-level differential abundance analysis identified a PD-associated microbial signature characterized by reduced abundances of short-chain fatty acid-producing bacteria, including Faecalibacterium prausnitzii , Agathobacter rectalis , Roseburia intestinalis , and Faecalicatena fissicatena , together with increased abundance of Ruminococcus sp. JE7A12. In contrast, AD exhibited minimal species-level changes, with only Bacteroidales bacterium CF showing reduced abundance compared with controls. Discussion Overall, these findings indicate that Parkinson's disease is characterized by a targeted disruption of beneficial butyrate-producing bacteria, whereas Alzheimer's disease exhibits subtler and less consistent microbiome alterations. Our results underscore the importance of species-level resolution for identifying disease-associated microbial signatures.",
+    "authors": "De Jaegher S, Pinzauti D, D'Aguanno M, Parkinson E, Schofield J, Strazzeri F, Skipp P, Penrice-Randal R, Kunicki A, et al.",
+    "journal": "Frontiers in microbiomes",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42206189",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)",
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42514986",
+    "id": "42514986",
+    "source": "MED",
+    "pmid": "42514986",
+    "pmcid": "PMC13416487",
+    "doi": "10.3390/pathogens15070659",
+    "title": "A Comprehensive Review of the Gut-Microbiota-Brain Axis in Alzheimer's Disease: From Pathophysiology to Potential Therapies.",
+    "abstract": "The gut-microbiota-brain axis (GMBA), an intricate network connecting the gastrointestinal (GI) tract and the brain, plays a pivotal role in maintaining overall health and influencing disease processes. The human gut microbiota, comprising over 3000 bacterial species, regulates immune responses, hormonal signals, and metabolite production, maintaining homeostasis under normal conditions. Dysbiosis, or microbial imbalance, has been linked to various central nervous system (CNS) disorders, including Alzheimer's disease (AD), Parkinson's disease (PD), multiple sclerosis (MS), and autism spectrum disorder (ASD). Given the growing interest in this topic and the limited effectiveness of current therapeutic strategies for managing patients with AD, the purpose of the current narrative review is to analyze the pathophysiological role of the GMBA in the pathogenesis of AD and assess potential therapeutic strategies targeting the GMBA, particularly the microbiome and its metabolites. A comprehensive literature search was conducted using PubMed, Scopus, and Web of Science to identify clinical studies, experimental research, and review articles examining the GMBA in health and AD, as well as related therapeutic strategies. The search terms included \"Alzheimer's disease\", \"neuroinflammation\", \"amyloid-beta\", \"tau\", \"gut-brain axis\", \"microbiome\", \"short-chain fatty acids\", \"probiotics\", \"prebiotics\", and \"fecal microbiota transplantation\". In AD, altered gut microbiota composition is associated with neuroinflammation, neurodegeneration, and exacerbation of disease progression. Probiotics have shown potential in enhancing cognitive function and reducing neuroinflammation by modulating microbiota composition and influencing brain-derived neurotrophic factor (BDNF) levels. Prebiotics, through their impact on gut microbiota and metabolite production, also offer therapeutic promise by improving cognitive function and mitigating neuroinflammation. With its historical and modern applications, fecal microbiota transplantation (FMT) may represent a potential strategy for addressing dysbiosis and its neurological implications. This manuscript focuses on GMBA and its effects on neuroinflammation, neurodegeneration, and CNS health while emphasizing the need for further research into microbiome-based therapies and the gut-brain relationship in patients with AD.",
+    "authors": "Ziaka M.",
+    "journal": "Pathogens (Basel, Switzerland)",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42514986",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)"
+    ]
+  },
+  {
+    "key": "pmid:42598050",
+    "id": "42598050",
+    "source": "MED",
+    "pmid": "42598050",
+    "pmcid": "PMC13470196",
+    "doi": "10.1016/j.jpha.2025.101521",
+    "title": "Gut-brain axis dysregulation in Parkinson's disease: Mechanisms linking microbiota to neuroinflammation and α-synuclein pathology.",
+    "abstract": "Parkinson's disease (PD) is increasingly understood as a multisystem disorder originating not only in the central nervous system (CNS) but also involving the gut-brain axis (GBA). A key driver of PD pathogenesis is gut microbiota dysbiosis, which contributes to disease progression by inducing intestinal inflammation, altered microbial metabolite production, and compromised gut barrier integrity. These alterations can initiate the misfolding and aggregation of α-synuclein in the enteric nervous system (ENS), facilitating its spread to the CNS via vagal pathways. Furthermore, microbiota-derived molecules, including short-chain fatty acids (SCFAs) and lipopolysaccharides (LPS), are implicated in triggering systemic and neuroinflammatory cascades that exacerbate the degeneration of dopaminergic neurons. This review consolidates current evidence on the mechanistic connections between gut microbiota dysregulation, neuroinflammation, and α-synuclein pathology in PD. We also discuss the translational potential of microbiota-focused biomarkers and innovative therapeutic strategies, providing new perspectives for early diagnosis and disease modification. Elucidating the GBA in PD paves the way for personalized medicine and microbiome-targeted therapies.",
+    "authors": "Zhao Z, Dong M, Mu Z, Zheng Z, Zhang Z.",
+    "journal": "Journal of pharmaceutical analysis",
+    "year": 2026,
+    "cited_by": 2,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42598050",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)"
+    ]
+  },
+  {
+    "key": "pmid:41601624",
+    "id": "41601624",
+    "source": "MED",
+    "pmid": "41601624",
+    "pmcid": "PMC12832290",
+    "doi": "10.3389/fimmu.2025.1739329",
+    "title": "The gut microbiota influences neurodegenerative diseases through the gut-brain axis: molecular mechanisms and effects on immune function.",
+    "abstract": "The pathogenesis of neurodegenerative diseases (NDDs), including Alzheimer's disease (AD), Parkinson's disease (PD), and amyotrophic lateral sclerosis (ALS), is complex and multifactorial. Recent studies indicate that the microbiota-gut-brain axis (MGBA) plays a crucial role in the development and progression of NDDs. The MGBA concept reveals a complex bidirectional regulatory network between the gut microbiota and the central nervous system (CNS), linking them through immune, neural, endocrine, and metabolic pathways. This review summarizes the components of the MGBA, communication pathways between gut microbiota and the brain, and mechanisms by which gut microbiota influence the onset and progression of NDDs. Finally, preclinical therapeutic approaches for NDDs are discussed, evaluating preclinical trial data for probiotics, prebiotics, and fecal microbiota transplantation.",
+    "authors": "Yang J, Song X, Yan S, Li Q, Yang W.",
+    "journal": "Frontiers in immunology",
+    "year": 2025,
+    "cited_by": 4,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/41601624",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)"
+    ]
+  },
+  {
+    "key": "pmid:41673679",
+    "id": "41673679",
+    "source": "MED",
+    "pmid": "41673679",
+    "pmcid": "PMC12892757",
+    "doi": "10.1186/s40035-026-00541-9",
+    "title": "Microbiota and Alzheimer's disease: mechanistic insights from a multi-organ perspective.",
+    "abstract": "Alzheimer's disease (AD) is a progressive neurodegenerative disorder driven by multifactorial mechanisms. Increasing evidence suggests that dysbiosis, a term denoting an imbalance in the composition of the microbiota, may play a pivotal role in the pathogenesis of AD across multiple bodily sites, including the gut, oral cavity, nasal passages, lungs, and skin. Microbial imbalances may promote neuroinflammation, immune dysfunction, and metabolic disturbances through complex host-microbiota networks. This review synthesizes current advances in the understanding of microbiota-driven modulation of AD, introduces the \"Multi-Axis Co-Regulation\" concept, and evaluates microbial biomarkers for early diagnosis. Finally, the translational potential of microbiota-targeting interventions, including probiotics, dietary modulation, fecal microbiota transplantation, and oral microbiome-based therapies, are discussed, which represent novel strategies for precision prevention and treatment of AD.",
+    "authors": "Liao J, Mou H, Luo S, Shen L, Jiao B.",
+    "journal": "Translational neurodegeneration",
+    "year": 2026,
+    "cited_by": 6,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/41673679",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)"
+    ]
+  },
+  {
+    "key": "pmid:42581224",
+    "id": "42581224",
+    "source": "MED",
+    "pmid": "42581224",
+    "pmcid": "PMC13461891",
+    "doi": "10.1007/s12035-026-06131-0",
+    "title": "Microbiome-Inflammation-Mitochondria Coupling in Neurodegeneration and Depression: An Integrative Opinion.",
+    "abstract": "There is increasing evidence that gut microbiome dysbiosis, systemic inflammation, and mitochondrial dysfunction interact in ways that influence psychiatric and neurodegenerative disease vulnerability. Recent findings indicate that microbial signaling, inflammatory activation, and mitochondrial stress responses form dynamic bidirectional networks that may influence neurotransmission, neuroplasticity, metabolism, and behavior. This integrative opinion article distinguishes major depressive disorder (MDD), Parkinson's disease (PD), and Alzheimer's disease (AD) as mechanistically distinct disorders while proposing that they may share overlapping upstream modulatory pathways involving inflammation, microbial dysregulation, and mitochondrial dysfunction. Importantly, the microbiome-inflammation-mitochondria axis is presented as a disease-modifying and vulnerability-associated framework rather than a singular unifying etiology. Current limitations including reverse causation, microbiome heterogeneity, and differences in treatment responsiveness are also discussed.",
+    "authors": "Stefano GB, Esch T.",
+    "journal": "Molecular neurobiology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "research-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42581224",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)"
+    ]
+  },
+  {
+    "key": "pmid:42381725",
+    "id": "42381725",
+    "source": "MED",
+    "pmid": "42381725",
+    "pmcid": "PMC13316636",
+    "doi": "10.1016/j.crfs.2026.101471",
+    "title": "Precision prebiotics: Engineering food-derived polysaccharides to target specific SCFA-producing taxa for neuroprotection via the microbiota-gut-brain axis.",
+    "abstract": "Neurodegenerative and neuropsychiatric disorders lack disease-modifying therapies. The microbiota-gut-brain (MGB) axis, particularly short-chain fatty acid (SCFA)-producing microbiota dysbiosis, has emerged as a conserved driver of neuroinjury pathogenesis. Natural food-derived polysaccharides have been explored as prebiotic substrates, but their clinical translation is hindered by poor target specificity, high interindividual heterogeneity, and low bioavailability. Engineered food-derived polysaccharides, as a next-generation precision prebiotic platform, enable rational tailoring of molecular fine structures via targeted physical, chemical, biological, and combinatorial modification technologies, aiming for strain-specific directional modulation of intestinal SCFA-producing microbiota and multi-pathway neuroprotection through the MGB axis. In this review, we systematically delineate the bidirectional regulatory mechanisms between SCFA-producing microbiota and neural homeostasis, dissect disease-specific pathological cascades driven by SCFA-producing microbiota dysbiosis, and discuss conflicting findings on the dual effects of SCFAs. We further propose a full-chain framework of the structure-activity relationship of engineered polysaccharides, dissecting core modification strategies, strain-specific targeting mechanisms, and a multi-dimensional efficacy evaluation system for these precision prebiotics. Additionally, we assess safety evaluation status, major global regulatory differences, and core clinical translation bottlenecks. Finally, we outline key unresolved challenges and propose a conceptual roadmap for AI-assisted rational design of precision prebiotics, personalized microbiota-adapted intervention strategies, and multicenter clinical translation directions. This review provides a mechanism-driven theoretical framework and practical guidance for developing engineered food-derived polysaccharides as precision nutrition interventions for neuroinjury-related disorders.",
+    "authors": "Yin Y, Li Y, Zhang X, Jia M, Zhu S, Liu C.",
+    "journal": "Current research in food science",
+    "year": 2026,
+    "cited_by": 1,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42381725",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)"
+    ]
+  },
+  {
+    "key": "pmid:42577720",
+    "id": "42577720",
+    "source": "MED",
+    "pmid": "42577720",
+    "pmcid": "PMC13454954",
+    "doi": "10.1155/padi/6914112",
+    "title": "Air Pollution and Parkinson's Disease Pathology: Clinical Evidence and the Molecular Mechanisms Linking Airborne Toxicants to Neuroinflammation and Neurodegeneration.",
+    "abstract": "Parkinson's disease (PD) is a neurodegenerative condition, and its rising prevalence necessitates the urgent need to identify modifiable risk factors. Air pollution, a pervasive and also escalating public health problem, has emerged as a potential contributor to the incidence and progression of PD. As urbanization and industrialization continue to exacerbate global air pollution levels, understanding the relationship between airborne toxicants and PD is a pressing scientific and public health priority. In this review, we critically discuss the current epidemiological evidence and the cellular and molecular mechanisms underlying air pollution-induced neurodegeneration in PD. Clinical studies associate long-term interaction with pollutants such as nitrogen oxides, particulate matter, and ozone with increased PD risk. Evidence also suggests that air pollution worsens PD prognosis. Mechanistically, air pollution is hypothesized to contribute to PD pathogenesis through gut microbiome alternations, oxidative stress, and neuroinflammatory pathways, as well as promoting α-synuclein aggregation.",
+    "authors": "Pakkhesal S, Pourebrahimian Leilabadi S, Hamzehzadeh S, Zare F, Gholipour-Khalili E, Malekinejad F, Fakhkhari S, et al.",
+    "journal": "Parkinson's disease",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42577720",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)"
+    ]
+  },
+  {
+    "key": "pmid:42387604",
+    "id": "42387604",
+    "source": "MED",
+    "pmid": "42387604",
+    "pmcid": "PMC13326367",
+    "doi": "10.1186/s40249-026-01436-7",
+    "title": "Dynamic alterations and potential roles of gut microbiota and metabolites in Angiostrongylus cantonensis-infected mice and rats.",
+    "abstract": "Background Angiostrongyliasis, a food-borne parasitic disease caused by Angiostrongylus cantonensis, is characterized by eosinophilic meningitis or meningoencephalitis, leading to serious central nervous system damage. Current diagnostic methods lack specificity or sensitivity, and the pathogenesis is complex and incompletely understood. This study aimed to comprehensively characterize the dynamic alterations in the gut microbiota and host metabolism in both suitable (rats) and non-suitable (mice) hosts following A. cantonensis infection and to identify potential metabolic biomarkers for early diagnosis. Methods Female BALB/c mice and Sprague Dawley rats (n = 10/group) were infected with 30 or 100 third-stage larvae, respectively. Serum, urine, feces, and brain samples were collected longitudinally. Gut microbiota was analyzed via 16S rRNA gene sequencing and metagenomics. Host metabolism was profiled using untargeted and targeted metabolomics via ultraperformance liquid chromatography-quadrupoles/time of flight-mass spectrometry. Statistical analyses included Wilcoxon rank sum test, linear discriminant effect size analysis, Spearman correlation analysis, orthogonal partial least squares-discriminatory analysis, and receiver operating characteristic curve analysis. Results Infection induced significant, host-specific gut microbiota dysbiosis. In infected hosts, Firmicutes decreased (P Conclusions A. cantonensis infection causes profound host-specific dysregulation of the gut microbiome and metabolome, with severe disturbances in Firmicutes, Bacteroidetes, lipid and BA metabolism being central features. These alterations highlight the critical role of the host-gut microbiota-metabolite axis in pathogenesis and offer novel insights for developing diagnostic and therapeutic strategies.",
+    "authors": "Hu Y, Chen JS, Zhou MY, Huang H, Zhou YF, Zhou HY, Lv ZY.",
+    "journal": "Infectious diseases of poverty",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42387604",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)"
+    ]
+  },
+  {
+    "key": "pmid:42695484",
+    "id": "42695484",
+    "source": "MED",
+    "pmid": "42695484",
+    "pmcid": "PMC13543306",
+    "doi": "10.1111/acel.70702",
+    "title": "Akkermansia muciniphila and Its Bioactive Derivatives: Emerging Regulators of Healthy Aging.",
+    "abstract": "The global aging trend underscores the urgent need for innovative interventions against aging-related decline. Accumulating evidence identifies Akkermansia muciniphila (A. muciniphila) as a key gut microbiota regulator of aging, with its depletion associated with age-related diseases (ARDs), whereas its abundance is enriched in healthy centenarians. This review summarized current evidence linking A. muciniphila to aging, examining their causal relationship, the roles of its bioactive derivatives, underlying mechanisms in aging and ARDs, findings from human clinical trials, and challenges in therapeutic translation. Clinically, A. muciniphila depletion correlated with aging and various ARDs, while its supplementation effectively ameliorated neurodegenerative disorders, metabolic dysfunction, musculoskeletal decline, intestinal barrier dysfunction, and atherosclerosis. Mechanistically, A. muciniphila and its derivatives (Amuc_1100, Amuc_1409, extracellular vesicles, and metabolites such as SCFAs) exerted anti-aging effects by enhancing intestinal barrier function, maintaining metabolic homeostasis, suppressing chronic inflammation, and modulating immune function, ultimately improving glucolipid metabolism, insulin sensitivity, cognitive function, musculoskeletal health, and vascular health. Emerging clinical trials further demonstrated its translational potential in ameliorating age-related sarcopenia, metabolic dysfunction, and respiratory symptoms. Despite promising preclinical and clinical results, translational applications reserve challenges related to strain heterogeneity, antimicrobial resistance gene transfer risk, biosafety, production stability, and limited clinical validation in elderly populations. Future research should prioritize large-scale clinical trials to establish optimal dosage, safety, and long-term efficacy, while exploring combined microbiota-targeted therapies. Harnessing the diverse benefits of A. muciniphila may enable novel strategies for promoting healthy aging.",
+    "authors": "Zhang T, Niu J, Hu X, Hu Z, Gao Y, Liu J, Chen N, Hu Y.",
+    "journal": "Aging cell",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42695484",
+    "matched_queries": [
+      "(gut flora OR intestinal bacteria OR microbial community) AND (Parkinson\\'s disease OR PD) AND (disease progression OR worsening OR clinical decline)"
+    ]
+  },
+  {
+    "key": "pmid:42845110",
+    "id": "42845110",
+    "source": "MED",
+    "pmid": "42845110",
+    "pmcid": null,
+    "doi": "10.1002/mds.70566",
+    "title": "The Gut-Brain Axis in Parkinson's Disease: From Clinical Observation toward Mechanism-Based Precision Medicine.",
+    "abstract": "Gastrointestinal dysfunction is increasingly recognized as a core feature of Parkinson's disease (PD), affecting quality of life, nutrition, medication response, and potentially the earliest stages of pathogenesis. This perspective traces the evolution of the gut from a neglected source of non-motor symptoms to a central component of biological models of PD. Gastrointestinal manifestations are physiologically heterogeneous and require objective phenotyping to distinguish dysphagia, gastroparesis, slow transit, defecatory dysfunction, and overlapping mechanisms. The body-first/brain-first framework further suggests that Lewy pathology may follow distinct anatomical trajectories, with early enteric and autonomic involvement defining a subgroup in which gut-directed biomarkers and therapies may be especially relevant. Alterations of the gut microbiome are reproducibly associated with PD, although geography, constipation, medication, diet, disease stage, and reverse causation complicate interpretation. Emerging work is shifting from taxonomy toward microbial functions and host pathways, including barrier integrity, immune and enteroendocrine signaling, short-chain fatty acids, glucagon-like peptide-1 (GLP-1), host genetic susceptibility, α-synuclein aggregation and propagation, and microbial levodopa metabolism. Trials of probiotics, fecal microbiota transplantation, and dietary interventions remain heterogeneous and have not established disease-modifying efficacy. Progress will require longitudinal studies in prodromal and subtype-defined populations, objective gastrointestinal measurements, integrated microbial, host-genetic and other multi-omics, mechanistic human and animal models, and clinical trials combining target-engagement markers with meaningful outcomes. Such an approach may enable precision gut-brain medicine for appropriately selected patients with PD. © 2026 The Author(s). Movement Disorders published by Wiley Periodicals LLC on behalf of International Parkinson and Movement Disorder Society.",
+    "authors": "Scheperjans F, Borghammer P, Pfeiffer RF, Appel-Cresswell S, Keshavarzian A.",
+    "journal": "Movement disorders : official journal of the Movement Disorder Society",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42845110",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42611576",
+    "id": "42611576",
+    "source": "MED",
+    "pmid": "42611576",
+    "pmcid": null,
+    "doi": "10.3791/72702",
+    "title": "Effects of Fecal Microbiota Transplantation on Intestinal Microbial Characteristics and Clinical Phenotypes in Patients with Parkinson's Disease.",
+    "abstract": "Alterations in the gut microbiota have been associated with Parkinson's disease (PD), but longitudinal microbial changes after fecal microbiota transplantation (FMT) and their clinical associations remain poorly understood. This single-center retrospective observational study included 6 patients with PD, stratified into high- and low-severity subgroups based on disease duration (>6 years vs ≤6 years). Thirty-six fecal samples were collected before FMT and monthly for five months afterward. Microbial diversity, community structure, taxonomic composition, and predicted functional profiles were assessed using 16S ribosomal RNA gene sequencing. Analyses included alpha and beta diversity, taxonomic abundance, linear discriminant analysis effect size, Tax4Fun2-based functional prediction, and Spearman rank correlations between microbial features and clinical indicators. Descriptive analyses indicated differences in microbial richness, diversity, community structure, and predicted functions between severity subgroups and across post-FMT time points. At baseline, the low-severity subgroup had greater microbial richness and diversity than the high-severity subgroup, with relatively higher abundances of taxa including Bifidobacterium and Lactobacillus. One month after FMT, richness and diversity increased from baseline in the high-severity subgroup, accompanied by changes in taxonomic composition. Both subgroups showed time-associated variation in microbial diversity and predicted Kyoto Encyclopedia of Genes and Genomes pathway enrichment after FMT. Predicted functions included carbohydrate and amino acid metabolism, secondary metabolite biosynthesis, membrane transport, and signal transduction. Several operational taxonomic units correlated with indicators of motor impairment, constipation, sleep quality, functional status, and neuropsychiatric symptoms. FMT was therefore associated with longitudinal changes in gut microbial diversity, composition, and predicted functions, and specific microbial features were associated with motor and non-motor indicators. Given the small retrospective cohort, these findings are preliminary and warrant confirmation in larger controlled studies. Future studies should determine whether these microbial alterations are reproducible, persist beyond five months, reflect donor engraftment, and correspond to measurable clinical improvement after transplantation in PD.",
+    "authors": "Sun G, Liu Q, Feng M.",
+    "journal": "Journal of visualized experiments : JoVE",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Video-Audio Media",
+      "Research Support, Non-U.S. Gov't",
+      "Journal Article",
+      "Observational Study"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42611576",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42545553",
+    "id": "42545553",
+    "source": "MED",
+    "pmid": "42545553",
+    "pmcid": null,
+    "doi": "10.1007/s10482-026-02398-4",
+    "title": "Gut microbial dysbiosis in a Southern Chinese cohort of patients with Parkinson's disease.",
+    "abstract": "Parkinson's disease (PD) is the second most common neurodegenerative disorder, affecting approximately 10 million people worldwide. Growing evidence suggests that gut microbial dysbiosis may be crucial in PD pathogenesis through the gut-brain axis. However, bacterial profiles can vary based on factors like diet, age, and medication use. This study explores gut microbial dysbiosis in patients with Parkinson's disease (PD), considering disease severity, age, and medication use.Faecal samples were collected from PD patients (n = 42) and age-matched controls (n = 25) and analysed using 16S rRNA gene pyrosequencing targeting the V3-V4 hypervariable regions. Taxonomic distinctions were assessed with particular focus on short-chain fatty acid (SCFA)-producing bacteria. Significant differences in faecal microbiome composition were observed between PD patients and controls. Anticholinergic and dopaminergic agents altered the abundance of SCFA-producing bacteria (Ruminococcaceae, Clostridiales, Blautia). Alistipes abundance was not significantly altered across medication groups in exploratory analyses. The faecal microbiota in PD patients showed modifications related to disease severity, age, and medication use. These changes appeared early and were influenced by medical interventions. This study highlights the intricate gut microbiome-PD relationship, suggesting potential therapeutic avenues and further research directions.",
+    "authors": "Li YM, Shao QZ, Ko CY, Chen Y, Haley DR, Hamadi HY, Zhao M.",
+    "journal": "Antonie van Leeuwenhoek",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42545553",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42539876",
+    "id": "42539876",
+    "source": "MED",
+    "pmid": "42539876",
+    "pmcid": "PMC13424795",
+    "doi": "10.7759/cureus.111856",
+    "title": "The Oral-Brain Axis: Mechanistic Insights Linking Periodontitis With Alzheimer's and Parkinson's Diseases.",
+    "abstract": "Neurodegenerative diseases, including Alzheimer's disease (AD) and Parkinson's disease (PD), are major causes of disability and mortality worldwide. Emerging evidence suggests that chronic peripheral inflammation and microbial dysbiosis may contribute to neurodegenerative processes. The oral-brain axis has recently gained attention as a biological framework linking oral microbial communities, systemic inflammatory responses, immune regulation, and central nervous system function. Within this context, periodontitis, a prevalent chronic inflammatory disease driven by oral dysbiosis, has been proposed as a potential modifiable risk factor for neurodegeneration. This narrative review examines current evidence supporting the oral-brain axis and its role in the relationship between periodontitis and neurodegenerative disorders. Key mechanisms include systemic dissemination of periodontal pathogens and their virulence factors, persistent inflammatory signaling, blood-brain barrier dysfunction, neuroimmune activation, oxidative stress, and protein aggregation. Particular attention is given to the contribution of Porphyromonas gingivalis and associated virulence factors to neuroinflammation, amyloidogenesis, and neuronal injury. Epidemiological, clinical, and experimental studies linking periodontal disease with cognitive decline, Alzheimer's disease, and Parkinson's disease are also discussed. Current evidence supports a biologically plausible association between periodontal disease and neurodegeneration through interconnected microbial, inflammatory, and vascular pathways. Although causality remains to be established, the oral-brain axis provides valuable insight into potential mechanisms underlying this relationship. Improved understanding of these interactions may facilitate the development of preventive and therapeutic strategies that integrate oral healthcare with approaches aimed at preserving neurological health and reducing the burden of neurodegenerative diseases.",
+    "authors": "Singh R, Asthana S, Arya A, Kaushik M, Khan M.",
+    "journal": "Cureus",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42539876",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42433197",
+    "id": "42433197",
+    "source": "MED",
+    "pmid": "42433197",
+    "pmcid": "PMC13355234",
+    "doi": "10.1111/jns.70141",
+    "title": "Impact of Gut Microbiota Dysbiosis in Treatment Outcomes of Guillain-Barré Syndrome.",
+    "abstract": "Background and aims The gut-microbiota plays a significant role in neuro-autoimmune diseases, like Guillain-Barré syndrome (GBS), a post-infectious disorder of the peripheral nervous system (PNS). By altering host immunity, gut dysbiosis may impact the standard therapeutic efficacy of intravenous immunoglobulin (IVIg) and plasma exchange (PE) and thereby, disease progression in GBS. In this study, we investigated the impact of gut-microbiota diversity on therapeutic outcomes of IVIg and PE in patients with GBS. Methods We enrolled 60 patients with GBS categorized into three treatment groups: IVIg-treated, PE, and supportive-care along with 60 age-sex-matched healthy controls from Bangladesh. Fecal microbial DNA was extracted at different timepoints and sequenced. Clinical and sequenced data were analyzed using the Qiime2-Dada2 pipeline. Results Gut-microbial diversity significantly differed in patients with GBS before and after treatment (Shannon: p = 0.037; Evenness: p = 0.012), particularly in IVIg-treated patients, showing significant changes after 6-month treatment (Shannon: p = 0.034; Evenness: p = 0.011). Beta diversity indicated microbiota restoration in IVIg-treated patients toward a healthy state after treatment (p ≤ 0.001). Phylum Actinobacteriota (p = 0.026), genera Bifidobacterium (p = 0.006), and Enterococcus (p ≤ 0.0001) were relatively abundant in severe patients. Mechanically ventilated patients showed significant gut-microbial diversity (Unweighted-UniFrac; p ≤ 0.001). Biomarker analysis identified a higher abundance of Eubacterium, Bacteroides, Escherichia-Shigella, and Actinomyces in GBS patients. Interpretation Our exploratory study indicates that gut microbiota dysbiosis is associated with GBS severity and IVIg-treatment outcomes. IVIg-treatment promoted partial restoration of microbial diversity, suggesting a potential immunomodulatory effect mediated through the microbiota. Further studies using meta-transcriptomics are warranted to define functional consequences of microbial shifts in treatment responses of GBS.",
+    "authors": "Hayat S, Nayeem MAJ, Asad A, Mostafa MG, Begum R, Munni MA, Anjuman AA, Sadia SA, Upama IJ, Hasan I, Mohammad QD, et al.",
+    "journal": "Journal of the peripheral nervous system : JPNS",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42433197",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42781777",
+    "id": "42781777",
+    "source": "MED",
+    "pmid": "42781777",
+    "pmcid": "PMC13602093",
+    "doi": "10.1002/jbt.71070",
+    "title": "Microplastics as Emerging Neurotoxins: Brain Accumulation, Neuroinflammation, and Neurodegeneration Risk.",
+    "abstract": "Microplastics (MPs) and nanoplastics (NPs) have emerged as ubiquitous environmental contaminants with profound implications for human neurological health. Recent landmark findings confirm the bioaccumulation of MPs/NPs in human brain tissue-with concentrations reaching 4917 μg/g in 2024 autopsy samples and up to 10-fold higher levels in individuals with dementia-underscoring the urgent need for mechanistic understanding. This review synthesizes current evidence on the routes by which MPs/NPs traverse the blood-brain barrier (BBB) and the olfactory pathway, their cellular effects within the central nervous system (CNS), and the molecular cascades that link plastic particle exposure to neuroinflammation and neurodegeneration. Key mechanisms include: disruption of tight junction proteins and BBB integrity; activation of microglia and the NLRP3 inflammasome; induction of oxidative stress via reactive oxygen species (ROS); mitochondrial dysfunction through impairment of the electron transport chain; synaptic toxicity and neurotransmitter dysregulation; and direct promotion of pathological protein aggregation-including amyloid-beta (Aβ), tau hyperphosphorylation, and α-synuclein fibrillation-implicated in Alzheimer's disease (AD) and Parkinson's disease (PD). Indirect neurotoxicity via the gut-brain axis is also addressed. Finally, critical research gaps and future directions are proposed, including standardized exposure models, longitudinal human cohort studies, and evaluation of therapeutic targets. This review positions MPs/NPs as a novel environmental risk factor for neurodegenerative diseases warranting priority attention in neuroscience and public health research.",
+    "authors": "Sophian A, Asmariani, Ismayani E.",
+    "journal": "Journal of biochemical and molecular toxicology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42781777",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42745506",
+    "id": "42745506",
+    "source": "MED",
+    "pmid": "42745506",
+    "pmcid": "PMC13579070",
+    "doi": "10.1002/mnfr.70592",
+    "title": "Diet, the Gut Microbiome, and Mental Health: Mechanistic Perspectives.",
+    "abstract": "The microbiota-gut-brain axis (MGBA) represents a dynamic, bidirectional communication network linking the gut microbiome with central nervous system function through neural, immune, metabolic, and endocrine pathways. Emerging clinical, observational, and preclinical evidence suggests that special and restrictive dietary patterns-including Mediterranean, ketogenic, vegan, gluten-free, low-FODMAP, sugar-restricted, dairy-free diets, and intermittent fasting (IF)-can substantially modulate the gut microbiota, potentially influencing mental health outcomes. In this review, we first outline the fundamental mechanisms underlying gut-brain communication, emphasizing the roles of microbial metabolites, vagal nerve signaling, immune modulation, and hypothalamic-pituitary-adrenal (HPA) axis interactions. We then examine how distinct dietary interventions may alter gut microbial composition and metabolic activity, with potential implications for neuroimmune regulation, neurotransmitter synthesis, gut barrier integrity, and stress resilience. Current limitations in the field-including population heterogeneity, interindividual microbiome variability, limited longitudinal and mechanistic human studies, and challenges in clinical translation-are critically discussed. Finally, we propose future research directions aimed at developing personalized dietary strategies for mental health support through microbiome-targeted approaches. Understanding how special diets reshape the MGBA may provide promising avenues for the nutritional modulation of emotional and cognitive well-being.",
+    "authors": "Hetta HF, Hassan RAA, Alanazi FE, Alqifari SF, Albalwi MA, Albalawi AA, Bukhari SQ, Alatawi Z, Ellah NHA, Ramadan YN.",
+    "journal": "Molecular nutrition & food research",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42745506",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42374626",
+    "id": "42374626",
+    "source": "MED",
+    "pmid": "42374626",
+    "pmcid": "PMC13321874",
+    "doi": "10.1080/19490976.2026.2692737",
+    "title": "Microbiome and metabolites impact enteric and central nervous systems in ALS.",
+    "abstract": "Amyotrophic lateral sclerosis (ALS) has been linked to gastrointestinal symptoms and alterations in the gut microbiota. The enteric nervous system (ENS) coordinates intestinal function and sits at the host-microbe interface. The mechanisms by which luminal changes relay to the central nervous system (CNS), where motor neurons reside, have yet to be completely defined. In this narrative review, we first present evidence from ALS patient cohorts and preclinical models alongside mechanistic studies of infection, dysbiosis, and related neurodegenerative diseases to discuss how the microbiota and its metabolites may affect the ENS and CNS in ALS. Next, we propose a plausible mechanism of ALS pathogenesis through the gut-microbiome-brain axis. We further offer a summary of clinical trials that have studied the impacts of the microbiota on human ALS. Finally, we discuss future directions for studies of microbiota-ENS-CNS interactions in ALS. Better understanding of the dynamic interactions among the microbiota, microbial metabolites, neuroactive metabolites, and inflammation through the ENS/CNS in ALS will provide innovative insights into ALS prevention and treatment.",
+    "authors": "Walton EI, Sun J.",
+    "journal": "Gut microbes",
+    "year": 2026,
+    "cited_by": 2,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42374626",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42694564",
+    "id": "42694564",
+    "source": "MED",
+    "pmid": "42694564",
+    "pmcid": "PMC13539905",
+    "doi": "10.7150/ijms.135274",
+    "title": "Synergistic Regulation of Alzheimer's Disease and Intestinal Microbiota Metabolism Mediated by the Gut-Brain Axis: A Comprehensive Analysis from a Multidisciplinary Perspective.",
+    "abstract": "Alzheimer's disease (AD), as a neurodegenerative disease with the interaction of multiple factors, has a close association between its pathological process and the metabolic imbalance of the gut microbiota mediated by the gut-brain axis. This review systematically summarizes the molecular mechanisms by which the gut microbiota regulates the functions of the central nervous system bidirectionally through molecular pathways such as metabolites (e.g., short-chain fatty acids, tryptophan-kynurenine metabolites), immunomodulatory mediators (e.g., cytokines, chemokines), and bioactive substances (e.g., γ-aminobutyric acid, 5-hydroxytryptophan) via the gut-brain axis. It synthesizes current evidence suggesting the imbalance of microbiota homeostasis may be closely associated with the core pathologies of AD (including β-amyloid deposition and tau protein hyperphosphorylation) through mechanisms such as the activation of the C/EBPβ-AEP signaling pathway, induction of chronic neuroinflammation, oxidative stress cascade reactions, and metabolic network remodeling. These findings, primarily derived from preclinical models and correlational human studies, indicate potential mechanisms but require further causal validation and rigorous clinical translation, including the downregulation of butyrate synthesis pathways and their associated epigenetic and immunomodulatory consequences (as mechanistically dissected in Section 5.2). Multi-omics integration (metagenomics, metabolomics, spatial transcriptomics) has delineated characteristic microbial and metabolic alterations in AD, while computational approaches are beginning to elucidate the complex networks underlying these associations (see Sections 6 and 7 for details).Intervention strategies based on microbiota regulation (such as microbiota-targeted dietary interventions and postbiotics) are emerging as promising approaches, although their clinical applications remain in early stages. Preliminary evidence suggests that fecal microbiota transplantation may improve cognitive outcomes in AD patients with comorbid conditions; however, rigorous randomized controlled trials are essential to validate its efficacy and safety. Critically, translating these mechanistic insights into clinical practice requires overcoming three translational bottlenecks: inferring causality from correlational multi-omics data, resolving species/strain-level functional heterogeneity masked by genus-level taxonomy, and establishing standardized safety protocols for live biotherapeutic products. Addressing these challenges defines the near-term roadmap for precision medicine in AD. However, current research still faces challenges such as the heterogeneity of cross-omics data, the lack of technical standardization, and insufficient interdisciplinary cooperation mechanisms. In the future, it is necessary to promote the early molecular diagnosis and personalized targeted treatment of AD through longitudinal multi-omics dynamic monitoring, modeling of the microbiota-host interaction network, and optimization of the ethical-translational medicine framework.",
+    "authors": "Lu P, Liu M, Zhang L, Fan JJ, Sun Y.",
+    "journal": "International journal of medical sciences",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42694564",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42188046",
+    "id": "42188046",
+    "source": "MED",
+    "pmid": "42188046",
+    "pmcid": "PMC13208782",
+    "doi": "10.3390/metabo16050337",
+    "title": "Hypothesis of the Causal Mechanisms Between Gut Microbiota and Neurodegenerative Diseases: An Elucidation from Evolutionary Perspective and Metabolic Consideration.",
+    "abstract": "Growing evidence links gut microbiota dysbiosis to neurodegenerative diseases (NDs) such as Alzheimer's disease and Parkinson's disease, yet the field remains dominated by correlational observations rather than experimentally validated causal mechanisms. In this hypothesis-generating Perspective, we propose that causal inference in microbiota-associated neurodegeneration may be strengthened by combining two complementary lenses: evolutionary biomedicine and microbial metabolism. Because evolutionary information carries intrinsic temporal and causal structure, it can provide biological prior knowledge for inferring causal mechanisms of diseases. Human Accelerated Regions (HARs), genomic loci conserved across mammals but rapidly divergent in the human lineage, offer an anchor for identifying human-specific host-microbe co-evolutionary units relevant to NDs. We further hypothesize that microbial metabolites represent one class of mechanistically testable intermediates linking host genetic background, gut microbial ecology, and neurodegenerative phenotypes. This integrated evolutionary-metabolic perspective offers a tractable path from correlation toward mechanism in gut microbiota-ND research.",
+    "authors": "Tang G, Guo L, Liu Z, Quan Y.",
+    "journal": "Metabolites",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "other",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42188046",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42746219",
+    "id": "42746219",
+    "source": "MED",
+    "pmid": "42746219",
+    "pmcid": "PMC13575618",
+    "doi": "10.3389/fphar.2026.1889898",
+    "title": "Microbiota-mitochondria axis in neurodegenerative disorders and retinal dysfunction: mechanisms and emerging therapeutic opportunities.",
+    "abstract": "The gut microbiota crucial role in maintaining host metabolism, immune homeostasis, intestinal integrity, and mitochondrial function. Emerging evidence suggests that dysregulation of the microbiota-mitochondria axis represents one of the key mechanisms linking gut dysbiosis to the development of neurodegenerative and ocular diseases. The dysbiosis causes disruptions in mitochondrial physiology due to lower levels of short-chain fatty acids, increased intestinal permeability, endotoxemia, oxidative stress, and inflammation. These mechanisms contribute to the pathogenesis of Alzheimer's disease, Parkinson's disease, age-related macular degeneration, diabetic retinopathy, retinitis pigmentosa, and central serous chorioretinopathy. Environmental factors such as unhealthy dietary patterns, excessive antibiotic use, and prolonged exposure to artificial blue light may exacerbate dysbiosis and further disrupt mitochondrial homeostasis, thereby contributing to disease progression. We also elaborated the emerging therapeutic strategies targeting both the gut microbiota and mitochondrial function, including next-generation probiotics, postbiotics, dietary interventions, mitochondria-targeted antioxidants, NAD + precursors, and precision medicine approaches. Collectively, current evidence represents the microbiota-mitochondria axis as a one of the promising mechanistic and therapeutic targets for neurodegenerative and ocular diseases. However, most therapeutic evidence discussed in this review is derived from preclinical studies, with relatively limited clinical validation. Future well-designed longitudinal studies and randomized clinical trials are essential to establish efficacy, safety, and translational applicability in humans.",
+    "authors": "Samaiya PK, Agrawal A, Kesharwani S, Sathe R, Prajapati SK, Majumdar S.",
+    "journal": "Frontiers in pharmacology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42746219",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:41517622",
+    "id": "41517622",
+    "source": "MED",
+    "pmid": "41517622",
+    "pmcid": "PMC12786582",
+    "doi": "10.3390/jcm15010368",
+    "title": "Five-Year Follow-Up of Photobiomodulation in Parkinson's Disease: A Case Series Exploring Clinical Stability and Microbiome Modulation.",
+    "abstract": "Background : Parkinson's disease (PD) involves progressive neurodegeneration with clinical or subclinical disturbance of the gut-brain axis, including altered gastrointestinal motility and enteric nervous system involvement. Clinical studies have reported gut microbiome alterations in PD, with shifts in taxa associated with inflammatory signalling and short-chain fatty acid (SCFA) metabolism. Photobiomodulation (PBM), a non-invasive light therapy, has been investigated as a potential adjunctive treatment for PD, with proposed effects on neural, metabolic, and immune pathways. We previously reported the five-year clinical outcomes in a PBM-treated Parkinson's disease case series. Here we report the five-year gut microbiome outcomes based on longitudinal samples collected from the same participants. This was an exploratory, open-label longitudinal study without a control group. Objective : Our objective was to assess whether long-term PBM was associated with changes in gut microbiome diversity and composition in the same Parkinson's disease cohort as previously assessed for changes in Parkinson's symptoms. Methods : Six participants from the earlier PBM proof-of-concept study who had been diagnosed with idiopathic PD and who had continued treatment (transcranial light emitting diode [LED] plus abdominal and neck laser) for five years had their faecal samples analysed by 16S rDNA sequencing to assess microbiome diversity and taxonomic composition. Results : Microbiome analysis revealed significantly reduced evenness (α-diversity) and significant shifts in β-diversity over five years, as assessed by Permutational Multivariate Analysis of Variance (PERMANOVA). At the phylum level, Pseudomonadota and Methanobacteriota decreased in four of the six participants. Both of these phyla are often increased in the Parkinson's microbiome compared with the microbiomes of healthy controls. Family-level changes included increased acetate-producing Bifidobacteriaceae (five of the six participants); decreased pro-inflammatory, lipopolysaccharide (LPS)-producing Enterobacteriaceae (two of the three participants who have this bacterial family present); and decreased LPS- and H 2 S-producing Desulfovibrionaceae (five of six). At the genus level, Faecalibacterium , a key butyrate producer, increased in four of the six participants, potentially leading to more SCFA availability, although other SCFA-producing bacteria were decreased. This was accompanied by reductions in pro-inflammatory LPS and H 2 S-producing genera that are often increased in the Parkinson's microbiome. Conclusions : This five-year case series represents the longest follow-up of microbiome changes in Parkinson's disease, although the interpretation of results is limited by very small numbers, the lack of a control group, and the inability to control for lifestyle influences such as dietary changes. While causal relationships cannot be inferred, the parallel changes in improvements in mobility and non-motor Parkinson's symptoms observed in this cohort, raises the hypothesis that PBM may interact with the gut-brain axis via the microbiome. Controlled studies incorporating functional multi-omics are needed to clarify potential mechanistic links between microbial function, host metabolism, and clinical outcomes.",
+    "authors": "Bicknell B, Liebert A, McLachlan C, Kiat H.",
+    "journal": "Journal of clinical medicine",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/41517622",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42782818",
+    "id": "42782818",
+    "source": "MED",
+    "pmid": "42782818",
+    "pmcid": "PMC13606001",
+    "doi": "10.3390/cells15181718",
+    "title": "Blood-Mediated Gut-Brain Axis in Parkinson's Disease: Focus on α-Synuclein Transport and Microbiota Dysbiosis-Induced Inflammation.",
+    "abstract": "Parkinson's disease (PD) is a progressive neurodegenerative disorder characterized by the loss of dopaminergic neurons and the deposition of Lewy bodies (LBs). The gut-brain axis has emerged as a potential route for the bidirectional dissemination of PD pathology, in which the enteric and central nervous systems may contribute to the spread of misfolded α-synuclein (α-Syn) and associated neuroinflammatory responses. However, neural pathways alone may not fully account for the widespread distribution of PD pathology across the brain and gut. As another major conduit connecting the gut and the brain, the peripheral circulation may provide an additional route for PD-related pathological processes. Nevertheless, how blood circulation contributes to the development and dissemination of pathology along the gut-brain axis remains underexplored. Accordingly, this narrative review examines peripheral blood as a potential additional route for pathological communication along the gut-brain axis, focusing on two potential mechanisms involving the transport of pathological α-Syn aggregates between the gut and the brain and the circulation of inflammatory signals associated with gut microbiota dysbiosis. Furthermore, to highlight the translational relevance of the gut-blood-brain axis, we briefly summarize recent advances in related blood-derived biomarkers and therapeutic strategies targeting these pathways.",
+    "authors": "Xu C, Li W, Ma X, Han L, Cui G, Zhao J, Wang X, Guan Y.",
+    "journal": "Cells",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42782818",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)",
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42156770",
+    "id": "42156770",
+    "source": "MED",
+    "pmid": "42156770",
+    "pmcid": "PMC13454270",
+    "doi": "10.1038/s41531-026-01376-x",
+    "title": "Safety and efficacy of faecal microbiota transplantation in Parkinson's disease.",
+    "abstract": "The gut microbiota may influence Parkinson's disease's (PD) pathophysiology. Faecal Microbiota Transplantation (FMT) may therefore improve symptoms. We reviewed five randomized controlled trials (RCT), three cohort studies, one case series, and two single case reports (total of 236 subjects). FMT methods varied (donor selection, FMT preparation method, pre-treatment, administration). Mild, self-limiting gastrointestinal symptoms were the most common adverse events (AEs). Constipation improved consistently after FMT. Motor and non-motor outcomes were heterogeneous, with improvements mainly reported in uncontrolled studies. One RCT demonstrated motor improvement at 8-12 weeks, another only after one year, while others showed no significant changes. In most RCTs, changes fell within or just beyond the minimal clinically important differences (MCID). Five studies reported taxonomic shifts, most consistently increased within the phylum Firmicutes. Large, well-designed RCTs with optimized FMT protocol for patient selection, FMT preparation and delivery, and donor selection are needed to determine whether FMT can affect PD symptoms or disease progression.",
+    "authors": "Chernova VO, Ng RW, Yang L, Ip M, Corcione S, Benech N, van Prehn J, Kuijper EJ, Contarino MF.",
+    "journal": "NPJ Parkinson's disease",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42156770",
+    "matched_queries": [
+      "(gut microbiome OR microbiota) AND Parkinson\\'s disease AND (longitudinal OR cohort OR follow-up)"
+    ]
+  },
+  {
+    "key": "pmid:42754368",
+    "id": "42754368",
+    "source": "MED",
+    "pmid": "42754368",
+    "pmcid": null,
+    "doi": "10.1177/1877718x261485793",
+    "title": "Gut microbiome dysbiosis, short-chain fatty acid depletion and implications for neuroinflammation in atypical parkinsonian syndromes - a systematic review of patient cohorts.",
+    "abstract": "IntroductionAtypical parkinsonian syndromes (APS) such as progressive supranuclear palsy (PSP), multiple system atrophy (MSA) and corticobasal syndrome (CBS) pose a major clinical challenge due to their progressive disease course, reduced life expectancy and resistance to dopaminergic therapy. The gut microbiome has gained increasing attention as a potential contributor to APS etiology and progression.AimThe literature analysis aims to systematically evaluate alterations in the gut microbiome in APS, their correlation with clinical symptoms and their potential diagnostic and therapeutic relevance.Material and methodsPubMed and Web of Science were searched separately for ''progressive supranuclear palsy'', ''multiple system atrophy'' and ''corticobasal syndrome'', each combined with \"gut microbiome\" AND \"human\". Inclusion criteria were ≥ 10 subjects per group, clinically confirmed APS and gut microbiome analysis in a case-control, cross-sectional, longitudinal or randomized controlled trial study design. 7 studies met the inclusion criteria (1 PSP, 1 PSP/MSA, 5 MSA). No studies with CBS patients could be included.ResultsThe gut microbiome is altered in APS compared to healthy controls, with several alterations correlating with clinical symptoms in individual studies. A reduction of short-chain fatty acid (SCFA) producing bacteria and an enrichment of pro-inflammatory taxa were observed, alongside impaired markers of intestinal barrier integrity.Discussion and conclusionAPS are associated with dysbiosis that correlates with clinical symptoms, although causality remains to be established. Generalizability is limited due to the lack of geographic heterogeneity in the included studies. Longitudinal studies with larger cohorts are required to identify robust microbial markers and therapeutic potential.",
+    "authors": "Khan SA, Hegelmaier T, Wegner F, Höllerhage M, Peters M, Duscha A, Desel C, Haghikia A, Klietz M.",
+    "journal": "Journal of Parkinson's disease",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42754368",
+    "matched_queries": [
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42719630",
+    "id": "42719630",
+    "source": "MED",
+    "pmid": "42719630",
+    "pmcid": "PMC13555365",
+    "doi": "10.1002/exp2.70221",
+    "title": "Probiotic Spore Inspired Oral Drug Delivery System With Multiple-Barriers-Crossing Ability Modulates Gut-Brain Axis for Parkinson's Disease Therapy.",
+    "abstract": "For Parkinson's disease (PD), the development of oral brain-targeted drug delivery is challenging due to various physiological barriers. Besides the brain, the effect of the gut on the microbiome-gut-brain axis should not be ignored. Therefore, developing a gut-brain dual-targeted delivery system with multiple-barriers-crossing ability is meaningful. During the germination of probiotic spores, we find that spore coat proteins (SP) shed from their surface possess excellent characteristics (re-assembling into nanoparticles, multiple-barriers penetration ability, antioxidant property, etc.), offering potential for brain-targeted drug delivery. Inspired by this, we propose a probiotic spore based oral drug delivery system to dual-regulate the gut-brain. After oral administration, the spore system crosses the harsh gastrointestinal chemical barrier. Spores germinate in the intestine into probiotics to modulate the gut-brain axis. Meanwhile, the SP-derived reassembled nanosystems cross multiple barriers (intestinal mucus barrier, enterocyte barrier, blood-brain barrier) to reach brain and further reduce oxidative stress. Notably, neurodegeneration and behavioral deficits are alleviated in PD mice. Such gut-brain dual-regulation strategy emphasizes a comprehensive and promising technique for central nervous system disease treatment, which may be an alternative to traditional single-targeted methods. Furthermore, the probiotic spore-based oral biotherapeutics with multiple-barriers-crossing efficiency provide new insight into other brain diseases.",
+    "authors": "Feng Q, Mei Y, Zhang J, Sun L, Si B, Zhou H, Xiao H, Liu R, Zhang J, Wang L.",
+    "journal": "Exploration (Beijing, China)",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42719630",
+    "matched_queries": [
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "doi:10.20944/preprints202605.1399.v1",
+    "id": "PPR1237842",
+    "source": "PPR",
+    "pmid": null,
+    "pmcid": null,
+    "doi": "10.20944/preprints202605.1399.v1",
+    "title": "Mediterranean Diet in Neurodegenerative Diseases: Recent Advances from Gut–Immune–Brain Axis to Multi-Omics Guided Precision Nutrition",
+    "abstract": "Neurodegenerative diseases such as Alzheimer's disease (AD) and Parkinson's disease (PD) are increasingly understood as systemic disorders driven by chronic neuroinflammation, metabolic dysregulation, and barrier dysfunction, which interact dynamically along the gut–immune–brain axis. The Mediterranean diet rich in plant-based foods, olive oil, and fish, is consistently associated with reduced cognitive decline and neurodegeneration risk. This review synthesizes recent advances to present a comprehensive framework illustrating how the Mediterranean diet functions as a systems-level modulator. Mechanistically, the Mediterranean diet remodels the gut microbiota, enhancing the production of bioactive metabolites like SCFA-producing bacteria (SCFAs). These metabolites serve as key signaling mediators that reinforce intestinal barrier integrity, reduce systemic inflammation, and subsequently modulate central processes. Within the central nervous system, diet-derived cues influence neuroinflammation by reprogramming microglial and astrocytic states, support mitochondrial function and proteostasis, and help maintain blood–brain barrier (BBB) stability. Disease-specific insights for AD and PD highlight the diet's role in modulating hallmark pathologies such as Amyloid Beta (Aβ), tau, and α-synuclein aggregation. Emerging multi-omics technologies—including single-cell/spatial transcriptomics and microbiome profiling—are reshaping the field, offering unprecedented resolution to dissect these pleiotropic effects. Ultimately, while the Mediterranean diet presents a promising neuroprotective strategy, individual responses vary based on genetics, microbiome, and metabolic context. The integration of these technologies is pivotal for transitioning from generalized dietary advice to precision nutrition approaches tailored to individual patient profiles, positioning the Mediterranean diet not merely as a diet but as a programmable intervention for neuro-immune and metabolic network modulation. Key challenges remain, including the need for more randomized controlled trials (RCTs) and standardized frameworks for multi-omics integration.",
+    "authors": "Dou J, Wang J, Xue F.",
+    "journal": "Preprint",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Preprint"
+    ],
+    "preprint": true,
+    "url": "https://europepmc.org/article/PPR/PPR1237842",
+    "matched_queries": [
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42564147",
+    "id": "42564147",
+    "source": "MED",
+    "pmid": "42564147",
+    "pmcid": "PMC13442656",
+    "doi": "10.3389/fcimb.2026.1688918",
+    "title": "Older adults with constipation and Parkinson's disease share comparable gut microbiota.",
+    "abstract": "Background Aging underlies numerous diseases, including Parkinson's disease (PD) and constipation. A large proportion of patients with PD often suffer from constipation; however, it remains unclear whether older patients with constipation and those with Parkinson's disease share common gut microbiota characteristics. Aim This study analyzed the characteristics of the gut microbiota in older adults with constipation or PD to identify differences and similarities and to evaluate the possible role of the microbiota in PD and constipation. Methods Raw data from fecal samples of 860 selected older adults from the Gut Microbiota Database (GMrepo) were analyzed, including patients with PD (n=378), constipation (CP, n=189), and healthy participants (CON, n=293). Results The CP group displayed a higher relative abundance of Bacteroides and Akkermansia , and a decreased relative abundance of Prevotella , Faecalibacterium , and Agathobacterium than the CON group. Similarly, the PD group exhibited an increased relative abundance of Bacteroides , Akkermansia , Parabacteroides , Phascolarctobacterium , and Bifidobacterium , and a decreased relative abundance of Escherichia-Shigella , Faecalibacterium , Agathobacterium , and Prevotella . Further analysis revealed that, compared with the CON group, most bacteria were enriched or deficient in the CP and PD groups, such as Bacteroides, Akkermansia , Faecalibacterium , Agathobacterium , and Prevotella . Conclusion The microbiota composition and structure of older adults with constipation or PD were similar and significantly different from those of healthy controls. This may partially explain the coexistence of constipation and PD in terms of the gut microbiota.",
+    "authors": "Ke L, Wang Y, Tang L, Yang M, Liu Q, Wu J, Bi X, Chen Y, Liu X.",
+    "journal": "Frontiers in cellular and infection microbiology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42564147",
+    "matched_queries": [
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42034029",
+    "id": "42034029",
+    "source": "MED",
+    "pmid": "42034029",
+    "pmcid": null,
+    "doi": "10.1016/j.phymed.2026.158200",
+    "title": "Da-Bu-Yin-Wan and Qian-Zheng-San regulate neuroinflammation and intestinal permeability through the microbiota-gut-brain axis in Parkinson's disease mice.",
+    "abstract": "Background Parkinson's disease (PD) is marked by progressive neurodegeneration and is becoming more widespread across the globe. Da-Bu-Yin-Wan and Qian-Zheng-San (BYQZF) is a compound from Chinese medicine known for its neuroprotective effects, but the specific active ingredients and mechanisms in relation to Parkinson's disease are not clearly comprehended. Purpose This investigation aimed to investigate how BYQZF works in treating PD. Methods Behavioral tests, histopathology, and Western blot were used to validate MPTP-induced PD mouse models. Mice were treated with BYQZF or SCFAs. The evaluation included gut microbiota, lipid metabolism and inflammation. To evaluate composition of microbiota, short-chain fatty acids, and canonical inflammatory signaling pathway, methods such as 16S rRNA sequencing, metabolomics, GC-MS, western blotting and RT-qPCR were utilized. The dependency on microbiota was confirmed with a model mimicking germ-free conditions. Results BYQZF improved motor/non-motor dysfunction, α-syn aggregation, and the decline of dopaminergic neurons in mice with PD, while also alleviating neuroinflammation and oxidative stress. The balance of gut microbiota was restored, SCFAs levels were increased, and the integrity of the intestinal barrier was improved. BYQZF suppressed the activation of the TLR4/MyD88/NF-κB pathway within the microbiota-gut-brain axis, thus decreasing inflammation both systemically and in the nervous system. Supplementation with SCFAs could replicate the aforementioned benefits of BYQZF, whereas depletion of the gut microbiota attenuated its efficacy. Conclusion BYQZF enriched gut bacteria such as Lachnospiraceae and Ruminococcaceae, which led to increased levels of SCFAs (particularly butyrate) in the serum. This increase was significantly positively correlated with improvements in intestinal barrier function, alleviation of neuroinflammation in the brain, and restoration of movement abilities in PD mice.",
+    "authors": "Zhu H, Feng J, Xu H, Cai D, Wei R, Gai C.",
+    "journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42034029",
+    "matched_queries": [
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42445284",
+    "id": "42445284",
+    "source": "MED",
+    "pmid": "42445284",
+    "pmcid": "PMC13360516",
+    "doi": "10.1080/20002297.2026.2699527",
+    "title": "Interactions between taste and oral microbiome: mechanisms and implications for oral and systemic diseases.",
+    "abstract": "Background The oral microbiome is a complex microbial ecosystem that contributes to oral and systemic health. Emerging evidence suggests a bidirectional interaction between oral microbiota and taste, although its underlying mechanisms and disease implications remain incompletely understood. Objective This review aims to summarize current knowledge regarding the interactions between the oral microbiome and taste, elucidate the potential mechanisms involved, and discuss their relevance to human diseases. Design Recent advances in clinical and experimental studies were reviewed, focusing on microbial metabolism, immunoinflammatory regulation, taste receptor modulation, and microbial-host interactions. Results Oral microorganisms may influence taste perception through metabolite production, inflammatory pathways, alteration of taste receptor expression, and other mechanisms such as physical barriers. Conversely, taste perception and taste receptors can regulate microbial colonization by shaping dietary behaviors and local immune responses. These interactions may contribute to the development and progression of oral diseases, extraoral inflammatory diseases, cardiometabolic disorders, cancer, and neurodegenerative conditions. Conclusions The taste-oral microbiome axis represents an emerging regulatory network linking microbial ecology, sensory function, and disease pathogenesis. Further longitudinal and mechanistic studies are required to clarify causal relationships and explore microbiome-targeted therapeutic strategies.",
+    "authors": "Xi M, Li S, Tang Y, Zhu J, Deng S.",
+    "journal": "Journal of oral microbiology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42445284",
+    "matched_queries": [
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42677452",
+    "id": "42677452",
+    "source": "MED",
+    "pmid": "42677452",
+    "pmcid": "PMC13561154",
+    "doi": "10.1111/febs.70704",
+    "title": "Metabolic shifts driven by host-microbial interactions.",
+    "abstract": "Host-microbe interactions within the gut have been extensively reviewed in the context of host immune response. Emerging evidence, however, highlights that these inflammatory and immune outcomes are often deeply intertwined with the microbiome-derived secondary metabolites. The gut microbiota functions in concert with the host by providing an extensive repertoire of metabolic enzymes that enhance digestion and capacity to assimilate a broad spectrum of ingested food sources. This symbiotic metabolism generates a diverse array of bioactive metabolites that shape local and systemic physiology, adaptive immune responses, and neuroimmune responses. Here, we focus on microbial metabolism as a central organizing principle of host-microbiota symbiosis. Microbiota-derived metabolites, including short-chain fatty acids, secondary bile acids, tryptophan-derived indoles, sphingolipids, and gaseous byproducts, signal through downstream molecular partners like nuclear receptors, transcriptional regulators, and redox-sensitive homeostatic pathways to regulate host energy homeostasis, but also alter immune functions like gut epithelial integrity, immune tolerance, and neuroimmune crosstalk. Finally, we discuss emerging therapeutic strategies that target microbial metabolic functions-including dietary interventions, engineered probiotics, postbiotics, and receptor-directed approaches-that position microbial metabolism as a tractable axis for modulating immunometabolism homeostasis and potentially mitigating metabolic and inflammatory diseases.",
+    "authors": "Nair T, Stuhr NL, Weathers BA, Curran SP.",
+    "journal": "The FEBS journal",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "research-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42677452",
+    "matched_queries": [
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  },
+  {
+    "key": "pmid:42181890",
+    "id": "42181890",
+    "source": "MED",
+    "pmid": "42181890",
+    "pmcid": "PMC13193986",
+    "doi": "10.3389/fphar.2026.1813134",
+    "title": "Neurodegeneration at the crossroads: the gut-brain axis and blood-brain barrier in Parkinson's disease - a review.",
+    "abstract": "Parkinson's disease (PD), which is one of the most common neurodegenerative illnesses, involves abnormal deposition of α-Synuclein and loss of dopaminergic neurons in the substantia nigra. Beyond this, there is increasing evidence that the gut-brain axis (GBA) and blood-brain barrier (BBB) interfere in disease initiation and progression. Dysbiosis of the gut microbiota affects the intestine and the BBB, allowing microbial metabolites and proinflammatory mediators to enter the CNS, causing neuroinflammation and neurodegeneration. Studies show that α-Synuclein pathology can originate in the gut and reach the brain via the vagus nerve. This review summarizes the connections among GBA, BBB, and PD, focusing on oxidative damage, inflammatory cascades, decreased expression of tight junction proteins, and signaling pathways such as TLR4/MyD88/NF-κB. In addition, we discuss therapeutic strategies that target the microbiota-BBB axis, such as probiotics, fecal microbiota transplantation, natural compounds (e.g., piperine, anethole, polymannuronic acid, Paeonia lactiflora), and stem cell therapy, which have demonstrated neuroprotective potential in animal models. Overall, the literature emphasizes the importance of restoring gut homeostasis and BBB integrity, and suggests that getting this axis right may offer novel opportunities for PD treatment. Future research is crucial to validate the efficacy of this approach clinically and to develop tailored therapies to prevent or delay PD progression.",
+    "authors": "Gamal NK, Fakhry R, Hatem Y, Rashed E, Marzouk R, Bukr AKM, Akawi N, George MY.",
+    "journal": "Frontiers in pharmacology",
+    "year": 2026,
+    "cited_by": 1,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42181890",
+    "matched_queries": [
+      "(intestinal microbiome OR gut bacteria) AND Parkinson\\'s disease"
+    ]
+  }
+]

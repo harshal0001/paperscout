@@ -36,14 +36,17 @@ class LLM:
         self.client = OpenAI(base_url=BASE_URL, api_key=key, timeout=90, max_retries=2)
         self.usage = {"prompt_tokens": 0, "completion_tokens": 0}
 
-    def complete_json(self, role, system, user, max_tokens=1500):
-        """One retry on unparseable output; thinking disabled (it ate the whole token budget in testing)."""
+    def complete_json(self, role, system, user, max_tokens=1500, schema=None):
+        """Schema-constrained decoding when a schema is given (free-form JSON broke deterministically in testing);
+        one retry on unparseable output; thinking disabled (it ate the whole token budget in testing)."""
+        extra = {"response_format": {"type": "json_schema", "json_schema": {"name": role, "schema": schema, "strict": True}}} \
+            if schema else {}
         last = None
         for _ in range(2):
             r = self.client.chat.completions.create(
                 model=MODELS[role], temperature=0, max_tokens=max_tokens,
                 messages=[{"role": "system", "content": system}, {"role": "user", "content": user}],
-                extra_body={"chat_template_kwargs": {"enable_thinking": False}},
+                extra_body={"chat_template_kwargs": {"enable_thinking": False}}, **extra,
             )
             if r.usage:
                 self.usage["prompt_tokens"] += r.usage.prompt_tokens
