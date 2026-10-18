@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-10-18_175829-do-sglt2-inhibitors-reduce-hospitalisati",
+  "question": "Do SGLT2 inhibitors reduce hospitalisation in heart failure with preserved ejection fraction?",
+  "started": "2026-10-18T17:58:29",
+  "models": {
+    "planner": "nvidia/nemotron-3-super-120b-a12b",
+    "ranker": "nvidia/Nemotron-3_5-Lightning",
+    "writer": "nvidia/nemotron-3-super-120b-a12b"
+  },
+  "status": "ok",
+  "warnings": [],
+  "counts": {
+    "per_query": {
+      "(heart failure with preserved ejection fraction OR HFpEF) AND (SGLT2 inhibitor OR dapagliflozin OR empagliflozin) AND (hospitalisation OR hospitalization)": 35,
+      "(heart failure OR cardiac failure) AND (preserved ejection fraction OR diastolic dysfunction) AND (SGLT2 inhibitor OR dapagliflozin OR empagliflozin OR gliflozin) AND (hospitalisation OR hospitalization)": 35,
+      "(heart failure with preserved ejection fraction OR HFpEF) AND (SGLT2 inhibitor OR dapagliflozin OR empagliflozin) AND (randomized OR \"meta-analysis\" OR \"systematic review\")": 35
+    },
+    "unique": 52,
+    "dropped_no_abstract": 1,
+    "unscored": 0,
+    "effects": 16
+  },
+  "finished": "2026-10-18T17:58:40",
+  "usage": {
+    "prompt_tokens": 21559,
+    "completion_tokens": 3330
+  }
+}

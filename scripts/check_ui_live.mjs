@@ -88,6 +88,12 @@ async function scenario(name, stream) {
   check(w.els.cvSub.innerHTML.length && !bad(w.els.map.innerHTML + w.els.pyr.innerHTML + w.els.list.innerHTML).length, "map, pyramid and cards have no bad values");
   check(w.missing.size === 0, `all theme variables resolve (${[...w.missing].join(",") || "none missing"})`);
   check(w.els.sTok.dataset.v > 0, `tokens stat set (${w.els.sTok.dataset.v})`);
+  // evidence-map bubbles must stay small whatever the citation counts (a 46,706-citation paper once drew r=37 px)
+  for (const extreme of [0, 8, 46706, 5e6]) {
+    w.run(`papers[0].cited_by = ${extreme}; drawMap();`);
+    const rs = [...w.els.map.innerHTML.matchAll(/ r="([\d.]+)"/g)].map(m => +m[1]);
+    check(rs.length && Math.max(...rs) <= 10 && Math.min(...rs) >= 3, `map bubbles within 3–10 px with max citations ${extreme} (got ${Math.min(...rs).toFixed(1)}–${Math.max(...rs).toFixed(1)})`);
+  }
 }
 
 // 2) failure path: planner ok, then a server error

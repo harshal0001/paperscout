@@ -1,0 +1,15 @@
+{
+  "summary": "Multiple lines of evidence indicate that SGLT2 inhibitors reduce heart failure hospitalizations in patients with HFpEF. A large meta-analysis of six RCTs found SGLT2i significantly reduced the risk of heart failure hospitalizations over ≥1 year follow-up [2]. The DELIVER trial specifically showed dapagliflozin reduced worsening heart failure (defined as unplanned HF hospitalization or urgent HF visit) by 18% compared to placebo in patients with LVEF >40% [3]. A nationwide cohort study of veterans with type 2 diabetes and HFpEF found SGLT2 inhibitors were associated with reduced risk of hospital admission for heart failure [7]. A systematic review and meta-analysis of 15 RCTs in HFpEF patients confirmed SGLT2Is reduce hospitalization for heart failure [8]. These findings are consistent across RCTs, meta-analyses, and real-world data.",
+  "evidence_gaps": "The evidence primarily focuses on patients with comorbid type 2 diabetes; less is known about SGLT2i effects on hospitalization in HFpEF patients without diabetes. Long-term data beyond 2-3 years of follow-up are limited, and most trials excluded patients with very advanced renal dysfunction or recent acute HF decompensation.",
+  "confidence": "high",
+  "cited_keys": [
+    "pmid:42405364",
+    "pmid:42007145",
+    "pmid:36027570",
+    "pmid:42211456",
+    "pmid:42099481",
+    "pmid:42759294",
+    "pmid:42644019",
+    "pmid:42488770"
+  ]
+}

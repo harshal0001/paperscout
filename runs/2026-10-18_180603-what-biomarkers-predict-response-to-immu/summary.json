@@ -1,0 +1,15 @@
+{
+  "summary": "In non-small cell lung cancer, biomarkers predicting response to immune checkpoint inhibitors include high tumor mutational burden (TMB) and associated neoantigen burden, which correlate with improved objective response and survival [1]; APOBEC mutational signatures, which predict benefit even in TMB-low tumors independent of PD-L1 status [3]; loss-of-function mutations in SWI/SNF complexes, linked to elevated immunogenicity and superior clinical outcomes [4]; high PD-1/PD-L1 and CTLA-4/CD80 interaction states measured by FRET efficiency, correlating with improved overall and progression-free survival [2]; and IFN-γ-related mRNA profiles or T cell-inflamed gene expression profiles, reflecting baseline T cell infiltration and predicting clinical benefit [6]. Additionally, TIDE scores modeling T cell dysfunction and exclusion have shown predictive accuracy for immunotherapy response [5], and high TMB (≥10 mut/Mb) specifically predicts improved progression-free survival with nivolumab plus ipilimumab versus chemotherapy [7]. These biomarkers reflect genomic, transcriptomic, and immune microenvironmental features that collectively inform response likelihood.",
+  "evidence_gaps": "These papers do not fully address the dynamic changes in biomarkers during treatment, the optimal cutoff values for emerging markers like APOBEC or SWI/SNF-LOF in clinical practice, or how these biomarkers perform in specific NSCLC subtypes (e.g., squamous vs. non-squamous) or in real-world populations beyond selected cohorts.",
+  "confidence": "high",
+  "cited_keys": [
+    "pmid:25765070",
+    "pmid:42535087",
+    "pmid:42378718",
+    "pmid:42642869",
+    "pmid:30127393",
+    "pmid:28650338",
+    "pmid:29658845",
+    "pmid:42779146"
+  ]
+}

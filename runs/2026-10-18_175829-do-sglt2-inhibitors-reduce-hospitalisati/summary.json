@@ -1,0 +1,15 @@
+{
+  "summary": "Multiple lines of evidence indicate that SGLT2 inhibitors reduce hospitalisation in heart failure with preserved ejection fraction (HFpEF). The DELIVER trial found dapagliflozin significantly reduced worsening heart failure (defined as unplanned hospitalisation for heart failure or urgent visit) or cardiovascular death by 18% (HR 0.82, 95% CI 0.73–0.92) over a median of 2.3 years in patients with LVEF >40% [1]. A nationwide cohort study of veterans with type 2 diabetes and HFpEF showed SGLT2 inhibitor use was associated with reduced risk of the composite outcome of all-cause mortality and heart failure hospitalisation [3]. Meta-analyses of RCTs consistently demonstrate benefit: one meta-analysis of 15 RCTs reported SGLT2 inhibitors reduced hospitalisation for heart failure (HHF) in HFpEF [5], while another of six RCTs (≥1 year follow-up) found significant reduction in heart failure-related hospital admissions [7]. An exploratory pooled analysis of DELIVER and EMPEROR-preserved trials showed SGLT2 inhibitors reduced cardiovascular death or HF hospitalisation by 27% in patients with recent (within 12 months) HF hospitalisation (broad definition: HR 0.73, 95% CI 0.59–0.90) [6]. Preclinical and mechanistic studies support biological plausibility [2,8].",
+  "evidence_gaps": "These papers do not specifically address whether the reduction in hospitalisation is consistent across all HFpEF subgroups (e.g., by age, sex, comorbidities, or diabetes status) nor do they detail long-term effects beyond approximately 2.5 years of follow-up.",
+  "confidence": "high",
+  "cited_keys": [
+    "pmid:36027570",
+    "pmid:42759294",
+    "pmid:42644019",
+    "pmid:42099481",
+    "pmid:42488770",
+    "pmid:42205792",
+    "pmid:42007145",
+    "pmid:41777267"
+  ]
+}

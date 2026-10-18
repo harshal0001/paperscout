@@ -1,0 +1,15 @@
+{
+  "summary": "CRISPR base editing shows effectiveness for treating sickle cell disease by reactivating fetal hemoglobin through precise modifications in the HBG promoter, such as creating KLF1 activator binding sites at positions -123/-124 or -113, which elevates γ-globin expression and rescues the pathological phenotype in hematopoietic stem/progenitor cells [1][2][5]. Base editing avoids insertions, deletions, and large genomic rearrangements associated with Cas9 nuclease approaches, resulting in higher and safer fetal hemoglobin levels [1]. Additionally, base editing can directly convert sickle hemoglobin (HbS) to the asymptomatic HbG-Makassar variant (βE6A), though functional assessment reveals mixed outcomes in red blood cell behavior, indicating the need for further evaluation of the mature red cell environment [3]. Preclinical studies demonstrate efficient installation of target base conversions and significant γ-globin reactivation in both human erythroid progenitor cells and in vivo mouse models, with no observed alterations in hematological parameters [5]. Base editing technology enables precise single-nucleotide changes without double-strand breaks, offering a promising avenue for therapeutic application in hemoglobinopathies [7]. Approved CRISPR-based therapies like Casgevy already utilize gene editing for sickle cell disease, highlighting the translational potential of such approaches [6][8].",
+  "evidence_gaps": "The papers do not fully address long-term safety, off-target effects in clinical settings, or the scalability and durability of base editing therapies in human patients, particularly regarding immune responses and engraftment efficiency post-treatment.",
+  "confidence": "moderate",
+  "cited_keys": [
+    "pmid:36333351",
+    "pmid:35147495",
+    "pmid:39920120",
+    "pmid:30082871",
+    "pmid:33620431",
+    "pmid:40160040",
+    "pmid:42033211",
+    "pmid:41773269"
+  ]
+}

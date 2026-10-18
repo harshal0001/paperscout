@@ -1,0 +1,416 @@
+[
+  {
+    "key": "pmid:34449189",
+    "measure": "HR",
+    "est": 0.73,
+    "lo": 0.61,
+    "hi": 0.88,
+    "outcome": "Hospitalisation",
+    "snippet": "The total number of hospitalizations for heart failure was lower in the empagliflozin group than in the placebo group (407 with empagliflozin and 541 with placebo; hazard ratio, 0.73; 95% CI, 0.61 to 0.88; P<0.001)."
+  },
+  {
+    "key": "pmid:36027570",
+    "measure": "HR",
+    "est": 0.79,
+    "lo": 0.69,
+    "hi": 0.91,
+    "outcome": "Progression",
+    "snippet": "Worsening heart failure occurred in 368 patients (11.8%) in the dapagliflozin group and in 455 patients (14.5%) in the placebo group (hazard ratio, 0.79; 95% CI, 0.69 to 0.91); cardiovascular death occurred in 231 patients (7.4%) and 261 patients (8.3%), respectively (hazard ratio, 0.88; 95% CI, 0.74 to 1.05)."
+  },
+  {
+    "key": "pmid:36027570",
+    "measure": "HR",
+    "est": 0.88,
+    "lo": 0.74,
+    "hi": 1.05,
+    "outcome": "CV death",
+    "snippet": "Worsening heart failure occurred in 368 patients (11.8%) in the dapagliflozin group and in 455 patients (14.5%) in the placebo group (hazard ratio, 0.79; 95% CI, 0.69 to 0.91); cardiovascular death occurred in 231 patients (7.4%) and 261 patients (8.3%), respectively (hazard ratio, 0.88; 95% CI, 0.74 to 1.05)."
+  },
+  {
+    "key": "pmid:42211456",
+    "measure": "HR",
+    "est": 0.86,
+    "lo": 0.79,
+    "hi": 0.92,
+    "outcome": "Mortality / survival",
+    "snippet": "Results SGLT2 inhibitor therapy was associated with a 14% reduction in all-cause mortality (HR = 0.86, 95% CI: 0.79-0.92; p < 0.001) and a 26% reduction in heart failure hospitalization (HR = 0.74, 95% CI: 0.68-0.81; p < 0.001)."
+  },
+  {
+    "key": "pmid:42211456",
+    "measure": "HR",
+    "est": 0.74,
+    "lo": 0.68,
+    "hi": 0.81,
+    "outcome": "Hospitalisation",
+    "snippet": "Results SGLT2 inhibitor therapy was associated with a 14% reduction in all-cause mortality (HR = 0.86, 95% CI: 0.79-0.92; p < 0.001) and a 26% reduction in heart failure hospitalization (HR = 0.74, 95% CI: 0.68-0.81; p < 0.001)."
+  },
+  {
+    "key": "pmid:42644019",
+    "measure": "HR",
+    "est": 0.82,
+    "lo": 0.7,
+    "hi": 0.96,
+    "outcome": "Composite endpoint",
+    "snippet": "Use of SGLT2 inhibitors was associated with a relative risk reduction in the primary composite outcome of 18% compared with the use of DPP4 inhibitors or sulfonylureas (hazard ratio 0.82, 95% confidence interval 0.70 to 0.96; P=0.01)."
+  },
+  {
+    "key": "pmid:42205792",
+    "measure": "HR",
+    "est": 0.78,
+    "lo": 0.6,
+    "hi": 1.03,
+    "outcome": "Composite endpoint",
+    "snippet": "Results Treatment with SGLT2 inhibitors reduced the risk of the primary endpoint by 22% in the strict group (HR: 0.78, 95% CI: 0.60-1.03, with a confidence interval that includes the null) and by 27% in the broad group (HR: 0.73, 95% CI: 0.59-0.90)."
+  },
+  {
+    "key": "pmid:42205792",
+    "measure": "HR",
+    "est": 0.73,
+    "lo": 0.59,
+    "hi": 0.9,
+    "outcome": "Composite endpoint",
+    "snippet": "Results Treatment with SGLT2 inhibitors reduced the risk of the primary endpoint by 22% in the strict group (HR: 0.78, 95% CI: 0.60-1.03, with a confidence interval that includes the null) and by 27% in the broad group (HR: 0.73, 95% CI: 0.59-0.90)."
+  },
+  {
+    "key": "pmid:41789221",
+    "measure": "RR",
+    "est": 0.8,
+    "lo": 0.69,
+    "hi": 0.93,
+    "outcome": "CV death",
+    "snippet": "However, empagliflozin significantly reduced the risk of cardiovascular mortality by 20% (RR: 0.80, 95% CI 0.69-0.93), including in patients with diabetes."
+  },
+  {
+    "key": "pmid:41789221",
+    "measure": "RR",
+    "est": 0.66,
+    "lo": 0.57,
+    "hi": 0.76,
+    "outcome": "Hospitalisation",
+    "snippet": "Sotagliflozin had the greatest reduction in hospitalizations (RR: 0.66, 95% CI 0.57-0.76), followed by empagliflozin (RR 0.73, 95% CI 0.66-0.81)."
+  },
+  {
+    "key": "pmid:41789221",
+    "measure": "RR",
+    "est": 0.73,
+    "lo": 0.66,
+    "hi": 0.81,
+    "outcome": "Hospitalisation",
+    "snippet": "Sotagliflozin had the greatest reduction in hospitalizations (RR: 0.66, 95% CI 0.57-0.76), followed by empagliflozin (RR 0.73, 95% CI 0.66-0.81)."
+  },
+  {
+    "key": "pmid:42513594",
+    "measure": "HR",
+    "est": 0.48,
+    "lo": 0.38,
+    "hi": 0.69,
+    "outcome": "Mortality / survival",
+    "snippet": "SGLT2 inhibitor exposure was associated with a lower adjusted hazard of death (HR, 0.48; 95% CI, 0.38-0.69; p < 0.001)."
+  },
+  {
+    "key": "pmid:42518892",
+    "measure": "RR",
+    "est": 0.9,
+    "lo": 0.83,
+    "hi": 0.98,
+    "outcome": "Mortality / survival",
+    "snippet": "SGLT2 inhibitors reduced all-cause mortality (ACM; RR 0.90, 95% CI 0.83-0.98; p = 0.016; 26 trials; low certainty), although trim-and-fill adjustment for publication bias attenuated the finding (adjusted RR 0.92, 95% CI 0.84-1.00)."
+  },
+  {
+    "key": "pmid:42518892",
+    "measure": "RR",
+    "est": 0.92,
+    "lo": 0.84,
+    "hi": 1.0,
+    "outcome": "Mortality / survival",
+    "snippet": "SGLT2 inhibitors reduced all-cause mortality (ACM; RR 0.90, 95% CI 0.83-0.98; p = 0.016; 26 trials; low certainty), although trim-and-fill adjustment for publication bias attenuated the finding (adjusted RR 0.92, 95% CI 0.84-1.00)."
+  },
+  {
+    "key": "pmid:42518892",
+    "measure": "RR",
+    "est": 0.74,
+    "lo": 0.69,
+    "hi": 0.79,
+    "outcome": "Hospitalisation",
+    "snippet": "HF hospitalization (HFH) was reduced (RR 0.74, 95% CI 0.69-0.79; 15 trials; moderate certainty), as were CV death (RR 0.86, 95% CI 0.76-0.98; seven trials; moderate certainty), the composite of CV death and HFH (RR 0.80, 95% CI 0.75-0.85; eight trials; high certainty), and serious adverse events (RR 0.94, 95% CI 0.90-0.99; 20 trials; high certainty)."
+  },
+  {
+    "key": "pmid:42752535",
+    "measure": "HR",
+    "est": 0.78,
+    "lo": 0.73,
+    "hi": 0.83,
+    "outcome": "Mortality / survival",
+    "snippet": "After inverse probability of treatment weighting, glucosuria was associated with lower risks of all-cause mortality (HR, 0.78; 95% CI, 0.73-0.83), heart failure hospitalization (HR, 0.87; 95% CI, 0.78-0.98), and end-stage kidney disease (HR, 0.73; 95% CI, 0.58-0.91) compared to no glucosuria."
+  },
+  {
+    "key": "pmid:42752535",
+    "measure": "HR",
+    "est": 0.87,
+    "lo": 0.78,
+    "hi": 0.98,
+    "outcome": "Hospitalisation",
+    "snippet": "After inverse probability of treatment weighting, glucosuria was associated with lower risks of all-cause mortality (HR, 0.78; 95% CI, 0.73-0.83), heart failure hospitalization (HR, 0.87; 95% CI, 0.78-0.98), and end-stage kidney disease (HR, 0.73; 95% CI, 0.58-0.91) compared to no glucosuria."
+  },
+  {
+    "key": "pmid:42752535",
+    "measure": "HR",
+    "est": 0.73,
+    "lo": 0.58,
+    "hi": 0.91,
+    "outcome": "Kidney",
+    "snippet": "After inverse probability of treatment weighting, glucosuria was associated with lower risks of all-cause mortality (HR, 0.78; 95% CI, 0.73-0.83), heart failure hospitalization (HR, 0.87; 95% CI, 0.78-0.98), and end-stage kidney disease (HR, 0.73; 95% CI, 0.58-0.91) compared to no glucosuria."
+  },
+  {
+    "key": "pmid:42769115",
+    "measure": "HR",
+    "est": 0.583,
+    "lo": 0.371,
+    "hi": 0.916,
+    "outcome": "Other",
+    "snippet": "Multivariable Cox regression confirmed SGLT2i use as an independent protective factor (HR, 0.583; 95% CI, 0.371-0.916; P=0.017)."
+  },
+  {
+    "key": "pmid:41597355",
+    "measure": "HR",
+    "est": 0.79,
+    "lo": 0.69,
+    "hi": 0.89,
+    "outcome": "CV death",
+    "snippet": "SGLT2i reduced the composite of worsening HF or CV death by about 21% (pooled HR 0.79, 95% CI 0.69-0.89), mainly driven by a consistent reduction in HF hospitalizations across trials."
+  },
+  {
+    "key": "pmid:42222151",
+    "measure": "OR",
+    "est": 0.89,
+    "lo": 0.82,
+    "hi": 0.95,
+    "outcome": "CV death",
+    "snippet": "Compared with placebo, finerenone was associated with lower risk of CV death (OR = 0.89, 95% CI 0.82-0.95) and worsening HF events (OR = 0.75, 95% CI 0.71-0.79), but higher risk of composite renal outcomes (OR = 1.42, 95% CI 1.10-1.84)."
+  },
+  {
+    "key": "pmid:42222151",
+    "measure": "OR",
+    "est": 0.75,
+    "lo": 0.71,
+    "hi": 0.79,
+    "outcome": "Progression",
+    "snippet": "Compared with placebo, finerenone was associated with lower risk of CV death (OR = 0.89, 95% CI 0.82-0.95) and worsening HF events (OR = 0.75, 95% CI 0.71-0.79), but higher risk of composite renal outcomes (OR = 1.42, 95% CI 1.10-1.84)."
+  },
+  {
+    "key": "pmid:42222151",
+    "measure": "OR",
+    "est": 1.42,
+    "lo": 1.1,
+    "hi": 1.84,
+    "outcome": "Kidney",
+    "snippet": "Compared with placebo, finerenone was associated with lower risk of CV death (OR = 0.89, 95% CI 0.82-0.95) and worsening HF events (OR = 0.75, 95% CI 0.71-0.79), but higher risk of composite renal outcomes (OR = 1.42, 95% CI 1.10-1.84)."
+  },
+  {
+    "key": "pmid:42739811",
+    "measure": "RR",
+    "est": 0.566,
+    "lo": 0.443,
+    "hi": 0.722,
+    "outcome": "Other",
+    "snippet": "2.3%; RR 0.566 [95% CI 0.443-0.722], p < 0.001), 90 days (2.2% vs."
+  },
+  {
+    "key": "pmid:42739811",
+    "measure": "RR",
+    "est": 1.111,
+    "lo": 1.089,
+    "hi": 1.133,
+    "outcome": "Other",
+    "snippet": "68.7%; RR 1.111 [95% CI 1.089-1.133], p < 0.001)."
+  },
+  {
+    "key": "pmid:42560763",
+    "measure": "OR",
+    "est": 0.8,
+    "lo": 0.71,
+    "hi": 0.91,
+    "outcome": "Composite endpoint",
+    "snippet": "SGLT2 inhibitor use was associated with a lower risk of MACE (odds ratio 0.80, 95% confidence interval, 0.71 to 0.91) and KRT (0.67, 0.52 to 0.85)."
+  },
+  {
+    "key": "pmid:33031522",
+    "measure": "HR",
+    "est": 0.9,
+    "lo": 0.85,
+    "hi": 0.95,
+    "outcome": "Safety",
+    "snippet": "Overall, SGLT2 inhibitors were associated with a reduced risk of major adverse CV events (HR, 0.90; 95% CI, 0.85-0.95; Q statistic, P = .27), HHF/CV death (HR, 0.78; 95% CI, 0.73-0.84; Q statistic, P = .09), and kidney outcomes (HR, 0.62; 95% CI, 0.56-0.70; Q statistic, P = .09), with no significant heterogeneity of associations with outcome."
+  },
+  {
+    "key": "pmid:33031522",
+    "measure": "HR",
+    "est": 0.78,
+    "lo": 0.73,
+    "hi": 0.84,
+    "outcome": "CV death",
+    "snippet": "Overall, SGLT2 inhibitors were associated with a reduced risk of major adverse CV events (HR, 0.90; 95% CI, 0.85-0.95; Q statistic, P = .27), HHF/CV death (HR, 0.78; 95% CI, 0.73-0.84; Q statistic, P = .09), and kidney outcomes (HR, 0.62; 95% CI, 0.56-0.70; Q statistic, P = .09), with no significant heterogeneity of associations with outcome."
+  },
+  {
+    "key": "pmid:33031522",
+    "measure": "HR",
+    "est": 0.62,
+    "lo": 0.56,
+    "hi": 0.7,
+    "outcome": "Kidney",
+    "snippet": "Overall, SGLT2 inhibitors were associated with a reduced risk of major adverse CV events (HR, 0.90; 95% CI, 0.85-0.95; Q statistic, P = .27), HHF/CV death (HR, 0.78; 95% CI, 0.73-0.84; Q statistic, P = .09), and kidney outcomes (HR, 0.62; 95% CI, 0.56-0.70; Q statistic, P = .09), with no significant heterogeneity of associations with outcome."
+  },
+  {
+    "key": "doi:10.21203/rs.3.rs-10332369/v1",
+    "measure": "RR",
+    "est": 0.56,
+    "lo": 0.43,
+    "hi": 0.71,
+    "outcome": "Composite endpoint",
+    "snippet": "Combination therapy was associated with lower risks of MACE (RR 0.56, 95% CI 0.43–0.71), all-cause mortality (RR 0.50, 95% CI 0.40–0.63), cardiovascular mortality (RR 0.26, 95% CI 0.16–0.43), myocardial infarction (RR 0.62, 95% CI 0.48–0.80), stroke (RR 0.65, 95% CI 0.49–0.86), kidney composite outcomes (RR 0.48, 95% CI 0.32–0.73), and hospitalization for heart failure (RR 0.67, 95% CI 0.64–0.71)."
+  },
+  {
+    "key": "doi:10.21203/rs.3.rs-10332369/v1",
+    "measure": "RR",
+    "est": 0.5,
+    "lo": 0.4,
+    "hi": 0.63,
+    "outcome": "Mortality / survival",
+    "snippet": "Combination therapy was associated with lower risks of MACE (RR 0.56, 95% CI 0.43–0.71), all-cause mortality (RR 0.50, 95% CI 0.40–0.63), cardiovascular mortality (RR 0.26, 95% CI 0.16–0.43), myocardial infarction (RR 0.62, 95% CI 0.48–0.80), stroke (RR 0.65, 95% CI 0.49–0.86), kidney composite outcomes (RR 0.48, 95% CI 0.32–0.73), and hospitalization for heart failure (RR 0.67, 95% CI 0.64–0.71)."
+  },
+  {
+    "key": "doi:10.21203/rs.3.rs-10332369/v1",
+    "measure": "RR",
+    "est": 0.26,
+    "lo": 0.16,
+    "hi": 0.43,
+    "outcome": "CV death",
+    "snippet": "Combination therapy was associated with lower risks of MACE (RR 0.56, 95% CI 0.43–0.71), all-cause mortality (RR 0.50, 95% CI 0.40–0.63), cardiovascular mortality (RR 0.26, 95% CI 0.16–0.43), myocardial infarction (RR 0.62, 95% CI 0.48–0.80), stroke (RR 0.65, 95% CI 0.49–0.86), kidney composite outcomes (RR 0.48, 95% CI 0.32–0.73), and hospitalization for heart failure (RR 0.67, 95% CI 0.64–0.71)."
+  },
+  {
+    "key": "pmid:30990260",
+    "measure": "HR",
+    "est": 0.66,
+    "lo": 0.53,
+    "hi": 0.81,
+    "outcome": "Kidney",
+    "snippet": "The relative risk of the renal-specific composite of end-stage kidney disease, a doubling of the creatinine level, or death from renal causes was lower by 34% (hazard ratio, 0.66; 95% CI, 0.53 to 0.81; P<0.001), and the relative risk of end-stage kidney disease was lower by 32% (hazard ratio, 0.68; 95% CI, 0.54 to 0.86; P = 0.002)."
+  },
+  {
+    "key": "pmid:30990260",
+    "measure": "HR",
+    "est": 0.68,
+    "lo": 0.54,
+    "hi": 0.86,
+    "outcome": "Kidney",
+    "snippet": "The relative risk of the renal-specific composite of end-stage kidney disease, a doubling of the creatinine level, or death from renal causes was lower by 34% (hazard ratio, 0.66; 95% CI, 0.53 to 0.81; P<0.001), and the relative risk of end-stage kidney disease was lower by 32% (hazard ratio, 0.68; 95% CI, 0.54 to 0.86; P = 0.002)."
+  },
+  {
+    "key": "pmid:30990260",
+    "measure": "HR",
+    "est": 0.8,
+    "lo": 0.67,
+    "hi": 0.95,
+    "outcome": "CV death",
+    "snippet": "The canagliflozin group also had a lower risk of cardiovascular death, myocardial infarction, or stroke (hazard ratio, 0.80; 95% CI, 0.67 to 0.95; P = 0.01) and hospitalization for heart failure (hazard ratio, 0.61; 95% CI, 0.47 to 0.80; P<0.001)."
+  },
+  {
+    "key": "pmid:36331190",
+    "measure": "HR",
+    "est": 0.86,
+    "lo": 0.78,
+    "hi": 0.95,
+    "outcome": "Hospitalisation",
+    "snippet": "The rate of hospitalization from any cause was lower in the empagliflozin group than in the placebo group (hazard ratio, 0.86; 95% CI, 0.78 to 0.95; P = 0.003), but there were no significant between-group differences with respect to the composite outcome of hospitalization for heart failure or death from cardiovascular causes (which occurred in 4.0% in the empagliflozin group and 4.6% in the placebo group) or death from any cause (in 4.5% and 5.1%, respectively)."
+  },
+  {
+    "key": "pmid:42647034",
+    "measure": "HR",
+    "est": 0.77,
+    "lo": 0.76,
+    "hi": 0.79,
+    "outcome": "Composite endpoint",
+    "snippet": "Among participants with SMI and type 2 diabetes, semaglutide initiation, compared with SGLT2 inhibitor initiation, was associated with lower risks of 3-point MACE (HR, 0.77; 95% CI, 0.76-0.79), 5-point MACE, myocardial infarction, stroke, heart failure, and coronary artery bypass grafting."
+  },
+  {
+    "key": "pmid:42647034",
+    "measure": "RR",
+    "est": 0.52,
+    "lo": 0.49,
+    "hi": 0.54,
+    "outcome": "Mortality / survival",
+    "snippet": "In a separately matched 1-year SMI cohort, mortality was lower with GLP-1RA initiation than with SGLT2 inhibitor initiation (2898 of 198 065; 1.46% vs 5624 of 198 065; 2.84%; RR, 0.52; 95% CI, 0.49-0.54; ARD, -1.38 percentage points; 95% CI, -1.47 to -1.29; P < .001)."
+  },
+  {
+    "key": "pmid:42647034",
+    "measure": "RR",
+    "est": 0.55,
+    "lo": 0.53,
+    "hi": 0.56,
+    "outcome": "Mortality / survival",
+    "snippet": "In 10-year exploratory analyses among participants with type 2 diabetes, semaglutide initiation, compared with SGLT2 inhibitor initiation, was associated with lower mortality in the major depressive disorder (RR, 0.55; 95% CI, 0.53-0.56), bipolar disorder (RR, 0.57; 95% CI, 0.51-0.63), and schizophrenia (RR, 0.67; 95% CI, 0.59-0.75) groups (all P < .001)."
+  },
+  {
+    "key": "pmid:42774613",
+    "measure": "HR",
+    "est": 0.86,
+    "lo": 0.53,
+    "hi": 1.39,
+    "outcome": "Other",
+    "snippet": "Results GLP-1 RA therapy was not associated with reduced AF incidence (HR 0.86; 95% CI, 0.53-1.39; p = 0.543) but was associated with lower mortality (HR 0.42; 95% CI, 0.23-0.75; p = 0.003)."
+  },
+  {
+    "key": "pmid:42774613",
+    "measure": "HR",
+    "est": 0.42,
+    "lo": 0.23,
+    "hi": 0.75,
+    "outcome": "Mortality / survival",
+    "snippet": "Results GLP-1 RA therapy was not associated with reduced AF incidence (HR 0.86; 95% CI, 0.53-1.39; p = 0.543) but was associated with lower mortality (HR 0.42; 95% CI, 0.23-0.75; p = 0.003)."
+  },
+  {
+    "key": "pmid:42374214",
+    "measure": "OR",
+    "est": 0.29,
+    "lo": 0.14,
+    "hi": 0.61,
+    "outcome": "Hospitalisation",
+    "snippet": "In HFrEF (n = 221), 30-day readmission was 12.1% versus 31.8% (crude OR 0.29, 95% CI 0.14-0.61)."
+  },
+  {
+    "key": "pmid:42374214",
+    "measure": "OR",
+    "est": 0.34,
+    "lo": 0.13,
+    "hi": 0.91,
+    "outcome": "Other",
+    "snippet": "The primary IPTW estimate was OR 0.34 (95% CI 0.13-0.91, p = 0.032)."
+  },
+  {
+    "key": "pmid:42439602",
+    "measure": "HR",
+    "est": 0.69,
+    "lo": 0.59,
+    "hi": 0.8,
+    "outcome": "Progression",
+    "snippet": "Results SGLT2 inhibitor use was associated with significant renoprotective effects, demonstrated by reduced risk of 30% eGFR decline (HR 0.69, 95% CI 0.59-0.80, p < 0.001) and 50% eGFR decline (HR 0.60, 95% CI 0.45-0.80, p < 0.001)."
+  },
+  {
+    "key": "pmid:42439602",
+    "measure": "HR",
+    "est": 0.6,
+    "lo": 0.45,
+    "hi": 0.8,
+    "outcome": "Progression",
+    "snippet": "Results SGLT2 inhibitor use was associated with significant renoprotective effects, demonstrated by reduced risk of 30% eGFR decline (HR 0.69, 95% CI 0.59-0.80, p < 0.001) and 50% eGFR decline (HR 0.60, 95% CI 0.45-0.80, p < 0.001)."
+  },
+  {
+    "key": "pmid:42439602",
+    "measure": "HR",
+    "est": 4.29,
+    "lo": 1.02,
+    "hi": 18.04,
+    "outcome": "Safety",
+    "snippet": "However, SGLT2 inhibitor use was associated with an increased risk of genital infections (HR 4.29, 95% CI 1.02-18.04, p = 0.047) in patients without prior history of such infections."
+  }
+]

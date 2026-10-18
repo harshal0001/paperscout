@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-10-18_180659-is-crispr-base-editing-effective-for-tre",
+  "question": "Is CRISPR base editing effective for treating sickle cell disease?",
+  "started": "2026-10-18T18:06:59",
+  "models": {
+    "planner": "nvidia/nemotron-3-super-120b-a12b",
+    "ranker": "nvidia/Nemotron-3_5-Lightning",
+    "writer": "nvidia/nemotron-3-super-120b-a12b"
+  },
+  "status": "ok",
+  "warnings": [],
+  "counts": {
+    "per_query": {
+      "\"sickle cell disease\" AND \"CRISPR base editing\"": 35,
+      "(sickle cell anemia OR HbSS OR sickle hemoglobinopathy) AND (base editing OR cytosine base editor OR adenine base editor)": 35,
+      "\"sickle cell disease\" AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")": 35,
+      "\"gene editing\" AND \"sickle cell\" AND therapeutic": 35
+    },
+    "unique": 115,
+    "dropped_no_abstract": 5,
+    "unscored": 0,
+    "effects": 0
+  },
+  "finished": "2026-10-18T18:07:15",
+  "usage": {
+    "prompt_tokens": 39515,
+    "completion_tokens": 5845
+  }
+}

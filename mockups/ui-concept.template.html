@@ -499,9 +499,12 @@ function drawMap() {
   g += `<rect class="zone" x="${x(7) - 12}" y="${T}" width="${W - R - x(7) + 12}" height="${y(7) - T}" rx="8"/><text x="${W - R - 4}" y="${T + 12}" text-anchor="end" class="zone-l">strong &amp; relevant</text>`;
   [0, 5, 10].forEach(s => g += `<line class="ax" x1="${L}" x2="${W - R}" y1="${y(s)}" y2="${y(s)}" stroke-dasharray="${s ? "2 4" : ""}"/><text x="${L - 6}" y="${y(s) + 3}" text-anchor="end">${s}</text>`);
   LEVELS.forEach((lv, i) => g += `<text x="${x(i)}" y="${H - B + 14}" text-anchor="middle" fill="${COLOR[lv]}">${SHORT[lv]}</text>`);
+  // bubble radius 3-10 px, log-scaled relative to the most-cited paper in THIS run, so landmark papers with
+  // tens of thousands of citations can never outgrow the chart
+  const cmax = Math.log(1 + Math.max(1, ...papers.map(p => p.cited_by || 0)));
   papers.filter(p => state.scored.has(p.key) && p.score != null).forEach(p => {
     const i = Math.max(0, LEVELS.indexOf(p.study_type)), jx = (hash(p.key) - .5) * 18, jy = (hash(p.key + "y") - .5) * 8;
-    const r = 3.5 + 2.2 * Math.log2(p.cited_by + 1), dim = state.level && p.study_type !== state.level;
+    const r = 3 + 7 * Math.log(1 + (p.cited_by || 0)) / cmax, dim = state.level && p.study_type !== state.level;
     g += `<circle class="dot${dim ? " dim" : ""}" data-k="${esc(p.key)}" cx="${(x(i) + jx).toFixed(1)}" cy="${(y(p.score) + jy).toFixed(1)}" r="${r.toFixed(1)}" fill="${COLOR[p.study_type] || V("st-other")}" fill-opacity=".85"/>`;
   });
   svg.innerHTML = g;
