@@ -1,0 +1,1985 @@
+[
+  {
+    "key": "pmid:41015034",
+    "id": "41015034",
+    "source": "MED",
+    "pmid": "41015034",
+    "pmcid": "PMC12629801",
+    "doi": "10.1016/j.xcrm.2025.102376",
+    "title": "Multiplex base editing of BCL11A regulatory elements to treat sickle cell disease.",
+    "abstract": "Sickle cell disease (SCD) is a genetic anemia caused by the production of an abnormal adult hemoglobin. Elevated levels of fetal hemoglobin (HbF) in adulthood reduce disease severity. A promising therapy involves the treatment of hematopoietic stem/progenitor cells (HSPCs) with CRISPR-Cas9 to downregulate the HbF repressor BCL11A via generation of double-strand breaks (DSBs) in the +58-kb enhancer. To improve safety and HbF induction, we use base editors to target both the +58-kb and +55-kb enhancers without generating DSBs. We dissect key DNA motifs recognized by transcriptional activators and identify critical nucleotides. Multiplex base editing efficiently disrupts these sites, reactivating HbF to levels exceeding those achieved with CRISPR-Cas9-induced editing, while minimizing DSBs and genomic rearrangements. Base editing is effective in long-term repopulating HSPCs and results in robust HbF reactivation in vivo. These findings demonstrate that multiplex base editing of BCL11A enhancers is a safe, efficient, and durable strategy to treat SCD.",
+    "authors": "Fontana L, Martinucci P, Amistadi S, Felix T, Mombled M, Tachtsidi A, Corre G, Chalumeau A, Hardouin G, Martin J, et al.",
+    "journal": "Cell reports. Medicine",
+    "year": 2025,
+    "cited_by": 5,
+    "open_access": true,
+    "pub_types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/41015034",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 9,
+    "reason": "Directly tests multiplex base editing of BCL11A enhancers to treat sickle cell disease in HSPCs",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:41296828",
+    "id": "41296828",
+    "source": "MED",
+    "pmid": "41296828",
+    "pmcid": null,
+    "doi": "10.1126/scitranslmed.adt8617",
+    "title": "Base editing of β0-thalassemia mutations as a therapeutic strategy for severe β-hemoglobinopathies.",
+    "abstract": "Gene therapy has emerged as a promising curative treatment for β-hemoglobinopathies, the most common genetic disorders worldwide. However, current approved approaches still have some limitations in terms of safety and efficacy. Here, we used highly processive adenine base editor (ABE) variants to precisely correct some of the most prevalent and severe β-thalassemia-causing mutations in the β-globin-encoding HBB gene, including CD39 and IVS2-1, using NRCH-ABE8e and SpRY-ABE8e, respectively. More than 90% of editing of hematopoietic stem and progenitor cells (HSPCs) led to improved β-globin expression in their erythroid progeny and persistent correction of both β-thalassemia and sickle cell-β-thalassemia phenotypes. The safety of this strategy was confirmed in HSPCs in vitro and in vivo through the absence of gene dysregulation and any meaningful impact on the DNA mutational burden, RNA deamination, β-globin gene locus integrity, and the clonality of the HSPC graft, as assessed by RNA sequencing, whole-exome sequencing, long-read sequencing, and human HSPC transplantation in immunodeficient mice. Overall, these preclinical studies suggest that base editing-mediated gene correction may be a safe and effective strategy for treating β-hemoglobinopathies.",
+    "authors": "Hardouin G, Martinucci P, Scaramuzza S, Antoniou P, Corradi F, Tachtsidi A, Corre G, Mombled M, Chermont J, et al.",
+    "journal": "Science translational medicine",
+    "year": 2025,
+    "cited_by": 2,
+    "open_access": false,
+    "pub_types": [
+      "Research Support, Non-U.S. Gov't",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/41296828",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 9,
+    "reason": "Directly tests adenine base editing to correct β-thalassemia and sickle cell-β-thalassemia phenotypes in HSPCs, showing >90% editing efficiency and phenotypic correction",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42755327",
+    "id": "42755327",
+    "source": "MED",
+    "pmid": "42755327",
+    "pmcid": null,
+    "doi": "10.1080/03630269.2026.2729189",
+    "title": "CRISPR-Based Mediated Reactivation of Fetal Hemoglobin as a Therapeutic Strategy for Hemoglobinopathies: Evidence from Preclinical to Clinical Trials in Sickle Cell Disease and β-Thalassemia.",
+    "abstract": "β-Hemoglobinopathies, including sickle cell disease (SCD) and β-thalassemia, are inherited disorders caused by mutations in the β-globin gene (HBB), leading to defective production of adult hemoglobin (HbA), vaso-occlusive crises, and rapid destruction of erythrocytes as they leave the bone marrow, resulting in hemolytic anemia. In recent years, CRISPR-based genome-editing technologies have emerged as promising therapeutic strategies to reactivate fetal hemoglobin (HbF) expression by targeting key regulatory elements, including the BCL11A enhancer and the HBG1/HBG2 promoters. This review aimed to synthesize available scientific evidence from PubMed, Scopus, Web of Science, and ClinicalTrials.gov on preclinical and clinical studies evaluating CRISPR-based genome-editing approaches for the treatment of SCD and β-thalassemia. This review was conducted and reported in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA 2020) Statement. A total of 247 records were identified; 20 studies met the inclusion criteria and were included in the qualitative synthesis. The included studies investigated various CRISPR-based platforms, including nuclease-mediated editing and base-editing strategies, to reactivate HbF expression. The studies reported durable increases in HbF levels, with therapeutic effects persisting for up to 22 months after treatment. Clinically, these outcomes were associated with the elimination or marked reduction of vaso-occlusive crises in patients with SCD and with transfusion independence in patients with β-thalassemia. Overall, the available evidence suggests that CRISPR-based HbF reactivation is a promising therapeutic approach for β-hemoglobinopathies, although long-term efficacy and safety data remain necessary.",
+    "authors": "Wong Castro DA, Morocho Perugachi AC, Fuel Herrera MO.",
+    "journal": "Hemoglobin",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42755327",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)",
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 9,
+    "reason": "Comprehensive review of CRISPR base editing for SCD, directly addresses fetal hemoglobin reactivation as therapeutic strategy with clinical trial evidence.",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "doi:10.64898/2026.09.15.751289",
+    "id": "PPR1322689",
+    "source": "PPR",
+    "pmid": null,
+    "pmcid": null,
+    "doi": "10.64898/2026.09.15.751289",
+    "title": "In vivo HSPC gene therapy of hemoglobinopathies without drug selection of corrected cells",
+    "abstract": "In vivo hematopoietic stem/progenitor cell (HSPC) gene therapy remains limited by low gene-editing efficiency and a lack of clinically applicable selection strategies to enrich therapeutically corrected progeny. We used in vivo base and prime editing to introduce a nonpathogenic EPOR variant into HSPCs, conferring erythropoietin hypersensitivity and promoting preferential expansion of gene-corrected erythroid cells. EPOR editing was combined with three therapeutic approaches for the correction of hemoglobinopathies: γ-globin gene addition, γ-globin reactivation, or correction of the sickle cell disease mutation. Tropism-modified helper-dependent adenoviral vectors (HDAd6/3+) targeting HSPCs were used to simultaneously deliver the EPOR-editing machinery and the corresponding therapeutic components. In vitro studies in an erythroid progenitor cell line and primary CD34+ cells demonstrated that the EPORW439* variant conferred a strong proliferative advantage to therapeutically modified erythroid progenitors. Mice humanized with CD34+ cells from a β⁰/β⁰-thalassemia patient were subjected to EPORW439*-mediated EPO hypersensitivity alongside a therapeutic γ-globin transgene which resulted in >70% HbF-positive erythroid cells and substantial reversion of the disease-associated phenotype, including reduced oxidative stress, near-complete elimination of splenic iron deposition, and reduced splenomegaly. Importantly, these effects were achieved after simple intravenous administration of the vectors following HSPC mobilization and cytokine prophylaxis, without subsequent pharmacologic selection. Together, these findings establish a strategy to amplify the therapeutic benefit of otherwise limited in vivo HSPC gene editing for hemoglobinopathies.",
+    "authors": "Sakunthala Velmurugan A, Paschoudi K, Queenan JA, Gil S, Maynard A, Fontana CE, Sharma R, Long A, Li C, Wang H, et al.",
+    "journal": "Preprint",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Preprint"
+    ],
+    "preprint": true,
+    "url": "https://europepmc.org/article/PPR/PPR1322689",
+    "matched_queries": [
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 9,
+    "reason": "In vivo base editing in HSPCs with EPOR variant; >70% HbF+ cells and disease phenotype reversion in β⁰/β⁰-thalassemia mice; directly addresses CRISPR base editing effectiveness.",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:40659814",
+    "id": "40659814",
+    "source": "MED",
+    "pmid": "40659814",
+    "pmcid": "PMC13169521",
+    "doi": "10.1038/s41573-025-01236-y",
+    "title": "CRISPR-based therapeutic genome editing for inherited blood disorders.",
+    "abstract": "Therapeutic genome editing promises to transform medicine. Pivotal discoveries have provided a diverse and versatile set of tools to correct pathogenic mutations or produce protective alleles using CRISPR-based technologies. These innovative therapies are especially adaptable for blood and immune disorders, where clinical methods allow haematopoietic stem cells (HSCs) to be mobilized, harvested, engineered ex vivo and transplanted back into a patient to permanently replace their blood system. This paradigm has been exemplified with the first US Food and Drug Administration (FDA)-approved CRISPR-Cas9 therapy for sickle cell disease and β-thalassaemia, exa-cel (Casgevy). Although promising, efficient delivery of gene edits involves complicated ex vivo manipulation and toxic myeloablative conditioning. The quiescent and elusive nature of HSCs also brings associated challenges. In this Review, we explore the state-of-the-art genome editing technologies of nucleases, base editors and prime editors, which hold promise to address unmet clinical needs for patients with inherited haematological disorders. We highlight the progress made for several disorders and discuss the challenges that remain for ex vivo and in vivo targeting of HSCs for next-generation gene therapies.",
+    "authors": "Levesque S, Bauer DE.",
+    "journal": "Nature reviews. Drug discovery",
+    "year": 2025,
+    "cited_by": 20,
+    "open_access": false,
+    "pub_types": [
+      "research-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/40659814",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 8,
+    "reason": "Reviews CRISPR-based genome editing for inherited blood disorders, includes FDA-approved exa-cel for SCD and discusses base editors",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:42400217",
+    "id": "42400217",
+    "source": "MED",
+    "pmid": "42400217",
+    "pmcid": null,
+    "doi": "10.1111/ejh.70260",
+    "title": "Efficacy, Safety, and Treatment-Delivery Feasibility of Autologous Gene Therapy for Sickle Cell Disease: A Systematic Review With Descriptive Synthesis of Clinical Trials.",
+    "abstract": "Background Severe sickle cell disease (SCD) leads to recurrent vaso-occlusive events (VOEs), progressive organ damage, and premature death. Autologous gene therapy has emerged as a potential curative strategy, but trial efficacy must be interpreted together with mobilization, apheresis collection, manufacturing, conditioning, cost, fertility preservation, and long-term surveillance requirements. Objective To evaluate the efficacy, safety, and treatment-delivery feasibility of autologous gene therapy for SCD across lentiviral, shmiR-BCL11A, CRISPR-Cas9, CRISPR-Cas12a, and base-editing platforms. Methods We searched PubMed, Embase, Scopus, Cochrane CENTRAL, ClinicalTrials.gov, FDA, and EMA sources, and ASH/EHA/EBMT/ASPHO conference proceedings through June 23, 2026. Eligible studies were interventional trials or long-term follow-up studies of autologous gene therapy for SCD. Two reviewers independently screened records, extracted data, and assessed risk of bias. Because endpoint definitions were heterogeneous and fewer than three prospectively comparable cohorts were available for the main efficacy outcomes, formal pooling and forest plots were not performed; outcome proportions are presented descriptively. Results The updated synthesis included 25 reports describing nine interventional clinical programs and associated follow-up reports, with 148 infused patients across lentiviral, shmiR, CRISPR-Cas9, CRISPR-Cas12a, and base-editing platforms. Prospectively defined VF12 was 96.7% (29/30) in the exa-cel pivotal cohort, and severe VOE resolution was 100% (25/25) in the lovo-cel pivotal cohort; both products achieved transfusion independence in evaluable patients. Reni-cel and risto-cel added contemporary Cas12a and base-editing evidence, with early follow-up showing high HbF induction and few or no reported post-infusion VOEs, but follow-up was shorter, and endpoints were not pooled with pivotal VF12 cohorts. Treatment-delivery outcomes differed across programs, including 44/46 infused for exa-cel and 35/47 infused for lovo-cel. Conclusion Autologous gene therapy for SCD produces substantial short- to medium-term reductions in severe VOEs and improves hemoglobin biology, but certainty remains limited by single-arm designs, small samples, evolving protocols, and incomplete long-term follow-up. Successful delivery depends on separable processes: transfusion preparation, mobilization, apheresis collection, ex vivo manufacturing/editing, product release, conditioning, and reinfusion. Long-term safety, fertility, organ outcomes, reimbursement, and global scalability remain unresolved implementation barriers.",
+    "authors": "Shaik MY, Divers S.",
+    "journal": "European journal of haematology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Systematic Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42400217",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)"
+    ],
+    "score": 8,
+    "reason": "Systematic review specifically evaluating autologous gene therapy for SCD across multiple platforms including base-editing; reports 96% VF12 efficacy.",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:42074029",
+    "id": "42074029",
+    "source": "MED",
+    "pmid": "42074029",
+    "pmcid": "PMC13115963",
+    "doi": "10.3390/ijms27083384",
+    "title": "Clinical Trial Landscape of Gene-Edited Autologous Hematopoietic Stem Cells for Hemoglobinopathies and Immunodeficiencies.",
+    "abstract": "Allogeneic hematopoietic cell transplantation (HCT) has been used for decades to treat certain malignant and non-malignant hematological conditions, but challenges remain. Increased understanding of disease mechanisms and recent developments in genome editing have enabled alternative strategies utilizing gene-edited autologous HCT and many of these have progressed to the clinic. We present here a comprehensive review of clinical trials of gene-edited autologous hematopoietic stem cells for the treatment of hemoglobinopathies and immunodeficiencies. Searches of major international clinical trial registries were carried out using specific key words. In total, 44 interventional clinical trials investigating gene-edited autologous stem cell therapies were identified, with CASGEVY (exagamglogene autotemcel) being the only product approved to date. Hemoglobinopathies were the most common indication (n = 37) followed by immunodeficiencies (n = 4), with single trials in HIV-1 infection, pyruvate kinase deficiency and limb-girdle muscular dystrophy. Gene-editing strategies fall into three categories: disruption of the BCL11A erythroid enhancer, editing of the γ-globin promoter and direct correction or disruption of disease-relevant genes. CD34+ hematopoietic stem and progenitor cells are the most common cell types edited, and CRISPR-Cas9 is the most widely used gene-editing modality. While results are encouraging, efficient intracellular delivery of gene-editing tools, editing efficiencies and off-target editing remain challenges for the field.",
+    "authors": "O'Hanlon Cohrt K, O'Dea S.",
+    "journal": "International journal of molecular sciences",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42074029",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)",
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")",
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 8,
+    "reason": "Comprehensive review of gene-edited autologous HCT trials for hemoglobinopathies, includes CRISPR modalities",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:42263664",
+    "id": "42263664",
+    "source": "MED",
+    "pmid": "42263664",
+    "pmcid": "PMC13452323",
+    "doi": "10.1182/bloodadvances.2025017417",
+    "title": "CRISPR application in hematological disorders: from bench to bedside.",
+    "abstract": "Abstract Clustered regularly interspaced short palindromic repeats (CRISPR)-associated protein genome editing has advanced from an experimental tool to a clinically validated therapeutic platform in hematology. Landmark successes in inherited blood diseases, including sickle cell disease, β-thalassemia, and severe combined immunodeficiency, have demonstrated that precise and durable genetic modifications can be safely and effectively implemented in human hematopoietic cells, positioning hematology at the forefront of translational genome editing. Beyond monogenic disease, CRISPR-based approaches are transforming both the biological understanding and treatment of hematologic malignancies by enabling systematic interrogation of cancer dependencies, functional mapping of genetic vulnerabilities, and mechanism-driven target validation, including in vivo and immune-relevant contexts. In parallel, therapeutic applications are emerging through the development of engineered cellular therapies, including edited autologous and allogeneic immune effector cells designed to enhance antitumor efficacy, persistence, and immune evasion. This review synthesizes recent CRISPR-based advances across benign and malignant hematologic diseases. We compare major editing modalities, including nuclease-mediated disruption, base editing, prime editing, and CRISPR-based transcriptional modulation, and highlight key preclinical studies alongside emerging clinical trial data. We also discuss translational challenges that currently limit broader clinical adoption, including delivery and manufacturing scalability, off-target and genotoxicity risks, tumor and immune heterogeneity, and the long-term durability and fitness of edited cell populations. Finally, we outline priorities for the next phase of the field, emphasizing how continued innovation in CRISPR technologies may enable increasingly precise, durable, and mechanism-informed therapeutic strategies in hematology.",
+    "authors": "Ladisa F, Morelli E, Soncini D, Garibotto M, Munshi NC, Fulciniti M, Cea M.",
+    "journal": "Blood advances",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42263664",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)",
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")"
+    ],
+    "score": 8,
+    "reason": "Reviews CRISPR advances in hematological disorders including sickle cell disease and base editing modalities",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42486091",
+    "id": "42486091",
+    "source": "MED",
+    "pmid": "42486091",
+    "pmcid": "PMC13576727",
+    "doi": "10.1016/j.xgen.2026.101298",
+    "title": "Base editing for precision therapeutics.",
+    "abstract": "Base editing (BE), the precise installation of single-nucleotide changes in DNA or RNA without inducing double-strand breaks, holds substantial therapeutic promise for correcting single-nucleotide variants, which constitute more than half of the known pathogenic genetic variants. Recent advances have improved base editor specificity, efficiency, and delivery, enabling clinically oriented procedures. Clinically, BE has shown early success or strong translational promise in sickle cell disease, β-thalassemia, leukemia (via CAR T and epitope engineering), hypercholesterolemia (PCSK9 and ANGPTL3), alpha-1-antitrypsin deficiency, and glycogen storage disease type Ia. Key remaining challenges include bystander editing within the activity window, residual off-target DNA and RNA editing, delivery constraints (payload size, tissue targeting, and redosing limits), immunogenicity, and the need for durable long-term safety evidence across relevant cell types and disease contexts. Continued technological refinements, careful preclinical validation, and rigorous clinical assessment will be essential to fully realize BE's transformative potential in precision medicine.",
+    "authors": "Regmi M, Ma K, Bi C, Zhang X, Zhao D, Yu L, Yang H, Wang N, Yang C.",
+    "journal": "Cell genomics",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42486091",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 8,
+    "reason": "Explicitly lists sickle cell disease as clinical success for base editing therapeutics",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:42617141",
+    "id": "42617141",
+    "source": "MED",
+    "pmid": "42617141",
+    "pmcid": null,
+    "doi": "10.1200/op-26-00479",
+    "title": "Translating CRISPR to Practice in the Clinic: Transformative Therapy in Hemoglobinopathies and Emerging Applications in Malignancies.",
+    "abstract": "Exagamglogene autotemcel, the first clustered regularly interspaced short palindromic repeats (CRISPR)-based gene-editing therapy to enter clinical practice, has established genome editing as a curative-intent option for eligible patients with severe sickle cell disease (SCD) and transfusion-dependent β-thalassemia (TDT). Ex vivo CRISPR-Cas9 editing of autologous CD34-positive hematopoietic stem and progenitor cells to reactivate fetal hemoglobin has produced durable freedom from severe vaso-occlusive crises in SCD and sustained transfusion independence in TDT. This approach offers a donor-independent alternative to allogeneic hematopoietic stem-cell transplantation without graft rejection or graft-versus-host disease. Hemoglobinopathies, therefore, provide the first clinically validated delivery model for CRISPR therapeutics. Successful implementation, however, requires more than editing efficacy. It depends on structured referral, candidacy assessment, organ function review, mobilization and collection, centralized manufacturing, pharmacokinetic-guided myeloablative conditioning, transplant-level supportive care, fertility preservation, psychosocial support, and prolonged surveillance coordinated among primary hematologists and cellular therapy programs. Key barriers include stem cell collection, conditioning-related toxicity, cost, reimbursement friction, and persistent inequities in access. Long-term follow-up and registry participation are necessary to evaluate outcomes beyond pain crises, identify late toxic effects, and compare real-world effectiveness across gene editing, gene addition, and allogeneic transplantation. In oncology, CRISPR-based therapy remains investigational, with early clinical feasibility demonstrated in relapsed or refractory B-cell malignancies, T-cell malignancies, AML, multiple myeloma, and selected solid tumors. For hematologists, oncologists, and transplant and cellular therapy programs, the central challenge is to integrate CRISPR into practice with the rigor required for any high-risk curative therapy: careful patient selection, disciplined delivery, and long-term accountability.",
+    "authors": "Salim Hammoud M, Hanna R.",
+    "journal": "JCO oncology practice",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42617141",
+    "matched_queries": [
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 8,
+    "reason": "Directly addresses CRISPR therapy for severe SCD; ex vivo editing to reactivate fetal hemoglobin, relevant to PICO",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "pmid:38644403",
+    "id": "38644403",
+    "source": "MED",
+    "pmid": "38644403",
+    "pmcid": "PMC11319617",
+    "doi": "10.1007/s12015-024-10715-5",
+    "title": "Base Editors-Mediated Gene Therapy in Hematopoietic Stem Cells for Hematologic Diseases.",
+    "abstract": "Base editors, developed from the CRISPR/Cas system, consist of components such as deaminase and Cas variants. Since their emergence in 2016, the precision, efficiency, and safety of base editors have been gradually optimized. The feasibility of using base editors in gene therapy has been demonstrated in several disease models. Compared with the CRISPR/Cas system, base editors have shown great potential in hematopoietic stem cells (HSCs) and HSC-based gene therapy, because they do not generate double-stranded breaks (DSBs) while achieving the precise realization of single-base substitutions. This precise editing mechanism allows for the permanent correction of genetic defects directly at their source within HSCs, thus promising a lasting therapeutic effect. Recent advances in base editors are expected to significantly increase the number of clinical trials for HSC-based gene therapies. In this review, we summarize the development and recent progress of DNA base editors, discuss their applications in HSC gene therapy, and highlight the prospects and challenges of future clinical stem cell therapies.",
+    "authors": "Zhang C, Xu J, Wu Y, Xu C, Xu P.",
+    "journal": "Stem cell reviews and reports",
+    "year": 2024,
+    "cited_by": 13,
+    "open_access": true,
+    "pub_types": [
+      "Research Support, Non-U.S. Gov't",
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/38644403",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 7,
+    "reason": "Reviews base editor applications in HSC gene therapy, relevant but general overview of technology for hematologic diseases",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:42033211",
+    "id": "42033211",
+    "source": "MED",
+    "pmid": "42033211",
+    "pmcid": "PMC13109818",
+    "doi": "10.1111/jcmm.71159",
+    "title": "Advances in CRISPR Base Editing: From Molecular Evolution to Therapeutic Applications in Genomic Medicine.",
+    "abstract": "CRISPR-Cas9 systems revolutionized gene editing, but inherent drawbacks, namely DNA double-strand breaks (DSBs) and the difficulty of achieving precise repairs (due to low HDR efficiency), led researchers to invent new, more accurate gene editing tools. Base editing represents a significant leap forward, enabling targeted single-nucleotide conversions directly on the DNA without DSBs or donor templates. The core technology involves fusing catalytically dead or nickase Cas proteins to DNA deaminase enzymes. Cytosine base editors (CBEs) convert C•G to T•A pairs, while adenine base editors (ABEs) change A•T to G•C. These editors exploit the deaminase function within the R-loop structure formed by Cas binding and co-opt endogenous DNA repair mechanisms for precision. While offering improved efficiency and editing precision, base editing faces persistent challenges, such as off-target effects, bystander edits, delivery and ethical concerns. Continuous engineering efforts have refined these tools, enhancing accuracy, expanding targetability and reducing unwanted edits. The base editing arsenal has also broadened to include C-to-G base editors (CGBEs), dual A&C editors and versions targeting organelles. Successful preclinical studies demonstrating the correction of mutations responsible for the disease have paved the way for clinical trials, which are now testing therapies for conditions like sickle cell disease, β-thalassaemia and hypercholesterolemia using various delivery systems. This review explores CRISPR base editing's origins, mechanisms of action, potential therapies and current restrictions, pointing to its broadening impact on medical genetics.",
+    "authors": "Aliciaslan M, Erbasan E, Erendor F, Sanlioglu S.",
+    "journal": "Journal of cellular and molecular medicine",
+    "year": 2026,
+    "cited_by": 3,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42033211",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 7,
+    "reason": "Reviews base editing therapeutic applications including sickle cell disease clinical trials",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "pmid:42787623",
+    "id": "42787623",
+    "source": "MED",
+    "pmid": "42787623",
+    "pmcid": null,
+    "doi": "10.3389/fgeed.2026.1868779",
+    "title": "Clinical translation of CRISPR-Cas9 therapeutics in cancer and inherited genetic disorders.",
+    "abstract": "CRISPR-Cas9, adapted from the bacterial Type II CRISPR adaptive immune system, functions as a programmable RNA-guided endonuclease that employs a single-guide RNA to direct Cas9 to specific genomic loci. CRISPR-Cas9 has transformed targeted genome editing by replacing complex protein engineering with programmable Watson-Crick base pairing between the guide RNA and target DNA. This review was developed following a structured literature search of major biomedical databases and clinical trial registries to synthesize current evidence on the therapeutic applications of CRISPR-Cas9 in oncology and inherited genetic disorders. Clinical studies of ex vivo BCL11A-enhancer editing have shown fetal hemoglobin reactivation, with most evaluable participants with sickle cell disease remaining free of severe vaso-occlusive crises for the prespecified period and most evaluable participants with transfusion-dependent β-thalassemia achieving sustained transfusion independence. In vivo reductions in circulating transthyretin protein levels have been achieved for transthyretin amyloidosis via lipid nanoparticle delivery, while clinically meaningful improvements in selected measures of visual function were observed in a subset of patients receiving subretinal AAV-delivered CRISPR editing for CEP290-associated Leber congenital amaurosis type 10. Preclinical and early clinical studies have further investigated CRISPR-engineered T cells designed to improve antitumor activity, persistence, or resistance to inhibitory signaling. Despite these advances, key translational hurdles include the risk of off-target mutations and large-scale chromosomal rearrangements. Furthermore, immune responses against bacterial Cas9 nucleases and viral delivery vectors may limit the long-term efficacy of CRISPR-based therapies, while technical barriers surrounding delivery to extrahepatic tissues, such as skeletal muscle and the central nervous system, continue to hinder broader clinical success. Ethical concerns regarding germline modifications and the high cost of individualized therapies present additional translational challenges. Consequently, emerging DSB-independent technologies, such as base editing and prime editing, may reduce selected DSB-associated liabilities, but each introduces distinct editing, delivery, and genotoxicity risks that require product-specific evaluation.",
+    "authors": "Bashir K, Vasudev P, Chhetri V, Dubhashi DP, Teli YG, Biswas R, Ramaiah S, Anbarasu A.",
+    "journal": "Frontiers in genome editing",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42787623",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)",
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")"
+    ],
+    "score": 7,
+    "reason": "Reviews CRISPR-Cas9 therapeutics including SCD; mentions BCL11A-enhancer editing and vaso-occlusive crisis reduction but broader scope beyond base editing.",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:42511925",
+    "id": "42511925",
+    "source": "MED",
+    "pmid": "42511925",
+    "pmcid": "PMC13404613",
+    "doi": "10.3390/biomedicines14071451",
+    "title": "Gene Therapy for β-Haemoglobinopathies: From Molecular Correction to Curative Medicine.",
+    "abstract": "Background: β-haemoglobinopathies, including sickle cell disease and transfusion-dependent β-thalassaemia, are among the most common monogenic disorders worldwide and represent a major global health burden. Conventional treatments, such as blood transfusions, iron chelation, fetal haemoglobin induction, and allogeneic haematopoietic stem cell transplantation, have improved outcomes but remain limited by treatment-related toxicity, donor availability, and incomplete curative potential. Methods: A narrative literature review was conducted using PubMed up to 2025. Search terms included \"sickle cell disease,\" \"sickle cell anemia,\" \"β-thalassemia,\" \"transfusion-dependent beta-thalassemia,\" \"gene therapy,\" \"gene addition,\" \"gene editing,\" \"CRISPR-Cas9,\" \"lentiviral vector,\" \"children,\" \"paediatric,\" and \"pediatric.\" Relevant clinical trials, reviews, consensus statements, and guidelines were selected and qualitatively analysed. Results: Gene therapy for β-haemoglobinopathies is based mainly on two strategies: gene addition and gene editing. Gene addition uses lentiviral vectors to introduce functional or modified β-globin genes into autologous haematopoietic stem cells, whereas gene editing targets regulatory pathways, particularly BCL11A, to reactivate fetal haemoglobin synthesis or correct disease-causing mutations. Clinical studies have shown encouraging outcomes, including transfusion independence in many patients with β-thalassaemia and marked reduction or elimination of vaso-occlusive crises in sickle cell disease. Paediatric and adolescent data are increasingly promising, although still limited. Conclusions: Gene therapy is reshaping the treatment landscape of β-haemoglobinopathies by offering a personalised and potentially curative approach. However, long-term safety, conditioning toxicity, fertility preservation, accessibility, costs, and implementation in high-prevalence regions remain critical challenges. Further studies are needed to optimise patient selection and expand equitable access.",
+    "authors": "Fogliazza F, Carbone G, Berzieri M, Ciriaco D, Esposito S.",
+    "journal": "Biomedicines",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42511925",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)",
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")",
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 7,
+    "reason": "Reviews gene editing strategies for SCD including BCL11A disruption and correction, relevant to base editing",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:42193948",
+    "id": "42193948",
+    "source": "MED",
+    "pmid": "42193948",
+    "pmcid": "PMC13204107",
+    "doi": "10.3390/cells15100939",
+    "title": "The Journey of Gene Therapy in Sickle Cell Disease: How Molecular Advances Meet Clinical Care.",
+    "abstract": "Sickle cell disease (SCD) is a monogenic disorder responsible for recurrent vaso-occlusive crises, progressive organ damage, and shortened life expectancy. For decades, allogeneic hematopoietic stem cell transplantation from a matched sibling donor has been the only established cure, but its reach remains limited by donor availability and transplant-related toxicity. The approval of two autologous gene therapy products in 2023, exagamglogene autotemcel (exa-cel) and lovotibeglogene autotemcel (lovo-cel), marked a turning point for the SCD population and the gene therapy field in general. This review proposes a molecular rationale for fetal hemoglobin reactivation and β-globin gene addition, describes the engineering of lentiviral and CRISPR-based platforms, and highlights the clinical evidence accumulated to date that demonstrated durable disease modification with acceptable short-term toxicity. We then assess the clinical positioning of gene therapy within the broader spectrum of curative options compared to current available treatments and address the financial, ethical and psychosocial barriers that limit access to gene therapy both within high-income countries and globally. Critical research priorities include long-term safety surveillance, comparative effectiveness studies, pediatric trials below 12 years, and validated patient-reported outcome instruments. Base editing, non-genotoxic conditioning, and in vivo delivery represent the most promising avenues to broaden access and reduce treatment burden.",
+    "authors": "Tardif M, Saby M, Forté S, Pincez T.",
+    "journal": "Cells",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42193948",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)"
+    ],
+    "score": 7,
+    "reason": "Reviews gene therapy advances in SCD, mentions CRISPR platforms and clinical evidence",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42494498",
+    "id": "42494498",
+    "source": "MED",
+    "pmid": "42494498",
+    "pmcid": "PMC13393444",
+    "doi": "10.1016/j.omtn.2026.103003",
+    "title": "CRISPRing through time: How cutting-edge technology is revolutionizing life sciences and medicine.",
+    "abstract": "Given the plethora of emerging technologies, none have truly captured the minds as CRISPR. From the groundbreaking research, the ultimate battle of the prizes and patents to a number of books, the science of CRISPR continues to be significant in the biomedical field. For many decades now, the emergence of synthetic biology as an intervention to correct diseases has become the foundation of biomedical research. Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR)-based genetic editing has become a common place for routine investigation of scientific hypotheses in pre-clinical settings. More recently, CRISPR-based diagnostic testing kits for SARS-CoV-2 have showcased a translational output. Furthermore, a technological landmark was achieved when the Food and Drug Administration (FDA) approved the first CRISPR-based gene therapy (exa-cel) to edit erythroid specific enhancer region of BCL11A in hematopoietic stem cells, introduced in patients suffering from sickle cell anemia to achieve durable remission. In this review, we provide a snapshot into the most important milestones along the journey of CRISPR from its discovery in bacteria to its usage in precision medicine. The intervention of machine learning tools has now intertwined complex biology with high-throughput scalable outputs. Given the vast amount of information on CRISPR, we try to pin down key take-home messages for scientists as well as non-scientist readers. This review article attempts to understand why and how CRISPR remains significant and seamlessly integrates in the emerging era of new technologies.",
+    "authors": "Banik I, Coppé JP.",
+    "journal": "Molecular therapy. Nucleic acids",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42494498",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)"
+    ],
+    "score": 7,
+    "reason": "Mentions FDA-approved CRISPR therapy (exa-cel) for sickle cell anemia, directly relevant",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "pmid:42028170",
+    "id": "42028170",
+    "source": "MED",
+    "pmid": "42028170",
+    "pmcid": "PMC13100679",
+    "doi": "10.1016/j.omtn.2026.102859",
+    "title": "CRISPR-Cas9-mediated therapeutics: Current clinical trials and therapy approval landscape to treat human diseases.",
+    "abstract": "The genome editing technology using CRISPR-Cas9 has created a new trajectory for treating diverse human diseases. The approval of CRISPR-Cas9 therapeutics was first given to Casgevy for treating transfusion-dependent β-thalassemia (TDT) by the UK Medicines and Healthcare Products Regulatory Agency (UKMHRA) on November 16, 2023. Subsequently, UKMHRA approved Casgevy for the treatment of sickle cell disease (SCD), which was approved by the US Food and Drug Administration (FDA) on December 8, 2023. The approval has created a new era of gene editing medicine. Numerous clinical trials have been initiated to treat different human diseases. In this comprehensive review, we present an overview of the therapeutic development that includes the earliest days of research using CRISPR-Cas9 technology, clinical trials, UKMHRA/FDA-approved therapeutics (Casgevy), and the CRISPR-Cas9 technology approved for the therapy of SCD and TDT. We also present details on the role of biopharmaceutical industry-academia collaboration and patent landscape of the CRISPR-Cas9 technology. Finally, the therapeutics' challenges, safety concerns, and cost-effectiveness are illustrated to provide a complete understanding on the current landscape of CRISPR-Cas9-mediated therapeutics for countries' policymakers, biopharmaceutical companies, and next-generation researchers to formulate the future strategies.",
+    "authors": "Chakraborty C, Bhattacharya M, Das A, Agoramoorthy G, Lee SS.",
+    "journal": "Molecular therapy. Nucleic acids",
+    "year": 2026,
+    "cited_by": 5,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42028170",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")"
+    ],
+    "score": 6,
+    "reason": "Reviews CRISPR-Cas9 clinical trials and approvals, includes SCD but focuses on Cas9 not base editing specifically",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:42225517",
+    "id": "42225517",
+    "source": "MED",
+    "pmid": "42225517",
+    "pmcid": null,
+    "doi": "10.1016/j.clinthera.2026.04.026",
+    "title": "In Utero Gene Therapy for Sickle Cell Disease: Current Evidence, Ethical Considerations, and Future Directions-A Scoping Review.",
+    "abstract": "Purpose Sickle Cell Disease (SCD) is a monogenic, autosomal recessive disorder caused by mutations in the β-globin gene, resulting in the production of abnormal hemoglobin S (HbS). When deoxygenated HbS polymerizes, it causes red blood cells to become sickle-shaped, and prone to hemolysis. These abnormal and sickled cells obstruct small blood vessels, leading to vaso-occlusion and tissue ischemia, contributing to multiple complications. SCD impacts nearly 8 million people worldwide, and is estimated to affect 500,000 newborns annually. Historically, potentially curative therapies have been limited, but advances in fetal diagnosis and gene-editing technologies have highlighted the potential use of in utero gene therapy as a strategy to correct the β-globin mutation before clinical disease onset. This scoping review summarizes the current evidence on in utero and fetal gene-editing strategies for SCD. Methods A systematic search of PubMed, Embase, and Scopus was conducted from database inception through September 2025 following PRISMA-ScR guidelines. Eligible studies included preclinical and translational investigations, early clinical reports, and expert policy or consensus statements focusing on in utero gene therapy or fetal gene editing for SCD. 25 studies met inclusion criteria and were categorized into 4 domains: ex vivo or in vivo gene editing, in utero gene editing, transplantation and tolerance, and reviews/policy/framework. Findings Preclinical studies demonstrated that targeted in utero gene editing can achieve postnatal correction of disease-relevant alleles in animal models using CRISPR-Cas9 and base-editing technologies. Lipid nanoparticle (LNP) and viral vector delivery platforms enabled efficient editing of fetal hematopoietic stem cells, supporting long-term persistence of edited genes. Transplantation studies showed that fetal immune tolerance can persist as well. Review and consensus statements emphasized ethical, regulatory, and procedural considerations, including maternal autonomy, risk assessment, and long-term monitoring. Collectively, the evidence supports the feasibility of prenatal intervention as an acceptable and potentially curative approach for SCD. Implications In utero gene therapy represents a promising strategy for early correction of the β-globin mutation, with the potential to prevent disease onset and reduce long-term morbidity. However, translation to clinical practice will require additional studies and nuanced ethical oversight. Future research should prioritize the optimal timing of intervention, maternal-fetal immune compatibility, and equitable access to ensure accessible clinical implementation.",
+    "authors": "Cudjoe E, Thorsen M, Molokwu N, Russo M.",
+    "journal": "Clinical therapeutics",
+    "year": 2026,
+    "cited_by": 2,
+    "open_access": false,
+    "pub_types": [
+      "Scoping Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42225517",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)"
+    ],
+    "score": 6,
+    "reason": "Scoping review of in utero gene editing strategies for SCD, relevant but not base editing specific",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:41773269",
+    "id": "41773269",
+    "source": "MED",
+    "pmid": "41773269",
+    "pmcid": "PMC12949972",
+    "doi": "10.2147/jbm.s576017",
+    "title": "Current Status of Clinical Gene Therapy for Hemophilia and Globin Disorders.",
+    "abstract": "In the last few years, gene therapy, holding the promise for long-term disease correction through a one-time treatment, has transitioned from experimental research to approved medicine. Several gene therapies are now available for congenital blood disorders, notably for hemophilia and hemoglobinopathies. In this review, we discuss each of the six therapies that now have regulatory approval for treatment in the United States: Roctavian (valoctocogene roxaparvovec) for hemophilia A, Beqvez (fidanacogene elaparvovec) and Hemgenix (etranacogene dezaparvovec) for hemophilia B, Lyfgenia (lovotibeglogene autotemcel) for sickle cell disease, Zynteglo (betibeglogene autotemcel) for β-thalassemia, and Casgevy (exagamglogene autotemcel) for either sickle cell disease or β-thalassemia. The underlying principles for these treatments vary and include both in vivo and ex vivo methods, lentiviral and adeno-associated viral (AAV) vectors, and gene silencing by the CRISPR-Cas9 gene editing system. Consequently, they pose correspondingly disparate risks and benefits when compared to other treatment modalities and to each other. Although long-term effects are not yet entirely understood, given the novelty of these therapies, knowledge on patient outcomes is continuously increasing. Overall, results are very encouraging, often freeing patients from the need for coagulation factor or red blood cell (RBC) infusions, albeit that for some of these diseases there is room for further improvement in terms of safety and therapeutic durability, which may be achieved with next-generation gene therapy products. However, improvements are needed to address issues with durability of results, side effects, and accessibility of these therapies.",
+    "authors": "Winkler R, Herath I, Kaczmarek R, Xiao W, Herzog RW, Severeid PE.",
+    "journal": "Journal of blood medicine",
+    "year": 2026,
+    "cited_by": 1,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/41773269",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")",
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 6,
+    "reason": "Reviews clinical gene therapy for hemoglobinopathies; mentions Casgevy (CRISPR-Cas9) for SCD but not base editing specifically",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "pmid:42273255",
+    "id": "42273255",
+    "source": "MED",
+    "pmid": "42273255",
+    "pmcid": "PMC13246667",
+    "doi": "10.3389/fgeed.2026.1774014",
+    "title": "CRISPR and Fanzor in sickle cell disease: current progress and future prospects.",
+    "abstract": "Advancements in genome editing have established a new frontier for the treatment of various genetic diseases, including sickle cell disease (SCD). SCD, the most prevalent monogenic blood disorder, causes severe pain, organ damage, and reduced life expectancy. The recent clinical approval of clustered regularly interspaced short palindromic repeats (CRISPR)-Cas9-based gene therapies for severe sickle cell anemia marks a significant milestone in treating genetic diseases. Despite these breakthroughs, limitations in CRISPR technology persist, requiring further innovation. Alternative approaches, such as the Fanzor (Fz) system, are being developed to complement CRISPR's capabilities. Unlike CRISPR, which is typically encoded within prokaryotic organisms, Fz is encoded in the eukaryotic genome, offering a universal RNA-guided mechanism applicable across all life kingdoms. Fz's eukaryotic origin may facilitate more efficient delivery across diverse cell types and tissues, enhancing its therapeutic potential. Here, we will review the current successes and limitations of the CRISPR technology in editing mutation associated with SCD. Additionally, we will explore the potential role of Fz as a genome-editing tool for SCD, a field where its application has not yet been studied.",
+    "authors": "Alhumoudi AY, Alotaibi AG, Alosaimi NF, Alshalani A, Alqahtani SM, Alsaab SM, Almutiri BJ, Albariqi MMH.",
+    "journal": "Frontiers in genome editing",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42273255",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)"
+    ],
+    "score": 6,
+    "reason": "Reviews CRISPR in SCD but focuses on CRISPR-Cas9 and Fanzor systems; limited base-editing focus.",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "doi:10.20944/preprints202511.0971.v1",
+    "id": "PPR1119300",
+    "source": "PPR",
+    "pmid": null,
+    "pmcid": null,
+    "doi": "10.20944/preprints202511.0971.v1",
+    "title": "Gene Therapy of Hemoglobinopathies",
+    "abstract": "Background: /Objectives: Sickle cells disease (SCD) and -thalassemia are autosomal recessive disorders of erythroid cells due to gene mutations occurring at the level of the -globin gene. The severe forms of these hemoglobinopathies observed in individuals homozygous for these defective genes need intensive treatments, are associated with a poor quality of life and allogeneic hematopoietic stem cell represents the only curative treatment option that can be offered only to a limited proportion of patients. Methods: This work is a narrative review supported by a systematic literature search and analysis. Results: To bypass this limitation, autologous hematopoietic stem cell transplantation has been developed in these patients in which patients’ HSCs are harvested and genetically modified ex vivo, then transplanted back into patients after conditioning for stem cell transplantation. There are two different approaches for gene therapy of hemoglobinopathies’, one based on gene addition or gene silencing using lentiviruses as vectors and the other based on gene editing strategies using CRISPR-Caspase 9 technology or base editing. Several gene therapy products have been successfully evaluated in these patients achieving transfusion independence and correction of hematological abnormalities durable in the time. Conclusions Several gene therapy products have been approved for the treatment of SCD and -thalassemic patients and offer a potentially curative treatment for these patients.",
+    "authors": "Testa U, Pelosi E, Castelli G.",
+    "journal": "Preprint",
+    "year": 2025,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Preprint"
+    ],
+    "preprint": true,
+    "url": "https://europepmc.org/article/PPR/PPR1119300",
+    "matched_queries": [
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 6,
+    "reason": "Narrative review of gene therapy for SCD; mentions base editing as an approach but no specific effectiveness data provided.",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "doi:10.20944/preprints202511.2257.v1",
+    "id": "PPR1127377",
+    "source": "PPR",
+    "pmid": null,
+    "pmcid": null,
+    "doi": "10.20944/preprints202511.2257.v1",
+    "title": "Advances in Gene Therapy for Inherited Haemoglobinopathies",
+    "abstract": "Haemoglobinopathies, including β-thalassaemia and sickle cell disease (SCD), are among the most common monogenic disorders worldwide and remain major causes of morbidity and early mortality. Historically, management of these life-altering diseases has relied on supportive treatment and symptom management and although these treatments reduce symptoms and ease disease burden, they do not correct the underlying genetic defect. Allogenic haematopoietic stem cell transplantation (HSCT) has been the only established curative option; however, it comes with substantial risks that significantly restrict its applicability. Over the past two decades, haematopoietic stem cell (HSC) gene therapy for haemoglobinopathies has rapidly progressed from experimental proof-of-concept to approved therapies. Lentiviral gene addition approaches have demonstrated durable expression of functional β-like globin transgenes, achieving transfusion independence in β-thalassaemia patients and significant reductions in vaso-occlusive events in SCD patients. Alternative therapeutic approaches to promote HbF expression have proved to be highly successful. Gene silencing strategies targeting BCL11A have been successful clinically and more recently, gene editing technologies such as CRISPR/Cas9, have enabled precise disruption of regulatory elements controlling γ-globin repression leading to the approval of the first CRISPR-based therapy for SCD and β-thalassaemia. Emerging base-editing technologies promise even more precise genetic modification and are advancing through clinical evaluation. Despite these advances, access to gene therapy remains restricted due to the need for highly specialised manufacturing, toxic myeloablative conditioning regimes, and high treatment costs. Ongoing improvements and adaptations in these areas are essential to ensure that gene therapies fulfil their potential as accessible, curative treatments for patients suffering from haemoglobinopathies worldwide.",
+    "authors": "Gaspar AB, Gaspar HB.",
+    "journal": "Preprint",
+    "year": 2025,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Preprint"
+    ],
+    "preprint": true,
+    "url": "https://europepmc.org/article/PPR/PPR1127377",
+    "matched_queries": [
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 6,
+    "reason": "Preprint reviewing advances in gene therapy for haemoglobinopathies; mentions emerging base-editing technologies but no specific effectiveness data.",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:38510648",
+    "id": "38510648",
+    "source": "MED",
+    "pmid": "38510648",
+    "pmcid": "PMC10953296",
+    "doi": "10.3389/fphar.2024.1364135",
+    "title": "Breaking genetic shackles: The advance of base editing in genetic disorder treatment.",
+    "abstract": "The rapid evolution of gene editing technology has markedly improved the outlook for treating genetic diseases. Base editing, recognized as an exceptionally precise genetic modification tool, is emerging as a focus in the realm of genetic disease therapy. We provide a comprehensive overview of the fundamental principles and delivery methods of cytosine base editors (CBE), adenine base editors (ABE), and RNA base editors, with a particular focus on their applications and recent research advances in the treatment of genetic diseases. We have also explored the potential challenges faced by base editing technology in treatment, including aspects such as targeting specificity, safety, and efficacy, and have enumerated a series of possible solutions to propel the clinical translation of base editing technology. In conclusion, this article not only underscores the present state of base editing technology but also envisions its tremendous potential in the future, providing a novel perspective on the treatment of genetic diseases. It underscores the vast potential of base editing technology in the realm of genetic medicine, providing support for the progression of gene medicine and the development of innovative approaches to genetic disease therapy.",
+    "authors": "Xu F, Zheng C, Xu W, Zhang S, Liu S, Chen X, Yao K.",
+    "journal": "Frontiers in pharmacology",
+    "year": 2024,
+    "cited_by": 21,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/38510648",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 5,
+    "reason": "General overview of base editing in genetic disease therapy, no SCD-specific effectiveness data",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:40242216",
+    "id": "40242216",
+    "source": "MED",
+    "pmid": "40242216",
+    "pmcid": "PMC12000063",
+    "doi": "10.3389/fgeed.2025.1553590",
+    "title": "CRISPR-dependent base editing as a therapeutic strategy for rare monogenic disorders.",
+    "abstract": "Rare monogenic disorders are caused by mutations in single genes and have an incidence rate of less than 0.5%. Due to their low prevalence, these diseases often attract limited research and commercial interest, leading to significant unmet medical needs. In a therapeutic landscape where treatments are targeted to manage symptoms, gene editing therapy emerges as a promising approach to craft curative and lasting treatments for these patients, often referred to as \"one-and-done\" therapeutics. CRISPR-dependent base editing enables the precise correction of genetic mutations by direct modification of DNA bases without creating potentially deleterious DNA double-strand breaks. Base editors combine a nickase version of Cas9 with cytosine or adenine deaminases to convert C·G to T·A and A·T to G·C, respectively. Together, cytosine (CBE) and adenine (ABE) base editors can theoretically correct ∼95% of pathogenic transition mutations cataloged in ClinVar. This mini-review explores the application of base editing as a therapeutic approach for rare monogenic disorders. It provides an overview of the state of gene therapies and a comprehensive compilation of preclinical studies using base editing to treat rare monogenic disorders. Key considerations for designing base editing-driven therapeutics are summarized in a user-friendly guide for researchers interested in applying this technology to a specific rare monogenic disorder. Finally, we discuss the prospects and challenges for bench-to-bedside translation of base editing therapies for rare monogenic disorders.",
+    "authors": "Cabré-Romans JJ, Cuella-Martin R.",
+    "journal": "Frontiers in genome editing",
+    "year": 2025,
+    "cited_by": 18,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/40242216",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 5,
+    "reason": "Discusses base editing for rare monogenic disorders generally, not SCD-specific effectiveness data",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "pmid:41404502",
+    "id": "41404502",
+    "source": "MED",
+    "pmid": "41404502",
+    "pmcid": "PMC12703980",
+    "doi": "10.1016/j.omtn.2025.102771",
+    "title": "Research progress of base editing and prime editing tools based on the CRISPR/Cas system.",
+    "abstract": "The base editor (BE) and prime editing guide RNA (pegRNA)-based prime editor (PE) technologies relying on the CRISPR/Cas system are very efficient gene editors that have been developed in recent years. The BEs include cytosine base editors (CBEs) that mediate the conversion of C to T, adenine base editors (ABEs) that mediate the conversion of A to G, glycosylase base editors (GBEs) that mediate the conversion of C to G, and the dual-base editors (DBEs) that mediate the simultaneous conversion of C to T and A to G. The BEs and PEs have been successfully applied for genome editing of various animals, plants, and microorganisms due to their advantages of high efficiency and independence of DNA double-strand breaks or donor DNA. The development process and characteristics of various BEs and PEs and their effectiveness of application are systematically introduced to provide a reference for selecting appropriate genome editing technologies. Moreover, the urgent issues that need to be addressed for more efficient and precise editing are summarized and prospected.",
+    "authors": "Gao H, Gao S, Kan G, Valentovich LN, An Y.",
+    "journal": "Molecular therapy. Nucleic acids",
+    "year": 2025,
+    "cited_by": 13,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/41404502",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 5,
+    "reason": "Comprehensive overview of base/prime editing tools, general relevance to technology",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:41463103",
+    "id": "41463103",
+    "source": "MED",
+    "pmid": "41463103",
+    "pmcid": "PMC12730278",
+    "doi": "10.3390/biomedicines13123093",
+    "title": "Gene Therapy of Beta Hemoglobinopathies.",
+    "abstract": "Background/Objectives: Sickle cell disease (SCD) and β-thalassemia are autosomal recessive disorders of erythroid cells due to gene mutations occurring at the level of the β-globin gene. The severe forms of these hemoglobinopathies observed in individuals homozygous for these defective genes need intensive treatments, are associated with a poor quality of life, and allogeneic hematopoietic stem cell represents the only curative treatment option that can be offered to a limited proportion of patients. Methods: This work is a narrative review supported by a systematic literature search and analysis. Results: To bypass this limitation, autologous hematopoietic stem cell transplantation has been developed in these patients, in which patients' HSCs are harvested and genetically modified ex vivo, then transplanted back into patients after conditioning for stem cell transplantation. There are two different approaches for gene therapy of hemoglobinopathies, one based on gene addition or gene silencing using lentiviruses as vectors and the other based on gene editing strategies using CRISPR-Caspase 9 technology or base editing. Several gene therapy products have been successfully evaluated in these patients, achieving transfusion independence and correction of hematological abnormalities durable over time. Conclusions: Several gene therapy products have been approved for the treatment of SCD and β-thalassemic patients and offer potentially curative treatment for these patients.",
+    "authors": "Testa U, Pelosi E, Castelli G.",
+    "journal": "Biomedicines",
+    "year": 2025,
+    "cited_by": 1,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/41463103",
+    "matched_queries": [
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 5,
+    "reason": "Review of gene therapy for β-hemoglobinopathies; mentions base editing but no effectiveness data.",
+    "study_type": "other"
+  },
+  {
+    "key": "pmid:42758354",
+    "id": "42758354",
+    "source": "MED",
+    "pmid": "42758354",
+    "pmcid": null,
+    "doi": "10.1007/s11033-026-12771-1",
+    "title": "CRISPR-Cas9 genome editing: technological advances, delivery strategies and precision engineering of primary cells for therapeutic application in genetic disorders and diabetes mellitus.",
+    "abstract": "The CRISPR-Cas9 system has revolutionized modern life sciences, driving a paradigm shift in biomedical research and becoming an indispensable tool in molecular biology due to its remarkable precision, efficiency, and simplicity. Originating from a bacterial adaptive immune mechanism, CRISPR-Cas9 has evolved rapidly, providing a versatile framework for manipulating genetic material and addressing a wide spectrum of human diseases. Recent progress includes the discovery of novel Cas orthologs and the rational engineering of Cas9 variants to enhance editing fidelity, broaden target range, and minimize off-target effects. Structural and functional optimization of single-guide RNAs (sgRNAs) has further improved target binding affinity, stability, and Cas9-sgRNA complex formation, thereby increasing overall editing performance. The development of high-fidelity Cas9 derivatives and next-generation platforms such as base editors and prime editors has enabled precise single-nucleotide substitutions and small insertions or deletions without generating double-stranded DNA breaks. Advanced delivery systems-including viral vectors, lipid nanoparticles, and ribonucleoprotein electroporation-have facilitated efficient CRISPR-mediated editing across in vitro, ex vivo, and in vivo models. Remarkable therapeutic milestones have been achieved in treating monogenic disorders such as sickle cell disease, β-thalassemia, and cystic fibrosis, where long-term clinical benefits have been documented. Furthermore, CRISPR-Cas9 technology is redefining diabetes research by enabling precise modeling of disease mechanisms, uncovering molecular pathways involved in glucose homeostasis, and opening new avenues for cellular and gene-based therapies. This review highlights recent advances in CRISPR-Cas9-mediated genome editing, emphasizing breakthroughs in primary cell editing and the development of translational models for genetic diseases and diabetes mellitus.",
+    "authors": "Islam MN, Islam MM, Feng H, Bellah SF, Zaman Miah MM, Hossain MS.",
+    "journal": "Molecular biology reports",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42758354",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)"
+    ],
+    "score": 5,
+    "reason": "Reviews CRISPR technologies including base editing for SCD but focuses on technological advances and delivery strategies broadly.",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:42756827",
+    "id": "42756827",
+    "source": "MED",
+    "pmid": "42756827",
+    "pmcid": "PMC13583639",
+    "doi": "10.71480/nmj.v67i5.1313",
+    "title": "Precision Genome Engineering in Human Disease: Expanding Therapeutic Roles of CRISPR Technologies.",
+    "abstract": "The advent of CRISPR-Cas9 technology has revolutionized genome editing, enabling precise modifications to the human genome with unprecedented accuracy and sequence specificity. This review examines current mechanistic insights, translational advances, and clinical developments in gene editing, focusing on applications in diabetes mellitus, cancer, hematologic disorders, neurodegenerative diseases, and autoimmune pathologies. This study provides a comprehensive analysis of recent literature on CRISPR-based genome editing, emphasizing next-generation modalities like base editing and prime editing, and their impact on target specificity and genomic integrity. Therapeutic strategies involving ex vivo editing of hematopoietic stem cells and in vivo delivery approaches, including lipid nanoparticle-mediated systems, are evaluated. Base editing and prime editing have improved sequence specificity and reduced double-strand DNA breaks, enhancing safety profiles. Ex vivo editing of hematopoietic stem cells for hemoglobinopathies and in vivo genome editing via lipid nanoparticles show translational promise. However, limitations persist: off-target effects, immunogenicity, delivery inefficiencies, and ethical concerns surrounding germline editing require careful consideration. Gene editing technologies show potential for treating previously intractable diseases. Technical, safety, and ethical challenges must be addressed through continued refinement of editing platforms, rigorous scientific validation, and the establishment of robust governance frameworks to ensure safe and responsible translation into clinical medicine.",
+    "authors": "Ubhenin AE, Adamude FA, Ochalefu DO, Anura F, Tarnande CI, Adam IK.",
+    "journal": "Nigerian medical journal : journal of the Nigeria Medical Association",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42756827",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)",
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")",
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 5,
+    "reason": "Reviews CRISPR base/prime editing for hemoglobinopathies including SCD but covers multiple disease areas and platform comparisons.",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:42662940",
+    "id": "42662940",
+    "source": "MED",
+    "pmid": "42662940",
+    "pmcid": "PMC13521169",
+    "doi": "10.1016/j.omtn.2026.103011",
+    "title": "The landscape and trajectory of global CRISPR therapeutics.",
+    "abstract": "With the first regulatory approval in 2023 of a CRISPR-based therapy for sickle cell disease followed by the recent demonstration of an accelerated, personalized CRISPR treatment for congenital severe carbamoyl-phosphate synthetase 1 deficiency, CRISPR-Cas9 genome editing has progressed from a laboratory technology into a clinical reality in just over a decade. While enthusiasm for deploying CRISPR-Cas9 to treat a range of human genetic diseases continues to grow, broad clinical application remains constrained due to technical, regulatory, manufacturing and economic challenges. Here, scientists from the European Cooperation in Science and Technology (COST) action Genome Editing to Treat Human Diseases (GenE-HumDi) provide a comprehensive global overview of the CRISPR therapeutic landscape. We systematically analyze CRISPR-based therapeutic trials registered on ClinicalTrials.gov and the EU Clinical Trials Register, providing a thorough assessment of the current clinical activity and the trajectory of CRISPR technology as it advances toward routine clinical interventions.",
+    "authors": "Şahin C, Formica TM, Silva A, Della Pelle G, Davis MC, Andersen DG, Çavdar M, Santos L, Qiu L, Olsen AL, Askou AL, et al.",
+    "journal": "Molecular therapy. Nucleic acids",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42662940",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)",
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")"
+    ],
+    "score": 5,
+    "reason": "Global CRISPR therapeutics landscape overview; includes SCD but broad scope across many diseases.",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:42418372",
+    "id": "42418372",
+    "source": "MED",
+    "pmid": "42418372",
+    "pmcid": "PMC13578968",
+    "doi": "10.1182/bloodadvances.2026019856",
+    "title": "Alternative conditioning regimens for hemoglobinopathy gene therapy: balancing efficacy, toxicity, and the next frontier.",
+    "abstract": "Abstract Gene therapy for sickle cell disease and transfusion-dependent thalassemia is now widely available, yet its broader application is constrained by the need for effective and tolerable conditioning. This review examines the central role of conditioning in enabling durable engraftment of gene-modified hematopoietic stem cells, emphasizing the narrow therapeutic window between insufficient niche clearance and excessive toxicity. Busulfan remains the standard conditioning agent, supported by consistent engraftment and clinical efficacy, but its use is limited by acute and long-term toxicities, including infertility and potential genotoxicity. Emerging strategies aim to mitigate these risks. Reduced-intensity melphalan shows early promise but raises concerns regarding the durability of engraftment, whereas treosulfan offers a potentially safer profile, although data in the autologous setting are lacking. Antibody-based, nongenotoxic approaches represent a transformative direction but remain investigational. Refining conditioning through comparative trials and long-term follow-up will be critical to fully realize the curative potential of gene therapy.",
+    "authors": "Sharma A, Corbacioglu S.",
+    "journal": "Blood advances",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "Review",
+      "discussion",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42418372",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)",
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")",
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 5,
+    "reason": "Reviews conditioning regimens for gene therapy, mentions SCD but not base editing efficacy",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42512120",
+    "id": "42512120",
+    "source": "MED",
+    "pmid": "42512120",
+    "pmcid": "PMC13406992",
+    "doi": "10.3390/biomedicines14071649",
+    "title": "Sickle Cell Disease: From Ancient Origins to Modern Breakthroughs in Gene Therapy.",
+    "abstract": "Sickle Cell Disease (SCD) is a hereditary hemoglobinopathy arising from a single-nucleotide transversion (GAG → GTG) at codon six of the HBB gene on chromosome 11, substituting glutamic acid with valine in the β-globin chain and producing hemoglobin S (HbS). Under hypoxic conditions, HbS polymerizes and distorts erythrocytes into the characteristic sickle shape, initiating a cascade of vaso-occlusion, chronic hemolytic anemia, and progressive multi-organ damage that defines the clinical burden of this disease. Although SCD has ancient origins in sub-Saharan Africa, the Indian subcontinent, the Middle East, and the Mediterranean, regions where it conferred heterozygous resistance to malaria, the ease of human migration has long since made it a global health concern, affecting an estimated 300,000-400,000 newborns annually. Advances in molecular and genomic research have deepened our understanding of SCD pathophysiology, revealing the central contributions of hemoglobin polymerization, oxidative stress, endothelial inflammation, and nitric oxide depletion to disease progression. Current management rests on supportive pharmacological interventions, including hydroxyurea, chronic transfusion therapy, L-glutamine, and multimodal pain management, complemented by lifestyle modifications. Curative approaches have advanced substantially: hematopoietic stem cell transplantation (HSCT) remains the established standard of cure, while the regulatory approvals in late 2023 of the CRISPR/Cas9-based exagamglogene autotemcel (Casgevy) and the lentiviral vector-based lovotibeglogene autotemcel (Lyfgenia) represent the most transformative development in the history of SCD therapeutics. This review traces the disease from its ancient origins and molecular characterization through to its clinical manifestations, inheritance patterns, screening strategies, and the full spectrum of current and emerging therapies. Persistent challenges, prohibitive treatment costs, healthcare inequities, the ethical dimensions of genome editing, and the urgent need for long-term safety data, are examined critically, with a view to informing the research and policy agenda that must accompany these remarkable scientific advances.",
+    "authors": "Ikolo B, Oyelami M, Mgbeke O, Jones K, Thomas S, Ikolo F.",
+    "journal": "Biomedicines",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42512120",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 5,
+    "reason": "Reviews SCD pathophysiology and gene therapy advances but not base editing specific",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42353791",
+    "id": "42353791",
+    "source": "MED",
+    "pmid": "42353791",
+    "pmcid": "PMC13299588",
+    "doi": "10.3390/genes17060631",
+    "title": "Building CRISPR-Based Gene-Editing Platforms for Personalized Medicine: The Next Step in Interventional Genetics.",
+    "abstract": "Recent advances in CRISPR technology have expanded beyond traditional double-strand break-based genome editing to include base editors and prime editors, enabling precise and programmable sequence modifications. This evolution marks a shift from conventional mutation correction toward platform-based therapeutic systems capable of targeting a broad spectrum of pathogenic variants. Such versatility holds promise for addressing a substantial proportion of known disease-causing mutations in rare monogenic disorders. This review discusses the technological progression of CRISPR systems, highlighting the principles, applications, and limitations of emerging editing modalities. We will explore their translation into personalized gene therapies, emphasizing delivery challenges, off-target safety, and the need for regulatory innovation. The paper will also introduce the concept of interventional genetics, an emerging medical framework linking genomic diagnosis directly to therapeutic intervention through adaptive gene-editing platforms. Finally, we will outline strategies for establishing unified, scalable, and regulatory-ready editing platforms that can accelerate the clinical implementation of individualized therapies for rare diseases.",
+    "authors": "Rodriguez SH, Yokota T.",
+    "journal": "Genes",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42353791",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")"
+    ],
+    "score": 5,
+    "reason": "Discusses CRISPR platform technologies for personalized medicine, general overview not SCD-specific effectiveness",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:41253147",
+    "id": "41253147",
+    "source": "MED",
+    "pmid": "41253147",
+    "pmcid": "PMC12765844",
+    "doi": "10.1016/j.xcrm.2025.102419",
+    "title": "Gene therapy for hemoglobinopathies: Clinical trial results and biology of hematopoietic stem cell and the bone marrow niche.",
+    "abstract": "Hemoglobinopathies, including beta-thalassemia (Bthal) and sickle cell disease (SCD), are among the most prevalent inherited blood disorders. Genetic mutations affecting hemoglobin synthesis result in severe anemia and multi-organ complications. The development of gene therapy (GT) aimed at correcting or modifying the hematopoietic system, although initially impaired by several limitations, has accomplished the marketing authorization of two hematopoietic stem cell (HSC) medicinal products, engineered by lentiviral vector gene addition and by CRISPR-Cas9 gene editing. Nonetheless, the success of these approaches stimulates a critical revision of our knowledge of HSC biology and bone marrow (BM) microenvironment in these diseases. Here, we review the clinical application of GT by gene addition and gene editing, and the novel findings about HSC and BM niche features and function in hemoglobinopathies. The identification of defective networks in HSC-niche is examined with the perspective of developing combined strategies to ameliorate the BM microenvironment to better support the genetically corrected cells.",
+    "authors": "Aprile A, Lidonnici MR, Ferrari G.",
+    "journal": "Cell reports. Medicine",
+    "year": 2025,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/41253147",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")"
+    ],
+    "score": 5,
+    "reason": "Reviews gene therapy for hemoglobinopathies including SCD, mentions CRISPR editing but not base editing effectiveness data",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "pmid:42024260",
+    "id": "42024260",
+    "source": "MED",
+    "pmid": "42024260",
+    "pmcid": "PMC13241422",
+    "doi": "10.1007/s12015-026-11132-6",
+    "title": "New Gene Therapy Strategy for β-Thalassemia.",
+    "abstract": "β-thalassemia is a common inherited hemoglobin disorder caused by reduced or absent β-globin production, leading to ineffective erythropoiesis, chronic anemia, and, in severe cases, lifelong transfusion dependence. Although allogeneic hematopoietic stem cell transplantation can be curative, its use is limited by donor availability and transplant-related complications. In recent years, gene therapy has emerged as a promising alternative and has rapidly changed the treatment landscape for β-thalassemia. In this review, we summarize both established and emerging gene-based strategies, including lentiviral gene addition to restore HBB expression and gene editing approaches aimed at reactivating fetal hemoglobin. We discuss key targets such as the erythroid-specific BCL11A enhancer, repressor-binding sites in the HBG promoters, and other regulatory elements involved in globin switching. We also highlight the growing potential of newer technologies such as base editing and prime editing, which may offer greater precision and reduce the risks associated with double-strand DNA breaks. Finally, we address the major challenges that still need to be resolved, including safety, durability, technical complexity, and access to treatment. Overall, gene therapy is moving β-thalassemia closer to a broadly applicable curative approach.",
+    "authors": "Liang D, Schmidt-Wolf IGH, Pu J.",
+    "journal": "Stem cell reviews and reports",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42024260",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")"
+    ],
+    "score": 5,
+    "reason": "Reviews gene therapy for β-thalassemia, discusses base editing as emerging technology but no SCD effectiveness data",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "pmid:42291973",
+    "id": "42291973",
+    "source": "MED",
+    "pmid": "42291973",
+    "pmcid": "PMC13254413",
+    "doi": "10.7759/cureus.108691",
+    "title": "CRISPR-Cas9-Mediated Gene Editing in Hematological Disorders: Advancing Translational and Clinical Applications.",
+    "abstract": "Clustered regularly interspaced short palindromic repeats-associated protein 9 (CRISPR-Cas9)-mediated gene editing has emerged as a pivotal advancement in hematological medicine, addressing genetic and regulatory abnormalities underlying inherited and acquired blood disorders. Conventional therapeutic strategies offer symptomatic control or partial disease modification, leaving substantial unmet clinical need for durable, mechanism-driven interventions. This narrative review aims to synthesize the translational and clinical progress of CRISPR-Cas9 applications in hematological disorders, with an emphasis on therapeutic strategies, safety considerations, and integration into clinical practice. A comprehensive literature evaluation was conducted using major biomedical databases, selecting peer-reviewed studies published between 2015 and 2025 that reported mechanistic, translational, or clinical relevance in hematology. Eligible literature included experimental investigations, clinical trials, and high-quality reviews, with exclusion of non-translational and germline-focused studies. This review highlights advances in hematopoietic stem cell editing, correction of hemoglobinopathies, immune cell engineering, and chimeric antigen receptor-based therapies, as well as progress in delivery platforms and high-fidelity nuclease designs. Key challenges related to off-target effects, genomic stability, manufacturing scalability, regulatory oversight, and ethical governance are critically evaluated. Emerging clinical trial outcomes demonstrate sustained therapeutic benefit and expanding feasibility across diverse hematological indications. Long-term clinical monitoring remains central to evaluating durability and safety. Collectively, current evidence supports CRISPR-Cas9 as a cornerstone technology in precision hematology, with continued optimization required to enable safe, equitable, and widespread clinical adoption.",
+    "authors": "Singh A, Kumar R, Chauhan P, Mallikarjuna M, Thaker R, Sambhav K.",
+    "journal": "Cureus",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42291973",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")",
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 5,
+    "reason": "Reviews CRISPR-Cas9 in hematological disorders; general, not base editing or SCD-specific effectiveness",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "doi:10.20944/preprints202606.0584.v1",
+    "id": "PPR1248463",
+    "source": "PPR",
+    "pmid": null,
+    "pmcid": null,
+    "doi": "10.20944/preprints202606.0584.v1",
+    "title": "Gene Therapy for β-Haemoglobinopathies: From Molecular Correction to Curative Medicine",
+    "abstract": "Background: β-haemoglobinopathies, including sickle cell disease and transfusion-dependent β-thalassaemia, are among the most common monogenic disorders worldwide and represent a major global health burden. Conventional treatments, such as blood transfusions, iron chelation, fetal haemoglobin induction, and allogeneic haematopoietic stem cell transplantation, have im-proved outcomes but remain limited by treatment-related toxicity, donor availability, and incom-plete curative potential. Methods: A narrative literature review was conducted using PubMed up to 2025. Search terms included “sickle cell disease,” “sickle cell anemia,” “β-thalassemia,” “transfu-sion-dependent beta-thalassemia,” “gene therapy,” “gene addition,” “gene editing,” “CRISPR-Cas9,” “lentiviral vector,” “children,” “paediatric,” and “pediatric.” Relevant clinical tri-als, reviews, consensus statements, and guidelines were selected and qualitatively analysed. Results: Gene therapy for β-haemoglobinopathies is based mainly on two strategies: gene addition and gene editing. Gene addition uses lentiviral vectors to introduce functional or modified β-globin genes into autologous haematopoietic stem cells, whereas gene editing targets regulatory pathways, particu-larly BCL11A, to reactivate fetal haemoglobin synthesis or correct disease-causing mutations. Clin-ical studies have shown encouraging outcomes, including transfusion independence in many pa-tients with β-thalassaemia and marked reduction or elimination of vaso-occlusive crises in sickle cell disease. Paediatric and adolescent data are increasingly promising, although still limited. Conclu-sion: Gene therapy is reshaping the treatment landscape of β-haemoglobinopathies by offering a personalised and potentially curative approach. However, long-term safety, conditioning toxicity, fertility preservation, accessibility, costs, and implementation in high-prevalence regions remain critical challenges. Further studies are needed to optimise patient selection and expand equitable access.",
+    "authors": "Fogliazza F, Carbone G, Berzieri M, Ciriaco D, Esposito S.",
+    "journal": "Preprint",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Preprint"
+    ],
+    "preprint": true,
+    "url": "https://europepmc.org/article/PPR/PPR1248463",
+    "matched_queries": [
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 5,
+    "reason": "Narrative review of gene therapy strategies for β-haemoglobinopathies; mentions CRISPR but no base editing effectiveness data.",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42136897",
+    "id": "42136897",
+    "source": "MED",
+    "pmid": "42136897",
+    "pmcid": "PMC13170808",
+    "doi": "10.4084/mjhid.2026.046",
+    "title": "Comprehensive Review of Genetic and Epigenetic Regulation of Fetal Hemoglobin in β-Hemoglobinopathies: From Molecular Mechanisms to Clinical Applications.",
+    "abstract": "Reactivating fetal hemoglobin (HbF) has become a key therapeutic strategy for β-hemoglobinopathies. However, the regulatory networks controlling HbF are complex and have only recently been uncovered. This review integrates current knowledge of the genetic and epigenetic factors that influence HbF expression, including BCL11A, HBS1L-MYB, KLF1, and variants associated with HPFH, and shows how these pathways work together to regulate γ-globin levels. It also highlights recent advances in HbF-targeted treatments, including gene-editing technologies such as CRISPR-Cas9-based BCL11A enhancer disruption, promoter editing to mimic hereditary persistence of fetal hemoglobin (HPFH), and advanced tools like base and prime editing. By combining mechanistic understanding with therapeutic development, this review highlights how improvements in HbF regulation have transformed efforts to find cures for sickle cell disease and β-thalassemia, while also revealing new opportunities for targeted HbF induction across different patient groups.",
+    "authors": "Abu Za'ror YSM, Suleiman JB, Delmani FA, Alhmoud JF, Ayasreh AM, Al-Wendawi SI, AlRamadneh TN, Azlan M.",
+    "journal": "Mediterranean journal of hematology and infectious diseases",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42136897",
+    "matched_queries": [
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 5,
+    "reason": "Review of HbF regulation and CRISPR-based BCL11A enhancer disruption; highlights therapeutic potential but no effectiveness data.",
+    "study_type": "other"
+  },
+  {
+    "key": "pmid:41645451",
+    "id": "41645451",
+    "source": "MED",
+    "pmid": "41645451",
+    "pmcid": "PMC13225742",
+    "doi": "10.1093/procel/pwag006",
+    "title": "Therapeutic adenine base editor with minimized off-target effects.",
+    "abstract": "Genome-wide off-target effect poses a safety risk for clinical use of adenine base editor (ABE), among which ABE8e is one of the most efficient. Genome-wide off-target analysis by two-cell embryo injection (GOTI) analysis showed that the rate of genome-wide single-nucleotide variants (SNVs) in ABE8e-edited cells was ∼30-fold higher than that of spontaneous SNVs in control cells, indicating prevalent off-target effects of ABE8e, but no off-target effect for ABE7.10, from which ABE8e was derived. We performed saturation mutagenesis of eight amino acid sites of the deaminase (TadA8e) within ABE8e and obtained ABE8eY149V that exhibited high editing efficiency without detectable off-target effect. Furthermore, TadA8eY149V could be fused with other Cas homologs (PAM-relaxed SpRY, hypercompact SaKKH, or IscB) to expand its target range. Finally, ABE8eY149V editing of hydroxyphenylpyruvate dioxygenase (Hpd) gene prevented lethality in hereditary tyrosinemia type I mice. The high efficiency and fidelity of ABE8eY149V suggest its potential application in ABE-based gene therapies.",
+    "authors": "Sun Y, Yan N, Feng H, Lu H, Zuo Z, Zhou C, Zuo E.",
+    "journal": "Protein & cell",
+    "year": 2026,
+    "cited_by": 1,
+    "open_access": true,
+    "pub_types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/41645451",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 4,
+    "reason": "Focuses on adenine base editor off-target effects, not sickle cell disease application",
+    "study_type": "meta-analysis"
+  },
+  {
+    "key": "pmid:42781958",
+    "id": "42781958",
+    "source": "MED",
+    "pmid": "42781958",
+    "pmcid": "PMC13602823",
+    "doi": "10.1002/ctm2.70764",
+    "title": "CRISPR-Cas9 and precision editing technologies linking functional genomics to clinical translation in genetic diseases.",
+    "abstract": "Background CRISPR-Cas9 and derivative precision-editing platforms increasingly connect pathogenic variant interpretation with functional genomics and therapeutic development in genetic diseases. This narrative review focuses on a variant-mechanism-driven framework for matching editing strategies to mutation structure, functional consequence, disease-model evidence, delivery feasibility, safety risk, and translational readiness. Main body The review summarizes how monogenic, polygenic, coding, non-coding, mitochondrial, and complex disease contexts influence the choice of canonical Cas9 editing, base editing, prime editing, Cas variants, CRISPR interference/activation, epigenome editing, and disease-model systems. It further compares ex vivo and in vivo delivery routes, safety assessment strategies, immunogenicity and genotoxicity concerns, and clinical implementation barriers, including CMC/manufacturing scalability, long-term follow-up, affordability, and regulatory oversight. Current evidence supports the clinical maturity of ex vivo hematopoietic editing, whereas most in vivo and precision-repair approaches remain constrained by delivery, durability, product heterogeneity, and safety uncertainties. Conclusion The central conclusion is that future CRISPR-based interventions should be judged not only by editability, but by whether molecular correction can be translated into durable, safe, manufacturable, and clinically meaningful benefit.",
+    "authors": "Wen Z, Su J.",
+    "journal": "Clinical and translational medicine",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42781958",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)",
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")"
+    ],
+    "score": 4,
+    "reason": "Narrative review connecting precision editing to clinical translation; general framework, not SCD/base-editing specific.",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:42782748",
+    "id": "42782748",
+    "source": "MED",
+    "pmid": "42782748",
+    "pmcid": "PMC13605270",
+    "doi": "10.3390/cells15181647",
+    "title": "Beyond Precision: A Multidimensional Framework for Selecting Genetic Medicine Platforms.",
+    "abstract": "Gene therapy is undergoing continued clinical translation and technological development. This progress has been marked by regulatory approvals and broadened therapeutic indications across genetic, metabolic, and oncologic diseases and disorders. The field has evolved over decades from early viral-mediated gene addition to approaches capable of targeted editing, regulation, or replacement of genetic information. These systems include base and prime editors, epigenetic modulators, CRISPR-Cas, RNA therapeutics and programmable integration platforms. When paired with increasingly sophisticated viral and nonviral delivery strategies, these technologies enable greater control over tissue targeting, duration of activity, and therapeutic exposure. Recent clinical successes, including approved ex vivo CRISPR-based therapies for hemoglobinopathies, in vivo CRISPR editing for transthyretin amyloidosis, and emerging clinical applications of base and prime editing, provide growing clinical evidence for the feasibility of genetic medicines. However, technological advancement has also made platform selection increasingly complex. Therapeutic performance is determined not by editing efficiency alone, but by the interaction among genetic precision, temporal control, dosage tunability, delivery efficiency, durability, and disease-specific safety requirements. A molecularly efficient platform may still have limited therapeutic value if it cannot reach the disease-relevant cell population at sufficient and safe exposure. In this review, we examine recent technological and clinical advances in genetic medicine with particular emphasis on developments during the past approximately five years. We propose a multidimensional framework in which gene therapy platforms are evaluated according to three intrinsic properties-genetic precision, temporal control, and dosage tunability-while delivery, clinical maturity, and disease context act as major translational constraints. This framework highlights that no single platform is universally optimal; rather, successful therapeutic design depends on matching the biological characteristics of the intervention to the requirements of the disease and target tissue. Remaining challenges in extrahepatic delivery, genomic safety, immunogenicity, manufacturing, and long-term monitoring remain important determinants of broader clinical implementation.",
+    "authors": "Wieland J, Jackson P, Penrod W, Nadauld S, Barrott J.",
+    "journal": "Cells",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42782748",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)",
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")",
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 4,
+    "reason": "Multidimensional framework for genetic medicine platform selection; includes base editing but not SCD-specific outcomes.",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:42608275",
+    "id": "42608275",
+    "source": "MED",
+    "pmid": "42608275",
+    "pmcid": "PMC13509143",
+    "doi": "10.1016/j.tibtech.2026.07.015",
+    "title": "On-target and off-target activities of CRISPR therapeutics across scales.",
+    "abstract": "Recent FDA-approved gene-editing therapies illustrate not only the transformative potential of biotechnologies using CRISPR (clustered regularly interspaced short palindromic repeats)-derived ribonucleoproteins in treating a broad range of diseases but also the spectrum of possible molecular variations CRISPR therapeutics can adopt. These include exagamglogene autotemcel, an ex vivo therapy for hemoglobinopathies using CRISPR nuclease Cas9, and kayjayguran abengcemeran, an in vivo therapy using a protospacer adjacent motif-altered base-editing Cas9 variant for an ultra-rare metabolic disorder. Together, these therapies underscore how far CRISPR has advanced beyond its original use as a tool in biological/biomedical research. In this opinion article, we argue that as CRISPR biotechnologies advance beyond the relative simplicity of in vitro applications, our understanding must also evolve to address the challenges of optimizing 'on-target' and 'off-target' mutational activities across the diverse contexts in which they occur.",
+    "authors": "Magdy M, Gibson JR, Dhungana A, Herring-Nicholas A, Cottle RN, Josephs EA.",
+    "journal": "Trends in biotechnology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "research-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42608275",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)",
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")",
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 4,
+    "reason": "Opinion article on on/off-target activities of CRISPR therapeutics; includes base editing but not SCD-specific effectiveness data.",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:42303162",
+    "id": "42303162",
+    "source": "MED",
+    "pmid": "42303162",
+    "pmcid": null,
+    "doi": "10.1016/j.jbiotec.2026.06.012",
+    "title": "CRISPR Cas9 revolutionizing genetic engineering and therapeutic applications.",
+    "abstract": "Genetic engineering has been transformed by CRISPR-Cas9 technology, offering high precision and adaptability in biological research and therapeutic innovation. Originating from a bacterial defense system, CRISPR-Cas9 enables targeted DNA editing through guide RNA-directed Cas9 nuclease activity, allowing gene modification, mutation correction, and disease mechanism analysis. This has opened new avenues in personalized medicine and gene therapy, particularly for cancer and inherited disorders, alongside applications in agriculture. In oncology, CRISPR-Cas9 demonstrates strong potential in oncogene targeting, immune cell engineering, and CAR-T-based immunotherapy, supported by substantial preclinical success. Delivery efficiency is enhanced through systems such as exosomes, liposomes, and nanoparticles, improving stability and tumor targeting. However, clinical translation remains constrained by off-target effects, delivery limitations, and ethical concerns in human genome editing, particularly germline modification. CRISPR shows therapeutic promise for muscular dystrophy, sickle cell disease, and cystic fibrosis. Emerging platforms including base editing, prime editing, and dCas9-based epigenome editing enable precise genome and gene regulation without double-strand breaks, reducing toxicity and expanding therapeutic scope in cancer and genetic diseases. Regulatory frameworks remain heterogeneous, affecting translation. The United States leads in approvals and clinical progress, the European Union emphasizes safety and ethics, China shows rapid expansion in clinical trials, and India remains in early stages due to regulatory and infrastructure constraints. Public perception influences adoption, shaped by misinformation and limited awareness. Persistent gaps in long-term safety, clinical efficacy, and population diversity remain challenges. Overall, CRISPR-Cas9 represents a transformative but carefully regulated platform for advancing biotechnology and medicine.",
+    "authors": "Durairaj S, Durairaj S, Krishnan S, Raju A.",
+    "journal": "Journal of biotechnology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42303162",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)"
+    ],
+    "score": 4,
+    "reason": "General review of CRISPR applications, mentions SCD but not base editing focus",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42519799",
+    "id": "42519799",
+    "source": "MED",
+    "pmid": "42519799",
+    "pmcid": "PMC13382508",
+    "doi": "10.3389/fmed.2026.1859881",
+    "title": "Long-read sequencing and next-generation CRISPR editors: a unified pipeline for rare disease precision medicine with ethical and regulatory perspectives.",
+    "abstract": "Rare diseases, most of which have a genetic basis, remain a major challenge due to diagnostic delays and limited therapeutic options, particularly within the Middle Eastern regions. These countries exhibit a heightened prevalence of genetic disorders attributable to their distinctive genetic architecture. Advances in long-read sequencing (LRS) technologies have significantly improved our ability to detect complex genetic variations, including structural variants (SVs), repeat expansions, and mutations in previously inaccessible genomic regions, thereby increasing the diagnostic yield in rare disease cohorts. In parallel, the rapid evolution of gene-editing platforms such as CRISPR/Cas9, base editors, and prime editors has opened new possibilities for addressing the biological pathways of the disease and achieving precise therapeutic correction of pathogenic variants causing the disease. Importantly, the integration of LRS with gene-editing approaches establishes a continuum from accurate variant discovery and functional characterization to the development of personalized therapies. This review highlights recent progress in both fields, discusses their complementary roles in rare disease research, and explores the translational opportunities and ethical challenges of combining these technologies to advance precision medicine. In addition, the review addresses emerging ethical and regulatory considerations associated with the clinical translation of long-read sequencing and next-generation gene-editing technologies, particularly in the context of rare disease precision medicine.",
+    "authors": "Konamveettil Abdul Latheef A, Ali M, Farahat O, Gourari F, AlQodsi E, Akawi N.",
+    "journal": "Frontiers in medicine",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42519799",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)"
+    ],
+    "score": 4,
+    "reason": "Discusses gene-editing platforms including base editors for rare diseases, general relevance",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "pmid:42469418",
+    "id": "42469418",
+    "source": "MED",
+    "pmid": "42469418",
+    "pmcid": null,
+    "doi": "10.1038/s41390-026-05270-3",
+    "title": "The future of pediatric gene therapy: CRISPR-Cas9, AI, and personalized medicine.",
+    "abstract": "The future of pediatric gene therapy is being fundamentally reshaped by the convergence of CRISPR-Cas9 genome editing, artificial intelligence (AI), and personalized medicine, providing unprecedented opportunities for the treatment of rare and previously intractable genetic disorders in children. CRISPR-Cas9 enables precise and potentially curative correction of pathogenic mutations underlying conditions, such as sickle cell disease, cystic fibrosis, and Duchenne muscular dystrophy, with particularly notable progress in hematological disorders. AI-driven tools, like DeepCRISPR and CRISPR-GPT are emerging as valuable assets for streamlining experimental design, prioritizing candidate edits, and accelerating preclinical-to-clinical translation. In parallel, advances in delivery systems, including adeno-associated viral (AAV) vectors and non-viral platforms such as lipid nanoparticles (LNPs), are expanding the feasibility of both ex vivo and in vivo pediatric applications. The synergistic integration of CRISPR-Cas9, AI, and personalized medicine enables more precise, patient-specific therapeutic strategies that better account for the developmental, physiological, and genetic heterogeneity of pediatric populations. Addressing these challenges will require interdisciplinary collaboration across genome engineering, AI science, clinical pediatrics, bioethics, and regulatory policy. The establishment of standardized regulatory frameworks, accompanied by robust and transparent AI integration, will be essential to ensure safe, equitable, and scalable translation. IMPACT: The future of pediatric gene therapy is being reshaped by the integration of CRISPR-Cas9, AI, and personalized medicine. We review recent clinical trials, including ex vivo CRISPR-Cas9 applications for hemoglobinopathies. This article emphasizes interdisciplinary collaboration to overcome these barriers. Pediatric gene therapy holds transformative potential to provide curative solutions for children.",
+    "authors": "Pan Y, Ding J, Wang W, Xu D, Fan J, Zhang W.",
+    "journal": "Pediatric research",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42469418",
+    "matched_queries": [
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 4,
+    "reason": "Future of pediatric gene therapy; mentions sickle cell disease but broad scope, not base editing effectiveness",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "pmid:42462791",
+    "id": "42462791",
+    "source": "MED",
+    "pmid": "42462791",
+    "pmcid": "PMC13398628",
+    "doi": "10.1002/1878-0261.70304",
+    "title": "Targeting transcription factors associated with hemoglobinopathies: Lessons from successful interventions and implications for cancer.",
+    "abstract": "Sickle cell disease and cancer represent fundamentally distinct classes of human disease-one is driven by a defined mutation in β-globin, whereas the other arises through complex genetic and epigenetic alterations that reshape cellular identity and behavior. Despite these differences, both contexts illustrate how transcription factors, chromatin regulators, and cis-regulatory elements can impose disease-relevant gene expression states. In β-hemoglobinopathies, therapeutic reactivation of fetal hemoglobin through modulation of γ-globin (HBG1/2) regulatory pathways, most notably disruption of the erythroid-specific BCL11A enhancer, has emerged as a clinically validated strategy. These advances have been facilitated in part by the HUDEP-2 erythroid progenitor cell line, which provides a tractable adult erythroid model for identifying fetal hemoglobin regulators, validating their function, and evaluating relevant gene editing and gene-regulatory therapies. Many of the regulators implicated in γ-globin silencing, including BCL11A, ZBTB7A, NuRD-associated proteins, DNMT1, KDM1A/LSD1, MYB, and ATF4, also function in cancer-associated transcriptional or epigenetic networks. In cancer, these factors can support oncogenic transcription, tumor suppressor repression, impaired differentiation, stress adaptation, invasion, or therapy resistance. This review summarizes discoveries enabled by HUDEP-2 cells in fetal hemoglobin regulation and hemoglobinopathy therapeutic development, then discusses how these mechanisms provide conceptual parallels for understanding and targeting regulatory dependencies in cancer.",
+    "authors": "Yu M, Das P, Zhang X, Cheng X.",
+    "journal": "Molecular oncology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42462791",
+    "matched_queries": [
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 4,
+    "reason": "Review discussing BCL11A disruption for HbF reactivation; general background, no treatment effectiveness data.",
+    "study_type": "other"
+  },
+  {
+    "key": "pmid:42298089",
+    "id": "42298089",
+    "source": "MED",
+    "pmid": "42298089",
+    "pmcid": null,
+    "doi": "10.1038/s41434-026-00627-z",
+    "title": "Applications of genome editing technologies in the treatment of human diseases.",
+    "abstract": "Genome editing has progressed from a laboratory capability for targeted DNA manipulation to a clinically relevant strategy for correcting, silencing, or regulating genes implicated in human disease. In this Review, we synthesize the mechanisms, capabilities, and constraints of the principal programmable platforms-zinc-finger nucleases (ZFNs), transcription activator-like effector nucleases (TALENs), and CRISPR-Cas systems-and highlight how base editors, prime editors, and epigenetic editors expand the range of achievable outcomes beyond double-strand break-dependent repair to precise nucleotide substitutions, small insertions/deletions, and transcriptional modulation. We compare genome-editing cargo formats, including plasmid DNA, viral-vector DNA, mRNA, guide RNA, and ribonucleoprotein complexes, together with the delivery modalities used to transport them, including AAV, adenoviral and herpesviral vectors, lipid nanoparticles (LNPs), electroporation, and virus-like particles. We then consolidate key biomedical applications enabled by these technologies, spanning endogenous gene tagging, high-throughput functional variant screening, molecular recording, and the generation of genetically faithful disease models. Across oncology, respiratory, hematologic, cardiovascular, metabolic, neurodegenerative, viral, ocular, and immune disorders, genome editing is advancing both ex vivo and in vivo interventions, including engineered cellular immunotherapies, hematopoietic stem and progenitor cell editing for hemoglobinopathies, and emerging liver-directed programs for lipid and coagulation targets. Finally, we discuss priorities for broad clinical implementation: improving editing fidelity and PAM flexibility, increasing performance in non-dividing cells, enabling tissue-selective delivery to difficult organs (for example, lung and central nervous system), and addressing manufacturing scalability, long-term monitoring, and equitable global access.",
+    "authors": "Alshorman J, Mehran MJ, Miyanda Tembo K, Mostafavi N, Bolideei M, Wang Y.",
+    "journal": "Gene therapy",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42298089",
+    "matched_queries": [
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 4,
+    "reason": "Review of genome editing platforms and applications; broad overview, no sickle cell disease base editing effectiveness data.",
+    "study_type": "other"
+  },
+  {
+    "key": "pmid:42761173",
+    "id": "42761173",
+    "source": "MED",
+    "pmid": "42761173",
+    "pmcid": null,
+    "doi": "10.1016/j.omtn.2026.103075",
+    "title": "Gene therapy for hereditary hematological disorders: From clinical breakthroughs to future horizons.",
+    "abstract": "Hereditary hematological disorders, including sickle cell disease, β-thalassemia, and hemophilia, are severe monogenic diseases that impose substantial morbidity and lifelong treatment burdens. Conventional therapies are largely supportive and rarely curative, whereas gene therapy is increasingly transforming the therapeutic landscape by addressing the underlying genetic defects. This review summarizes the major gene therapy strategies currently being developed for hereditary hematological disorders, with a particular focus on gene addition, gene editing, and gene silencing, as well as ex vivo and in vivo delivery platforms. We highlight recent clinical breakthroughs, including approved products for hemoglobinopathies and hemophilia, and discuss emerging approaches such as base editing, prime editing, epigenetic modulation, and lipid nanoparticle-mediated delivery. In addition, we examine the major challenges that continue to limit broader clinical adoption, including immune responses, off-target effects, conditioning-related toxicity, manufacturing complexity, high cost, and limited accessibility. Finally, we outline future directions that may accelerate clinical translation, including improved editing precision, next-generation vector engineering, artificial intelligence-assisted design, scalable manufacturing, and more equitable access to treatment. Together, these advances suggest that gene therapy is steadily moving from experimental innovation toward durable, potentially curative treatment for hereditary hematological disorders.",
+    "authors": "Chen Z, Wang W, Wu Y, Qiang Y, Cheng W, Liu F.",
+    "journal": "Molecular therapy. Nucleic acids",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42761173",
+    "matched_queries": [
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 4,
+    "reason": "Review of gene therapy strategies for hereditary hematological disorders; discusses base editing as emerging approach but no effectiveness data.",
+    "study_type": "other"
+  },
+  {
+    "key": "pmid:40745001",
+    "id": "40745001",
+    "source": "MED",
+    "pmid": "40745001",
+    "pmcid": "PMC12322193",
+    "doi": "10.1038/s12276-025-01514-0",
+    "title": "CRISPR-based functional genomics tools in vertebrate models.",
+    "abstract": "The advent of CRISPR-Cas technologies has revolutionized functional genomics by enabling precise genetic manipulations in various model organisms. In popular vertebrate models, including mice and zebrafish, CRISPR has been adapted to high-throughput mutagenesis workflows, knock-in alleles and large-scale screens, bringing us closer to understanding gene functions in development, physiology and pathology. The development of innovative technologies, such as base editors, capable of single-nucleotide modifications, and prime editors, offering precision edits without double-strand breaks, exemplifies the expanding toolkit. In addition to gene editing, transcriptional modulation, that is, CRISPR interference and CRISPR activation systems, can elucidate the mechanisms of gene regulation. Newer methods, such as MIC-Drop and Perturb-seq, which increase screening throughput in vivo, hold significant promise to improve our ability to dissect complex biological processes and mechanisms. Furthermore, CRISPR-based gene therapies for treating sickle cell disease and other monogenic diseases have already demonstrated their potential for clinical translation. Here this Review covers the transformative impact of CRISPR-based tools in vertebrate models, highlighting their utility in functional genomics research and disease modeling.",
+    "authors": "Varshney GK, Burgess SM.",
+    "journal": "Experimental & molecular medicine",
+    "year": 2025,
+    "cited_by": 11,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/40745001",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 3,
+    "reason": "General CRISPR review mentions SCD gene therapies but not base editing focus",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:41972732",
+    "id": "41972732",
+    "source": "MED",
+    "pmid": "41972732",
+    "pmcid": "PMC13072328",
+    "doi": "10.3390/cells15070644",
+    "title": "CRISPR-Cas9 Therapeutics in Early Clinical Development: Delivery and Molecular Diagnostics.",
+    "abstract": "CRISPR-Cas9 has progressed from an experimental tool to a therapeutic modality, marked by the first regulatory approvals of an ex vivo-edited autologous CD34+ hematopoietic stem cell product that induces fetal hemoglobin (CASGEVY/exa-cel). In this narrative review, we synthesize modality-specific molecular diagnostic strategies used across early CRISPR clinical translation. In parallel, early clinical experience has begun to demonstrate the feasibility of in vivo editing, including subretinal delivery for CEP290-associated inherited retinal degeneration (EDIT-101 programme) and hepatocyte-targeted lipid nanoparticles (LNPs) for liver-derived targets such as transthyretin and plasma prekallikrein (KLKB1). As translation expands across hematologic, metabolic, ocular and oncology indications, development is increasingly constrained by the predictability and safety of editing outcomes, delivery-determined biodistribution and exposure time, and immune recognition of bacterial Cas9 orthologs and delivery components. We summarize diagnostic readouts for confirming patient genotype, quantifying on-target editing and expression changes, assessing off-target and structural outcomes using orthogonal assays, and monitoring clonal dynamics and immune responses during long-term follow-up. We also discuss how these readouts interface with CMC controls and regulatory expectations for advanced therapy medicinal products (ATMPs), highlighting the need for fit-for-purpose, standardized testing frameworks in early trials.",
+    "authors": "Rutkowska A, Strózik T, Wasiak T, Ciunowicz D, Kapelan N, Szczepaniak N, Sosnowski J, Goślińska W, Bartkowiak J, et al.",
+    "journal": "Cells",
+    "year": 2026,
+    "cited_by": 1,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/41972732",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")"
+    ],
+    "score": 3,
+    "reason": "Reviews CRISPR-Cas9 therapeutic development but focuses on diagnostics and delivery, not SCD base editing efficacy",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "pmid:42793101",
+    "id": "42793101",
+    "source": "MED",
+    "pmid": "42793101",
+    "pmcid": "PMC13604784",
+    "doi": "10.3390/biom16091268",
+    "title": "Recent Advances in CRISPR/Cas Technologies for Biological Discovery, Therapeutics, and Diagnostics.",
+    "abstract": "The clustered regularly interspaced short palindromic repeats (CRISPR)/CRISPR-associated protein (Cas) system began as a tool for programmable genome editing. CRISPR/Cas technologies have evolved into a versatile platform for functional genomic screening, epigenome editing, therapeutic target discovery, and highly sensitive molecular diagnostics. New effectors and engineered variants continue to push these applications into personalized medicine and point-of-care testing. Here, this review highlights recent advances in therapeutic target discovery and therapeutic and molecular diagnostic development utilizing CRISPR/Cas technologies. We discuss how CRISPR interference (CRISPRi), CRISPR activation (CRISPRa), base editing, and prime editing have improved our understanding of disease mechanisms, while creating new opportunities for therapeutic intervention. Current applications in cancer immunotherapy, infectious disease, and neurological disorders are also discussed. In diagnostics, CRISPR-based platforms enable sensitive detection of infectious pathogens, cancer biomarkers, and genetic disorders using programmable nuclease activity in both laboratory and point-of-care settings. Collectively, these advances continue to expand the role of CRISPR/Cas technology across biological discovery, disease diagnostics, and therapeutic development, driving progress in precision medicine.",
+    "authors": "Kim MS, Do HS, Jang HY, Lee KE, Lee SJ.",
+    "journal": "Biomolecules",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42793101",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)",
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")"
+    ],
+    "score": 3,
+    "reason": "Broad CRISPR review, no specific SCD or base editing efficacy data",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42138773",
+    "id": "42138773",
+    "source": "MED",
+    "pmid": "42138773",
+    "pmcid": "PMC13179409",
+    "doi": "10.1007/s44307-026-00115-w",
+    "title": "Base editing of Artemis mutations ex vivo sheds light on gene therapy for Artemis-deficient SCID.",
+    "abstract": "Artemis is an endonuclease that cleaves DNA hairpins during V(D)J recombination, a critical step enabling coding-joint formation and essential for lymphocyte development. Artemis-deficient severe combined immunodeficiency (ART-SCID) is a monogenic disorder marked by impaired lymphocyte development and poor responsiveness to allogeneic hematopoietic stem cell transplantation. In this study, we explored the use of base editors to correct mutations in the Artemis gene. Specifically, we firstly documented the pathogenic mutations of Artemis from previous studies and newly identified from ClinVar database. Then, we performed ex vivo assays using cytidine base editors (CBEs) to repair the c.181T > C mutation, and adenosine base editors (ABEs) to target the pathogenic c.49G > A and c.404G > A variants associated with ART-SCID. Targeted deep sequencing revealed that rAPOBEC1-SpRY-HF1-BE4max achieved efficient editing (~ 50%) at the c.181T > C site, while ABE8e reached ~ 35% and ~ 20% editing efficiency at the c.49G > A and c.404G > A sites, respectively. Importantly, base editors restored Artemis endonuclease activity in a 293TArtemis-/- system, with no detectable off-target effects at the predicted sites as assessed by targeted deep sequencing. These findings provide proof-of-concept that base editing can correct ART-SCID-associated mutations, highlighting its potential for future therapeutic development.",
+    "authors": "Huang Z, Cai Z, Yan P, Hu Y, Wang Y, Zhou G, Deng L, Wang X, Li Z, Chen W, Tao X, Xu A, Yuan S.",
+    "journal": "Advanced biotechnology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42138773",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 3,
+    "reason": "Studies Artemis mutations in SCID, not sickle cell disease",
+    "study_type": "case report"
+  },
+  {
+    "key": "pmid:42667096",
+    "id": "42667096",
+    "source": "MED",
+    "pmid": "42667096",
+    "pmcid": "PMC13524484",
+    "doi": "10.1016/j.omtn.2026.103053",
+    "title": "Pharmacological readthrough and base editing for ANK1 nonsense mutations in an erythroid model of hereditary spherocytosis.",
+    "abstract": "Hereditary spherocytosis (HS) is the most common inherited chronic hemolytic anemia and results from defects in proteins of the erythrocyte membrane skeleton. Nonsense mutations in ANK1 are a common cause of HS, yet current treatments remain largely supportive without addressing genetic defects. In this study, we identified two ANK1 nonsense mutations (p.R281X and p.Q744X) in unrelated HS pedigrees and generated K562 erythroid differentiation models using cytosine base editor-mediated knockin to evaluate potential targeted therapies. Functional analyses confirmed that both mutations markedly reduced ankyrin-1 expression and disrupted membrane-skeletal integrity. We then assessed two targeted therapeutic strategies: translational readthrough-inducing drugs (TRIDs) and adenine base editors (ABEs). Gentamicin promoted translational readthrough at both mutant sites, whereas CC-90009 showed activity primarily at p.Q744X. Both agents partially restored full-length ankyrin-1 expression, accompanied by restored membrane stability. In parallel, ABE8e-mediated correction achieved efficient (>85%) and precise genomic repair in bulk-edited K562 populations, leading to near-complete recovery of ankyrin-1 expression and membrane-skeletal integrity with minimal off-target effects. Together, these findings provide exploratory proof-of-concept for targeted molecular intervention in ANK1 nonsense mutation-associated HS, highlighting TRIDs and ABEs as mechanistically distinct strategies with complementary strengths and limitations and suggesting their relative utility may depend on mutation-specific and clinical contexts.",
+    "authors": "Li S, Li J, Shi W, Nie Z, Zhang S, Ding X, Hu J, Li P, Xie X.",
+    "journal": "Molecular therapy. Nucleic acids",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42667096",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 3,
+    "reason": "Hereditary spherocytosis model, not sickle cell disease",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42600889",
+    "id": "42600889",
+    "source": "MED",
+    "pmid": "42600889",
+    "pmcid": null,
+    "doi": "10.1016/j.exphem.2026.105493",
+    "title": "Unlocking the curative potential of gene transfer and editing for hematopoietic disorders.",
+    "abstract": "Hematopoietic stem and progenitor cells (HSPCs) gene therapy may transform the therapeutic landscape for inherited hematological disorders and already offers potentially curative options for some diseases, including inborn errors of immunity and β-hemoglobinopathies. Its continued success relies on further refinement of gene transfer technologies, gene-editing tools such as clustered regularly interspaced short palindromic repeats (CRISPR) and associated systems (CRISPR-Cas), and optimized ex vivo HSPC manipulation protocols that ensure robust, long-term engraftment and clonal diversity with reduced-toxicity, nongenotoxic conditioning strategies. Here, we reviewed recent developments and refinements in gene transfer and editing technologies for HSPCs, while also discussing the critical limitations and hurdles to clinical translation, as recently presented at the New Investigator Committee Gene Therapy webinar. Future directions must prioritize integrating technological innovation with the development of equitable and simplified models to reduce costs and ensure that these life-saving cellular therapies reach patients worldwide.",
+    "authors": "Shiroshita K, Stolz A, Malouf C, Tran VL, Li J, Weiss MJ, Naldini L.",
+    "journal": "Experimental hematology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42600889",
+    "matched_queries": [
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 3,
+    "reason": "Review of gene transfer/editing technologies; no specific sickle cell disease base editing data.",
+    "study_type": "other"
+  },
+  {
+    "key": "pmid:41482541",
+    "id": "41482541",
+    "source": "MED",
+    "pmid": "41482541",
+    "pmcid": "PMC13479990",
+    "doi": "10.1038/s41587-025-02948-7",
+    "title": "Sensitive and unbiased genome-wide profiling of base-editor-induced off-target activity using CHANGE-seq-BE.",
+    "abstract": "Detection of the off-target effects of base editors is important for identifying their safety risks but current methods for understanding their global activities have limitations in terms of sensitivity or bias by computationally selecting a subset of sites for experimental analysis. We present CHANGE-seq-BE, a method to assess the guide RNA-dependent off-target profile of both adenine and cytosine base editors that is simultaneously sensitive and unbiased. CHANGE-seq-BE relies on selective sequencing of base-editor-modified genomic DNA in vitro and provides comprehensive identification of genome-wide off-target mutations. We found that 98.8% of validated off-target sites were unique to ABE8e adenine base editors compared to Cas9 nuclease, suggesting substantially higher off-target activity of the former. We further applied CHANGE-seq-BE to support genotoxicity studies in an emergency investigational new drug application for customized adenine base editor treatment for a person with CD40L-deficient X-linked hyper IgM syndrome. Our results emphasize the importance of using a base-editor-specific method for identifying off-target activity.",
+    "authors": "Lazzarotto CR, Katta V, Li Y, Manquen G, Wood RK, Chyr J, Urbina E, Matsubara A, Lee G, Wu X, De Ravin SS, Tsai SQ.",
+    "journal": "Nature biotechnology",
+    "year": 2026,
+    "cited_by": 13,
+    "open_access": false,
+    "pub_types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/41482541",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 2,
+    "reason": "Describes off-target profiling method, no sickle cell disease treatment data",
+    "study_type": "meta-analysis"
+  },
+  {
+    "key": "pmid:40704025",
+    "id": "40704025",
+    "source": "MED",
+    "pmid": "40704025",
+    "pmcid": "PMC12284509",
+    "doi": "10.1016/j.omtn.2025.102622",
+    "title": "In vivo precision base editing to rescue mouse models of disease.",
+    "abstract": "CRISPR base editing enables precise, irreversible base conversions without inducing double-stranded breaks (DSBs) and has gained significant attention in recent years. By converting cytosine to thymine (C→T) or adenine to guanine (A→G), base editors (BEs) efficiently correct pathogenic single-nucleotide variants (SNVs). This review examines in vivo mouse disease models-assessing editing efficiency, phenotypic rescue, and therapeutic potential across 66 studies. A key challenge in base editing is optimizing delivery. Most studies rely on split-intein dual adeno-associated virus (AAV) vectors due to BEs exceeding AAV packaging limits, though lipid nanoparticle (LNP) delivery is emerging. Editing efficiencies vary widely, influenced by enzyme design, delivery method, and sequence context. Many studies show significant functional gains, including extended survival in severe models such as FAH-deficient tyrosinemia type I and Hutchinson-Gilford progeria, restored dystrophin in Duchenne muscular dystrophy, and cognitive improvement in neurodegenerative models. Despite advantages such as reduced indels and increased precision, base editing is restricted to SNV correction and targets only a limited editing window relative to a protospacer adjacent motif (PAM) site. Advances in enzyme engineering, delivery strategies, and hybrid approaches incorporating prime editing could broaden its applications. As base editing evolves, its success in preclinical models positions it as a key player in next-generation gene therapies.",
+    "authors": "Schindeler A, Chu J, Au-Yeung C, Kao HY, Ginn SL, O'Donohue AK.",
+    "journal": "Molecular therapy. Nucleic acids",
+    "year": 2025,
+    "cited_by": 10,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/40704025",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 2,
+    "reason": "Review of mouse models, not specific to sickle cell disease treatment",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42448320",
+    "id": "42448320",
+    "source": "MED",
+    "pmid": "42448320",
+    "pmcid": "PMC13471105",
+    "doi": "10.1111/bjh.70675",
+    "title": "Red lines and green lights: Gene therapy for inherited erythroid disorders beyond the haemoglobinopathies.",
+    "abstract": "Gene therapy is revolutionizing treatment paradigms for inherited haematological and immunological conditions. Recent successes, including the United States Food and Drug Administration (FDA) approval of gene therapy products for sickle cell disease and beta-thalassaemia, highlight the translational path of gene therapies for erythroid-specific disorders. In contrast, gene therapy development for other inherited erythroid disorders remains largely preclinical. Here, we examine the emerging landscape of gene therapies for inherited non-haemoglobinopathy erythroid disorders, focusing on the status of gene therapies for Diamond-Blackfan anaemia (DBA), pyruvate kinase deficiency (PKD), X-linked sideroblastic anaemia (XLSA), congenital erythropoietic porphyria (CEP) and congenital dyserythropoietic anaemia (CDA). We discuss the latest cellular engineering approaches being applied to developing therapies for these erythroid disorders and evolving strategies for conditioning and engraftment of modified cells. Despite the rarity of these disorders individually, several convergent biological and translational themes have emerged. Leveraging shared insights across diseases may accelerate clinical translation and broaden the curative potential of gene therapy for inherited erythroid disorders beyond the haemoglobinopathies.",
+    "authors": "Joshi G, Natarajan N, Dickerson KE, Voit RA.",
+    "journal": "British journal of haematology",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "research-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42448320",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)",
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")",
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 2,
+    "reason": "Focuses on non-haemoglobinopathy erythroid disorders, not SCD base editing",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42444979",
+    "id": "42444979",
+    "source": "MED",
+    "pmid": "42444979",
+    "pmcid": "PMC13357706",
+    "doi": "10.1002/mco2.70791",
+    "title": "Delivery Systems for Therapeutic Genome Editing: Challenges, Innovations, and Future Perspectives.",
+    "abstract": "Therapeutic genome editing has advanced rapidly with the development of diverse programmable nucleases, from zinc-finger nucleases and transcription activator-like effector nucleases to clustered regularly interspaced short palindromic repeats (CRISPR)-based systems such as base and prime editors. Despite these breakthroughs, clinical translation remains constrained by the challenge of achieving safe, efficient, and tissue-specific delivery. Viral vectors, particularly adeno-associated viruses, have enabled durable editing in selected organs but are limited by their restricted cargo capacity, immunogenicity, and complex manufacturing. Nonviral platforms, most notably ionizable lipid nanoparticles, have demonstrated remarkable efficacy for hepatic targets, with clinical trials reporting up to 93% protein knockdown after a single dose. An expanding set of emerging modalities, including virus-mimicking nanosystems, cell-derived extracellular vesicles, cell-penetrating peptides, and intelligent-responsive multifunctional scaffolds, further enriches the delivery toolbox by supporting transient expression and programmable targeting across diverse editors and tissues. Parallel advances in high-throughput barcoded screening and machine learning are accelerating vector optimization, while rational chemical modification of payloads improves in vivo stability and specificity. This review provides a comprehensive overview of current and emerging delivery systems for genome editing, highlighting key innovations, unresolved challenges, and interdisciplinary strategies poised to unlock broader therapeutic potential.",
+    "authors": "Yang M, Song Y, Wang Z, Chao K, Li L, Zhang X, Duan X, Yu C, Xue R, Zhao J.",
+    "journal": "MedComm",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42444979",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")"
+    ],
+    "score": 2,
+    "reason": "Focuses on delivery systems broadly, no SCD base editing outcome data",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "pmid:41741059",
+    "id": "41741059",
+    "source": "MED",
+    "pmid": "41741059",
+    "pmcid": "PMC13454772",
+    "doi": "10.1016/j.cll.2025.10.006",
+    "title": "Emerging Considerations in Transfusion Medicine: Hematopoietic Stem and Progenitor Cell Collection for Gene Therapy for Sickle Cell Disease and Transfusion-Dependent Thalassemia.",
+    "abstract": "Gene-modified hematopoietic stem cell transplant (GM-HSCT) is an innovative curative therapy for transfusion-dependent β-thalassemia (TDT) and sickle cell disease (SCD), which has demonstrated excellent efficacy in clinical trials. Two commercial products are currently available, with several additional products in clinical trials. GM-HSCT requires the mobilization and subsequent collection of hematopoietic stem and progenitor cells (HSPCs) by apheresis. Current protocols consistently demonstrate effectiveness in collecting HSPCs in patients with TDT. However, disease-specific characteristics of SCD create challenges in collecting HSPCs. Further research remains in optimizing collection procedures in this population.",
+    "authors": "Gibson NM, Kwiatkowski JL, Chou ST.",
+    "journal": "Clinics in laboratory medicine",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "research-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/41741059",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")"
+    ],
+    "score": 2,
+    "reason": "Focuses on HSPC collection challenges for GM-HSCT, not base editing treatment effectiveness",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "pmid:42678547",
+    "id": "42678547",
+    "source": "MED",
+    "pmid": "42678547",
+    "pmcid": null,
+    "doi": "10.1007/s10142-026-02026-4",
+    "title": "CRISPR-cas systems in pharmacology: functional pharmacogenomics, drug screening, resistance, and therapeutic translation.",
+    "abstract": "CRISPR-Cas9 gene-editing technology has advanced pharmacological research by enabling targeted genetic modification for disease modeling, therapeutic development, and precision medicine. This review discusses the applications of CRISPR-Cas9 in drug discovery, personalized therapy, cancer drug resistance research, genetic disorders, and antimicrobial resistance. By editing disease-associated genes, CRISPR-Cas9 supports the development of patient-specific therapeutic strategies and more accurate preclinical models. In cancer, CRISPR-Cas9 is used to investigate the target genes involved in treatment resistance, while in genetic disorders, it offers potential mutation-correcting approaches, with the most robust clinical evidence currently seen in selected hemoglobinopathies. CRISPR-based strategies also hold promise for restoring antibiotic susceptibility by targeting genes that confer antibiotic resistance. Despite these advances, clinical translation remains limited by off-target effects, delivery challenges, immune responses, long-term safety concerns, and ethical and regulatory issues. Continued improvements in editing precision, delivery systems, and governance frameworks are essential for responsible clinical integration. Overall, CRISPR-Cas9 represents a vital platform for future pharmacological innovation, but its broad clinical use may require further validation of safety, efficacy, durability, and accessibility.",
+    "authors": "Akhtar MS, Amin A.",
+    "journal": "Functional & integrative genomics",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42678547",
+    "matched_queries": [
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 2,
+    "reason": "Reviews CRISPR-Cas9 in pharmacology; no SCD base editing efficacy data",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "pmid:40480225",
+    "id": "40480225",
+    "source": "MED",
+    "pmid": "40480225",
+    "pmcid": "PMC12239427",
+    "doi": "10.1016/j.chembiol.2025.05.003",
+    "title": "Charting the development and engineering of CRISPR base editors: lessons and inspirations.",
+    "abstract": "CRISPR base editors (BEs) have introduced a new chapter in precise genome editing. The brief but fruitful history of BE development documents many case studies that not only lay the foundation of base-editing technology but are also instrumental to future protein engineering efforts. In this review, we summarize the development and engineering of various BEs with a focus on recent progress. These include traditional cytosine and adenine base editors (CBEs and ABEs), novel TadA-derived CBEs, transversion BEs, dual BEs, and CRISPR-free BEs. We discuss each aspect of the workflow and highlight the successes and challenges encountered in the engineering process.",
+    "authors": "Zou S, Sun Y, Tang W.",
+    "journal": "Cell chemical biology",
+    "year": 2025,
+    "cited_by": 7,
+    "open_access": false,
+    "pub_types": [
+      "Research Support, Non-U.S. Gov't",
+      "research-article",
+      "Review",
+      "Journal Article",
+      "Research Support, N.I.H., Extramural"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/40480225",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 1,
+    "reason": "General base editor engineering review, no SCD application",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42706916",
+    "id": "42706916",
+    "source": "MED",
+    "pmid": "42706916",
+    "pmcid": "PMC13551056",
+    "doi": "10.1002/jimd.70249",
+    "title": "Genome Editing for Glycogen Storage Diseases.",
+    "abstract": "Gene therapy has been developed for several glycogen storage diseases and has advanced into clinical trials. However, the limitations of these gene therapies with regard to stability following treatment early in life have led to the development of genome editing. Early results for genome editing in both glycogen storage disease type Ia and Pompe disease have demonstrated promising efficacy, and proof-of-concept studies as well as a clinical trial are underway. These studies will determine whether genome editing fulfills its promise with regard to stably treating glycogen storage diseases early in life.",
+    "authors": "von Beck T, Wang R, Koeberl D.",
+    "journal": "Journal of inherited metabolic disease",
+    "year": 2026,
+    "cited_by": 1,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42706916",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)",
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")"
+    ],
+    "score": 1,
+    "reason": "Focuses on glycogen storage diseases, not SCD",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42198846",
+    "id": "42198846",
+    "source": "MED",
+    "pmid": "42198846",
+    "pmcid": "PMC13284844",
+    "doi": "10.1016/j.ymthe.2026.05.020",
+    "title": "In vivo base editing of Asgr1 reduces blood lipids in mice.",
+    "abstract": "Base editing enables the precise, permanent modulation of gene expression, offering a promising therapeutic avenue for targeting lipid-regulating genes. Recently, asialoglycoprotein receptor 1 (ASGR1), a liver-specific receptor, has emerged as a potential therapeutic target for controlling circulating lipid levels. Here we employed adeno-associated virus serotype 8 (AAV8) to deliver an all-in-one adenine base editor (ABE) to target Asgr1 in mice. Systemic administration of an Asgr1-targeting ABE achieved 54.7% ± 2.2% editing efficiency, leading to a marked depletion of hepatic ASGR1 and significant reductions in serum and hepatic total cholesterol (TC) and triglyceride (TG). These effects were mediated, in part, by the modulation of biliary cholesterol excretion pathways. No overt liver injury was observed following in vivo base editing of Asgr1. Moreover, combined treatment with Asgr1 base editing and the lipid-lowering drug ezetimibe produced an additive reduction in TC levels. Finally, lipid nanoparticle (LNP)-delivered base editing of ASGR1 in human HepG2 cells achieved >91% editing and near-complete protein knockout, which significantly lowered cellular cholesterol. Collectively, our results demonstrate that ASGR1 base editing represents a promising strategy for blood lipid control.",
+    "authors": "Agrahari G, Nguyen NTK, Li M, Zhang C, Xu J, Zhang J, Chen YE, Han R.",
+    "journal": "Molecular therapy : the journal of the American Society of Gene Therapy",
+    "year": 2026,
+    "cited_by": 1,
+    "open_access": false,
+    "pub_types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42198846",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 1,
+    "reason": "Lipid metabolism in mice, unrelated to sickle cell disease",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42108472",
+    "id": "42108472",
+    "source": "MED",
+    "pmid": "42108472",
+    "pmcid": "PMC13330345",
+    "doi": "10.1186/s13059-026-04095-x",
+    "title": "Designing genome editing experiments with EditABLE.",
+    "abstract": "While many computational tools exist for designing CRISPR-Cas experiments, there is a need for a centralized resource that combines individual tools to predict the most efficient genome editing strategy for a given application. To fill this gap, we develop EditABLE (EditABLE-app.stanford.edu), an online resource that provides optimal CRISPR editors and guide RNAs based on user provided sequence data with functionalities for base editing, prime editing, and integrase-mediated editing. We demonstrate the utility of EditABLE by applying it to one of the most common monogenic disorders, autosomal dominant polycystic kidney disease (ADPKD), identifying specific editing tools across the ADPKD mutation landscape.",
+    "authors": "Maxim DS, Sostena J, Johnson NS, Wu DW, Charu V, Carter JN, Anand S, Church GM, Bhalla V.",
+    "journal": "Genome biology",
+    "year": 2026,
+    "cited_by": 1,
+    "open_access": true,
+    "pub_types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42108472",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 1,
+    "reason": "Genome editing design tool, no SCD treatment data",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42793718",
+    "id": "42793718",
+    "source": "MED",
+    "pmid": "42793718",
+    "pmcid": "PMC13605214",
+    "doi": "10.3390/diagnostics16182933",
+    "title": "Clinical Implications of Sickle Cell Thalassemia on Pregnancy Outcomes: A Systematic Review.",
+    "abstract": "Background/Objectives: Sickle cell thalassemia (HbSβ-thal) and related sickle cell disease (SCD) genotypes are associated with substantial maternal, fetal, and neonatal morbidity during pregnancy. This systematic review aimed to summarize pregnancy outcomes and clinical management strategies in women with HbSβ-thal and related hemoglobinopathies, with an additional narrative comparison to sickle cell trait (SCT)-a distinct, heterozygous, and generally benign carrier state that is not a form of SCD. Methods: A systematic literature search was conducted in PubMed, MEDLINE, Web of Science, EMBASE, and Scopus for studies published between 2016 and 2026 using terms related to sickle cell anemia, sickle cell disease, sickle cell thalassemia, HbS/beta-thalassemia, sickle cell trait, pregnancy outcomes, maternal complications, neonatal outcomes, fetal outcomes, and clinical/obstetric management. Studies reporting maternal, fetal, or neonatal outcomes were included, while letters, commentaries, conference abstracts, and presentations were excluded. Study selection followed PRISMA principles. Risk of bias was assessed using appropriate tools according to study design, including the Newcastle-Ottawa Scale (NOS), AMSTAR 2 (A MeaSurement Tool to Assess systematic Reviews), SANRA (Scale for the Assessment of Narrative Review Articles), and CARE (CAse REport) guidelines. SCT terms were included in the same search strategy, so that SCT studies were retrieved and screened through the same PRISMA process and are reported as a prespecified comparator subgroup. Results: Fourteen studies met the inclusion criteria: ten reporting outcomes in HbSβ-thal and related SCD genotypes and four reporting outcomes in SCT. The most frequently reported maternal complications were severe anemia, vaso-occlusive crises (VOCs), preeclampsia, thromboembolic events, infections, acute chest syndrome, cesarean delivery, and postpartum complications, which led to a significant increase in hospitalization rates. Fetal and neonatal outcomes were also unfavorable, with increased rates of preterm birth, low birth weight, intrauterine growth restriction, placental insufficiency, and neonatal intensive care admission. Placental vascular malperfusion and low maternal hemoglobin were important mechanisms underlying fetal growth restriction. By contrast, the included SCT literature suggested outcomes generally closer to the general obstetric population, with a smaller number of specific associations (e.g., preeclampsia, intrauterine fetal death) reported inconsistently across studies. Conclusions: Pregnancies complicated by HbSβ-thal and related hemoglobinopathies remain high-risk and require early identification, preconception counseling, multidisciplinary care, close antenatal surveillance, individualized transfusion strategies, and postpartum thromboprophylaxis when indicated. Prospective genotype-specific studies, particularly isolating HbSβ-thal from broader SCD cohorts, are needed to optimize evidence-based management.",
+    "authors": "Gerede A, Stavros S, Potiris A, Oikonomou E, Christodoulaki C, Vogiatzoglou AL, Chatzakis C, Domali E, Koutlaki N, et al.",
+    "journal": "Diagnostics (Basel, Switzerland)",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42793718",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 1,
+    "reason": "Pregnancy outcomes in sickle cell thalassemia, not treatment effectiveness",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42512696",
+    "id": "42512696",
+    "source": "MED",
+    "pmid": "42512696",
+    "pmcid": "PMC13409839",
+    "doi": "10.3390/healthcare14142180",
+    "title": "Cardiac Remodeling Patterns in Pediatric and Adolescent Patients with Sickle Cell Disease and Their Association with the Genotype and Clinical Severity of the Disease: A Systematic Review.",
+    "abstract": "Background: Sickle cell disease (SCD) is the most common inherited blood disorder globally, affecting approximately 300,000 newborns annually. Cardiac remodeling, resulting from chronic anemia, vascular obstruction, and endothelial dysfunction, substantially contributes to morbidity and mortality in patients with SCD. Therefore, characterizing these patterns is essential to clinical management and outcome improvement in pediatric patients. However, a comprehensive synthesis of cardiac remodeling patterns in pediatric and adolescent patients with SCD and their associations with genotype and clinical severity is lacking. Methods: We conducted a systematic review in accordance with the PRISMA 2020 guidelines and searched five databases for studies published from January 1978 to December 2024. Of 1131 retrieved studies, 37 met the inclusion criteria; of these, 31 focused exclusively on children (Group A), while six included both children and adults (Group B). We analyzed cardiac remodeling patterns, genotype-specific findings, associations with disease severity, and imaging modalities. The 37 studies included approximately 4253 patients from 12 countries, representing diverse populations and imaging techniques. Results: Left ventricular (LV) dilation was the most frequently reported finding, noted in 33 of 37 studies (89.2%; representing study-level reporting frequency, not patient-level prevalence), followed by diastolic dysfunction (reported in 18 of 37 studies; 48.6%); elevated TRV (≥2.5 m/s) as an echocardiographic screening marker for pulmonary hypertension (PH) risk was found in 14 of 37 studies (37.8%; TRV ≥ 2.5 m/s is a screening criterion, not confirmed hemodynamic PH); myocardial fibrosis was found in three studies (8.1%, exclusively from mixed-age cohorts); and QTc prolongation/arrhythmia was found in one study (2.7%). The HbSS genotype was associated with the most severe cardiac changes. Studies that did not stratify by genotype subtype (HbS/β0 vs. HbS/β+) may underestimate cardiac severity in mixed-genotype cohorts. Markers of disease severity, such as elevated lactate dehydrogenase (LDH) expression, frequent acute chest syndrome (ACS), and increased hospitalizations, were associated with more pronounced cardiac remodeling in individual studies, but the cross-study consistency of this association varied. Study designs and imaging modalities also varied, underscoring the need for standardized assessment protocols to enhance comparability and clinical translation. This review presents a narrative synthesis; individual study statistics are reported as originally published, without formal pooled estimates. Conclusions: Cardiac abnormalities in SCD were reported from early childhood, with more advanced phenotypes being more frequently described in older adolescents and mixed-age cohorts, suggesting possible age-related progression requiring prospective confirmation. Principal limitations include retrospective PROSPERO registration (CRD420261435382), the predominance of cross-sectional study designs, the inconsistent z-score normalization of cardiac dimensions, the incomplete reporting of treatment exposure, the disproportionate contribution of mixed-age cohorts to advanced imaging findings, and inter-study heterogeneity in echocardiographic protocols.",
+    "authors": "Mustafa AEM, Ali NMT.",
+    "journal": "Healthcare (Basel, Switzerland)",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42512696",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 1,
+    "reason": "Cardiac remodeling in SCD patients, not treatment effectiveness",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:41940158",
+    "id": "41940158",
+    "source": "MED",
+    "pmid": "41940158",
+    "pmcid": "PMC12973408",
+    "doi": "10.1016/j.abiote.2025.100003",
+    "title": "Plant base editing: a decade of progress and future applications.",
+    "abstract": "Base editors derived from clustered regularly interspaced short palindromic repeats (CRISPR)/CRISPR-associated protein 9 (Cas9) systems are widely used for genomic studies in both plants and animals. The broad applicability and safety of base-editing approaches have garnered considerable attention from the research community, and there could be ways to further enhance targeting efficiency and target window range. However, the complex classification and diverse functionalities of base editors pose challenges to their effective utilization and improvement. In this review, we discuss technical principles characterizing various types of base editors, including cytosine base editors (CBEs), adenine base editors (ABEs), dual base editors (DBEs), thymine base editors (TBEs), and guanine base editors (GBEs), among others, which employ distinct mechanisms and DNA repair pathways. We also describe current optimization strategies to assist researchers in improving the deployment of these tools under specific conditions. Finally, we comprehensively analyze the practical applications and advantages of base editors, offering a clear view of their development, their previous and potential applications, and how to select the appropriate tools for specific purposes.",
+    "authors": "Zhang R, Zheng Z, Li G, Zheng X, Su L, Yuan X, Li T, Tan J, Zeng D, Zhang S, Liu J, Shen H, Chai N, Liu YG, Zhu Q.",
+    "journal": "aBIOTECH",
+    "year": 2026,
+    "cited_by": 5,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/41940158",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 0,
+    "reason": "Plant base editing, completely off-topic",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "pmid:42587684",
+    "id": "42587684",
+    "source": "MED",
+    "pmid": "42587684",
+    "pmcid": "PMC13465219",
+    "doi": "10.3390/diagnostics16152448",
+    "title": "Engineering the Universal Donor: CRISPR-Mediated Blood Group Antigen Deletion and the Path Toward Truly Universal Red Blood Cells-A Narrative Review.",
+    "abstract": "The designation of O RhD-negative blood as a \"universal donor\" misrepresents the complexity of red blood cell (RBC) compatibility. With 47 recognized blood group systems encompassing 366 antigens, non-ABO antigen exposure drives alloimmunization in 20-50% of chronically transfused patients. A narrative review of PubMed, Scopus, and EMBASE was conducted for studies published between 2016 and 2025, with selective inclusion of foundational pre-2016 works. Enzymatic approaches using Flavonifractor plautii CAZymes and Akkermansia muciniphila exoglycosidase cocktails enable near-complete ABO antigen removal, though group A conversion remains incomplete. CRISPR-Cas9 multiplex editing of immortalized erythroblasts has achieved simultaneous deletion of ABO, Rh, Kell, Duffy, and MNS antigens. Induced pluripotent stem cell platforms enable scalable manufacture; however, enucleation efficiency (40-70%), yield (4.6 × 103 RBCs/iPSC), and fetal hemoglobin prevalence remain translational barriers. Convergence of enzymatic and gene-editing technologies on GMP-compatible iPSC platforms represents the most credible pathway to truly universal RBCs, although current evidence remains largely confined to immortalized cell lines and early-stage iPSC proof-of-concept studies rather than clinically validated products. Regulatory frameworks, scalability, and rigorous off-target profiling define the key challenges ahead.",
+    "authors": "Altayar MA.",
+    "journal": "Diagnostics (Basel, Switzerland)",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42587684",
+    "matched_queries": [
+      "(sickle cell disease) AND (CRISPR base editing)",
+      "(sickle cell disease) AND (CRISPR base editing) AND (randomized OR \"clinical trial\" OR \"phase 1\" OR \"phase 2\")"
+    ],
+    "score": 0,
+    "reason": "Reviews RBC universal donor concept, not sickle cell disease treatment",
+    "study_type": "narrative review"
+  },
+  {
+    "key": "pmid:42582747",
+    "id": "42582747",
+    "source": "MED",
+    "pmid": "42582747",
+    "pmcid": "PMC13458021",
+    "doi": "10.1155/anem/9936958",
+    "title": "Systematic Review on Plant-Based Therapies for the Management of Sickle Cell Anaemia.",
+    "abstract": "Background Sickle cell anaemia (SCA) is a hereditary haemoglobin disorder that continues to pose a significant public health burden worldwide. This systematic review aimed to synthesise evidence on plant-derived therapies investigated for their antisickling, antioxidant and membrane-stabilising effects in the management of SCA. Methods A systematic search of PubMed, Scopus and Web of Science was performed according to PRISMA 2020 guidelines to identify studies (2010-2025) evaluating plant-based interventions for SCA. Results Thirty-four studies published between 2010 and 2025 were included, with the majority (58.8%) published between 2018 and 2025, while 20.6% were published between 2010 and 2012. Most studies originated from Africa (58.8%), particularly Nigeria and the Democratic Republic of the Congo, followed by Asia (26.5%). Carica papaya was the most frequently investigated medicinal plant (21.2%), and leaves were the most commonly used plant part (39%). Strong antisickling activity was reported in 41.2% of studies, while 26.5% demonstrated inhibition of haemoglobin S (HbS) polymerisation and 17.6% reported membrane-stabilising or antihaemolytic effects. Antioxidant activity accounted for 45.5% of all oxidative assessments. Overall, inhibition of HbS polymerisation was the most frequently reported mechanism of action, identified in 60.6% of the included studies. Conclusion The evidence demonstrates that plant-derived extracts and phytochemicals possess significant antisickling, antioxidant and membrane-protective activity, supporting their potential as adjunct therapies for SCA. Nonetheless, standardisation of experimental protocols, toxicological evaluation and clinical trials are essential to advance towards clinical application.",
+    "authors": "Sunday BY, Terkimbi SD, Ben OM, Bukke SPN, Charles II, Ninsiima HI, Afodun AM, Kibirige J, Latif SIA, Eze ED.",
+    "journal": "Anemia",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42582747",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 0,
+    "reason": "Focuses on plant-based therapies, not CRISPR base editing for SCD treatment",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "doi:10.20944/preprints202609.1215.v1",
+    "id": "PPR1320201",
+    "source": "PPR",
+    "pmid": null,
+    "pmcid": null,
+    "doi": "10.20944/preprints202609.1215.v1",
+    "title": "Review of Pain Management in Sickle Cell Disease",
+    "abstract": "Sickle cell disease (encompassing genotypes of HbSS, HbSC, and HbSβ-thalassemia) is a debilitating hematologic disease affecting nearly 7.7 million people worldwide. Most commonly caused by a single base pair mutation in the hemoglobin beta globin (HBB) gene, red blood cells (RBCs) are distorted into a sickle shape during physiologic stress, causing microscopic vascular occlusions in every organ in the body. The hallmark of this disease is the “pain crisis” caused by these occlusions and resulting tissue infarction. For the patient, frequent pain leads to reduced functional capacity, depression/anxiety, and difficulty maintaining employment, pursuing education, or stable relationships. This negatively affects healthcare systems as well through provider burnout, negative perceptions of the patients, and increased utilization of healthcare resources. Repeated bouts of acute pain can lead to the development of chronic pain over time. The pain associated with sickle cell disease is the most common reason for hospitalization. It presents a formidable challenge to healthcare providers due to its complexity. It is multi-faceted, mediated by physical, emotional, and sociologic factors. The aim of this review is to help the clinician gain a better understanding and appreciation for the pain experienced by these patients and manage it effectively.",
+    "authors": "Sedhom WG, Stein BL.",
+    "journal": "Preprint",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": false,
+    "pub_types": [
+      "Preprint"
+    ],
+    "preprint": true,
+    "url": "https://europepmc.org/article/PPR/PPR1320201",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 0,
+    "reason": "Pain management review, no gene editing or treatment effectiveness data",
+    "study_type": "preclinical"
+  },
+  {
+    "key": "pmid:42649757",
+    "id": "42649757",
+    "source": "MED",
+    "pmid": "42649757",
+    "pmcid": "PMC13509248",
+    "doi": "10.3390/bioengineering13080867",
+    "title": "Retinal Challenges in Sickle Cell Patients-Present and Future: A Systematic Review.",
+    "abstract": "Importance: Sickle cell retinopathy and maculopathy are frequent but underdiagnosed complications of sickle cell disease that can lead to vision loss. Unfortunately, there is currently no ophthalmological follow-up protocol to best diagnose and treat these complications. Objective: To identify the most important risk factors associated with the progression of sickle cell retinopathy and maculopathy, review the current screening techniques and effective treatments and propose a follow-up protocol tailored to the patient's risk profile. Evidence Review: Relevant studies were selected using the PICO framework and a structured search strategy across multiple databases including PubMed, Scopus, Cochrane Library, Cible+, ScienceDirect and the American Academy of Ophthalmology network. The search spanned from 1980 to 2025. Original research articles addressing risk factors, screening, and treatment methods for sickle cell retinopathy and maculopathy were included. In total, 48 studies met the inclusion criteria. Data extraction and quality assessment were applied uniformly. Findings: The systematic review included 48 articles (10,543 participants), representing a mix of study types: randomized clinical trials, prospective and retrospective cohort studies, and cross-sectional studies. Major findings included: Risk Factors: Commonly identified risk factors for sickle cell retinopathy and maculopathy include genotype SS, increased age, male sex, and low fetal hemoglobin levels. Screening and Diagnosis: Wide-field fluorescein angiography and optical coherence tomography angiography were the most effective tools for early detection of peripheral ischemia and macular thinning, respectively. Treatment and Management: Laser photocoagulation remains the standard intervention for proliferative sickle cell retinopathy. Preventive strategies and regular ophthalmologic monitoring are emphasized across high-quality studies. Conclusions and Relevance: Risk stratification based on genotype, hemoglobin F levels, and imaging findings allows for tailored ophthalmologic management of patients with sickle cell disease. A structured follow-up protocol is proposed, aiming to improve early detection, prevent complications, and optimize resource allocation.",
+    "authors": "Motulsky E, El Bachti A.",
+    "journal": "Bioengineering (Basel, Switzerland)",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42649757",
+    "matched_queries": [
+      "(sickle cell anemia OR HbSS) AND (base editor OR BE3 OR ABE8e OR CBE)"
+    ],
+    "score": 0,
+    "reason": "Focuses on ocular complications of sickle cell disease, not CRISPR treatment effectiveness",
+    "study_type": "systematic review"
+  },
+  {
+    "key": "pmid:42698910",
+    "id": "42698910",
+    "source": "MED",
+    "pmid": "42698910",
+    "pmcid": "PMC13543164",
+    "doi": "10.1002/hsr2.73178",
+    "title": "Contemporary Management of Thalassemia: A Perspective on Current Standards and the Emergence of FDA-Approved Oral Therapy.",
+    "abstract": "Background and aims Thalassemia is an inherited hemoglobin disorder characterized by ineffective erythropoiesis, chronic anemia, and progressive multisystem complications that require lifelong management. Current treatment relies on regular red blood cell transfusions, iron chelation therapy, and supportive multidisciplinary care, while hematopoietic stem cell transplantation offers a curative option for selected patients. Although gene-based therapies and novel pharmacological agents have expanded therapeutic options, their widespread implementation is limited by cost, accessibility, and long-term safety considerations. This article summarizes contemporary management strategies for α and β thalassemia, with particular emphasis on the recent emergence of the FDA-approved oral pyruvate kinase activator, mitapivat. Methods A structured literature review was conducted using PubMed and PubMed Central. Searches included the terms \"thalassemia,\" \"mitapivat,\" \"pyruvate kinase activator,\" \"gene therapy,\" \"hydroxyurea,\" and \"luspatercept.\" Priority was given to recent systematic reviews, clinical practice guidelines, pivotal phase II and III clinical trials, regulatory publications, and peer-reviewed studies relevant to current therapeutic practice. Results Conventional therapies remain essential but are associated with significant limitations, including transfusion dependence, iron overload, and treatment-related complications. Curative strategies such as hematopoietic stem cell transplantation and gene therapy are effective in selected patients but remain constrained by donor availability, toxicity, cost, and limited accessibility. Emerging pharmacological therapies target ineffective erythropoiesis and iron dysregulation. Phase III ENERGIZE and ENERGIZE-T trials demonstrated that mitapivat significantly improved hemoglobin response in non-transfusion-dependent disease and reduced transfusion burden in transfusion-dependent disease, with an acceptable safety profile, leading to FDA approval as the first oral therapy for adults with α or β thalassemia. Conclusion Mitapivat represents a significant advance in thalassemia management by targeting erythrocyte metabolism and providing the first FDA-approved oral treatment for anemia in adults with α or β thalassemia. Multi-year follow-up and real-world studies are needed to further define its durability, safety, and role within evolving treatment strategies.",
+    "authors": "Zainab F, Hasan AH, Abid MH, Abid MA.",
+    "journal": "Health science reports",
+    "year": 2026,
+    "cited_by": 0,
+    "open_access": true,
+    "pub_types": [
+      "article-commentary",
+      "Journal Article"
+    ],
+    "preprint": false,
+    "url": "https://europepmc.org/article/MED/42698910",
+    "matched_queries": [
+      "(hemoglobinopathies) AND (gene editing OR CRISPR) AND (therapy OR treatment)"
+    ],
+    "score": 0,
+    "reason": "Discusses thalassemia management, not sickle cell disease or CRISPR base editing.",
+    "study_type": "narrative review"
+  }
+]

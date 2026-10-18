@@ -1,0 +1,15 @@
+{
+  "summary": "Multiplex base editing of BCL11A regulatory elements (+58-kb and +55-kb enhancers) effectively reactivates fetal hemoglobin (HbF) in hematopoietic stem/progenitor cells (HSPCs) to levels exceeding those achieved with CRISPR-Cas9-induced double-strand breaks, demonstrating robust HbF reactivation in vivo and long-term repopulation capacity, indicating a safe and durable strategy for sickle cell disease treatment [1]. Additionally, base editing of β-globin gene mutations (e.g., CD39 and IVS2-1) using highly processive adenine base editors (ABE) achieves >90% editing efficiency in HSPCs, leading to improved β-globin expression and phenotypic correction of sickle cell-β-thalassemia, with confirmed safety profiles in vitro and in vivo [2]. These preclinical findings support the effectiveness of CRISPR base editing for treating sickle cell disease through either HbF reactivation or direct mutation correction.",
+  "evidence_gaps": "The provided papers lack direct clinical trial data in humans with sickle cell disease using base editing, focusing instead on preclinical models; thus, real-world efficacy, long-term safety, and scalability in patients remain unverified.",
+  "confidence": "moderate",
+  "cited_keys": [
+    "pmid:41015034",
+    "pmid:41296828",
+    "pmid:42755327",
+    "doi:10.64898/2026.09.15.751289",
+    "pmid:40659814",
+    "pmid:42400217",
+    "pmid:42074029",
+    "pmid:42263664"
+  ]
+}

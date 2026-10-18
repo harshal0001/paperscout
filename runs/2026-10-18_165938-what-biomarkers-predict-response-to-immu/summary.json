@@ -1,0 +1,15 @@
+{
+  "summary": "Biomarkers predicting response to immune checkpoint inhibitors in NSCLC include high CTLA-4/CD80 interaction states (measured by FRET efficiency ≥6.41%), which correlate with improved overall and progression-free survival when co-occurring with high PD-1/PD-L1 interaction [1]; APOBEC mutational signatures, which predict improved overall survival in TMB-low metastatic NSCLC independent of PD-L1 status [2]; tumor cell-expressed OX40L, associated with prolonged PFS and OS under pembrolizumab in PD-L1-high NSCLC [4]; and CD47 expression, which, when combined with PD-L1 status, serves as an independent prognostic factor for immunotherapy efficacy [7]. Circulating cytokines such as declines in IL-6, IL-8, IL-10, and IL-17A, alongside transient increases in IFN-γ and TNF-α, may indicate favorable immune reinvigoration during PD-1 blockade, though findings remain inconsistent [3]. Additionally, chemokine signatures and multi-omic biomarkers (genomic, transcriptomic, proteomic, metabolomic) show promise when integrated into predictive models [8]. Tumor immune microenvironment heterogeneity, assessed via single-cell and spatial multi-omics, influences response by defining immune niches that affect T-cell infiltration and function [5].",
+  "evidence_gaps": "These studies do not establish standardized thresholds or clinical validation for most biomarkers beyond exploratory or retrospective analyses, nor do they prospectively validate combinatorial biomarker algorithms in diverse, real-world populations to guide routine clinical decision-making.",
+  "confidence": "moderate",
+  "cited_keys": [
+    "pmid:42535087",
+    "pmid:42378718",
+    "pmid:42769976",
+    "pmid:42731877",
+    "pmid:42594562",
+    "pmid:42779146",
+    "pmid:42813858",
+    "pmid:42465572"
+  ]
+}

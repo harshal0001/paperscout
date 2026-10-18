@@ -26,6 +26,7 @@ Optional env overrides: `PLANNER_MODEL`, `RANKER_MODEL`, `WRITER_MODEL`, `NEBIUS
 
 ```bash
 .venv/bin/python -m pytest -q   # offline: mock LLM + recorded Europe PMC response
+.venv/bin/python scripts/smoke_examples.py   # live: sends every home-page example question to a running server (real tokens, <$0.05)
 ```
 
 ## Cost

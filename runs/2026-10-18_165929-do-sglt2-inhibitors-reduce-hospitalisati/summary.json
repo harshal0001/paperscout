@@ -1,0 +1,15 @@
+{
+  "summary": "Multiple meta-analyses and cohort studies indicate that SGLT2 inhibitors significantly reduce heart failure hospitalization in patients with heart failure with preserved ejection fraction (HFpEF). A 2026 systematic review and meta-analysis of seven RCTs found a statistically significant reduction in HF hospitalization risk (OR=0.74, p<0.00001) regardless of diabetes status [1]. Another meta-analysis of fifteen RCTs specific to HFpEF reported reduced hospitalisation for heart failure (HHF) with SGLT2 inhibitor treatment [5]. A nationwide cohort study of veterans with type 2 diabetes and HFpEF showed SGLT2 inhibitors were associated with lower risk of heart failure hospital admission [4]. Pooled analyses of the DELIVER and EMPEROR-preserved trials demonstrated reduced risk of cardiovascular death or HF hospitalization in patients recently hospitalized for HFpEF, with hazard ratios of 0.78 (strict group) and 0.73 (broad group) [6]. A meta-analysis of six RCTs confirmed significant reduction in HF-related hospital admissions with SGLT2 inhibitor use [7]. These findings consistently support a benefit of SGLT2 inhibitors in reducing HF hospitalization in HFpEF.",
+  "evidence_gaps": "The evidence primarily focuses on HFpEF with LVEF >40%; less is known about effects in borderline or improved EF subgroups. Long-term data beyond 1-2 years and real-world effectiveness in diverse, non-veteran populations remain underrepresented.",
+  "confidence": "high",
+  "cited_keys": [
+    "pmid:42117353",
+    "pmid:42211456",
+    "pmid:42759294",
+    "pmid:42644019",
+    "pmid:42488770",
+    "pmid:42205792",
+    "pmid:42007145",
+    "pmid:42487144"
+  ]
+}

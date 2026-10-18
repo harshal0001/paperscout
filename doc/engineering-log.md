@@ -48,6 +48,12 @@ cannot). Planner and writer got schemas too, since the same failure class applie
 Measured after the fixes (2 questions): 64–71 papers, 0 unscored, 0 warnings, 9–11 s, about 26k input + 3.5k output
 tokens per question (almost all on Lightning), which is under $0.01.
 
+**Live smoke test (`scripts/smoke_examples.py`, 16:59, final code):** all 4 home-page example questions (read from
+`index.html` by the script, so the list cannot drift) passed: 61–94 papers, 0 unscored, 0 warnings, 2–7 citations,
+both exports OK, 9–14 s each. The checker was proven by its failure path: against a server with no API key it
+reported FAIL for every question and exited 1. The browser UI itself was not exercised (the user chose a
+terminal-only check); the JavaScript rendering is unverified, see backlog.
+
 **Tests:** 26 offline tests (mock LLM + a recorded Europe PMC response) covering the happy path and every failure
 path: planner failure or garbage output → fallback query plus a warning; one query failing → warning, run continues;
 all failing → error event and a persisted `run.json` with status `failed`; ranker batch failure or partial reply →

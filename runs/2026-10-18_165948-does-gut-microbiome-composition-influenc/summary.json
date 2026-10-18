@@ -1,0 +1,15 @@
+{
+  "summary": "Multiple lines of evidence indicate that gut microbiome composition influences Parkinson's disease progression. Studies show PD-specific microbial alterations, including enrichment of Paraprevotella, Akkermansia, and Campylobacter, along with metabolic deficits in tyrosine and glutathione pathways, independent of constipation [1]. Meta-analyses link proinflammatory bacteria like Klebsiella variicola and GABA-consuming species such as Evtepia gabavorous to α-synuclein accumulation and neuronal excitability, suggesting a role in disease progression [2]. Preclinical work demonstrates that microbiome-derived vitamin B6 regulates dopaminergic homeostasis and α-synuclein aggregation, with pdxJ-deficient bacteria worsening motor behavior and neurodegeneration [3]. Furthermore, microbiota-regulated TCDCA correlates with PD severity, promotes blood-brain barrier dysfunction via VSMC TGR5 signaling, and exacerbates dopaminergic neurodegeneration in mice [4]. These findings collectively support a mechanistic role for gut microbiota in modulating PD progression through metabolic, inflammatory, and neurovascular pathways.",
+  "evidence_gaps": "While the papers establish associations and mechanistic links in preclinical models, they lack longitudinal human data tracking microbiome changes over time in relation to clinical progression rates, and few directly test whether modifying the microbiome alters long-term disease trajectories in PD patients.",
+  "confidence": "moderate",
+  "cited_keys": [
+    "pmid:42291308",
+    "pmid:40461531",
+    "pmid:42400260",
+    "pmid:42854697",
+    "pmid:42845985",
+    "pmid:42719630",
+    "pmid:41944109",
+    "pmid:42592705"
+  ]
+}

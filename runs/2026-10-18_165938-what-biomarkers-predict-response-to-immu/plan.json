@@ -1,0 +1,15 @@
+{
+  "pico": {
+    "population": "non-small cell lung cancer",
+    "intervention": "immune checkpoint inhibitors",
+    "comparison": "",
+    "outcome": "predictive biomarkers"
+  },
+  "queries": [
+    "(non-small cell lung cancer OR NSCLC) AND (immune checkpoint inhibitors OR PD-1 OR PD-L1 OR CTLA-4) AND (biomarker OR predictive biomarker)",
+    "(PD-L1 OR TMB OR tumor mutational burden OR gene expression signature) AND (response OR efficacy OR outcome) AND (immune checkpoint inhibitors OR pembrolizumab OR nivolumab OR atezolizumab)",
+    "(non-small cell lung cancer OR NSCLC) AND (immune checkpoint inhibitors OR PD-1 OR PD-L1 OR CTLA-4) AND (randomized controlled trial OR meta-analysis OR systematic review)",
+    "(lung cancer) AND (immunotherapy) AND (biomarker discovery OR RNA-seq OR proteomics)"
+  ],
+  "rationale": "Queries cover core concepts, biomarker synonyms, study design filters, and omics-based discovery approaches to capture predictive biomarker evidence."
+}
