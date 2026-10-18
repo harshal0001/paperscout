@@ -9,6 +9,8 @@ from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+from paperscout.insights import extract_effects, outcome_tags  # noqa: E402
 FIELDS = ("key", "id", "title", "authors", "journal", "year", "cited_by", "open_access", "preprint", "doi", "pmid",
           "url", "score", "reason", "study_type", "matched_queries", "abstract")
 
@@ -24,11 +26,13 @@ def newest_ok_run():
 def main():
     run_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else newest_ok_run()
     meta = json.loads((run_dir / "run.json").read_text())
+    ranked = json.loads((run_dir / "ranked.json").read_text())
     data = {
         "run_id": meta["run_id"], "question": meta["question"], "counts": meta["counts"], "usage": meta.get("usage"),
         "warnings": meta["warnings"], "plan": json.loads((run_dir / "plan.json").read_text()),
         "summary": json.loads((run_dir / "summary.json").read_text()),
-        "papers": [{k: p.get(k) for k in FIELDS} for p in json.loads((run_dir / "ranked.json").read_text())],
+        "papers": [{**{k: p.get(k) for k in FIELDS}, "outcomes": outcome_tags(p["abstract"])} for p in ranked],
+        "effects": [{"key": p["key"], **e} for p in ranked for e in extract_effects(p["abstract"])],
     }
     template = (ROOT / "mockups" / "ui-concept.template.html").read_text()
     if template.count('"__RUN_DATA__"') != 1:
@@ -36,7 +40,8 @@ def main():
     payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")  # never close the <script> early
     out = ROOT / "mockups" / f"{datetime.now():%Y-%m-%d_%H%M}-ui-concept.html"
     out.write_text(template.replace('"__RUN_DATA__"', payload))
-    print(f"{out.relative_to(ROOT)}  ({len(data['papers'])} papers from {meta['run_id']}, {out.stat().st_size // 1024} KB)")
+    print(f"{out.relative_to(ROOT)}  ({len(data['papers'])} papers, {len(data['effects'])} effect sizes from "
+          f"{meta['run_id']}, {out.stat().st_size // 1024} KB)")
 
 
 if __name__ == "__main__":

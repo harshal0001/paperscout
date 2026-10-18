@@ -54,6 +54,17 @@ both exports OK, 9–14 s each. The checker was proven by its failure path: agai
 reported FAIL for every question and exited 1. The browser UI itself was not exercised (the user chose a
 terminal-only check); the JavaScript rendering is unverified, see backlog.
 
+**UI concept (`mockups/`, not wired into the app):** a standalone page built by `scripts/build_ui_sample.py` from a
+saved run, so it shows real model output and nothing is retyped. Its Insight canvas has three diagrams: an evidence
+funnel (Sankey from searches to the papers that grounded the brief), a forest plot of effect sizes, and an evidence
+gap map (outcomes × study designs). The effect sizes and outcome tags come from `paperscout/insights.py`: a pattern
+match over the abstracts that keeps each source sentence word for word, with 18 tests on invented shapes. Two bugs
+were caught that way: case-insensitive "OR" matched the English word "or" ("aged 18 or 65 (40-80)" became an odds
+ratio), and "cardiovascular death" was labelled plain mortality because "death" starts later. Fixes: abbreviations are
+now case-sensitive, and the keyword that *ends* closest to the number wins, with the longer match taking ties.
+`scripts/check_ui_sample.mjs` runs every renderer in Node against a stub DOM and fails on NaN/undefined. Its numbers
+were cross-checked against the run's JSON from Python (100 hits, 66 unique, 13 with score ≥7, 8 cited, 19 relevant).
+
 **Tests:** 26 offline tests (mock LLM + a recorded Europe PMC response) covering the happy path and every failure
 path: planner failure or garbage output → fallback query plus a warning; one query failing → warning, run continues;
 all failing → error event and a persisted `run.json` with status `failed`; ranker batch failure or partial reply →
