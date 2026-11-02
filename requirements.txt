@@ -3,4 +3,4 @@ uvicorn[standard]
 httpx
 openai
 python-dotenv
-pytest
+pytest<9.2  # 9.2 monkeypatch undo deletes starlette app.state attrs

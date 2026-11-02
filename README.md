@@ -21,14 +21,23 @@ You can filter by score, open access, preprints, study design or any diagram sel
 
 Built for the Nebius Build Week hackathon (Healthcare / Life Sciences track).
 
+## Requirements
+
+- Python 3.11 or newer
+- A [Nebius Token Factory](https://tokenfactory.nebius.com) API key. Europe PMC needs no key.
+- Node.js, only for the UI check in `scripts/check_ui_live.mjs`
+
 ## Run
 
 ```bash
-uv venv && uv pip install -r requirements.txt
+python3 -m venv .venv            # or: uv venv
+.venv/bin/pip install -r requirements.txt
 echo 'NEBIUS=<your Nebius Token Factory API key>' > .env
 .venv/bin/uvicorn paperscout.server:app --port 8000
 # open http://localhost:8000
 ```
+
+If your default `python3` is older than 3.11, call a newer one explicitly, for example `python3.12 -m venv .venv`. `.env` is gitignored.
 
 Optional env overrides: `PLANNER_MODEL`, `RANKER_MODEL`, `WRITER_MODEL`, `NEBIUS_BASE_URL`, `RUNS_DIR`.
 
