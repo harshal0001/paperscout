@@ -23,31 +23,78 @@ Built for the Nebius Build Week hackathon (Healthcare / Life Sciences track).
 
 ## Requirements
 
-- Python 3.11 or newer
-- A [Nebius Token Factory](https://tokenfactory.nebius.com) API key. Europe PMC needs no key.
-- Node.js, only for the UI check in `scripts/check_ui_live.mjs`
+- **Python 3.11 or newer.** Check with `python3 --version`.
+- **A Nebius Token Factory API key.** Sign in at [tokenfactory.nebius.com](https://tokenfactory.nebius.com), create a key, and make sure the account has credit. Europe PMC needs no key.
+- **Node.js** (optional), only for the UI check in step 7.
 
-## Run
+## Getting started
+
+**1. Clone the repo**
 
 ```bash
-python3 -m venv .venv            # or: uv venv
+git clone https://github.com/harshal0001/paperscout.git
+cd paperscout
+```
+
+**2. Create a virtual environment**
+
+```bash
+python3 -m venv .venv
+```
+
+If `python3` is older than 3.11, name a newer one, for example `python3.12 -m venv .venv`. With [uv](https://docs.astral.sh/uv/), `uv venv` works too.
+
+**3. Install the dependencies**
+
+```bash
 .venv/bin/pip install -r requirements.txt
-echo 'NEBIUS=<your Nebius Token Factory API key>' > .env
-.venv/bin/uvicorn paperscout.server:app --port 8000
-# open http://localhost:8000
 ```
 
-If your default `python3` is older than 3.11, call a newer one explicitly, for example `python3.12 -m venv .venv`. `.env` is gitignored.
-
-Optional env overrides: `PLANNER_MODEL`, `RANKER_MODEL`, `WRITER_MODEL`, `NEBIUS_BASE_URL`, `RUNS_DIR`.
-
-## Test
+**4. Add your API key**
 
 ```bash
-.venv/bin/python -m pytest -q   # offline: mock LLM + recorded Europe PMC response
-.venv/bin/python scripts/smoke_examples.py   # live: sends every home-page example question to a running server (real tokens, <$0.05)
-node scripts/check_ui_live.mjs               # UI: replays a captured real event stream through the page's JS (no browser)
+echo 'NEBIUS=<your Nebius Token Factory API key>' > .env
 ```
+
+`.env` is gitignored, so the key is never committed. It starts with a dot, so Finder hides it; open it with `open -e .env` or press Cmd+Shift+. in Finder.
+
+**5. Start the server**
+
+```bash
+.venv/bin/uvicorn paperscout.server:app --port 8000
+```
+
+**6. Open the app**
+
+Go to [http://localhost:8000](http://localhost:8000), type a research question or click an example, and press Search. A search typically takes 10–30 seconds and costs well under $0.01. Each run is saved to `runs/<timestamp>-<slug>/`.
+
+To stop the server, press Ctrl+C in its terminal.
+
+**7. Run the checks (optional)**
+
+```bash
+.venv/bin/python -m pytest -q                 # offline: mock LLM + recorded Europe PMC response, no key needed
+node scripts/check_ui_live.mjs                # UI: replays a captured real event stream through the page's JS (no browser)
+.venv/bin/python scripts/smoke_examples.py    # live: sends every home-page example question to the running server (real tokens, <$0.05)
+```
+
+### Configuration
+
+Optional environment variables, set in `.env` or the shell:
+
+| Variable | Default |
+|---|---|
+| `PLANNER_MODEL` | `nvidia/nemotron-3-super-120b-a12b` |
+| `RANKER_MODEL` | `nvidia/Nemotron-3_5-Lightning` |
+| `WRITER_MODEL` | `nvidia/nemotron-3-super-120b-a12b` |
+| `NEBIUS_BASE_URL` | `https://api.tokenfactory.nebius.com/v1/` |
+| `RUNS_DIR` | `runs/` |
+
+### Troubleshooting
+
+- **The search fails with "NEBIUS … is not set":** `.env` is missing or isn't in the project folder. Repeat step 4, then restart the server.
+- **`Address already in use`:** a server is already running on port 8000. Stop it, or use another port with `--port 8001`.
+- **Europe PMC returns 503:** this is a temporary outage on their side; it is retried automatically. Try again in a minute if it persists.
 
 ## Cost
 
